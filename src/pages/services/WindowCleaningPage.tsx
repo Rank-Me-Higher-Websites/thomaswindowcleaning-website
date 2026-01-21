@@ -334,10 +334,16 @@ const WindowCleaningPage = () => {
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
               Ready to enjoy spotless windows? Contact Thomas Window Cleaning today for professional window cleaning in Chicago, IL. We look forward to making your windows shine!
             </p>
-            <a href="tel:8474043398" className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
-              <Phone className="w-5 h-5" />
-              Call Now: (847) 404-3398
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
+                <Phone className="w-5 h-5" />
+                Call Now: (847) 404-3398
+              </a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
+                <ArrowRight className="w-5 h-5" />
+                Get Quote
+              </Link>
+            </div>
           </div>
         </section>
       </main>
