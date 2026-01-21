@@ -40,7 +40,7 @@ export const FloatingCTA = () => {
       </a>
       <a
         href="#booking"
-        className="flex-1 flex items-center justify-center gap-2 bg-star hover:bg-star/90 text-foreground font-semibold py-3 px-4 rounded-lg shadow-xl transition-all duration-300 hover:scale-105"
+        className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-4 rounded-lg shadow-xl transition-all duration-300 hover:scale-105"
       >
         <FileText className="w-5 h-5" />
         <span>Get Quote</span>
