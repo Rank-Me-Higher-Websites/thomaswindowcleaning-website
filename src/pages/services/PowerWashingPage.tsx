@@ -83,23 +83,23 @@ const PowerWashingPage = () => {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={powerWashingHero} alt="Power Washing" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-foreground/70" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                <span className="text-white">Professional</span>{' '}
-                <span className="text-accent">Power Washing</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                Professional{' '}
+                <span className="text-primary">Power Washing</span>
               </h1>
               <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning offers professional <span className="font-semibold text-white">power and pressure washing</span> in <span className="font-semibold text-white">Chicago, IL</span>. We specialize in <span className="text-accent font-semibold">removing stains, buildup, and discoloration</span> from siding, driveways, sidewalks, decks, and more.
+                Thomas Window Cleaning offers professional <span className="font-semibold">power and pressure washing</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="text-primary">removing stains, buildup, and discoloration</span> from siding, driveways, sidewalks, decks, and more.
               </p>
               <p className="text-white/80 mb-8">
-                Serving homeowners and businesses across <span className="font-semibold text-white">Chicago, IL</span> and the greater Chicagoland area, our experienced team restores your property's curb appeal with professional-grade equipment.
+                Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team restores your property's curb appeal with professional-grade equipment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>
