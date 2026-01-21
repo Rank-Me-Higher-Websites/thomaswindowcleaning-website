@@ -5,7 +5,6 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import offersHero from '@/assets/offers-hero.jpg';
-import offersHouse from '@/assets/offers-house.jpg';
 import offersPowerWashing from '@/assets/offers-power-washing.jpg';
 import offersWindowCleaning from '@/assets/offers-window-cleaning.jpg';
 
@@ -16,7 +15,7 @@ const offers = [
     terms: 'New or existing customers. Must present offer at time of service.',
     icon: Percent,
     highlight: false,
-    image: offersHouse,
+    image: offersHero,
   },
   {
     title: '$20 Off',
