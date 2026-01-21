@@ -119,10 +119,10 @@ const OffersPage = () => {
                     <p className="text-foreground font-medium mb-2">{offer.description}</p>
                     <p className="text-sm text-muted-foreground mb-6">{offer.terms}</p>
                     
-                    <a href="#booking" className="btn-glow w-full">
+                    <Link to="/contact#booking" className="btn-glow w-full">
                       <CalendarCheck className="w-4 h-4" />
                       Book Now
-                    </a>
+                    </Link>
                   </div>
                 </motion.div>
               ))}
