@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, Shield, Award, CheckCircle } from 'lucide-react';
-import aboutImg from '@/assets/thomas-about.jpg';
+import aboutImg from '@/assets/thomas-squeegee.jpg';
 
 const features = [
   'Streak-free windows guaranteed',
