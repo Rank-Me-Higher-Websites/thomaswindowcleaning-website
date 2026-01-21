@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Clock, Star } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import logoImg from '@/assets/thomas-logo.png';
+import angiesListBadge from '@/assets/angies-list-badge.png';
 
 const footerLinks = {
   services: [
@@ -48,6 +49,11 @@ export const Footer = () => {
             <p className="text-primary-foreground/80 text-sm mb-6">
               Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
             </p>
+            <img 
+              src={angiesListBadge} 
+              alt="Angie's List Super Service Award 2016" 
+              className="h-24 w-auto mb-6"
+            />
             <div className="flex gap-4">
               <a
                 href="https://www.facebook.com/thomaswindowbg"
