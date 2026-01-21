@@ -3,6 +3,7 @@ import { Phone, Mail, MapPin, Send, Facebook, Instagram, Clock } from 'lucide-re
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import contactHero from '@/assets/contact-hero.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 
 const ContactPage = () => {
@@ -24,8 +25,12 @@ const ContactPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="py-24 bg-muted/30">
-          <div className="container mx-auto px-4">
+        <section className="relative py-24 overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={contactHero} alt="Contact" className="w-full h-full object-cover opacity-30" />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+          </div>
+          <div className="container mx-auto px-4 relative z-10">
             <div className="text-center max-w-3xl mx-auto">
               <span className="section-label justify-center">CONTACT US</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">

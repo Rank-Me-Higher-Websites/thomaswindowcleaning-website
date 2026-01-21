@@ -3,7 +3,7 @@ import { Phone, Tag, Percent, Gift } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
-import heroBg from '@/assets/hero-bg.jpg';
+import offersHero from '@/assets/offers-hero.jpg';
 
 const offers = [
   {
@@ -38,7 +38,7 @@ const OffersPage = () => {
         {/* Hero Section */}
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src={heroBg} alt="Offers" className="w-full h-full object-cover opacity-20" />
+            <img src={offersHero} alt="Offers" className="w-full h-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
           </div>
           
