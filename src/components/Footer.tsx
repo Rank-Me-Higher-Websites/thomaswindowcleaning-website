@@ -36,7 +36,7 @@ export const Footer = () => {
   return (
     <footer className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand column with map */}
           <div className="lg:col-span-2">
             <Link to="/" className="mb-6 inline-block">
@@ -137,10 +137,10 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact with Badge */}
+          {/* Contact */}
           <div>
             <h4 className="font-semibold mb-6">Contact Us</h4>
-            <ul className="space-y-4 text-sm mb-6">
+            <ul className="space-y-4 text-sm">
               <li>
                 <a
                   href="tel:8474043398"
@@ -168,10 +168,14 @@ export const Footer = () => {
                 Mon - Sat: 9:00 - 19:00
               </li>
             </ul>
+          </div>
+
+          {/* Badge */}
+          <div className="flex items-start justify-center lg:justify-start">
             <img 
               src={angiesListBadge} 
               alt="Angie's List Super Service Award 2016" 
-              className="h-24 w-auto"
+              className="h-28 w-auto"
             />
           </div>
         </div>
