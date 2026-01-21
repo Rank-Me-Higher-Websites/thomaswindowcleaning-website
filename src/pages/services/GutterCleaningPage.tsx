@@ -87,11 +87,10 @@ const GutterCleaningPage = () => {
           <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                Leading Local{' '}
-                <span className="text-primary">Gutter Cleaning</span>
+                Leading Local Gutter Cleaning
               </h1>
               <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning provides professional <span className="font-semibold">gutter cleaner service</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="text-primary">clearing debris, leaves, and buildup</span> to ensure efficient drainage and protect your home.
+                Thomas Window Cleaning provides professional <span className="font-semibold">gutter cleaner service</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="font-semibold">clearing debris, leaves, and buildup</span> to ensure efficient drainage and protect your home.
               </p>
               <p className="text-white/80 mb-8">
                 Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team prevents costly water damage with thorough gutter maintenance.
