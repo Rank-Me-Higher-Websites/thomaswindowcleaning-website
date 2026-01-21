@@ -136,64 +136,260 @@ const OffersPage = () => {
           </div>
         </section>
 
-        {/* Info Section */}
+        {/* SEO Content Section - Why Choose Our Offers */}
         <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  💧 Take Advantage Of Our Limited-Time{' '}
-                  <span className="text-gradient">Exterior Cleaning Offers</span> 💧
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="text-center mb-12"
+              >
+                <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                  Why Chicagoland Homeowners Choose{' '}
+                  <span className="text-gradient">Thomas Window Cleaning</span>
                 </h2>
-                <p className="text-muted-foreground text-lg">
-                  Thomas Window Cleaning proudly serves homeowners in Wheeling and across Chicagoland, 
-                  delivering reliable and affordable exterior cleaning solutions. Our team specializes 
-                  in streak-free window washing, powerful pressure washing, and thorough gutter debris 
-                  removal to help protect and beautify your home.
+                <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+                  For over 29 years, we've been the trusted choice for exterior cleaning services 
+                  across Chicago, Wheeling, and the greater Chicagoland area.
                 </p>
+              </motion.div>
+
+              {/* Service Highlights with Images */}
+              <div className="space-y-12 mb-16">
+                {/* Window Cleaning Highlight */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="grid md:grid-cols-2 gap-8 items-center"
+                >
+                  <div className="order-2 md:order-1">
+                    <h3 className="text-2xl font-bold mb-4 text-foreground">
+                      🪟 Professional Window Cleaning Services
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Our <strong>professional window cleaning</strong> service delivers streak-free, 
+                      crystal-clear results that transform your home. We use eco-friendly cleaning solutions 
+                      and professional-grade equipment to ensure every window sparkles—inside and out.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Interior and exterior window cleaning
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Screen cleaning and track detailing
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Hard water stain removal
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Safe cleaning for multi-story homes
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img 
+                      src={offersWindowCleaning} 
+                      alt="Professional window cleaning service in Chicago" 
+                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </motion.div>
+
+                {/* Power Washing Highlight */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="grid md:grid-cols-2 gap-8 items-center"
+                >
+                  <div>
+                    <img 
+                      src={offersPowerWashing} 
+                      alt="Power washing services for driveways and patios in Chicagoland" 
+                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-foreground">
+                      💦 Power Washing & Pressure Cleaning
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Restore your property's curb appeal with our <strong>professional power washing services</strong>. 
+                      From driveways and sidewalks to siding and decks, we blast away years of dirt, grime, 
+                      mold, and mildew to reveal clean, like-new surfaces.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Driveway and sidewalk cleaning
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Deck and patio restoration
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        House siding and brick cleaning
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Fence and outdoor furniture cleaning
+                      </li>
+                    </ul>
+                  </div>
+                </motion.div>
+
+                {/* Gutter Cleaning Highlight */}
+                <motion.div
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6 }}
+                  className="grid md:grid-cols-2 gap-8 items-center"
+                >
+                  <div className="order-2 md:order-1">
+                    <h3 className="text-2xl font-bold mb-4 text-foreground">
+                      🍂 Gutter Cleaning & Maintenance
+                    </h3>
+                    <p className="text-muted-foreground mb-4">
+                      Protect your home from water damage with our thorough <strong>gutter cleaning services</strong>. 
+                      Chicago's unpredictable weather means your gutters work overtime—we ensure they're 
+                      clear of debris and flowing properly to prevent costly repairs.
+                    </p>
+                    <ul className="space-y-2 text-muted-foreground">
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Complete debris removal
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Downspout flushing and unclogging
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Gutter inspection for damage
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-primary font-bold">✓</span>
+                        Seasonal maintenance packages
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="order-1 md:order-2">
+                    <img 
+                      src={offersHero} 
+                      alt="Gutter cleaning services in Wheeling and Chicago" 
+                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
+                    />
+                  </div>
+                </motion.div>
               </div>
 
-              <p className="text-muted-foreground text-center mb-12">
-                Regular exterior cleaning not only boosts your home's curb appeal but also prevents 
-                long-term damage caused by clogged gutters, built-up grime, and weather exposure. 
-                Whether you're preparing your home for the changing seasons, hosting guests, or 
-                simply want a fresher look, we've got you covered.
-              </p>
-
-              <div className="grid sm:grid-cols-2 gap-6 mb-12">
+              {/* Trust Badges */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12"
+              >
                 {benefits.map((benefit, index) => (
-                  <motion.div
+                  <div
                     key={index}
-                    initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    className="flex items-center gap-4 glass-card p-4"
+                    className="flex items-center gap-3 glass-card p-4"
                   >
-                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                      <benefit.icon className="w-6 h-6 text-primary" />
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                      <benefit.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <span className="font-medium text-foreground">{benefit.text}</span>
-                  </motion.div>
+                    <span className="font-medium text-sm text-foreground">{benefit.text}</span>
+                  </div>
+                ))}
+              </motion.div>
+
+              {/* SEO Rich Text */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+                className="glass-card p-8 text-center"
+              >
+                <h3 className="text-2xl font-bold mb-4">
+                  Save on Exterior Cleaning Services in Chicago & Wheeling
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Our current <strong>exterior cleaning specials</strong> make it the perfect time to invest in your 
+                  home's appearance and protection. Whether you need <strong>window washing in Chicago</strong>, 
+                  <strong>power washing in Wheeling</strong>, or <strong>gutter cleaning across Chicagoland</strong>, 
+                  our experienced team delivers exceptional results at competitive prices.
+                </p>
+                <p className="text-muted-foreground mb-6">
+                  Regular exterior maintenance not only boosts your home's curb appeal but also prevents 
+                  long-term damage from clogged gutters, built-up grime, and harsh weather exposure. 
+                  Don't wait until small problems become expensive repairs—take advantage of these 
+                  limited-time offers and give your home the professional care it deserves.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <a href="tel:8474043398" className="btn-glow">
+                    <Phone className="w-5 h-5" />
+                    Call (847) 404-3398
+                  </a>
+                  <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-muted text-foreground px-6 py-3 rounded-lg font-semibold hover:bg-muted/80 transition-colors">
+                    <ArrowRight className="w-5 h-5" />
+                    Get a Free Quote
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Areas We Serve */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center"
+            >
+              <h2 className="text-2xl md:text-3xl font-bold mb-6">
+                Serving Homeowners Across <span className="text-gradient">Chicagoland</span>
+              </h2>
+              <p className="text-muted-foreground mb-8">
+                We proudly offer our exterior cleaning services to residential and commercial 
+                properties throughout the greater Chicago area, including:
+              </p>
+              <div className="flex flex-wrap justify-center gap-3 mb-8">
+                {[
+                  'Wheeling', 'Arlington Heights', 'Buffalo Grove', 'Palatine', 
+                  'Mount Prospect', 'Des Plaines', 'Northbrook', 'Glenview',
+                  'Schaumburg', 'Hoffman Estates', 'Elk Grove Village', 'Park Ridge'
+                ].map((area) => (
+                  <span 
+                    key={area}
+                    className="px-4 py-2 bg-muted rounded-full text-sm font-medium text-foreground"
+                  >
+                    {area}
+                  </span>
                 ))}
               </div>
-
-              <div className="text-center">
-                <p className="text-muted-foreground mb-6">
-                  Don't wait—these seasonal savings won't last! Book your appointment today and see 
-                  why Chicagoland homeowners continue to choose Thomas Window Cleaning year after year.
-                </p>
-                <h3 className="text-2xl font-bold mb-6">
-                  Ready To Give Your Home The Care It Deserves?
-                </h3>
-                <p className="text-muted-foreground mb-8">
-                  Reach out today and let our experts handle the hard work while you enjoy the results.
-                </p>
-                <Link to="/contact" className="btn-glow text-lg">
-                  Contact Us
-                </Link>
-              </div>
-            </div>
+              <p className="text-muted-foreground text-sm">
+                Don't see your area? <Link to="/contact" className="text-primary font-medium hover:underline">Contact us</Link> to 
+                check if we service your location.
+              </p>
+            </motion.div>
           </div>
         </section>
 
