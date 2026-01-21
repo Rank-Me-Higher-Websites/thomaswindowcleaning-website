@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Phone, ArrowRight, Sparkles, Droplets, Waves } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import windowCleaningImg from '@/assets/window-cleaning-squeegee.png';
+import windowCleaningImg from '@/assets/window-cleaning-service.png';
 import gutterCleaningImg from '@/assets/thomas-gutter-cleaning.jpg';
 import powerWashingImg from '@/assets/thomas-power-washing.jpg';
 
