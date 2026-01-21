@@ -1,16 +1,17 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const footerLinks = {
   services: [
-    { label: 'Window Cleaning', href: '#window-cleaning' },
-    { label: 'Gutter Cleaning', href: '#gutter-cleaning' },
-    { label: 'Power Washing', href: '#power-washing' },
+    { label: 'Window Cleaning', href: '/services/window-cleaning' },
+    { label: 'Gutter Cleaning', href: '/services/gutter-cleaning' },
+    { label: 'Power Washing', href: '/services/power-washing' },
   ],
   company: [
-    { label: 'About Us', href: '#about' },
-    { label: 'Pricing', href: '#prices' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'About Us', href: '/#about' },
+    { label: 'Pricing', href: '/prices' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Contact', href: '/contact' },
   ],
 };
 
@@ -21,7 +22,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand column */}
           <div>
-            <a href="#home" className="flex items-center gap-3 mb-6">
+            <Link to="/" className="flex items-center gap-3 mb-6">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary-foreground">
                 <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
                 <rect x="22" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -32,19 +33,23 @@ export const Footer = () => {
                 <span className="font-bold text-xl">Thomas</span>
                 <span className="text-xs opacity-80 block -mt-1">Window Cleaning</span>
               </div>
-            </a>
+            </Link>
             <p className="text-primary-foreground/80 text-sm mb-6">
               Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.facebook.com/thomaswindowbg"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/thomaswindowbg/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
@@ -58,12 +63,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -75,12 +80,12 @@ export const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.href}
                     className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

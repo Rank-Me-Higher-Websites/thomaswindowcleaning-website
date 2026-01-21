@@ -1,19 +1,44 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Phone, Menu, X, Clock, Mail, Facebook, Instagram } from 'lucide-react';
+import { Phone, Menu, X, Clock, Mail, Facebook, Instagram, ChevronDown, Sparkles, Droplets, Waves } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+
+const services = [
+  { 
+    label: 'Window Cleaning', 
+    href: '/services/window-cleaning',
+    icon: Sparkles,
+    description: 'Crystal-clear, streak-free windows'
+  },
+  { 
+    label: 'Gutter Cleaning', 
+    href: '/services/gutter-cleaning',
+    icon: Droplets,
+    description: 'Prevent costly water damage'
+  },
+  { 
+    label: 'Power Washing', 
+    href: '/services/power-washing',
+    icon: Waves,
+    description: 'Restore your exterior surfaces'
+  },
+];
 
 const navLinks = [
-  { label: 'Home', href: '#home' },
-  { label: 'Services', href: '#services' },
-  { label: 'Offers', href: '#offers' },
-  { label: 'Prices', href: '#prices' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '#', hasDropdown: true },
+  { label: 'Offers', href: '/offers' },
+  { label: 'Prices', href: '/prices' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +47,22 @@ export const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsServicesOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsMobileMenuOpen(false);
+    setIsServicesOpen(false);
+  }, [location]);
 
   return (
     <>
@@ -43,10 +84,10 @@ export const Header = () => {
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.facebook.com/thomaswindowbg" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
               <Facebook className="w-4 h-4" />
             </a>
-            <a href="#" className="hover:opacity-80 transition-opacity">
+            <a href="https://www.instagram.com/thomaswindowbg/" target="_blank" rel="noopener noreferrer" className="hover:opacity-80 transition-opacity">
               <Instagram className="w-4 h-4" />
             </a>
           </div>
@@ -56,8 +97,8 @@ export const Header = () => {
       {/* Main header */}
       <header className={`sticky-header ${isScrolled ? 'py-3 shadow-md' : 'py-4'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
-          {/* Logo - matching Thomas Window style */}
-          <a href="#home" className="flex items-center gap-3">
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-3">
             <div className="relative">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary">
                 <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
@@ -70,19 +111,69 @@ export const Header = () => {
               <span className="font-bold text-2xl text-primary tracking-tight">Thomas</span>
               <span className="text-xs text-muted-foreground -mt-1 tracking-wide">Window Cleaning</span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-foreground hover:text-primary transition-colors text-sm font-medium relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
-              </a>
+              link.hasDropdown ? (
+                <div key={link.label} className="relative" ref={dropdownRef}>
+                  <button
+                    onClick={() => setIsServicesOpen(!isServicesOpen)}
+                    className="flex items-center gap-1 text-foreground hover:text-primary transition-colors text-sm font-medium"
+                  >
+                    {link.label}
+                    <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                  </button>
+                  
+                  <AnimatePresence>
+                    {isServicesOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: 10 }}
+                        transition={{ duration: 0.2 }}
+                        className="absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-xl z-50 overflow-hidden"
+                      >
+                        <div className="p-2">
+                          {services.map((service) => (
+                            <Link
+                              key={service.label}
+                              to={service.href}
+                              className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group"
+                            >
+                              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+                                <service.icon className="w-5 h-5 text-primary" />
+                              </div>
+                              <div>
+                                <div className="font-medium text-foreground group-hover:text-primary transition-colors">
+                                  {service.label}
+                                </div>
+                                <div className="text-xs text-muted-foreground">
+                                  {service.description}
+                                </div>
+                              </div>
+                            </Link>
+                          ))}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ) : (
+                <Link
+                  key={link.label}
+                  to={link.href}
+                  className={`text-sm font-medium relative group transition-colors ${
+                    location.pathname === link.href ? 'text-primary' : 'text-foreground hover:text-primary'
+                  }`}
+                >
+                  {link.label}
+                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                    location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'
+                  }`} />
+                </Link>
+              )
             ))}
           </nav>
 
@@ -112,16 +203,48 @@ export const Header = () => {
               exit={{ opacity: 0, height: 0 }}
               className="lg:hidden border-t border-border bg-card"
             >
-              <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
+              <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
                 {navLinks.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-foreground hover:text-primary transition-colors py-2 border-b border-border/50"
-                  >
-                    {link.label}
-                  </a>
+                  link.hasDropdown ? (
+                    <div key={link.label}>
+                      <button
+                        onClick={() => setIsServicesOpen(!isServicesOpen)}
+                        className="flex items-center justify-between w-full py-2 text-foreground"
+                      >
+                        {link.label}
+                        <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      <AnimatePresence>
+                        {isServicesOpen && (
+                          <motion.div
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: 'auto' }}
+                            exit={{ opacity: 0, height: 0 }}
+                            className="pl-4 border-l-2 border-primary/20 ml-2"
+                          >
+                            {services.map((service) => (
+                              <Link
+                                key={service.label}
+                                to={service.href}
+                                className="flex items-center gap-2 py-2 text-muted-foreground hover:text-primary transition-colors"
+                              >
+                                <service.icon className="w-4 h-4" />
+                                {service.label}
+                              </Link>
+                            ))}
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
+                    </div>
+                  ) : (
+                    <Link
+                      key={link.label}
+                      to={link.href}
+                      className="py-2 text-foreground hover:text-primary transition-colors border-b border-border/50"
+                    >
+                      {link.label}
+                    </Link>
+                  )
                 ))}
                 <a href="tel:8474043398" className="btn-glow text-center mt-2">
                   <Phone className="w-4 h-4" />
