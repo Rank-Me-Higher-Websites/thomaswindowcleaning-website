@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Send } from 'lucide-react';
 
 export const ContactSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,47 +18,45 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden bg-background">
-      <div className="floating-blob floating-blob-secondary w-96 h-96 top-0 -left-48 opacity-20" />
-      
+    <section id="contact" className="py-12 md:py-16 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
           {/* Contact info */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.4 }}
           >
             <span className="section-label">GET IN TOUCH</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Let's discuss your{' '}
               <span className="text-gradient">cleaning needs</span>
             </h2>
 
-            <div className="space-y-6">
+            <div className="space-y-3">
               <a
                 href="tel:8474043398"
-                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <Phone className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground mb-1">Phone Number</div>
-                  <div className="text-lg font-semibold text-foreground">(847) 404-3398</div>
+                  <div className="text-xs text-muted-foreground">Phone</div>
+                  <div className="text-sm font-semibold text-foreground">(847) 404-3398</div>
                 </div>
               </a>
 
               <a
                 href="mailto:thomaswindowcleaning@gmail.com"
-                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <Mail className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <Mail className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground mb-1">Email Address</div>
-                  <div className="text-lg font-semibold text-foreground">thomaswindowcleaning@gmail.com</div>
+                  <div className="text-xs text-muted-foreground">Email</div>
+                  <div className="text-sm font-semibold text-foreground">thomaswindowcleaning@gmail.com</div>
                 </div>
               </a>
 
@@ -66,14 +64,14 @@ export const ContactSection = () => {
                 href="https://maps.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                  <MapPin className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                  <MapPin className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
-                  <div className="text-sm text-muted-foreground mb-1">Address</div>
-                  <div className="text-lg font-semibold text-foreground">P.O. Box 582 Wheeling, Illinois 60090</div>
+                  <div className="text-xs text-muted-foreground">Address</div>
+                  <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, IL 60090</div>
                 </div>
               </a>
             </div>
@@ -81,13 +79,13 @@ export const ContactSection = () => {
 
           {/* Contact form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: 20 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: 0.1 }}
           >
-            <div className="glass-card p-8 shadow-xl">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">Fill in the details</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="glass-card p-5 md:p-6 shadow-lg">
+              <h3 className="text-lg font-bold mb-4 text-foreground">Fill in the details</h3>
+              <form onSubmit={handleSubmit} className="space-y-3">
                 <input
                   type="text"
                   placeholder="First Name"
@@ -114,14 +112,14 @@ export const ContactSection = () => {
                 />
                 <textarea
                   placeholder="Your Message"
-                  rows={4}
+                  rows={3}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="input-glass resize-none"
                   required
                 />
-                <button type="submit" className="btn-glow w-full text-lg">
-                  <Send className="w-5 h-5" />
+                <button type="submit" className="btn-glow w-full">
+                  <Send className="w-4 h-4" />
                   Send Message
                 </button>
               </form>

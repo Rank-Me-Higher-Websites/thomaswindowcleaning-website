@@ -43,66 +43,63 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section id="testimonials" className="py-24 relative overflow-hidden bg-muted/30">
-      {/* Background elements */}
-      <div className="floating-blob floating-blob-primary w-96 h-96 -bottom-48 -right-48 opacity-20" />
-      
+    <section id="testimonials" className="py-12 md:py-16 relative overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          transition={{ duration: 0.4 }}
+          className="text-center mb-8 md:mb-10"
         >
           <span className="section-label justify-center">TESTIMONIALS</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">
             Trusted by thousands of<br />
             <span className="text-gradient">people & companies</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-sm max-w-xl mx-auto">
             See what our clients are saying about our professional cleaning services
           </p>
         </motion.div>
 
         {/* Testimonials grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={testimonial.name}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="testimonial-card relative hover:shadow-xl transition-shadow"
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              className="testimonial-card relative"
             >
               {/* Quote icon */}
-              <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20" />
+              <Quote className="absolute top-3 right-3 w-6 h-6 text-primary/15" />
               
               {/* Rating */}
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-0.5 mb-3">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-star text-star" />
+                  <Star key={i} className="w-3.5 h-3.5 fill-star text-star" />
                 ))}
               </div>
               
               {/* Content */}
-              <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
+              <p className="text-muted-foreground text-xs mb-4 leading-relaxed line-clamp-4">
                 "{testimonial.content}"
               </p>
               
               {/* Author */}
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                  <span className="text-primary font-semibold">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center">
+                  <span className="text-primary text-xs font-semibold">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-sm text-foreground">{testimonial.name}</div>
-                  <div className="text-xs text-muted-foreground">{testimonial.role}</div>
+                  <div className="font-medium text-xs text-foreground">{testimonial.name}</div>
+                  <div className="text-[10px] text-muted-foreground">{testimonial.role}</div>
                 </div>
               </div>
             </motion.div>
@@ -111,23 +108,23 @@ export const TestimonialsSection = () => {
 
         {/* Google Reviews badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="flex justify-center mt-12"
+          transition={{ duration: 0.4, delay: 0.4 }}
+          className="flex justify-center mt-8"
         >
           <a
             href="#"
-            className="glass-card px-6 py-4 flex items-center gap-4 hover:shadow-lg transition-shadow"
+            className="glass-card px-4 py-2.5 flex items-center gap-3"
           >
-            <div className="flex items-center gap-1">
+            <div className="flex items-center gap-0.5">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-star text-star" />
+                <Star key={i} className="w-4 h-4 fill-star text-star" />
               ))}
             </div>
-            <div>
+            <div className="text-sm">
               <span className="font-semibold text-foreground">5.0 Rating</span>
-              <span className="text-muted-foreground text-sm ml-2">• 47 Google Reviews</span>
+              <span className="text-muted-foreground text-xs ml-1.5">• 47 Google Reviews</span>
             </div>
           </a>
         </motion.div>

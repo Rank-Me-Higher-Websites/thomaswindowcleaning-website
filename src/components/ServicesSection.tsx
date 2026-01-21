@@ -31,77 +31,74 @@ const services = [
 
 export const ServicesSection = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden bg-background">
-      {/* Background elements */}
-      <div className="floating-blob floating-blob-secondary w-96 h-96 -top-48 right-0 opacity-30" />
-      
+    <section id="services" className="py-12 md:py-16 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-16"
+          transition={{ duration: 0.4 }}
+          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-8 md:mb-10"
         >
           <div>
             <span className="section-label">SERVICES</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
               Cleaning Services<br />
               <span className="text-gradient">in Chicagoland area</span>
             </h2>
           </div>
-          <div className="mt-6 lg:mt-0 max-w-md">
-            <p className="text-muted-foreground mb-4">
-              We offer comprehensive cleaning solutions, including professional window and gutter cleaning, for both small and large residential and commercial customers.
+          <div className="mt-4 lg:mt-0 max-w-sm">
+            <p className="text-muted-foreground text-sm mb-3">
+              We offer comprehensive cleaning solutions for both residential and commercial customers.
             </p>
-            <a href="tel:8474043398" className="flex items-center gap-3 text-primary font-semibold group">
-              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                <Phone className="w-5 h-5" />
+            <a href="tel:8474043398" className="flex items-center gap-2 text-primary font-medium group">
+              <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
+                <Phone className="w-4 h-4" />
               </div>
               <div>
-                <span className="text-sm text-muted-foreground block">CALL US ANYTIME</span>
-                <span className="text-lg">(847) 404-3398</span>
+                <span className="text-xs text-muted-foreground block leading-none mb-0.5">CALL US</span>
+                <span className="text-sm">(847) 404-3398</span>
               </div>
             </a>
           </div>
         </motion.div>
 
         {/* Services grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
           {services.map((service, index) => (
             <motion.a
               key={service.title}
               href={service.href}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
               className="service-card group"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
-                    <service.icon className="w-5 h-5 text-primary" />
+              <div className="p-4 md:p-5">
+                <div className="flex items-center gap-2.5 mb-2">
+                  <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                    <service.icon className="w-4 h-4 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <h3 className="text-base font-semibold group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                 </div>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-3 line-clamp-2">
                   {service.description}
                 </p>
-                <span className="inline-flex items-center gap-2 text-primary text-sm font-medium group-hover:gap-3 transition-all">
+                <span className="inline-flex items-center gap-1.5 text-primary text-sm font-medium group-hover:gap-2 transition-all">
                   Learn More
-                  <ArrowRight className="w-4 h-4" />
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>
             </motion.a>
