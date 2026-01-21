@@ -315,71 +315,81 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
                 Professional Gutter Cleaning Services in Wheeling, IL & Chicago Suburbs
               </h2>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 text-center">
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
                 Thomas Window Cleaning provides expert gutter cleaning and maintenance throughout the Chicago metropolitan area. With over 29 years of experience, our trained technicians safely remove leaves, debris, and buildup to ensure proper water drainage and protect your home from costly damage.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Residential Gutter Cleaning</h3>
+              {/* Service Types - Horizontal Layout */}
+              <div className="flex flex-col md:flex-row gap-4 mb-10">
+                <div className="flex-1 bg-primary/5 border-l-4 border-primary rounded-r-lg p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Home className="h-5 w-5 text-primary" />
+                    <h3 className="text-base font-semibold text-foreground">Residential Gutter Cleaning</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Protect your home's foundation, roof, and siding with regular gutter maintenance. Our residential service includes complete debris removal, downspout clearing, and a thorough inspection to identify potential issues before they become expensive repairs.
+                    Protect your home's foundation, roof, and siding with regular gutter maintenance. Our residential service includes complete debris removal, downspout clearing, and thorough inspection.
                   </p>
                 </div>
-                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Commercial Gutter Cleaning</h3>
+                <div className="flex-1 bg-primary/5 border-l-4 border-primary rounded-r-lg p-5">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Building2 className="h-5 w-5 text-primary" />
+                    <h3 className="text-base font-semibold text-foreground">Commercial Gutter Cleaning</h3>
+                  </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Keep your commercial property safe from water damage with professional gutter maintenance. We service office buildings, retail spaces, and multi-unit properties with flexible scheduling to minimize disruption to your business operations.
+                    Keep your commercial property safe from water damage. We service office buildings, retail spaces, and multi-unit properties with flexible scheduling.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-card rounded-xl p-6 border border-border shadow-md mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-4">What's Included in Our Gutter Cleaning Service?</h3>
-                <div className="grid sm:grid-cols-2 gap-3">
+              {/* What's Included - Grid with Background */}
+              <div className="bg-card rounded-xl p-6 md:p-8 border border-border shadow-sm mb-10">
+                <h3 className="text-lg font-semibold text-foreground mb-5 text-center">What's Included in Our Gutter Cleaning Service?</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
-                    "Complete debris & leaf removal",
-                    "Downspout clearing & flushing",
-                    "Gutter system inspection",
-                    "Minor repairs & reattachment",
-                    "Gutter guard assessment",
-                    "Roof valley debris removal",
-                    "Ground cleanup of all debris",
-                    "Before & after photos available"
+                    { icon: "🍂", text: "Debris & Leaf Removal" },
+                    { icon: "🔧", text: "Downspout Clearing" },
+                    { icon: "🔍", text: "System Inspection" },
+                    { icon: "🛠️", text: "Minor Repairs" },
+                    { icon: "🛡️", text: "Guard Assessment" },
+                    { icon: "🏠", text: "Roof Valley Cleaning" },
+                    { icon: "🧹", text: "Ground Cleanup" },
+                    { icon: "📸", text: "Before/After Photos" }
                   ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                      <span>{item}</span>
+                    <div key={index} className="flex flex-col items-center text-center p-3 rounded-lg bg-muted/50">
+                      <span className="text-2xl mb-2">{item.icon}</span>
+                      <span className="text-xs font-medium text-foreground">{item.text}</span>
                     </div>
                   ))}
                 </div>
               </div>
 
-              <div className="bg-card rounded-xl p-6 border border-border shadow-md mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-3">Why Regular Gutter Maintenance Matters</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  Clogged gutters can cause serious damage to your property including foundation cracks, basement flooding, roof leaks, fascia rot, and landscape erosion. Regular cleaning—especially in spring and fall—prevents these costly issues and extends the life of your gutter system. Our experts recommend cleaning gutters at least twice per year, or more frequently if you have overhanging trees.
-                </p>
+              {/* Why It Matters - Alert Style */}
+              <div className="bg-primary/10 rounded-xl p-6 mb-10 flex gap-4 items-start">
+                <Shield className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-base font-semibold text-foreground mb-2">Why Regular Gutter Maintenance Matters</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Clogged gutters cause foundation cracks, basement flooding, roof leaks, and landscape erosion. Regular cleaning—especially in spring and fall—prevents costly repairs and extends the life of your gutter system. We recommend cleaning at least twice per year.
+                  </p>
+                </div>
               </div>
 
+              {/* Areas Served - Inline Style */}
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center justify-center gap-2">
-                  <MapPin className="h-5 w-5 text-primary" />
-                  Serving Chicago & Surrounding Communities
+                <h3 className="text-base font-semibold text-foreground mb-3 inline-flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-primary" />
+                  Proudly Serving the Chicagoland Area
                 </h3>
-                <p className="text-sm text-muted-foreground mb-4">
-                  We proudly provide gutter cleaning services throughout the Chicagoland area including:
-                </p>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {["Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", "Mount Prospect", "Des Plaines", "Northbrook", "Glenview", "Prospect Heights", "Schaumburg"].map((area, index) => (
-                    <span key={index} className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground">
-                      {area}, IL
+                <div className="flex flex-wrap justify-center gap-x-3 gap-y-1 text-sm text-muted-foreground">
+                  {["Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", "Mount Prospect", "Des Plaines", "Northbrook", "Glenview", "Prospect Heights", "Schaumburg"].map((area, index, arr) => (
+                    <span key={index}>
+                      {area}{index < arr.length - 1 ? " •" : ""}
                     </span>
                   ))}
                 </div>
