@@ -177,7 +177,7 @@ const WindowCleaningPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="glass-card overflow-hidden shadow-xl"
+                className="image-tile shadow-xl"
               >
                 <img src={windowCleaningImg} alt="Window Cleaning Service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
@@ -248,7 +248,7 @@ const WindowCleaningPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="glass-card p-6 text-center"
+                  className="card-hover p-6 text-center"
                 >
                   <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <service.icon className="w-7 h-7 text-primary" />
@@ -280,7 +280,7 @@ const WindowCleaningPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="glass-card overflow-hidden"
+                className="image-tile"
               >
                 <img src={thomasDifference1} alt="Professional window cleaning with squeegee" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
@@ -289,7 +289,7 @@ const WindowCleaningPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="glass-card overflow-hidden"
+                className="image-tile"
               >
                 <img src={thomasDifference2} alt="Close-up of window cleaning service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>

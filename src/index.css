@@ -160,12 +160,63 @@
 
   /* Service card hover - refined */
   .service-card {
-    @apply glass-card overflow-hidden transition-all duration-300;
+    @apply glass-card overflow-hidden transition-all duration-300 cursor-pointer;
   }
 
   .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-card), 0 16px 32px -12px hsl(var(--glow-primary));
+  }
+
+  /* Image tile hover effect */
+  .image-tile {
+    @apply relative overflow-hidden rounded-xl transition-all duration-300;
+  }
+
+  .image-tile:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-card), 0 12px 24px -12px hsl(var(--glow-primary));
+    box-shadow: 0 12px 24px -8px hsl(0 0% 0% / 0.15);
+  }
+
+  .image-tile img {
+    @apply transition-transform duration-500 ease-out;
+  }
+
+  .image-tile:hover img {
+    transform: scale(1.05);
+  }
+
+  /* Interactive card with lift and glow */
+  .hover-lift {
+    @apply transition-all duration-300 cursor-pointer;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px -8px hsl(0 0% 0% / 0.12);
+  }
+
+  /* Subtle scale effect for images */
+  .hover-zoom {
+    @apply overflow-hidden;
+  }
+
+  .hover-zoom img {
+    @apply transition-transform duration-500 ease-out;
+  }
+
+  .hover-zoom:hover img {
+    transform: scale(1.08);
+  }
+
+  /* Blog/offer card hover */
+  .card-hover {
+    @apply glass-card transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card), 0 12px 24px -8px hsl(var(--glow-primary));
   }
 
   /* Floating CTA on mobile */
