@@ -118,14 +118,6 @@ export const BookingSection = () => {
                   Submit
                 </button>
               </form>
-              
-              {/* Urgency notice */}
-              <div className="mt-6 p-4 bg-accent/10 border border-accent/20 rounded-xl">
-                <p className="text-sm text-center">
-                  <span className="font-semibold text-accent">🔥 Limited Time:</span>{' '}
-                  <span className="text-muted-foreground">15% off your first service this month!</span>
-                </p>
-              </div>
             </div>
           </motion.div>
         </div>
