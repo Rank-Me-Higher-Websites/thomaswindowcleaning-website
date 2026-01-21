@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Phone, ArrowRight, Shield } from 'lucide-react';
+import { Phone, ArrowRight, Shield, Clock } from 'lucide-react';
 
 export const CTASection = () => {
   const ref = useRef(null);
@@ -23,6 +23,12 @@ export const CTASection = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-4xl mx-auto"
         >
+          {/* Urgency badge */}
+          <div className="inline-flex items-center gap-2 bg-primary-foreground/20 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <Clock className="w-4 h-4" />
+            Limited Time: 15% Off First Service
+          </div>
+
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-primary-foreground">
             Chicago's Trusted Experts in Power Washing, Window Cleaning & Gutter Cleaning
           </h2>

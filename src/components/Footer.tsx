@@ -36,9 +36,9 @@ export const Footer = () => {
   return (
     <footer className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-          {/* Brand column with map */}
-          <div className="lg:col-span-2">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+          {/* Brand column */}
+          <div>
             <Link to="/" className="mb-6 inline-block">
               <img 
                 src={logoImg} 
@@ -77,20 +77,6 @@ export const Footer = () => {
               >
                 <Star className="w-5 h-5" />
               </a>
-            </div>
-            {/* Map */}
-            <div className="rounded-xl overflow-hidden">
-              <iframe 
-                src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-                width="100%" 
-                height="150" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Thomas Window Cleaning Location"
-                className="w-full"
-              />
             </div>
           </div>
 
@@ -137,8 +123,8 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact with Badge */}
-          <div className="flex gap-6 items-center">
+          {/* Contact */}
+          <div className="flex gap-6">
             <div>
               <h4 className="font-semibold mb-6">Contact Us</h4>
               <ul className="space-y-4 text-sm">
@@ -173,7 +159,25 @@ export const Footer = () => {
             <img 
               src={angiesListBadge} 
               alt="Angie's List Super Service Award 2016" 
-              className="h-28 w-auto hidden md:block"
+              className="h-24 w-auto hidden md:block"
+            />
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="mb-12">
+          <h4 className="font-semibold mb-6">Our Service Area</h4>
+          <div className="rounded-xl overflow-hidden max-w-2xl">
+            <iframe 
+              src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              width="100%" 
+              height="200" 
+              style={{ border: 0 }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Thomas Window Cleaning Location"
+              className="w-full"
             />
           </div>
         </div>
