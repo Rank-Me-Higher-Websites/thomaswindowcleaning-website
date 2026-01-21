@@ -197,20 +197,6 @@ const ContactPage = () => {
                     </button>
                   </form>
                 </div>
-
-                {/* Map */}
-                <div className="mt-6 glass-card overflow-hidden h-48">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47467.45938095!2d-87.96377!3d42.1335205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb945112c2f09%3A0xc1bd0ae10b07e6c!2sWheeling%2C%20IL%2060090!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Thomas Window Cleaning Location"
-                  />
-                </div>
               </motion.div>
             </div>
           </div>
