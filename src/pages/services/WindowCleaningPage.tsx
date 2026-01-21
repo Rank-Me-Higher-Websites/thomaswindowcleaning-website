@@ -94,13 +94,13 @@ const WindowCleaningPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={windowCleaningHero} alt="Window Cleaning" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-24">
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Top Rated Window Cleaners
@@ -126,7 +126,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <motion.div
@@ -186,7 +186,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <span className="section-label justify-center">PRICING</span>
@@ -228,7 +228,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold">
@@ -262,7 +262,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Thomas Difference Section */}
-        <section className="py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -298,7 +298,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <span className="section-label justify-center">FAQ</span>
@@ -326,7 +326,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary">
+        <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
               Schedule Your Window Cleaning Today!
