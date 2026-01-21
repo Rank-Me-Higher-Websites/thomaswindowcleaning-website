@@ -170,7 +170,7 @@ export const Footer = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             title="Thomas Window Cleaning Location - Wheeling, IL"
-            className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+            className="w-full h-full"
           />
         </div>
         {/* Bottom bar */}
