@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Send, Facebook, Instagram, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Facebook, Instagram, Clock, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -39,9 +39,19 @@ const ContactPage = () => {
               <p className="text-sm md:text-base text-white/85 mb-3">
                 Thomas Window Cleaning, Inc. provides professional cleaning services for competitive prices.
               </p>
-              <p className="text-white/70 text-sm">
+              <p className="text-white/70 text-sm mb-6">
                 Your positive feedback and referrals are the best reward for us!
               </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
+                  <Phone className="w-4 h-4" />
+                  Call Now
+                </a>
+                <a href="#booking" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm">
+                  <ArrowRight className="w-4 h-4" />
+                  Get Quote
+                </a>
+              </div>
             </div>
           </div>
         </section>

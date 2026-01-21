@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -97,9 +97,19 @@ const BlogPage = () => {
               <p className="text-lg text-white/90 mb-4">
                 Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning.
               </p>
-              <p className="text-white/80">
+              <p className="text-white/80 mb-8">
                 Discover the best practices for window cleaning, gutter maintenance, and power washing to keep your property looking its best.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </a>
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                  <ArrowRight className="w-5 h-5" />
+                  Get Quote
+                </Link>
+              </div>
             </div>
           </div>
         </section>

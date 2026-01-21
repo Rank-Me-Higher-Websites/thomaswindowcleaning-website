@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Sparkles, Droplets, Waves } from 'lucide-react';
+import { Phone, Sparkles, Droplets, Waves, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -75,10 +75,16 @@ const PricesPage = () => {
               <p className="text-white/80 mb-8">
                 Our rates are competitive, and our quality of service stands out across the northwest suburbs. Whether you need window cleaning, gutter cleaning, or power washing, we deliver expert results with no hidden fees.
               </p>
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
-                <Phone className="w-5 h-5" />
-                Get a Free Estimate
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </a>
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                  <ArrowRight className="w-5 h-5" />
+                  Get Quote
+                </Link>
+              </div>
             </div>
           </div>
         </section>
