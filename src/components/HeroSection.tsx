@@ -136,7 +136,7 @@ export const HeroSection = () => {
               </div>
               
               {/* Testimonial Quote - positioned at bottom left */}
-              <div className="absolute bottom-4 left-4 max-w-[280px] bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
+              <div className="absolute -bottom-4 left-0 max-w-[280px] bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
                 <p className="text-white/90 text-xs italic mb-2 leading-relaxed">
                   "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service."
                 </p>
