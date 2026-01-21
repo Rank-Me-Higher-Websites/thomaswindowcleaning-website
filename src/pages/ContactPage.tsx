@@ -48,10 +48,13 @@ const ContactPage = () => {
                   <Phone className="w-4 h-4" />
                   Call Now
                 </a>
-                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm">
+                <button 
+                  onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                  className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm"
+                >
                   <ArrowRight className="w-4 h-4" />
                   Get Quote
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -157,7 +160,7 @@ const ContactPage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.1 }}
               >
-                <div className="glass-card p-5 md:p-6 shadow-lg">
+                <div id="contact-form" className="glass-card p-5 md:p-6 shadow-lg">
                   <h3 className="text-lg font-bold mb-4 text-foreground">Fill in the details</h3>
                   <form onSubmit={handleSubmit} className="space-y-3">
                     <input
@@ -291,10 +294,13 @@ const ContactPage = () => {
                 <Phone className="w-5 h-5" />
                 Call Now: (847) 404-3398
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
+              <button 
+                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
+                className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg"
+              >
                 <ArrowRight className="w-5 h-5" />
                 Get Quote
-              </Link>
+              </button>
             </div>
           </div>
         </section>
