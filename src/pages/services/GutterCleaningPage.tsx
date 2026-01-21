@@ -7,6 +7,8 @@ import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import gutterCleaningImg from '@/assets/thomas-gutter-autumn.jpg';
 import gutterCleaningHero from '@/assets/thomas-house.jpg';
+import gutterStandsOut1 from '@/assets/gutter-stands-out-1.jpg';
+import gutterStandsOut2 from '@/assets/gutter-stands-out-2.jpg';
 
 const pricingData = [
   { size: '<2000 sqf', story1: '$100', story2: '$150', story3: '$200' },
@@ -251,7 +253,7 @@ const GutterCleaningPage = () => {
         {/* Thomas Difference Section */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Why Thomas Gutter Cleaning{' '}
                 <span className="text-gradient">Stands Out</span>
@@ -259,6 +261,27 @@ const GutterCleaningPage = () => {
               <p className="text-muted-foreground text-lg">
                 We're more than just local gutter cleaners—we're your trusted gutter maintenance experts serving Chicago and the suburbs. Our customers rely on our thorough cleaning process, reliability, and attention to detail to keep their gutters clear and their homes protected.
               </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="glass-card overflow-hidden"
+              >
+                <img src={gutterStandsOut1} alt="Residential gutter cleaning service" className="w-full aspect-[4/3] object-cover" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="glass-card overflow-hidden"
+              >
+                <img src={gutterStandsOut2} alt="Gutters full of leaves before cleaning" className="w-full aspect-[4/3] object-cover" />
+              </motion.div>
             </div>
           </div>
         </section>
