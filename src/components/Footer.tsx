@@ -1,5 +1,6 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Clock } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logoImg from '@/assets/thomas-logo.png';
 
 const footerLinks = {
   services: [
@@ -22,17 +23,12 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand column */}
           <div>
-            <Link to="/" className="flex items-center gap-3 mb-6">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary-foreground">
-                <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="22" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="4" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="22" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-              </svg>
-              <div>
-                <span className="font-bold text-xl">Thomas</span>
-                <span className="text-xs opacity-80 block -mt-1">Window Cleaning</span>
-              </div>
+            <Link to="/" className="mb-6 inline-block">
+              <img 
+                src={logoImg} 
+                alt="Thomas Window Cleaning" 
+                className="h-12 w-auto brightness-0 invert"
+              />
             </Link>
             <p className="text-primary-foreground/80 text-sm mb-6">
               Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
