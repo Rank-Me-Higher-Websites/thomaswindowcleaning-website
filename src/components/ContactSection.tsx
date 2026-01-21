@@ -18,7 +18,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden">
+    <section id="contact" className="py-24 relative overflow-hidden bg-background">
       <div className="floating-blob floating-blob-secondary w-96 h-96 top-0 -left-48 opacity-20" />
       
       <div className="container mx-auto px-4" ref={ref}>
@@ -30,7 +30,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.6 }}
           >
             <span className="section-label">GET IN TOUCH</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-foreground">
               Let's discuss your{' '}
               <span className="text-gradient">cleaning needs</span>
             </h2>
@@ -38,27 +38,27 @@ export const ContactSection = () => {
             <div className="space-y-6">
               <a
                 href="tel:8474043398"
-                className="glass-card p-6 flex items-center gap-4 group hover:border-primary/30 transition-colors"
+                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Phone className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground mb-1">Phone Number</div>
-                  <div className="text-lg font-semibold">(847) 404-3398</div>
+                  <div className="text-lg font-semibold text-foreground">(847) 404-3398</div>
                 </div>
               </a>
 
               <a
                 href="mailto:thomaswindowcleaning@gmail.com"
-                className="glass-card p-6 flex items-center gap-4 group hover:border-primary/30 transition-colors"
+                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <Mail className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <Mail className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground mb-1">Email Address</div>
-                  <div className="text-lg font-semibold">thomaswindowcleaning@gmail.com</div>
+                  <div className="text-lg font-semibold text-foreground">thomaswindowcleaning@gmail.com</div>
                 </div>
               </a>
 
@@ -66,14 +66,14 @@ export const ContactSection = () => {
                 href="https://maps.google.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="glass-card p-6 flex items-center gap-4 group hover:border-primary/30 transition-colors"
+                className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <MapPin className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <MapPin className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
                 </div>
                 <div>
                   <div className="text-sm text-muted-foreground mb-1">Address</div>
-                  <div className="text-lg font-semibold">P.O. Box 582 Wheeling, Illinois 60090</div>
+                  <div className="text-lg font-semibold text-foreground">P.O. Box 582 Wheeling, Illinois 60090</div>
                 </div>
               </a>
             </div>
@@ -85,8 +85,8 @@ export const ContactSection = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="glass-card p-8">
-              <h3 className="text-2xl font-bold mb-6">Fill in the details</h3>
+            <div className="glass-card p-8 shadow-xl">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Fill in the details</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                   type="text"

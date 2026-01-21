@@ -28,10 +28,7 @@ export const HowItWorksSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-card/30 to-transparent" />
-      
+    <section className="py-24 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section header */}
         <motion.div
@@ -41,7 +38,7 @@ export const HowItWorksSection = () => {
           className="text-center mb-16"
         >
           <span className="section-label justify-center">HOW IT WORKS</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
             Schedule cleaning service<br />
             <span className="text-gradient">in 3 simple steps</span>
           </h2>
@@ -55,19 +52,19 @@ export const HowItWorksSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="glass-card p-8 text-center relative group"
+              className="glass-card p-8 text-center relative group hover:shadow-xl transition-shadow"
             >
               {/* Step number */}
-              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center text-primary font-bold">
+              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-lg">
                 {step.number}
               </div>
               
               {/* Icon */}
-              <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/30 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
+              <div className="w-16 h-16 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-6 group-hover:bg-primary/20 transition-colors">
                 <step.icon className="w-7 h-7 text-primary" />
               </div>
               
-              <h3 className="text-lg font-bold mb-4 tracking-wide">{step.title}</h3>
+              <h3 className="text-lg font-bold mb-4 tracking-wide text-foreground">{step.title}</h3>
               <p className="text-muted-foreground text-sm">{step.description}</p>
 
               {/* Connector line (not on last item) */}

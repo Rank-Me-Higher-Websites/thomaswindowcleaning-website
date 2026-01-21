@@ -26,10 +26,10 @@ export const Header = () => {
   return (
     <>
       {/* Top bar */}
-      <div className="hidden md:block bg-card/80 backdrop-blur-sm border-b border-border/30">
+      <div className="hidden md:block bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 py-2 flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6 text-muted-foreground">
-            <a href="tel:8474043398" className="flex items-center gap-2 hover:text-primary transition-colors">
+          <div className="flex items-center gap-6">
+            <a href="tel:8474043398" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Phone className="w-4 h-4" />
               (847) 404-3398
             </a>
@@ -37,16 +37,16 @@ export const Header = () => {
               <Clock className="w-4 h-4" />
               Mon - Sat: 9:00 - 19:00 / Closed on Sundays
             </span>
-            <a href="mailto:thomaswindowcleaning@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:thomaswindowcleaning@gmail.com" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <Mail className="w-4 h-4" />
               thomaswindowcleaning@gmail.com
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#" className="hover:opacity-80 transition-opacity">
               <Facebook className="w-4 h-4" />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="#" className="hover:opacity-80 transition-opacity">
               <Instagram className="w-4 h-4" />
             </a>
           </div>
@@ -54,18 +54,21 @@ export const Header = () => {
       </div>
 
       {/* Main header */}
-      <header className={`sticky-header ${isScrolled ? 'py-3' : 'py-4'}`}>
+      <header className={`sticky-header ${isScrolled ? 'py-3 shadow-md' : 'py-4'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
-          {/* Logo */}
+          {/* Logo - matching Thomas Window style */}
           <a href="#home" className="flex items-center gap-3">
             <div className="relative">
-              <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">T</span>
-              </div>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary">
+                <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="22" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="4" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="22" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+              </svg>
             </div>
             <div className="flex flex-col">
-              <span className="font-bold text-xl text-foreground">Thomas</span>
-              <span className="text-xs text-muted-foreground -mt-1">Window Cleaning</span>
+              <span className="font-bold text-2xl text-primary tracking-tight">Thomas</span>
+              <span className="text-xs text-muted-foreground -mt-1 tracking-wide">Window Cleaning</span>
             </div>
           </a>
 
@@ -75,7 +78,7 @@ export const Header = () => {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm font-medium relative group"
+                className="text-foreground hover:text-primary transition-colors text-sm font-medium relative group"
               >
                 {link.label}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
@@ -107,7 +110,7 @@ export const Header = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden border-t border-border/30"
+              className="lg:hidden border-t border-border bg-card"
             >
               <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
                 {navLinks.map((link) => (
@@ -115,7 +118,7 @@ export const Header = () => {
                     key={link.label}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-muted-foreground hover:text-foreground transition-colors py-2 border-b border-border/20"
+                    className="text-foreground hover:text-primary transition-colors py-2 border-b border-border/50"
                   >
                     {link.label}
                   </a>

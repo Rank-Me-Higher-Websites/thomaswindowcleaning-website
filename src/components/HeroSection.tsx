@@ -13,25 +13,23 @@ export const HeroSection = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    // Handle form submission
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
           src={heroBg}
           alt="Professional window cleaning"
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/90 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/60 to-foreground/40" />
       </div>
 
       {/* Floating gradient blobs */}
-      <div className="floating-blob floating-blob-primary w-96 h-96 -top-48 -left-48" />
-      <div className="floating-blob floating-blob-secondary w-80 h-80 bottom-20 right-10" />
-      <div className="floating-blob floating-blob-primary w-64 h-64 top-1/2 left-1/3 opacity-30" />
+      <div className="floating-blob floating-blob-primary w-96 h-96 -top-48 -left-48 opacity-40" />
+      <div className="floating-blob floating-blob-secondary w-80 h-80 bottom-20 right-10 opacity-30" />
 
       <div className="container mx-auto px-4 py-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -40,82 +38,56 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
+            className="text-primary-foreground"
           >
             {/* Badge */}
             <div className="flex items-center gap-3 mb-6">
-              <div className="flex">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 fill-star text-star" />
-                ))}
-              </div>
-              <span className="text-muted-foreground text-sm">
-                Since 1995 • <span className="text-primary font-semibold">1000+</span> Happy Customers
+              <span className="bg-primary-foreground/20 backdrop-blur-sm px-4 py-1.5 rounded-full text-sm font-medium border border-primary-foreground/30">
+                100% CUSTOMER SATISFACTION
               </span>
             </div>
 
             {/* Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-              Chicagoland's Trusted{' '}
-              <span className="text-gradient">Professional Cleaning</span>{' '}
-              Experts
+              PROFESSIONAL<br />
+              CLEANING SERVICES
             </h1>
 
             {/* Description */}
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl">
+            <p className="text-lg text-primary-foreground/80 mb-8 max-w-xl">
               Window Cleaning, Gutter Cleaning & Power Washing. Based in Wheeling, IL — proudly serving the greater Chicagoland area since 1995.
             </p>
 
             {/* CTA buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
-              <a href="tel:8474043398" className="btn-glow text-lg">
-                <Phone className="w-5 h-5" />
-                Request a Callback
-              </a>
-              <a href="#services" className="btn-outline-glow text-lg">
-                Explore Services
+              <a href="#services" className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors">
+                Learn More
                 <ArrowRight className="w-5 h-5" />
               </a>
             </div>
 
             {/* Trust indicator */}
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <CheckCircle className="w-4 h-4 text-primary" />
-              Trusted by homeowners across Chicagoland
+            <div className="flex items-center gap-4">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 fill-star text-star" />
+                ))}
+              </div>
+              <span className="text-primary-foreground/80 text-sm">
+                Trusted by 1000+ homeowners since 1995
+              </span>
             </div>
           </motion.div>
 
-          {/* Right side - Video + Form */}
+          {/* Right side - Form */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="space-y-6"
           >
-            {/* VSL Video placeholder */}
-            <div className="glass-card aspect-video relative group cursor-pointer overflow-hidden">
-              <img
-                src={heroBg}
-                alt="Video thumbnail"
-                className="w-full h-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 flex items-center justify-center bg-background/40">
-                <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center animate-pulse-glow transition-transform duration-300 group-hover:scale-110">
-                  <Play className="w-8 h-8 text-primary-foreground fill-current ml-1" />
-                </div>
-              </div>
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between">
-                <span className="text-sm text-foreground/80 bg-background/60 backdrop-blur px-3 py-1 rounded-full">
-                  0:53
-                </span>
-                <span className="text-sm text-foreground/80 bg-background/60 backdrop-blur px-3 py-1 rounded-full">
-                  Click for sound
-                </span>
-              </div>
-            </div>
-
             {/* Quick booking form */}
-            <div className="glass-card p-6">
-              <h3 className="text-xl font-semibold mb-4">Book Your Services</h3>
+            <div className="glass-card p-8 bg-card/95 backdrop-blur-xl">
+              <h3 className="text-2xl font-bold mb-6 text-foreground">Book Your Services</h3>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <input
                   type="text"

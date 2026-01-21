@@ -17,7 +17,7 @@ export const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="py-24 relative overflow-hidden bg-muted/30">
       {/* Background elements */}
       <div className="floating-blob floating-blob-primary w-80 h-80 top-20 -left-40 opacity-20" />
       
@@ -30,7 +30,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="glass-card overflow-hidden">
+            <div className="glass-card overflow-hidden shadow-xl">
               <img
                 src={windowCleaningImg}
                 alt="Professional window cleaning"
@@ -42,10 +42,10 @@ export const AboutSection = () => {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isInView ? { opacity: 1, scale: 1 } : {}}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="absolute -bottom-6 -right-6 lg:bottom-8 lg:-right-8 glass-card p-6"
+              className="absolute -bottom-6 -right-6 lg:bottom-8 lg:-right-8 glass-card p-6 shadow-xl"
             >
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                <div className="w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-primary" />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <span className="section-label">WINDOW CLEANING SERVICES</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
               Your Trusted Experts for{' '}
               <span className="text-gradient">Crystal-Clear Windows</span>{' '}
               & Clog-Free Gutters
@@ -86,7 +86,7 @@ export const AboutSection = () => {
                   className="flex items-center gap-3"
                 >
                   <CheckCircle className="w-5 h-5 text-primary shrink-0" />
-                  <span className="text-sm">{feature}</span>
+                  <span className="text-sm text-foreground">{feature}</span>
                 </motion.div>
               ))}
             </div>
