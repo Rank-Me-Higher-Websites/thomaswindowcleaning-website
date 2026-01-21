@@ -45,7 +45,7 @@ export const HowItWorksSection = () => {
         </motion.div>
 
         {/* Steps grid */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 pt-6">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
@@ -55,7 +55,7 @@ export const HowItWorksSection = () => {
               className="glass-card p-8 text-center relative group hover:shadow-xl transition-shadow"
             >
               {/* Step number */}
-              <div className="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-lg">
+              <div className="absolute -top-3 right-4 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold shadow-lg">
                 {step.number}
               </div>
               
