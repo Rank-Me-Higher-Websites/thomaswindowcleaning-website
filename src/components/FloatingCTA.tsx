@@ -5,7 +5,7 @@ export const FloatingCTA = () => {
     <div className="floating-cta">
       <a
         href="tel:8474043398"
-        className="btn-glow w-full text-lg justify-center animate-pulse-glow"
+        className="btn-glow w-full text-lg justify-center shadow-xl"
       >
         <Phone className="w-5 h-5" />
         Call Now: (847) 404-3398

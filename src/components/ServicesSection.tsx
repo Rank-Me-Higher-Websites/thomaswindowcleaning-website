@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Phone, ArrowRight, Sparkles, Droplets, Waves } from 'lucide-react';
 import windowCleaningImg from '@/assets/window-cleaning.jpg';
@@ -35,9 +34,9 @@ export const ServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="services" className="py-24 relative overflow-hidden">
+    <section id="services" className="py-24 relative overflow-hidden bg-background">
       {/* Background elements */}
-      <div className="floating-blob floating-blob-secondary w-96 h-96 -top-48 right-0 opacity-20" />
+      <div className="floating-blob floating-blob-secondary w-96 h-96 -top-48 right-0 opacity-30" />
       
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
@@ -49,7 +48,7 @@ export const ServicesSection = () => {
         >
           <div>
             <span className="section-label">SERVICES</span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               Cleaning Services<br />
               <span className="text-gradient">in Chicagoland area</span>
             </h2>
@@ -59,7 +58,7 @@ export const ServicesSection = () => {
               We offer comprehensive cleaning solutions, including professional window and gutter cleaning, for both small and large residential and commercial customers.
             </p>
             <a href="tel:8474043398" className="flex items-center gap-3 text-primary font-semibold group">
-              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/30 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+              <div className="w-12 h-12 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                 <Phone className="w-5 h-5" />
               </div>
               <div>
@@ -90,7 +89,7 @@ export const ServicesSection = () => {
               </div>
               <div className="p-6">
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/30 flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 border border-primary/20 flex items-center justify-center">
                     <service.icon className="w-5 h-5 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">

@@ -46,7 +46,7 @@ export const TestimonialsSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="testimonials" className="py-24 relative overflow-hidden">
+    <section id="testimonials" className="py-24 relative overflow-hidden bg-muted/30">
       {/* Background elements */}
       <div className="floating-blob floating-blob-primary w-96 h-96 -bottom-48 -right-48 opacity-20" />
       
@@ -59,7 +59,7 @@ export const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <span className="section-label justify-center">TESTIMONIALS</span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground">
             Trusted by thousands of<br />
             <span className="text-gradient">people & companies</span>
           </h2>
@@ -76,7 +76,7 @@ export const TestimonialsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="testimonial-card relative"
+              className="testimonial-card relative hover:shadow-xl transition-shadow"
             >
               {/* Quote icon */}
               <Quote className="absolute top-4 right-4 w-8 h-8 text-primary/20" />
@@ -95,13 +95,13 @@ export const TestimonialsSection = () => {
               
               {/* Author */}
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                   <span className="text-primary font-semibold">
                     {testimonial.name.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-sm">{testimonial.name}</div>
+                  <div className="font-semibold text-sm text-foreground">{testimonial.name}</div>
                   <div className="text-xs text-muted-foreground">{testimonial.role}</div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ export const TestimonialsSection = () => {
         >
           <a
             href="#"
-            className="glass-card px-6 py-4 flex items-center gap-4 hover:border-primary/30 transition-colors"
+            className="glass-card px-6 py-4 flex items-center gap-4 hover:shadow-lg transition-shadow"
           >
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
@@ -126,7 +126,7 @@ export const TestimonialsSection = () => {
               ))}
             </div>
             <div>
-              <span className="font-semibold">5.0 Rating</span>
+              <span className="font-semibold text-foreground">5.0 Rating</span>
               <span className="text-muted-foreground text-sm ml-2">• 47 Google Reviews</span>
             </div>
           </a>

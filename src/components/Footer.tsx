@@ -16,33 +16,36 @@ const footerLinks = {
 
 export const Footer = () => {
   return (
-    <footer className="py-16 border-t border-border/30">
+    <footer className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand column */}
           <div>
             <a href="#home" className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-primary/20 border border-primary/30 flex items-center justify-center">
-                <span className="text-primary font-bold text-xl">T</span>
-              </div>
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary-foreground">
+                <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="22" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="4" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <rect x="22" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
+              </svg>
               <div>
                 <span className="font-bold text-xl">Thomas</span>
-                <span className="text-xs text-muted-foreground block -mt-1">Window Cleaning</span>
+                <span className="text-xs opacity-80 block -mt-1">Window Cleaning</span>
               </div>
             </a>
-            <p className="text-muted-foreground text-sm mb-6">
+            <p className="text-primary-foreground/80 text-sm mb-6">
               Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
             </p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-lg bg-secondary flex items-center justify-center hover:bg-primary/20 hover:text-primary transition-colors"
+                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
@@ -57,7 +60,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -74,7 +77,7 @@ export const Footer = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -90,7 +93,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="tel:8474043398"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Phone className="w-4 h-4 shrink-0" />
                   (847) 404-3398
@@ -99,17 +102,17 @@ export const Footer = () => {
               <li>
                 <a
                   href="mailto:thomaswindowcleaning@gmail.com"
-                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 >
                   <Mail className="w-4 h-4 shrink-0" />
                   thomaswindowcleaning@gmail.com
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-muted-foreground">
+              <li className="flex items-start gap-3 text-primary-foreground/80">
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
                 P.O. Box 582 Wheeling, IL 60090
               </li>
-              <li className="flex items-center gap-3 text-muted-foreground">
+              <li className="flex items-center gap-3 text-primary-foreground/80">
                 <Clock className="w-4 h-4 shrink-0" />
                 Mon - Sat: 9:00 - 19:00
               </li>
@@ -118,11 +121,11 @@ export const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
+        <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
           <p>© 2024 Thomas Window Cleaning. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-primary-foreground transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-primary-foreground transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
