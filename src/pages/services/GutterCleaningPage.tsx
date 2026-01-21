@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
+import gutterCleaningHero from '@/assets/gutter-cleaning-hero.jpg';
 
 const pricingData = [
   { size: '<2000 sqf', story1: '$100', story2: '$150', story3: '$200' },
@@ -31,7 +32,7 @@ const GutterCleaningPage = () => {
         {/* Hero Section */}
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src={gutterCleaningImg} alt="Gutter Cleaning" className="w-full h-full object-cover opacity-20" />
+            <img src={gutterCleaningHero} alt="Gutter Cleaning" className="w-full h-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
           </div>
           

@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import windowCleaningImg from '@/assets/window-cleaning.jpg';
+import windowCleaningHero from '@/assets/window-cleaning-hero.jpg';
 
 const pricingData = [
   { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
@@ -32,7 +33,7 @@ const WindowCleaningPage = () => {
         {/* Hero Section */}
         <section className="relative py-24 overflow-hidden">
           <div className="absolute inset-0">
-            <img src={windowCleaningImg} alt="Window Cleaning" className="w-full h-full object-cover opacity-20" />
+            <img src={windowCleaningHero} alt="Window Cleaning" className="w-full h-full object-cover opacity-30" />
             <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
           </div>
           
