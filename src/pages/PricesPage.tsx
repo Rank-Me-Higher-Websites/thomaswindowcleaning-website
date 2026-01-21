@@ -58,13 +58,13 @@ const PricesPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={pricesHero} alt="Exterior Cleaning Prices" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-24">
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Transparent Exterior Cleaning Service Prices
@@ -90,7 +90,7 @@ const PricesPage = () => {
         </section>
 
         {/* Transparent Pricing Info Section */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-10 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <motion.div
@@ -127,33 +127,35 @@ const PricesPage = () => {
         </section>
 
         {/* Window Cleaning Prices */}
-        <section className="py-24">
+        <section className="py-10 md:py-16">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex items-center gap-4 mb-8"
+              className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Sparkles className="w-5 h-5 text-primary" />
               </div>
-              <h2 className="text-3xl font-bold">Window Cleaning Prices</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Window Cleaning Prices</h2>
             </motion.div>
 
-            <div className="glass-card overflow-hidden max-w-3xl">
-              <div className="grid grid-cols-3 bg-primary text-primary-foreground font-semibold">
-                <div className="p-4 text-center">No. of Windows</div>
-                <div className="p-4 text-center border-l border-primary-foreground/20">Inside & Outside</div>
-                <div className="p-4 text-center border-l border-primary-foreground/20">Outside Only</div>
-              </div>
-              {windowPricing.map((row, index) => (
-                <div key={index} className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                  <div className="p-4 text-center font-medium">{row.windows}</div>
-                  <div className="p-4 text-center border-l border-border">{row.insideOutside}</div>
-                  <div className="p-4 text-center border-l border-border">{row.outsideOnly}</div>
+            <div className="overflow-x-auto -mx-4 px-4">
+              <div className="glass-card overflow-hidden min-w-[400px] max-w-3xl">
+                <div className="grid grid-cols-3 bg-primary text-primary-foreground font-semibold text-xs md:text-sm">
+                  <div className="p-3 md:p-4 text-center">No. of Windows</div>
+                  <div className="p-3 md:p-4 text-center border-l border-primary-foreground/20">Inside & Outside</div>
+                  <div className="p-3 md:p-4 text-center border-l border-primary-foreground/20">Outside Only</div>
                 </div>
-              ))}
+                {windowPricing.map((row, index) => (
+                  <div key={index} className={`grid grid-cols-3 text-xs md:text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                    <div className="p-3 md:p-4 text-center font-medium">{row.windows}</div>
+                    <div className="p-3 md:p-4 text-center border-l border-border">{row.insideOutside}</div>
+                    <div className="p-3 md:p-4 text-center border-l border-border">{row.outsideOnly}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             
             <div className="mt-4">
@@ -165,35 +167,37 @@ const PricesPage = () => {
         </section>
 
         {/* Gutter Cleaning Prices */}
-        <section className="py-24 bg-muted/30">
+        <section className="py-10 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex items-center gap-4 mb-8"
+              className="flex items-center gap-3 mb-6"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Droplets className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Droplets className="w-5 h-5 text-primary" />
               </div>
-              <h2 className="text-3xl font-bold">Gutter Cleaning Prices</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Gutter Cleaning Prices</h2>
             </motion.div>
 
-            <div className="glass-card overflow-hidden max-w-4xl">
-              <div className="grid grid-cols-4 bg-primary text-primary-foreground font-semibold">
-                <div className="p-4 text-center">House Size</div>
-                <div className="p-4 text-center border-l border-primary-foreground/20">1 Story</div>
-                <div className="p-4 text-center border-l border-primary-foreground/20">2 Story</div>
-                <div className="p-4 text-center border-l border-primary-foreground/20">3 Story</div>
-              </div>
-              {gutterPricing.map((row, index) => (
-                <div key={index} className={`grid grid-cols-4 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                  <div className="p-4 text-center font-medium text-sm">{row.size}</div>
-                  <div className="p-4 text-center border-l border-border">{row.story1}</div>
-                  <div className="p-4 text-center border-l border-border">{row.story2}</div>
-                  <div className="p-4 text-center border-l border-border">{row.story3}</div>
+            <div className="overflow-x-auto -mx-4 px-4">
+              <div className="glass-card overflow-hidden min-w-[450px] max-w-4xl">
+                <div className="grid grid-cols-4 bg-primary text-primary-foreground font-semibold text-xs md:text-sm">
+                  <div className="p-3 md:p-4 text-center">House Size</div>
+                  <div className="p-3 md:p-4 text-center border-l border-primary-foreground/20">1 Story</div>
+                  <div className="p-3 md:p-4 text-center border-l border-primary-foreground/20">2 Story</div>
+                  <div className="p-3 md:p-4 text-center border-l border-primary-foreground/20">3 Story</div>
                 </div>
-              ))}
+                {gutterPricing.map((row, index) => (
+                  <div key={index} className={`grid grid-cols-4 text-xs md:text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                    <div className="p-3 md:p-4 text-center font-medium">{row.size}</div>
+                    <div className="p-3 md:p-4 text-center border-l border-border">{row.story1}</div>
+                    <div className="p-3 md:p-4 text-center border-l border-border">{row.story2}</div>
+                    <div className="p-3 md:p-4 text-center border-l border-border">{row.story3}</div>
+                  </div>
+                ))}
+              </div>
             </div>
             
             <p className="text-muted-foreground mt-4">
@@ -206,62 +210,62 @@ const PricesPage = () => {
         </section>
 
         {/* Power Washing Prices */}
-        <section className="py-24">
+        <section className="py-10 md:py-16">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="flex items-center gap-4 mb-8"
+              className="flex items-center gap-3 mb-4"
             >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <Waves className="w-6 h-6 text-primary" />
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                <Waves className="w-5 h-5 text-primary" />
               </div>
-              <h2 className="text-3xl font-bold">Home Power Washing Prices</h2>
+              <h2 className="text-2xl md:text-3xl font-bold">Home Power Washing Prices</h2>
             </motion.div>
             
-            <p className="text-muted-foreground mb-8">
+            <p className="text-muted-foreground text-sm mb-6">
               Note: Additional charge may apply for materials if necessary
             </p>
 
-            <div className="grid md:grid-cols-3 gap-6 max-w-5xl">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl">
               {/* One Story */}
               <div className="glass-card overflow-hidden">
-                <div className="bg-primary text-primary-foreground p-4 text-center font-bold">
-                  One Story Homes
+              <div className="bg-primary text-primary-foreground p-3 text-center font-bold text-sm">
+                One Story Homes
+              </div>
+              {powerWashingPricing.oneStory.map((row, index) => (
+                <div key={index} className={`grid grid-cols-2 text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                  <div className="p-3 font-medium">{row.sides}</div>
+                  <div className="p-3 text-right border-l border-border">{row.price}</div>
                 </div>
-                {powerWashingPricing.oneStory.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-2 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                    <div className="p-4 font-medium">{row.sides}</div>
-                    <div className="p-4 text-right border-l border-border">{row.price}</div>
-                  </div>
-                ))}
+              ))}
               </div>
 
               {/* Two Story */}
               <div className="glass-card overflow-hidden">
-                <div className="bg-primary text-primary-foreground p-4 text-center font-bold">
-                  Two Story Homes
+              <div className="bg-primary text-primary-foreground p-3 text-center font-bold text-sm">
+                Two Story Homes
+              </div>
+              {powerWashingPricing.twoStory.map((row, index) => (
+                <div key={index} className={`grid grid-cols-2 text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                  <div className="p-3 font-medium">{row.sides}</div>
+                  <div className="p-3 text-right border-l border-border">{row.price}</div>
                 </div>
-                {powerWashingPricing.twoStory.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-2 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                    <div className="p-4 font-medium">{row.sides}</div>
-                    <div className="p-4 text-right border-l border-border">{row.price}</div>
-                  </div>
-                ))}
+              ))}
               </div>
 
               {/* Three Story */}
               <div className="glass-card overflow-hidden">
-                <div className="bg-primary text-primary-foreground p-4 text-center font-bold">
-                  Three Story Homes
+              <div className="bg-primary text-primary-foreground p-3 text-center font-bold text-sm">
+                Three Story Homes
+              </div>
+              {powerWashingPricing.threeStory.map((row, index) => (
+                <div key={index} className={`grid grid-cols-2 text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                  <div className="p-3 font-medium">{row.sides}</div>
+                  <div className="p-3 text-right border-l border-border">{row.price}</div>
                 </div>
-                {powerWashingPricing.threeStory.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-2 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                    <div className="p-4 font-medium">{row.sides}</div>
-                    <div className="p-4 text-right border-l border-border">{row.price}</div>
-                  </div>
-                ))}
+              ))}
               </div>
             </div>
             
@@ -272,7 +276,7 @@ const PricesPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary">
+        <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
               Ready to Get Started?

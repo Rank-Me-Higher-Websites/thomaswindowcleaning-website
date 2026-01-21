@@ -83,13 +83,13 @@ const BlogPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={blogHero} alt="Exterior Cleaning Tips Blog" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-24">
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Residential Exterior Cleaning Tips
@@ -115,9 +115,9 @@ const BlogPage = () => {
         </section>
 
         {/* Blog Grid */}
-        <section className="py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {blogPosts.map((post, index) => (
                 <motion.article
                   key={post.slug}
@@ -164,7 +164,7 @@ const BlogPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary">
+        <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
               Need Professional Cleaning Services?
