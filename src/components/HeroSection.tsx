@@ -76,11 +76,11 @@ export const HeroSection = () => {
             className="hidden md:block"
           >
             {/* Image Card with Stats Overlay */}
-            <div className="relative rounded-xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-xl overflow-hidden shadow-2xl max-w-md mx-auto">
               <img
                 src={aboutImg}
                 alt="Thomas Window Cleaning Team"
-                className="w-full aspect-[4/3] object-cover"
+                className="w-full aspect-[4/5] object-cover"
               />
               
               {/* Stats Badges - overlaid at bottom */}
