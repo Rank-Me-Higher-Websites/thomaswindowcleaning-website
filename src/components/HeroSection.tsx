@@ -126,29 +126,29 @@ export const HeroSection = () => {
                 <img
                   src={aboutImg}
                   alt="Thomas Window Cleaning Team"
-                  className="w-full aspect-[4/5] object-cover"
+                  className="w-full aspect-[5/4] object-cover"
                 />
+                
+                {/* Stats Badges - positioned at bottom inside image */}
+                <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-3">
+                  <div className="flex flex-col items-center px-5 py-3 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm">
+                    <span className="text-star text-2xl font-bold">29+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
+                  </div>
+                  <div className="flex flex-col items-center px-5 py-3 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm">
+                    <span className="text-star text-2xl font-bold">5.0</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
+                  </div>
+                  <div className="flex flex-col items-center px-5 py-3 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm">
+                    <span className="text-star text-2xl font-bold">1K+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
+                  </div>
+                </div>
               </div>
               
-              {/* Stats Badges - positioned on right edge */}
-              <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 flex flex-col gap-2">
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">29+</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
-                </div>
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">5.0</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
-                </div>
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">1K+</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
-                </div>
-              </div>
-              
-              {/* Testimonial Quote - positioned bottom right */}
-              <div className="absolute -bottom-4 -right-4 max-w-[280px] bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
-              <p className="text-white/90 text-xs italic mb-2 leading-relaxed">
+              {/* Testimonial Quote - positioned below image */}
+              <div className="mt-4 bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
+                <p className="text-white/90 text-sm italic mb-2 leading-relaxed">
                   "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service."
                 </p>
                 <p className="text-star text-xs font-semibold">
