@@ -5,10 +5,10 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import powerWashingImg from '@/assets/thomas-power-washing-2.jpg';
 import powerWashingHero from '@/assets/thomas-gutter-ladder.jpg';
 import powerWashingChoose1 from '@/assets/power-washing-choose-1.jpg';
 import powerWashingChoose2 from '@/assets/power-washing-choose-2.jpg';
+import powerWashingChoose3 from '@/assets/power-washing-choose-3.jpg';
 
 const pricingData = {
   oneStory: [
@@ -285,7 +285,7 @@ const PowerWashingPage = () => {
                 transition={{ duration: 0.5 }}
                 className="glass-card overflow-hidden"
               >
-                <img src={powerWashingImg} alt="Professional power washing service" className="w-full aspect-[4/3] object-cover" />
+                <img src={powerWashingChoose3} alt="Professional power washing service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
