@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { Phone, Tag, Percent, Gift } from 'lucide-react';
+import { Phone, Tag, Percent, Gift, DollarSign, CheckCircle, Shield, Users, Calendar, Award } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
@@ -21,12 +22,19 @@ const offers = [
     highlight: true,
   },
   {
-    title: 'Referral Bonus',
-    description: 'Refer a friend and both get $15 off your next service.',
-    terms: 'Friend must be a new customer. Both parties receive discount.',
-    icon: Gift,
+    title: '$10 Off',
+    description: 'Get $10 off any service.',
+    terms: 'New customers only. Must present offer at time of service.',
+    icon: DollarSign,
     highlight: false,
   },
+];
+
+const benefits = [
+  { icon: Users, text: 'Family-owned and locally trusted' },
+  { icon: Shield, text: 'Fully insured professionals' },
+  { icon: Calendar, text: 'Flexible scheduling for your convenience' },
+  { icon: Award, text: '100% satisfaction guarantee' },
 ];
 
 const OffersPage = () => {
@@ -44,7 +52,7 @@ const OffersPage = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-3xl">
-              <span className="section-label">SAVE BIG</span>
+              <span className="section-label">SAVE BIG WITH EXPERTS</span>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 Exterior Cleaning{' '}
                 <span className="text-gradient">Offers</span>
@@ -105,6 +113,67 @@ const OffersPage = () => {
                   </a>
                 </motion.div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Info Section */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                  💧 Take Advantage Of Our Limited-Time{' '}
+                  <span className="text-gradient">Exterior Cleaning Offers</span> 💧
+                </h2>
+                <p className="text-muted-foreground text-lg">
+                  Thomas Window Cleaning proudly serves homeowners in Wheeling and across Chicagoland, 
+                  delivering reliable and affordable exterior cleaning solutions. Our team specializes 
+                  in streak-free window washing, powerful pressure washing, and thorough gutter debris 
+                  removal to help protect and beautify your home.
+                </p>
+              </div>
+
+              <p className="text-muted-foreground text-center mb-12">
+                Regular exterior cleaning not only boosts your home's curb appeal but also prevents 
+                long-term damage caused by clogged gutters, built-up grime, and weather exposure. 
+                Whether you're preparing your home for the changing seasons, hosting guests, or 
+                simply want a fresher look, we've got you covered.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                {benefits.map((benefit, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    className="flex items-center gap-4 glass-card p-4"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
+                      <benefit.icon className="w-6 h-6 text-primary" />
+                    </div>
+                    <span className="font-medium text-foreground">{benefit.text}</span>
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="text-center">
+                <p className="text-muted-foreground mb-6">
+                  Don't wait—these seasonal savings won't last! Book your appointment today and see 
+                  why Chicagoland homeowners continue to choose Thomas Window Cleaning year after year.
+                </p>
+                <h3 className="text-2xl font-bold mb-6">
+                  Ready To Give Your Home The Care It Deserves?
+                </h3>
+                <p className="text-muted-foreground mb-8">
+                  Reach out today and let our experts handle the hard work while you enjoy the results.
+                </p>
+                <Link to="/contact" className="btn-glow text-lg">
+                  Contact Us
+                </Link>
+              </div>
             </div>
           </div>
         </section>
