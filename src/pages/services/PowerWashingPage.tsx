@@ -167,7 +167,7 @@ const PowerWashingPage = () => {
                 transition={{ duration: 0.6 }}
                 className="glass-card overflow-hidden shadow-xl"
               >
-                <img src={powerWashingImg} alt="Power Washing Service" className="w-full aspect-[4/3] object-cover" />
+                <img src={powerWashingChoose1} alt="Power Washing Service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
             </div>
           </div>
