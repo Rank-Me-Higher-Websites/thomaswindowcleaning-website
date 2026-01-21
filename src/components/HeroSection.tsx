@@ -126,7 +126,7 @@ export const HeroSection = () => {
                 <img
                   src={aboutImg}
                   alt="Thomas Window Cleaning Team"
-                  className="w-full aspect-[4/5] object-cover"
+                  className="w-full aspect-[4/3] object-cover"
                 />
               </div>
               
