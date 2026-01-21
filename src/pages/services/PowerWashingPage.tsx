@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { CheckCircle, Phone, ArrowRight, Shield, Award, Home, Building2, Droplets } from 'lucide-react';
+import { CheckCircle, Phone, ArrowRight, Shield, Award, Home, Building2, Droplets, MapPin, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -324,6 +324,101 @@ const PowerWashingPage = () => {
                   </AccordionItem>
                 ))}
               </Accordion>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-5xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
+                Expert Power Washing Services in Wheeling, IL & Chicago Suburbs
+              </h2>
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+                Thomas Window Cleaning delivers professional pressure washing services throughout the Chicago metropolitan area. With over 29 years of experience, our team uses commercial-grade equipment to restore driveways, siding, decks, and more to like-new condition.
+              </p>
+
+              {/* Surface Types - 3 Column Cards */}
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+                {[
+                  { title: "Driveways & Sidewalks", desc: "Remove oil stains, tire marks, and years of dirt buildup from concrete and asphalt surfaces." },
+                  { title: "House Siding", desc: "Safely clean vinyl, aluminum, brick, and stucco siding without causing damage." },
+                  { title: "Decks & Patios", desc: "Restore wood, composite, and stone surfaces by eliminating mold, mildew, and algae." },
+                  { title: "Fences & Walls", desc: "Revitalize wooden, vinyl, and brick fences to look fresh and well-maintained." },
+                  { title: "Garage Floors", desc: "Deep clean concrete floors to remove grease, oil, and stubborn stains." },
+                  { title: "Commercial Properties", desc: "Maintain storefronts, parking lots, and building exteriors for a professional appearance." }
+                ].map((surface, index) => (
+                  <div key={index} className="bg-card rounded-lg p-5 border border-border shadow-sm hover:shadow-md transition-shadow">
+                    <h3 className="text-sm font-semibold text-foreground mb-2">{surface.title}</h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">{surface.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              {/* Benefits Row */}
+              <div className="grid md:grid-cols-3 gap-6 mb-10">
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-primary/5">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Zap className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground mb-1">High-Pressure Cleaning</h4>
+                    <p className="text-xs text-muted-foreground">1,500-4,000 PSI adjusted for each surface type</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-primary/5">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Shield className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground mb-1">Surface Safe</h4>
+                    <p className="text-xs text-muted-foreground">Techniques tailored to protect your property</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4 p-4 rounded-lg bg-primary/5">
+                  <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <Droplets className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h4 className="text-sm font-semibold text-foreground mb-1">Eco-Friendly</h4>
+                    <p className="text-xs text-muted-foreground">Biodegradable cleaning solutions when needed</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* When to Power Wash */}
+              <div className="bg-muted/50 rounded-xl p-6 mb-10">
+                <h3 className="text-lg font-semibold text-foreground mb-4 text-center">When Should You Power Wash?</h3>
+                <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
+                  {[
+                    { indicator: "✓", text: "Visible mold or mildew growth" },
+                    { indicator: "✓", text: "Stained or discolored surfaces" },
+                    { indicator: "✓", text: "Before painting or staining" },
+                    { indicator: "✓", text: "Preparing to sell your home" },
+                    { indicator: "✓", text: "After construction or renovation" },
+                    { indicator: "✓", text: "Seasonal spring cleaning" },
+                    { indicator: "✓", text: "Algae on decks or walkways" },
+                    { indicator: "✓", text: "Oil stains on driveway" }
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-2 text-sm">
+                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                      <span className="text-muted-foreground text-xs">{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Areas Served */}
+              <div className="text-center border-t border-border pt-8">
+                <h3 className="text-base font-semibold text-foreground mb-4 inline-flex items-center gap-2">
+                  <MapPin className="h-4 w-4 text-primary" />
+                  Service Areas
+                </h3>
+                <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
+                  We provide power washing services in <span className="font-medium text-foreground">Wheeling</span>, <span className="font-medium text-foreground">Arlington Heights</span>, <span className="font-medium text-foreground">Buffalo Grove</span>, <span className="font-medium text-foreground">Palatine</span>, <span className="font-medium text-foreground">Mount Prospect</span>, <span className="font-medium text-foreground">Des Plaines</span>, <span className="font-medium text-foreground">Northbrook</span>, <span className="font-medium text-foreground">Glenview</span>, and throughout the greater Chicago metropolitan area.
+                </p>
+              </div>
             </div>
           </div>
         </section>
