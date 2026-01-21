@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, Send, Facebook, Instagram, Clock, ArrowRight } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, Facebook, Instagram, Clock, ArrowRight, CheckCircle, Shield, Award } from 'lucide-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import contactHero from '@/assets/contact-hero.jpg';
@@ -197,6 +198,80 @@ const ContactPage = () => {
                     </button>
                   </form>
                 </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Content Section */}
+        <section className="py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+              >
+                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+                  Professional Exterior Cleaning Services in Chicago & Northwest Suburbs
+                </h2>
+                <p className="text-muted-foreground mb-6">
+                  Thomas Window Cleaning has been the trusted choice for <strong>residential and commercial exterior cleaning</strong> in <strong>Wheeling, IL</strong> and the greater Chicago area since 1995. Our licensed and insured technicians deliver exceptional results for <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> services.
+                </p>
+                
+                <div className="grid md:grid-cols-3 gap-6 my-8">
+                  <div className="glass-card p-5 text-center">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <Shield className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Licensed & Insured</h3>
+                    <p className="text-sm text-muted-foreground">Fully licensed and insured for your peace of mind and protection.</p>
+                  </div>
+                  <div className="glass-card p-5 text-center">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <Award className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Award Winning</h3>
+                    <p className="text-sm text-muted-foreground">Angie's List Super Service Award recipient for outstanding service.</p>
+                  </div>
+                  <div className="glass-card p-5 text-center">
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                      <CheckCircle className="w-6 h-6 text-primary" />
+                    </div>
+                    <h3 className="font-semibold mb-2">Satisfaction Guaranteed</h3>
+                    <p className="text-sm text-muted-foreground">100% satisfaction guarantee on all our cleaning services.</p>
+                  </div>
+                </div>
+
+                <h3 className="text-xl font-bold mb-4">Areas We Serve</h3>
+                <p className="text-muted-foreground mb-4">
+                  We proudly serve homeowners and businesses throughout the <strong>Chicago metropolitan area</strong>, including Wheeling, Buffalo Grove, Arlington Heights, Palatine, Mount Prospect, Des Plaines, Northbrook, Glenview, Libertyville, Vernon Hills, and surrounding northwest suburbs.
+                </p>
+
+                <h3 className="text-xl font-bold mb-4">Why Choose Thomas Window Cleaning?</h3>
+                <ul className="space-y-2 text-muted-foreground mb-6">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Experienced professionals</strong> with over 25 years serving the Chicago area</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Transparent pricing</strong> with no hidden fees—get your <Link to="/prices" className="text-primary hover:underline">free estimate</Link> today</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Eco-friendly cleaning solutions</strong> safe for your family, pets, and landscaping</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                    <span><strong>Flexible scheduling</strong> with same-week appointments often available</span>
+                  </li>
+                </ul>
+
+                <p className="text-muted-foreground">
+                  Ready to transform your home's exterior? <strong>Call us at <a href="tel:8474043398" className="text-primary hover:underline">(847) 404-3398</a></strong> or fill out the contact form above for a free, no-obligation quote. We look forward to exceeding your expectations!
+                </p>
               </motion.div>
             </div>
           </div>
