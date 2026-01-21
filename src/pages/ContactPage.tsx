@@ -215,6 +215,28 @@ const ContactPage = () => {
             </div>
           </div>
         </section>
+
+        {/* CTA Section */}
+        <section className="py-24 bg-primary">
+          <div className="container mx-auto px-4 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+              Ready to Get Started?
+            </h2>
+            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+              Get a free estimate for your exterior cleaning needs. Professional service, competitive prices!
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
+                <Phone className="w-5 h-5" />
+                Call Now: (847) 404-3398
+              </a>
+              <a href="#booking" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
+                <ArrowRight className="w-5 h-5" />
+                Get Quote
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
 
       <Footer />
