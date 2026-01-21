@@ -5,8 +5,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import windowCleaningImg from '@/assets/window-cleaning.jpg';
-import windowCleaningHero from '@/assets/window-cleaning-hero.jpg';
+import windowCleaningImg from '@/assets/thomas-residential-window.jpg';
+import windowCleaningHero from '@/assets/thomas-window-hero.jpg';
 
 const pricingData = [
   { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
