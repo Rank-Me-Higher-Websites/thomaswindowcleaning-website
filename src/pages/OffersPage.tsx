@@ -49,13 +49,13 @@ const OffersPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={offersHero} alt="Special Offers" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-24">
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
                 Exclusive Savings on Exterior Cleaning
@@ -81,19 +81,19 @@ const OffersPage = () => {
         </section>
 
         {/* Offers Grid */}
-        <section className="py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Chicagoland Exterior Cleaning{' '}
                 <span className="text-gradient">Offers</span>
               </h2>
-              <p className="text-muted-foreground mt-4">
+              <p className="text-muted-foreground mt-2 text-sm">
                 Windows, Gutters & More
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-5xl mx-auto">
               {offers.map((offer, index) => (
                 <motion.div
                   key={offer.title}
@@ -137,7 +137,7 @@ const OffersPage = () => {
         </section>
 
         {/* Info Section */}
-        <section className="py-24 bg-muted/30">
+        <section className="py-12 md:py-16 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
@@ -198,7 +198,7 @@ const OffersPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary">
+        <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
               Don't Miss Out on These Savings!
