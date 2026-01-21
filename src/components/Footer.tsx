@@ -36,7 +36,7 @@ export const Footer = () => {
   return (
     <footer className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8 mb-12">
           {/* Brand column */}
           <div>
             <Link to="/" className="mb-6 inline-block">
@@ -124,42 +124,44 @@ export const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="flex gap-6">
-            <div>
-              <h4 className="font-semibold mb-6">Contact Us</h4>
-              <ul className="space-y-4 text-sm">
-                <li>
-                  <a
-                    href="tel:8474043398"
-                    className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                  >
-                    <Phone className="w-4 h-4 shrink-0" />
-                    (847) 404-3398
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:thomaswindowcleaning@gmail.com"
-                    className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                  >
-                    <Mail className="w-4 h-4 shrink-0" />
-                    thomaswindowcleaning@gmail.com
-                  </a>
-                </li>
-                <li className="flex items-start gap-3 text-primary-foreground/80">
-                  <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                  P.O. Box 582 Wheeling, IL 60090
-                </li>
-                <li className="flex items-center gap-3 text-primary-foreground/80">
-                  <Clock className="w-4 h-4 shrink-0" />
-                  Mon - Sat: 9:00 - 19:00
-                </li>
-              </ul>
-            </div>
+          <div>
+            <h4 className="font-semibold mb-6">Contact Us</h4>
+            <ul className="space-y-4 text-sm">
+              <li>
+                <a
+                  href="tel:8474043398"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  <Phone className="w-4 h-4 shrink-0" />
+                  (847) 404-3398
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:thomaswindowcleaning@gmail.com"
+                  className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
+                >
+                  <Mail className="w-4 h-4 shrink-0" />
+                  thomaswindowcleaning@gmail.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3 text-primary-foreground/80">
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                P.O. Box 582 Wheeling, IL 60090
+              </li>
+              <li className="flex items-center gap-3 text-primary-foreground/80">
+                <Clock className="w-4 h-4 shrink-0" />
+                Mon - Sat: 9:00 - 19:00
+              </li>
+            </ul>
+          </div>
+
+          {/* Badge */}
+          <div className="hidden lg:flex items-center justify-center">
             <img 
               src={angiesListBadge} 
               alt="Angie's List Super Service Award 2016" 
-              className="h-24 w-auto hidden md:block"
+              className="h-28 w-auto"
             />
           </div>
 
