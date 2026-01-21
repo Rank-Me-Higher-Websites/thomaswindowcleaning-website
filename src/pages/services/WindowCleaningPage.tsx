@@ -337,13 +337,13 @@ const WindowCleaningPage = () => {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-muted/30 rounded-lg p-5">
+                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
                   <h3 className="text-lg font-semibold text-foreground mb-3">Residential Window Cleaning</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Our home window cleaning service includes thorough interior and exterior glass cleaning, frame wiping, screen cleaning, and sill maintenance. We handle everything from standard double-hung windows to skylights, French panes, and hard-to-reach high windows—all with care and precision.
                   </p>
                 </div>
-                <div className="bg-muted/30 rounded-lg p-5">
+                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
                   <h3 className="text-lg font-semibold text-foreground mb-3">Commercial Window Cleaning</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
                     Keep your storefront or office looking professional with our commercial window washing services. Clean windows enhance curb appeal, create inviting spaces for customers, and reflect your business's attention to detail. We offer flexible scheduling to minimize disruption.
@@ -351,9 +351,9 @@ const WindowCleaningPage = () => {
                 </div>
               </div>
 
-              <div className="bg-background border border-border rounded-lg p-5 mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-3">What's Included in Our Window Cleaning Service?</h3>
-                <div className="grid sm:grid-cols-2 gap-2">
+              <div className="bg-card rounded-xl p-6 border border-border shadow-md mb-8">
+                <h3 className="text-lg font-semibold text-foreground mb-4">What's Included in Our Window Cleaning Service?</h3>
+                <div className="grid sm:grid-cols-2 gap-3">
                   {[
                     "Interior & exterior glass cleaning",
                     "Window frame & sill wiping",
