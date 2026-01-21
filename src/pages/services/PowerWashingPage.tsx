@@ -285,7 +285,7 @@ const PowerWashingPage = () => {
                 transition={{ duration: 0.5 }}
                 className="glass-card overflow-hidden"
               >
-                <img src={powerWashingChoose1} alt="Worker on ladder pressure washing home" className="w-full aspect-[4/3] object-cover" />
+                <img src={powerWashingImg} alt="Professional power washing service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
