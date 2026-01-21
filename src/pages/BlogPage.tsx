@@ -117,34 +117,36 @@ const BlogPage = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="glass-card overflow-hidden group"
                 >
-                  <div className="aspect-video overflow-hidden">
-                    <img
-                      src={post.image}
-                      alt={post.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
-                        {post.category}
-                      </span>
-                      <span className="text-xs text-muted-foreground flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
-                        {post.date}
+                  <Link to={`/blog/${post.slug}`}>
+                    <div className="aspect-video overflow-hidden">
+                      <img
+                        src={post.image}
+                        alt={post.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <div className="flex items-center gap-4 mb-4">
+                        <span className="text-xs font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+                          {post.category}
+                        </span>
+                        <span className="text-xs text-muted-foreground flex items-center gap-1">
+                          <Calendar className="w-3 h-3" />
+                          {post.date}
+                        </span>
+                      </div>
+                      <h2 className="text-lg font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                        {post.title}
+                      </h2>
+                      <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
+                        {post.excerpt}
+                      </p>
+                      <span className="inline-flex items-center gap-2 text-primary text-sm font-medium group-hover:gap-3 transition-all">
+                        Read More
+                        <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>
-                    <h2 className="text-lg font-bold mb-3 line-clamp-2 group-hover:text-primary transition-colors">
-                      {post.title}
-                    </h2>
-                    <p className="text-sm text-muted-foreground mb-4 line-clamp-3">
-                      {post.excerpt}
-                    </p>
-                    <span className="inline-flex items-center gap-2 text-primary text-sm font-medium group-hover:gap-3 transition-all">
-                      Read More
-                      <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
+                  </Link>
                 </motion.article>
               ))}
             </div>
