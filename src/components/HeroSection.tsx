@@ -111,33 +111,33 @@ export const HeroSection = () => {
           >
             {/* Image Card with Stats Overlay */}
             <div className="relative max-w-md ml-auto">
-              <div className="rounded-xl overflow-hidden shadow-2xl">
+              <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src={aboutImg}
                   alt="Thomas Window Cleaning Team"
                   className="w-full aspect-[4/3] object-cover"
                 />
+                
+                {/* Stats Badges - positioned at bottom inside image */}
+                <div className="absolute bottom-4 left-4 right-4 flex justify-start gap-3">
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">29+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
+                  </div>
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">5.0</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
+                  </div>
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">1K+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
+                  </div>
+                </div>
               </div>
               
-              {/* Stats Badges - positioned on right edge at top */}
-              <div className="absolute right-0 top-4 translate-x-1/2 flex flex-col gap-2">
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">29+</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
-                </div>
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">5.0</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
-                </div>
-                <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
-                  <span className="text-star text-xl font-bold">1K+</span>
-                  <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
-                </div>
-              </div>
-              
-              {/* Testimonial Quote - positioned at bottom left */}
-              <div className="absolute -bottom-4 left-0 max-w-[280px] bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
-                <p className="text-white/90 text-xs italic mb-2 leading-relaxed">
+              {/* Testimonial Quote - positioned below image */}
+              <div className="mt-2 bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
+                <p className="text-white/90 text-sm italic mb-2 leading-relaxed">
                   "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service."
                 </p>
                 <p className="text-star text-xs font-semibold">
