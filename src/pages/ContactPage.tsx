@@ -26,7 +26,7 @@ const ContactPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] md:min-h-[55vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[45vh] md:min-h-[50vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover object-top" />
             <div className="absolute inset-0 bg-black/60" />
@@ -58,7 +58,7 @@ const ContactPage = () => {
         </section>
 
         {/* Contact Content */}
-        <section className="py-12 md:py-16">
+        <section className="py-10 md:py-12">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
               {/* Contact Info */}
@@ -204,7 +204,7 @@ const ContactPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-16 bg-muted/30">
+        <section className="py-10 md:py-12 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <motion.div
@@ -213,14 +213,14 @@ const ContactPage = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
               >
-                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+                <h2 className="text-xl md:text-2xl font-bold mb-4 text-center">
                   Professional Exterior Cleaning Services in Chicago & Northwest Suburbs
                 </h2>
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground text-sm mb-4">
                   Thomas Window Cleaning has been the trusted choice for <strong>residential and commercial exterior cleaning</strong> in <strong>Wheeling, IL</strong> and the greater Chicago area since 1995. Our licensed and insured technicians deliver exceptional results for <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> services.
                 </p>
                 
-                <div className="grid md:grid-cols-3 gap-6 my-8">
+                <div className="grid md:grid-cols-3 gap-4 my-6">
                   <div className="glass-card p-5 text-center">
                     <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
                       <Shield className="w-6 h-6 text-primary" />
@@ -244,13 +244,13 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold mb-4">Areas We Serve</h3>
-                <p className="text-muted-foreground mb-4">
+                <h3 className="text-lg font-bold mb-2">Areas We Serve</h3>
+                <p className="text-muted-foreground text-sm mb-4">
                   We proudly serve homeowners and businesses throughout the <strong>Chicago metropolitan area</strong>, including Wheeling, Buffalo Grove, Arlington Heights, Palatine, Mount Prospect, Des Plaines, Northbrook, Glenview, Libertyville, Vernon Hills, and surrounding northwest suburbs.
                 </p>
 
-                <h3 className="text-xl font-bold mb-4">Why Choose Thomas Window Cleaning?</h3>
-                <ul className="space-y-2 text-muted-foreground mb-6">
+                <h3 className="text-lg font-bold mb-2">Why Choose Thomas Window Cleaning?</h3>
+                <ul className="space-y-1.5 text-muted-foreground text-sm mb-4">
                   <li className="flex items-start gap-2">
                     <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                     <span><strong>Experienced professionals</strong> with over 25 years serving the Chicago area</span>
@@ -269,8 +269,8 @@ const ContactPage = () => {
                   </li>
                 </ul>
 
-                <p className="text-muted-foreground">
-                  Ready to transform your home's exterior? <strong>Call us at <a href="tel:8474043398" className="text-primary hover:underline">(847) 404-3398</a></strong> or fill out the contact form above for a free, no-obligation quote. We look forward to exceeding your expectations!
+                <p className="text-muted-foreground text-sm">
+                  Ready to transform your home's exterior? <strong>Call us at <a href="tel:8474043398" className="text-primary hover:underline">(847) 404-3398</a></strong> or fill out the contact form above for a free, no-obligation quote.
                 </p>
               </motion.div>
             </div>
@@ -278,7 +278,7 @@ const ContactPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-24 bg-primary">
+        <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
               Ready to Get Started?
