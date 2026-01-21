@@ -27,7 +27,7 @@ const ContactPage = () => {
         {/* Hero Section */}
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover" />
+            <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover object-top" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
