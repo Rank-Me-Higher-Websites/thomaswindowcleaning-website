@@ -7,7 +7,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 
-// Blog tile images from source
+// Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
 import powerWashingSeasonalTile from '@/assets/blog/power-washing-seasonal-tile.jpg';
 import gutterCleaningAffordableTile from '@/assets/blog/gutter-cleaning-affordable-tile.jpg';
@@ -17,6 +17,17 @@ import windowCleaningWheelingTile from '@/assets/blog/window-cleaning-wheeling-t
 import pressureCleaningChicagoTile from '@/assets/blog/pressure-cleaning-chicago-tile.jpg';
 import surfacesPressureCleaningTile from '@/assets/blog/surfaces-pressure-cleaning-tile.jpg';
 import windowCleanersWheelingTile from '@/assets/blog/window-cleaners-wheeling-tile.jpg';
+
+// Blog tile images from source - Page 2
+import hireProfessionalWindowCleaningTile from '@/assets/blog/hire-professional-window-cleaning-tile.jpg';
+import beginnersGuidePowerWashingTile from '@/assets/blog/beginners-guide-power-washing-tile.jpg';
+import localGuidePowerWashingWheelingTile from '@/assets/blog/local-guide-power-washing-wheeling-tile.jpg';
+import windowCleaningChicagoTile from '@/assets/blog/window-cleaning-chicago-tile.jpg';
+import windowWashersVsDiyTile from '@/assets/blog/window-washers-vs-diy-tile.avif';
+import gutterCleaningMythsTile from '@/assets/blog/gutter-cleaning-myths-tile.jpg';
+import gutterCleaningScheduleTile from '@/assets/blog/gutter-cleaning-schedule-tile.jpg';
+import windowWashingBenefitsTile from '@/assets/blog/window-washing-benefits-tile.jpeg';
+import chicagoWindowCleanersGuideTile from '@/assets/blog/chicago-window-cleaners-guide-tile.jpg';
 
 // Blog post data with markdown content including images
 const blogPostsData: Record<string, {
