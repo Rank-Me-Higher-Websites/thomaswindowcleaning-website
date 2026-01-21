@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
+import blogHero from '@/assets/blog-hero.jpg';
 
 // Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
@@ -242,26 +243,54 @@ const BlogPage = () => {
       <Header />
       
       <main>
-        {/* Hero Section - Minimal */}
-        <section className="pt-24 pb-8 md:pt-32 md:pb-12 bg-gradient-to-b from-muted/50 to-background">
-          <div className="container mx-auto px-4">
-            <div className="text-center max-w-3xl mx-auto">
+        {/* Hero Section */}
+        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img src={blogHero} alt="Exterior Cleaning Tips Blog" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
+          </div>
+          
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+            <div className="max-w-3xl">
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-foreground"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
               >
-                Expert Tips & Insights
+                Residential Exterior Cleaning Tips
               </motion.h1>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-muted-foreground text-lg"
+                className="text-lg text-white/90 mb-4"
               >
-                Professional advice for maintaining your home's exterior
+                Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning.
               </motion.p>
+              <motion.p 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.15 }}
+                className="text-white/80 mb-8"
+              >
+                Discover the best practices for window cleaning, gutter maintenance, and power washing to keep your property looking its best.
+              </motion.p>
+              <motion.div 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="flex flex-col sm:flex-row gap-4"
+              >
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                  <Phone className="w-5 h-5" />
+                  Call Now
+                </a>
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                  <ArrowRight className="w-5 h-5" />
+                  Get Quote
+                </Link>
+              </motion.div>
             </div>
           </div>
         </section>
