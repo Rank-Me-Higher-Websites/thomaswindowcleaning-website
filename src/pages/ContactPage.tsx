@@ -25,67 +25,67 @@ const ContactPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[50vh] md:min-h-[55vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover object-top" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-24">
-            <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+            <div className="max-w-2xl">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
                 Contact Cleaning Services in Chicago
               </h1>
-              <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning, Inc. provides professional cleaning services for competitive prices. We strive to make each customer happy and satisfied.
+              <p className="text-sm md:text-base text-white/85 mb-3">
+                Thomas Window Cleaning, Inc. provides professional cleaning services for competitive prices.
               </p>
-              <p className="text-white/80 mb-8">
-                Your positive feedback and referrals to friends, family and neighbors are the best reward for us!
+              <p className="text-white/70 text-sm">
+                Your positive feedback and referrals are the best reward for us!
               </p>
             </div>
           </div>
         </section>
 
         {/* Contact Content */}
-        <section className="py-24">
+        <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
               {/* Contact Info */}
               <motion.div
-                initial={{ opacity: 0, x: -30 }}
+                initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                transition={{ duration: 0.4 }}
               >
-                <h2 className="text-3xl font-bold mb-8">Get In Touch</h2>
-                <p className="text-muted-foreground mb-8">
-                  We offer services such as window cleaning, gutter cleaning, pressure washing and more. Your positive feedback and referrals to friends, family and neighbors are the best reward for us!
+                <h2 className="text-2xl md:text-3xl font-bold mb-6">Get In Touch</h2>
+                <p className="text-muted-foreground text-sm mb-6">
+                  We offer window cleaning, gutter cleaning, pressure washing and more. Your positive feedback and referrals are the best reward for us!
                 </p>
 
-                <div className="space-y-6">
+                <div className="space-y-3">
                   <a
                     href="tel:8474043398"
-                    className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                    className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
                   >
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <Phone className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <Phone className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground mb-1">Call Us</div>
-                      <div className="text-lg font-semibold text-foreground">(847) 404-3398</div>
+                      <div className="text-xs text-muted-foreground">Call Us</div>
+                      <div className="text-sm font-semibold text-foreground">(847) 404-3398</div>
                     </div>
                   </a>
 
                   <a
                     href="mailto:thomaswindowcleaning@gmail.com"
-                    className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                    className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
                   >
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <Mail className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <Mail className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground mb-1">Email Address</div>
-                      <div className="text-lg font-semibold text-foreground">thomaswindowcleaning@gmail.com</div>
+                      <div className="text-xs text-muted-foreground">Email</div>
+                      <div className="text-sm font-semibold text-foreground">thomaswindowcleaning@gmail.com</div>
                     </div>
                   </a>
 
@@ -93,48 +93,47 @@ const ContactPage = () => {
                     href="https://maps.google.com/maps/dir//Wheeling,+IL+60090+USA"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="glass-card p-6 flex items-center gap-4 group hover:shadow-lg transition-all"
+                    className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
                   >
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                      <MapPin className="w-6 h-6 text-primary group-hover:text-primary-foreground" />
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
+                      <MapPin className="w-4 h-4 text-primary group-hover:text-primary-foreground" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground mb-1">Location</div>
-                      <div className="text-lg font-semibold text-foreground">P.O. Box 582 Wheeling, Illinois 60090</div>
+                      <div className="text-xs text-muted-foreground">Location</div>
+                      <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, IL 60090</div>
                     </div>
                   </a>
 
-                  <div className="glass-card p-6 flex items-center gap-4">
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center">
-                      <Clock className="w-6 h-6 text-primary" />
+                  <div className="glass-card p-4 flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Clock className="w-4 h-4 text-primary" />
                     </div>
                     <div>
-                      <div className="text-sm text-muted-foreground mb-1">Business Hours</div>
-                      <div className="text-lg font-semibold text-foreground">Mon - Sat: 9:00 - 19:00</div>
-                      <div className="text-sm text-muted-foreground">Closed on Sundays</div>
+                      <div className="text-xs text-muted-foreground">Business Hours</div>
+                      <div className="text-sm font-semibold text-foreground">Mon - Sat: 9:00 - 19:00</div>
                     </div>
                   </div>
                 </div>
 
                 {/* Social Links */}
-                <div className="mt-8">
-                  <h3 className="font-semibold mb-4">Follow Us</h3>
-                  <div className="flex gap-4">
+                <div className="mt-6">
+                  <h3 className="font-semibold text-sm mb-3">Follow Us</h3>
+                  <div className="flex gap-2">
                     <a
                       href="https://www.facebook.com/thomaswindowbg"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
-                      <Facebook className="w-5 h-5" />
+                      <Facebook className="w-4 h-4" />
                     </a>
                     <a
                       href="https://www.instagram.com/thomaswindowbg/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+                      className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
                     >
-                      <Instagram className="w-5 h-5" />
+                      <Instagram className="w-4 h-4" />
                     </a>
                   </div>
                 </div>
@@ -142,14 +141,14 @@ const ContactPage = () => {
 
               {/* Contact Form */}
               <motion.div
-                initial={{ opacity: 0, x: 30 }}
+                initial={{ opacity: 0, x: 20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
+                transition={{ duration: 0.4, delay: 0.1 }}
               >
-                <div className="glass-card p-8 shadow-xl">
-                  <h3 className="text-2xl font-bold mb-6 text-foreground">Fill in the details</h3>
-                  <form onSubmit={handleSubmit} className="space-y-4">
+                <div className="glass-card p-5 md:p-6 shadow-lg">
+                  <h3 className="text-lg font-bold mb-4 text-foreground">Fill in the details</h3>
+                  <form onSubmit={handleSubmit} className="space-y-3">
                     <input
                       type="text"
                       placeholder="First Name"
@@ -176,21 +175,21 @@ const ContactPage = () => {
                     />
                     <textarea
                       placeholder="Your Message"
-                      rows={5}
+                      rows={4}
                       value={formData.message}
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       className="input-glass resize-none"
                       required
                     />
-                    <button type="submit" className="btn-glow w-full text-lg">
-                      <Send className="w-5 h-5" />
+                    <button type="submit" className="btn-glow w-full">
+                      <Send className="w-4 h-4" />
                       Send Message
                     </button>
                   </form>
                 </div>
 
-                {/* Map placeholder */}
-                <div className="mt-8 glass-card overflow-hidden h-64">
+                {/* Map */}
+                <div className="mt-6 glass-card overflow-hidden h-48">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47467.45938095!2d-87.96377!3d42.1335205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb945112c2f09%3A0xc1bd0ae10b07e6c!2sWheeling%2C%20IL%2060090!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
                     width="100%"

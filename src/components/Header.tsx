@@ -96,19 +96,19 @@ export const Header = () => {
       </div>
 
       {/* Main header */}
-      <header className={`sticky-header ${isScrolled ? 'py-3 shadow-md' : 'py-4'}`}>
+      <header className={`sticky-header ${isScrolled ? 'py-2 shadow-sm' : 'py-2.5'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img 
               src={logoImg} 
               alt="Thomas Window Cleaning" 
-              className="h-10 md:h-12 w-auto"
+              className="h-8 md:h-10 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navLinks.map((link) => (
               link.hasDropdown ? (
                 <div key={link.label} className="relative" ref={dropdownRef}>
@@ -117,30 +117,30 @@ export const Header = () => {
                     className="flex items-center gap-1 text-foreground hover:text-primary transition-colors text-sm font-medium"
                   >
                     {link.label}
-                    <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                   </button>
                   
                   <AnimatePresence>
                     {isServicesOpen && (
                       <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-72 bg-card border border-border rounded-xl shadow-xl z-50 overflow-hidden"
+                        exit={{ opacity: 0, y: 8 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute top-full left-0 mt-1.5 w-64 bg-card border border-border rounded-lg shadow-lg z-50 overflow-hidden"
                       >
-                        <div className="p-2">
+                        <div className="p-1.5">
                           {services.map((service) => (
                             <Link
                               key={service.label}
                               to={service.href}
-                              className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group"
+                              className="flex items-start gap-2.5 p-2.5 rounded-md hover:bg-muted transition-colors group"
                             >
-                              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                                <service.icon className="w-5 h-5 text-primary" />
+                              <div className="w-8 h-8 rounded-md bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/15 transition-colors">
+                                <service.icon className="w-4 h-4 text-primary" />
                               </div>
                               <div>
-                                <div className="font-medium text-foreground group-hover:text-primary transition-colors">
+                                <div className="font-medium text-sm text-foreground group-hover:text-primary transition-colors">
                                   {service.label}
                                 </div>
                                 <div className="text-xs text-muted-foreground">
@@ -163,7 +163,7 @@ export const Header = () => {
                   }`}
                 >
                   {link.label}
-                  <span className={`absolute -bottom-1 left-0 h-0.5 bg-primary transition-all duration-300 ${
+                  <span className={`absolute -bottom-0.5 left-0 h-px bg-primary transition-all duration-200 ${
                     location.pathname === link.href ? 'w-full' : 'w-0 group-hover:w-full'
                   }`} />
                 </Link>
@@ -172,9 +172,9 @@ export const Header = () => {
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center gap-4">
-            <a href="tel:8474043398" className="btn-glow text-sm">
-              <Phone className="w-4 h-4" />
+          <div className="hidden md:flex items-center">
+            <a href="tel:8474043398" className="btn-glow text-sm py-2">
+              <Phone className="w-3.5 h-3.5" />
               Call Now
             </a>
           </div>
@@ -182,9 +182,9 @@ export const Header = () => {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 text-foreground"
+            className="lg:hidden p-1.5 text-foreground"
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
@@ -195,18 +195,18 @@ export const Header = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden border-t border-border bg-card"
+              className="lg:hidden border-t border-border/50 bg-card"
             >
-              <nav className="container mx-auto px-4 py-4 flex flex-col gap-2">
+              <nav className="container mx-auto px-4 py-3 flex flex-col gap-1">
                 {navLinks.map((link) => (
                   link.hasDropdown ? (
                     <div key={link.label}>
                       <button
                         onClick={() => setIsServicesOpen(!isServicesOpen)}
-                        className="flex items-center justify-between w-full py-2 text-foreground"
+                        className="flex items-center justify-between w-full py-2 text-sm text-foreground"
                       >
                         {link.label}
-                        <ChevronDown className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
+                        <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} />
                       </button>
                       <AnimatePresence>
                         {isServicesOpen && (
@@ -214,15 +214,15 @@ export const Header = () => {
                             initial={{ opacity: 0, height: 0 }}
                             animate={{ opacity: 1, height: 'auto' }}
                             exit={{ opacity: 0, height: 0 }}
-                            className="pl-4 border-l-2 border-primary/20 ml-2"
+                            className="pl-3 border-l border-primary/20 ml-1 mb-1"
                           >
                             {services.map((service) => (
                               <Link
                                 key={service.label}
                                 to={service.href}
-                                className="flex items-center gap-2 py-2 text-muted-foreground hover:text-primary transition-colors"
+                                className="flex items-center gap-2 py-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
                               >
-                                <service.icon className="w-4 h-4" />
+                                <service.icon className="w-3.5 h-3.5" />
                                 {service.label}
                               </Link>
                             ))}
@@ -234,14 +234,14 @@ export const Header = () => {
                     <Link
                       key={link.label}
                       to={link.href}
-                      className="py-2 text-foreground hover:text-primary transition-colors border-b border-border/50"
+                      className="py-2 text-sm text-foreground hover:text-primary transition-colors border-b border-border/30"
                     >
                       {link.label}
                     </Link>
                   )
                 ))}
-                <a href="tel:8474043398" className="btn-glow text-center mt-2">
-                  <Phone className="w-4 h-4" />
+                <a href="tel:8474043398" className="btn-glow text-center text-sm mt-2 py-2">
+                  <Phone className="w-3.5 h-3.5" />
                   Call Now
                 </a>
               </nav>

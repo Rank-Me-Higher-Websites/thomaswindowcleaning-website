@@ -92,30 +92,24 @@
 @layer components {
   /* Glassmorphism card - light version */
   .glass-card {
-    @apply relative overflow-hidden rounded-2xl bg-card;
-    backdrop-filter: blur(24px);
-    -webkit-backdrop-filter: blur(24px);
+    @apply relative overflow-hidden rounded-xl bg-card;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border: 1px solid hsl(var(--glass-border));
-    box-shadow: var(--shadow-glass);
+    box-shadow: var(--shadow-card);
   }
 
-  .glass-card::before {
-    content: '';
-    @apply absolute inset-0 pointer-events-none;
-    background: linear-gradient(135deg, hsl(0 0% 100% / 0.6) 0%, transparent 50%);
-  }
-
-  /* Glow button - dark primary */
+  /* Glow button - compact */
   .btn-glow {
-    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-xl transition-all duration-300;
+    @apply relative inline-flex items-center justify-center gap-2 px-5 py-2.5 font-semibold rounded-lg transition-all duration-200;
     background: var(--gradient-cta);
     color: hsl(var(--primary-foreground));
-    box-shadow: 0 4px 20px -4px hsl(var(--glow-primary));
+    box-shadow: 0 2px 8px -2px hsl(var(--glow-primary));
   }
 
   .btn-glow:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 30px -4px hsl(var(--glow-primary)), var(--shadow-glow);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px -2px hsl(var(--glow-primary));
   }
 
   .btn-glow:active {
@@ -124,88 +118,86 @@
 
   /* Secondary outline button */
   .btn-outline-glow {
-    @apply relative inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold rounded-xl transition-all duration-300;
+    @apply relative inline-flex items-center justify-center gap-2 px-5 py-2.5 font-semibold rounded-lg transition-all duration-200;
     background: transparent;
-    border: 2px solid hsl(var(--primary));
+    border: 1.5px solid hsl(var(--primary));
     color: hsl(var(--primary));
   }
 
   .btn-outline-glow:hover {
     background: hsl(var(--primary) / 0.05);
-    box-shadow: 0 0 20px -4px hsl(var(--glow-primary));
   }
 
-  /* Floating gradient blobs - subtle for light theme */
+  /* Floating gradient blobs - subtle */
   .floating-blob {
     @apply absolute rounded-full pointer-events-none;
-    filter: blur(100px);
-    animation: float 20s ease-in-out infinite;
+    filter: blur(80px);
+    animation: float 25s ease-in-out infinite;
   }
 
   .floating-blob-primary {
-    background: hsl(187 85% 70% / 0.3);
+    background: hsl(187 85% 70% / 0.2);
   }
 
   .floating-blob-secondary {
-    background: hsl(260 80% 80% / 0.2);
-    animation-delay: -10s;
+    background: hsl(260 80% 80% / 0.15);
+    animation-delay: -12s;
   }
 
-  /* Sticky header - light glass */
+  /* Sticky header - compact */
   .sticky-header {
-    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
-    background: hsl(0 0% 100% / 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-bottom: 1px solid hsl(var(--border));
+    @apply fixed top-0 left-0 right-0 z-50 transition-all duration-200;
+    background: hsl(0 0% 100% / 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid hsl(var(--border) / 0.5);
   }
 
-  /* Testimonial card */
+  /* Testimonial card - compact */
   .testimonial-card {
-    @apply glass-card p-6;
+    @apply glass-card p-4 md:p-5;
   }
 
-  /* Service card hover */
+  /* Service card hover - refined */
   .service-card {
-    @apply glass-card overflow-hidden transition-all duration-500;
+    @apply glass-card overflow-hidden transition-all duration-300;
   }
 
   .service-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-glass), 0 20px 40px -20px hsl(var(--glow-primary));
-    border-color: hsl(var(--primary) / 0.2);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card), 0 12px 24px -12px hsl(var(--glow-primary));
   }
 
   /* Floating CTA on mobile */
   .floating-cta {
-    @apply fixed bottom-6 left-4 right-4 z-50 md:hidden;
+    @apply fixed bottom-4 left-3 right-3 z-50 md:hidden;
   }
 
-  /* Badge styles */
+  /* Badge styles - compact */
   .badge-glow {
-    @apply inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium;
+    @apply inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium;
     background: hsl(var(--primary) / 0.08);
-    border: 1px solid hsl(var(--primary) / 0.2);
+    border: 1px solid hsl(var(--primary) / 0.15);
     color: hsl(var(--primary));
   }
 
-  /* Input styles - light */
+  /* Input styles - compact */
   .input-glass {
-    @apply w-full px-4 py-3 rounded-xl bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground transition-all duration-300;
+    @apply w-full px-3.5 py-2.5 rounded-lg bg-muted/40 border border-border text-foreground placeholder:text-muted-foreground text-sm transition-all duration-200;
   }
 
   .input-glass:focus {
-    @apply outline-none border-primary/50 ring-2 ring-primary/10 bg-card;
+    @apply outline-none border-primary/40 ring-1 ring-primary/10 bg-card;
   }
 
-  /* Section headers */
+  /* Section headers - compact */
   .section-label {
-    @apply inline-flex items-center gap-2 text-primary text-sm font-semibold uppercase tracking-wider mb-4;
+    @apply inline-flex items-center gap-2 text-primary text-xs font-semibold uppercase tracking-widest mb-2;
   }
 
   .section-label::before {
     content: '';
-    @apply w-8 h-0.5 bg-primary rounded-full;
+    @apply w-6 h-px bg-primary;
   }
 }
 

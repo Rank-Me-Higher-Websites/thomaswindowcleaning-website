@@ -34,61 +34,58 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="py-16 bg-primary text-primary-foreground">
+    <footer className="py-10 md:py-12 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
           {/* Brand column */}
-          <div>
-            <Link to="/" className="mb-6 inline-block">
+          <div className="col-span-2 md:col-span-1">
+            <Link to="/" className="mb-4 inline-block">
               <img 
                 src={logoImg} 
                 alt="Thomas Window Cleaning" 
-                className="h-12 w-auto brightness-0 invert"
+                className="h-10 w-auto brightness-0 invert"
               />
             </Link>
-            <p className="text-primary-foreground/80 text-sm mb-6">
-              Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
+            <p className="text-primary-foreground/70 text-xs mb-4 max-w-[200px]">
+              Professional window cleaning, gutter cleaning, and power washing since 1995.
             </p>
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-2">
               <a
                 href="https://www.facebook.com/thomaswindowbg"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Facebook"
+                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Facebook className="w-5 h-5" />
+                <Facebook className="w-4 h-4" />
               </a>
               <a
                 href="https://www.instagram.com/thomaswindowbg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Instagram"
+                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="https://www.yelp.com/biz/thomas-window-cleaning-wheeling"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Yelp"
+                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Star className="w-5 h-5" />
+                <Star className="w-4 h-4" />
               </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold mb-6">Services</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold text-sm mb-3">Services</h4>
+            <ul className="space-y-2">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <Link
                     to={link.href}
-                    className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs"
                   >
                     {link.label}
                   </Link>
@@ -99,21 +96,21 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold mb-6">Company</h4>
-            <ul className="space-y-3">
+            <h4 className="font-semibold text-sm mb-3">Company</h4>
+            <ul className="space-y-2">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   {link.scrollTo ? (
                     <button
                       onClick={() => handleScrollLink(link.href, link.scrollTo)}
-                      className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm text-left"
+                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs text-left"
                     >
                       {link.label}
                     </button>
                   ) : (
                     <Link
                       to={link.href}
-                      className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm"
+                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-xs"
                     >
                       {link.label}
                     </Link>
@@ -124,70 +121,50 @@ export const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="flex gap-6">
-            <div>
-              <h4 className="font-semibold mb-6">Contact Us</h4>
-              <ul className="space-y-4 text-sm">
-                <li>
-                  <a
-                    href="tel:8474043398"
-                    className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                  >
-                    <Phone className="w-4 h-4 shrink-0" />
-                    (847) 404-3398
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:thomaswindowcleaning@gmail.com"
-                    className="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                  >
-                    <Mail className="w-4 h-4 shrink-0" />
-                    thomaswindowcleaning@gmail.com
-                  </a>
-                </li>
-                <li className="flex items-start gap-3 text-primary-foreground/80">
-                  <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
-                  P.O. Box 582 Wheeling, IL 60090
-                </li>
-                <li className="flex items-center gap-3 text-primary-foreground/80">
-                  <Clock className="w-4 h-4 shrink-0" />
-                  Mon - Sat: 9:00 - 19:00
-                </li>
-              </ul>
-            </div>
+          <div>
+            <h4 className="font-semibold text-sm mb-3">Contact</h4>
+            <ul className="space-y-2 text-xs">
+              <li>
+                <a
+                  href="tel:8474043398"
+                  className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 shrink-0" />
+                  (847) 404-3398
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:thomaswindowcleaning@gmail.com"
+                  className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 shrink-0" />
+                  <span className="truncate">thomaswindowcleaning@gmail.com</span>
+                </a>
+              </li>
+              <li className="flex items-start gap-2 text-primary-foreground/70">
+                <MapPin className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                Wheeling, IL 60090
+              </li>
+              <li className="flex items-center gap-2 text-primary-foreground/70">
+                <Clock className="w-3.5 h-3.5 shrink-0" />
+                Mon - Sat: 9-7
+              </li>
+            </ul>
             <img 
               src={angiesListBadge} 
-              alt="Angie's List Super Service Award 2016" 
-              className="h-24 w-auto hidden md:block"
-            />
-          </div>
-        </div>
-
-        {/* Map */}
-        <div className="mb-12">
-          <h4 className="font-semibold mb-6">Our Service Area</h4>
-          <div className="rounded-xl overflow-hidden max-w-2xl">
-            <iframe 
-              src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="200" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Thomas Window Cleaning Location"
-              className="w-full"
+              alt="Angie's List Super Service Award" 
+              className="h-16 w-auto mt-3 hidden md:block"
             />
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-primary-foreground/20 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/80">
-          <p>© {new Date().getFullYear()} Thomas Window Cleaning. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Privacy Policy</Link>
-            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Terms of Service</Link>
+        <div className="pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-primary-foreground/60">
+          <p>© {new Date().getFullYear()} Thomas Window Cleaning</p>
+          <div className="flex gap-4">
+            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Privacy</Link>
+            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Terms</Link>
           </div>
         </div>
       </div>
