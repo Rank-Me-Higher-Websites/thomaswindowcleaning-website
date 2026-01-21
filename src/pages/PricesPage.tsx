@@ -57,22 +57,24 @@ const PricesPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img src={pricesHero} alt="Prices" className="w-full h-full object-cover opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+            <img src={pricesHero} alt="Exterior Cleaning Prices" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
-              <span className="section-label justify-center">PRICES</span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Transparent Exterior Cleaning{' '}
-                <span className="text-gradient">Service Prices</span>
+          
+          <div className="container mx-auto px-4 relative z-10 py-24">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                Transparent Exterior Cleaning Service Prices
               </h1>
-              <p className="text-lg text-muted-foreground mb-8">
-                For fair and transparent pricing on exterior cleaning services, Thomas Window Cleaning is your go-to team in Wheeling, IL. Our rates are competitive, and our quality of service stands out across the northwest suburbs.
+              <p className="text-lg text-white/90 mb-4">
+                For fair and transparent pricing on <span className="font-semibold">exterior cleaning services</span>, Thomas Window Cleaning is your go-to team in <span className="font-semibold">Wheeling, IL</span>.
               </p>
-              <a href="tel:8474043398" className="btn-glow text-lg">
+              <p className="text-white/80 mb-8">
+                Our rates are competitive, and our quality of service stands out across the northwest suburbs. Whether you need window cleaning, gutter cleaning, or power washing, we deliver expert results with no hidden fees.
+              </p>
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-5 h-5" />
                 Get a Free Estimate
               </a>
