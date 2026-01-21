@@ -300,34 +300,6 @@ const PowerWashingPage = () => {
           </div>
         </section>
 
-        {/* FAQ Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <span className="section-label justify-center">FAQ</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
-                Frequently Asked{' '}
-                <span className="text-gradient">Questions</span>
-              </h2>
-            </div>
-
-            <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
-                    <AccordionTrigger className="text-left font-medium">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                ))}
-              </Accordion>
-            </div>
-          </div>
-        </section>
-
         {/* SEO Content Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
@@ -419,6 +391,34 @@ const PowerWashingPage = () => {
                   We provide power washing services in <span className="font-medium text-foreground">Wheeling</span>, <span className="font-medium text-foreground">Arlington Heights</span>, <span className="font-medium text-foreground">Buffalo Grove</span>, <span className="font-medium text-foreground">Palatine</span>, <span className="font-medium text-foreground">Mount Prospect</span>, <span className="font-medium text-foreground">Des Plaines</span>, <span className="font-medium text-foreground">Northbrook</span>, <span className="font-medium text-foreground">Glenview</span>, and throughout the greater Chicago metropolitan area.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-12 md:py-16 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <span className="section-label justify-center">FAQ</span>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Frequently Asked{' '}
+                <span className="text-gradient">Questions</span>
+              </h2>
+            </div>
+
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
+                    <AccordionTrigger className="text-left font-medium">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </section>
