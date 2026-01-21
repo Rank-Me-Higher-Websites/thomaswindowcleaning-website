@@ -81,23 +81,23 @@ const GutterCleaningPage = () => {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={gutterCleaningHero} alt="Gutter Cleaning" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/70" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                Leading Local{' '}
-                <span className="text-primary">Gutter Cleaning</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                <span className="text-white">Leading Local</span>{' '}
+                <span className="text-green-400">Gutter Cleaning</span>
               </h1>
-              <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning provides professional <span className="font-semibold">gutter cleaner service</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="text-primary">clearing debris, leaves, and buildup</span> to ensure efficient drainage and protect your home.
+              <p className="text-lg text-gray-100 mb-4">
+                Thomas Window Cleaning provides professional <span className="font-semibold text-white">gutter cleaner service</span> in <span className="font-semibold text-white">Chicago, IL</span>. We specialize in <span className="text-green-400 font-semibold">clearing debris, leaves, and buildup</span> to ensure efficient drainage and protect your home.
               </p>
-              <p className="text-white/80 mb-8">
-                Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team prevents costly water damage with thorough gutter maintenance.
+              <p className="text-gray-200 mb-8">
+                Serving homeowners and businesses across <span className="font-semibold text-white">Chicago, IL</span> and the greater Chicagoland area, our experienced team prevents costly water damage with thorough gutter maintenance.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>

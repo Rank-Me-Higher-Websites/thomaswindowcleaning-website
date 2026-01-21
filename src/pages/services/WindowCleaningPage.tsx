@@ -95,23 +95,23 @@ const WindowCleaningPage = () => {
         <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={windowCleaningHero} alt="Window Cleaning" className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-black/60" />
+            <div className="absolute inset-0 bg-black/70" />
           </div>
           
           <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                Top Rated{' '}
-                <span className="text-primary">Window Cleaners</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+                <span className="text-white">Top Rated</span>{' '}
+                <span className="text-green-400">Window Cleaners</span>
               </h1>
-              <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning provides professional <span className="font-semibold">residential and commercial window cleaning</span> in <span className="font-semibold">Chicago, IL</span> and surrounding areas. We specialize in <span className="text-primary">streak-free window washing</span>, interior and exterior glass cleaning, and complete frame maintenance.
+              <p className="text-lg text-gray-100 mb-4">
+                Thomas Window Cleaning provides professional <span className="font-semibold text-white">residential and commercial window cleaning</span> in <span className="font-semibold text-white">Chicago, IL</span> and surrounding areas. We specialize in <span className="text-green-400 font-semibold">streak-free window washing</span>, interior and exterior glass cleaning, and complete frame maintenance.
               </p>
-              <p className="text-white/80 mb-8">
-                Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team ensures crystal-clear results using professional-grade equipment.
+              <p className="text-gray-200 mb-8">
+                Serving homeowners and businesses across <span className="font-semibold text-white">Chicago, IL</span> and the greater Chicagoland area, our experienced team ensures crystal-clear results using professional-grade equipment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors">
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>
