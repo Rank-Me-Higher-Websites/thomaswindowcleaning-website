@@ -28,6 +28,10 @@ import gutterCleaningScheduleTile from '@/assets/blog/gutter-cleaning-schedule-t
 import windowWashingBenefitsTile from '@/assets/blog/window-washing-benefits-tile.jpeg';
 import chicagoWindowCleanersGuideTile from '@/assets/blog/chicago-window-cleaners-guide-tile.jpg';
 
+// Blog tile images from source - Page 3
+import gutterGuardsTile from '@/assets/blog/gutter-guards-tile.jpg';
+import sparklingCleanWindowsTile from '@/assets/blog/sparkling-clean-windows-tile.jpg';
+
 const blogPosts = [
   // Page 1 posts
   {
@@ -174,6 +178,23 @@ const blogPosts = [
     date: 'October 5, 2024',
     category: 'Window Cleaning',
     slug: 'chicago-window-cleaners-guide-spotless-glass',
+  },
+  // Page 3 posts
+  {
+    title: 'Gutter Guards: Are They Worth the Investment?',
+    excerpt: 'Gutter guards are designed to keep leaves, twigs, and other debris out of your gutters, allowing rainwater to flow freely. But are they really worth the investment?',
+    image: gutterGuardsTile,
+    date: 'September 25, 2024',
+    category: 'Gutter Cleaning',
+    slug: 'gutter-guards-worth-investment',
+  },
+  {
+    title: 'Top 5 Tips for Sparkling Clean Windows',
+    excerpt: 'Cleaning your windows without hiring a professional can be time-consuming and messy without the right tools and techniques. However, if you prefer to do it yourself, having the proper window cleaning tips can help.',
+    image: sparklingCleanWindowsTile,
+    date: 'September 20, 2024',
+    category: 'Window Cleaning',
+    slug: 'top-5-tips-sparkling-clean-windows',
   },
 ];
 

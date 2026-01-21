@@ -29,6 +29,10 @@ import gutterCleaningScheduleTile from '@/assets/blog/gutter-cleaning-schedule-t
 import windowWashingBenefitsTile from '@/assets/blog/window-washing-benefits-tile.jpeg';
 import chicagoWindowCleanersGuideTile from '@/assets/blog/chicago-window-cleaners-guide-tile.jpg';
 
+// Blog tile images from source - Page 3
+import gutterGuardsTile from '@/assets/blog/gutter-guards-tile.jpg';
+import sparklingCleanWindowsTile from '@/assets/blog/sparkling-clean-windows-tile.jpg';
+
 // Blog post data with markdown content including images
 const blogPostsData: Record<string, {
   title: string;
@@ -1932,6 +1936,97 @@ We've covered everything from the unique challenges of Chicago's climate to the 
 With Chicago's unpredictable weather and urban pollution, staying ahead of dirt and grime takes a proactive approach. Scheduling regular cleanings, using purified water for a streak-free finish, and choosing non-toxic cleaning solutions can all make a big difference.
 
 If you're ready to enjoy crystal-clear views without the hassle, consider reaching out to a trusted Chicago window cleaning service. Investing in professional care ensures your windows stay spotless and protected, no matter the season.`,
+  },
+  // Page 3 posts
+  'gutter-guards-worth-investment': {
+    title: 'Gutter Guards: Are They Worth the Investment?',
+    excerpt: 'Gutter guards are designed to keep leaves, twigs, and other debris out of your gutters, allowing rainwater to flow freely. But are they really worth the investment?',
+    image: gutterGuardsTile,
+    date: 'September 25, 2024',
+    category: 'Gutter Cleaning',
+    readTime: '5 min read',
+    content: `Gutter guards are designed to keep leaves, twigs, and other debris out of your gutters, allowing rainwater to flow freely. But are they really worth the investment? Let's take a look at the benefits to help you decide.
+
+![Gutter guards](https://thomaswindow.com/wp-content/uploads/2024/07/gutterguard.jpg)
+
+## Benefits of Gutter Guards
+
+### Reduces Gutter Cleaning
+
+Gutter guards can significantly reduce the amount of debris that collects in your gutters, meaning you won't have to clean them as often. For homeowners who dread the twice-yearly gutter cleaning routine, this can be a major time-saver.
+
+### Prevents Clogs and Water Damage
+
+By keeping debris out, gutter guards help prevent clogs that can lead to water overflow and damage to your roof, walls, and foundation. When gutters overflow, water can seep into your home's structure, causing costly damage over time.
+
+### Extends Gutter Life
+
+With less debris causing wear and tear, your gutters can last longer. Leaves and twigs that sit in gutters can trap moisture, leading to rust and corrosion. Gutter guards help keep your gutters dry and functional for years to come.
+
+### Prevents Pest Infestations
+
+Gutter guards can keep pests like birds, rodents, and insects from nesting in your gutters. Clogged gutters provide the perfect environment for pests to make their home, but with guards in place, you eliminate this invitation.
+
+## Are Gutter Guards Right for You?
+
+Gutter guards can be a good investment if you want to reduce the hassle of frequent gutter cleaning and prevent potential water damage to your home. However, they come with an initial cost and still require some maintenance.
+
+Consider your specific needs, the type of debris your gutters collect, and your budget when deciding if gutter guards are right for you. If you live in an area with lots of trees or experience heavy rainfall, gutter guards may be especially beneficial.
+
+## Professional Installation
+
+For the best results, consider having your gutter guards professionally installed. A professional can recommend the best type of guard for your home and ensure proper installation for maximum effectiveness.
+
+At Thomas Window Cleaning, we can help you assess your gutter needs and recommend the best solution for your home. Contact us today for a free consultation.`,
+  },
+  'top-5-tips-sparkling-clean-windows': {
+    title: 'Top 5 Tips for Sparkling Clean Windows',
+    excerpt: 'Cleaning your windows without hiring a professional can be time-consuming and messy without the right tools and techniques. However, if you prefer to do it yourself, having the proper window cleaning tips can help.',
+    image: sparklingCleanWindowsTile,
+    date: 'September 20, 2024',
+    category: 'Window Cleaning',
+    readTime: '5 min read',
+    content: `Cleaning your windows without hiring a professional can be time-consuming and messy without the right tools and techniques. However, if you prefer to do it yourself, having the proper window cleaning tips can help you achieve spotless windows.
+
+![Professional window cleaning](https://thomaswindow.com/wp-content/uploads/2024/07/ww.blog01-e1754658324513.jpg)
+
+## 1. Choose the Right Weather
+
+Opt for dry, cloudy days for window cleaning to prevent the cleaner from drying too quickly and leaving streaks. If the weather isn't ideal, start by cleaning windows in the shaded areas of your home. This approach not only avoids streaks but also minimizes your exposure to intense sunlight.
+
+## 2. Remove Dust and Dirt First
+
+Use a sweeping brush or the dusting attachment of a vacuum cleaner to remove dirt from windows and frames. This step prevents dirt from mixing with the cleaner and forming hard-to-remove stains.
+
+Taking a few extra minutes to dust before you start cleaning will save you time and frustration in the long run.
+
+## 3. Apply Cleaner Generously
+
+Applying a generous amount of cleaner helps dissolve dirt and streaks quickly. Choose a cleaner based on the type of dirt on your windows. For greasy windows, opt for a cleaner with strong grease removal properties.
+
+The cleaner should form a fine mist that stays until you wipe it off. Using too little cleaner is one of the most common mistakes homeowners make.
+
+## 4. Use the Right Cloth
+
+Microfiber cloths are highly absorbent, reusable, and prevent streaks. Avoid using newspapers or paper towels that can leave lint.
+
+If using paper towels, choose those that are strong enough to avoid leaving lint. Wipe one side of the window vertically and the other side horizontally to easily identify any streaks.
+
+## 5. Consider Using a Squeegee
+
+A squeegee can be helpful for larger windows but may be messy for smaller ones due to dripping. Decide whether a squeegee is necessary based on the size of your windows.
+
+For best results with a squeegee, start at the top of the window and work your way down in a single, smooth stroke.
+
+## Plan Your Cleaning Schedule
+
+Clean your windows once or twice a year. It might be challenging to clean all windows in one day due to the effort involved. To make it easier, plan to clean windows room by room to avoid exhaustion.
+
+## When to Call the Professionals
+
+At Thomas Window Cleaning, we specialize in making your windows sparkle. Our team has the right equipment and extensive experience, allowing us to work efficiently and achieve the desired results.
+
+If you'd rather leave the work to the experts, contact us today for a free estimate!`,
   },
 };
 
