@@ -159,6 +159,20 @@ export const Footer = () => {
           </div>
         </div>
 
+        {/* Google Map */}
+        <div className="mb-8 rounded-xl overflow-hidden h-48 md:h-64">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47467.45938095!2d-87.96377!3d42.1335205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb945112c2f09%3A0xc1bd0ae10b07e6c!2sWheeling%2C%20IL%2060090!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Thomas Window Cleaning Location - Wheeling, IL"
+            className="grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+          />
+        </div>
         {/* Bottom bar */}
         <div className="pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Thomas Window Cleaning</p>
