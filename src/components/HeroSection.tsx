@@ -23,7 +23,7 @@ export const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-primary-foreground"
+            className="text-white"
           >
             {/* Top Badges */}
             <div className="flex flex-wrap items-center gap-2 mb-4">
@@ -38,23 +38,23 @@ export const HeroSection = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1] text-white">
               #1 Window Cleaning in<br />
               Chicagoland –<br />
               <span className="text-emerald-400">Streak-Free Guaranteed!</span>
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-primary-foreground/85 mb-5 max-w-xl leading-relaxed">
-              <span className="font-semibold">Thomas Window Cleaning</span> specializes in{' '}
+            <p className="text-base md:text-lg text-white/90 mb-5 max-w-xl leading-relaxed">
+              <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
               <span className="text-emerald-400 font-medium">window cleaning</span>,{' '}
               <span className="text-emerald-400 font-medium">gutter cleaning</span>, and{' '}
               <span className="text-emerald-400 font-medium">power washing</span>. Serving{' '}
-              <span className="font-semibold">Wheeling & Chicagoland</span> since 1995.
+              <span className="font-semibold text-white">Wheeling & Chicagoland</span> since 1995.
             </p>
 
             {/* Service Tags */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5 text-sm text-primary-foreground/80">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5 text-sm text-white/80">
               <span className="inline-flex items-center gap-1.5">
                 <Sparkles className="w-3.5 h-3.5 text-emerald-400" />
                 Window Cleaning
@@ -83,19 +83,19 @@ export const HeroSection = () => {
 
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-2 mb-4">
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <CheckCircle className="w-3.5 h-3.5 text-emerald-400" />
                 Fully Insured
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <MapPin className="w-3.5 h-3.5 text-emerald-400" />
                 #1 Wheeling
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <Shield className="w-3.5 h-3.5 text-emerald-400" />
                 Satisfaction Guarantee
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <DollarSign className="w-3.5 h-3.5 text-emerald-400" />
                 Fair Pricing
               </span>
@@ -109,7 +109,7 @@ export const HeroSection = () => {
                 ))}
               </div>
               <span className="font-bold text-white">5.0</span>
-              <span className="text-primary-foreground/70 text-sm">47 Google Reviews</span>
+              <span className="text-white/70 text-sm">47 Google Reviews</span>
             </div>
           </motion.div>
 
@@ -148,7 +148,7 @@ export const HeroSection = () => {
               
               {/* Testimonial Quote - positioned bottom right */}
               <div className="absolute -bottom-4 -right-4 max-w-[280px] bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
-                <p className="text-primary-foreground/90 text-xs italic mb-2 leading-relaxed">
+              <p className="text-white/90 text-xs italic mb-2 leading-relaxed">
                   "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service."
                 </p>
                 <p className="text-star text-xs font-semibold">
