@@ -5,8 +5,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import powerWashingImg from '@/assets/power-washing.jpg';
-import powerWashingHero from '@/assets/power-washing-hero.jpg';
+import powerWashingImg from '@/assets/thomas-power-washing-2.jpg';
+import powerWashingHero from '@/assets/thomas-gutter-ladder.jpg';
 
 const pricingData = {
   oneStory: [

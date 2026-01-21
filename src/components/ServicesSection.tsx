@@ -1,9 +1,9 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Phone, ArrowRight, Sparkles, Droplets, Waves } from 'lucide-react';
-import windowCleaningImg from '@/assets/window-cleaning.jpg';
-import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
-import powerWashingImg from '@/assets/power-washing.jpg';
+import windowCleaningImg from '@/assets/thomas-window-cleaning.jpg';
+import gutterCleaningImg from '@/assets/thomas-gutter-cleaning.jpg';
+import powerWashingImg from '@/assets/thomas-power-washing.jpg';
 
 const services = [
   {

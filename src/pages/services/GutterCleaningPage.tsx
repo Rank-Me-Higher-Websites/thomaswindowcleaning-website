@@ -5,8 +5,8 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
-import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
-import gutterCleaningHero from '@/assets/gutter-cleaning-hero.jpg';
+import gutterCleaningImg from '@/assets/thomas-gutter-autumn.jpg';
+import gutterCleaningHero from '@/assets/thomas-house.jpg';
 
 const pricingData = [
   { size: '<2000 sqf', story1: '$100', story2: '$150', story3: '$200' },

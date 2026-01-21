@@ -1,7 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, Shield, Award, CheckCircle } from 'lucide-react';
-import windowCleaningImg from '@/assets/window-cleaning.jpg';
+import aboutImg from '@/assets/thomas-about.jpg';
 
 const features = [
   'Streak-free windows guaranteed',
@@ -32,7 +32,7 @@ export const AboutSection = () => {
           >
             <div className="glass-card overflow-hidden shadow-xl">
               <img
-                src={windowCleaningImg}
+                src={aboutImg}
                 alt="Professional window cleaning"
                 className="w-full aspect-[4/3] object-cover"
               />
