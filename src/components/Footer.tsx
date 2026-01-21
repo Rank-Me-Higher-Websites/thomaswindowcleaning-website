@@ -176,8 +176,8 @@ export const Footer = () => {
         <div className="pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Thomas Window Cleaning</p>
           <div className="flex gap-4">
-            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Privacy</Link>
-            <Link to="/contact" className="hover:text-primary-foreground transition-colors">Terms</Link>
+            <Link to="/privacy" className="hover:text-primary-foreground transition-colors">Privacy</Link>
+            <Link to="/terms" className="hover:text-primary-foreground transition-colors">Terms</Link>
           </div>
         </div>
       </div>
