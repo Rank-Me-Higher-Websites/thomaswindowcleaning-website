@@ -36,7 +36,7 @@ export const Footer = () => {
   return (
     <footer className="py-16 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand column */}
           <div>
             <Link to="/" className="mb-6 inline-block">
@@ -162,23 +162,23 @@ export const Footer = () => {
               className="h-24 w-auto hidden md:block"
             />
           </div>
-        </div>
 
-        {/* Map */}
-        <div className="mb-12">
-          <h4 className="font-semibold mb-6">Our Service Area</h4>
-          <div className="rounded-xl overflow-hidden max-w-2xl">
-            <iframe 
-              src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-              width="100%" 
-              height="200" 
-              style={{ border: 0 }} 
-              allowFullScreen 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Thomas Window Cleaning Location"
-              className="w-full"
-            />
+          {/* Map */}
+          <div>
+            <h4 className="font-semibold mb-6">Our Service Area</h4>
+            <div className="rounded-xl overflow-hidden">
+              <iframe 
+                src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="180" 
+                style={{ border: 0 }} 
+                allowFullScreen 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Thomas Window Cleaning Location"
+                className="w-full"
+              />
+            </div>
           </div>
         </div>
 
