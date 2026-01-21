@@ -5,15 +5,23 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import blogHero from '@/assets/blog-hero.jpg';
-import powerWashingImg from '@/assets/power-washing.jpg';
-import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
-import windowCleaningImg from '@/assets/window-cleaning.jpg';
+
+// Blog tile images from source
+import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
+import powerWashingSeasonalTile from '@/assets/blog/power-washing-seasonal-tile.jpg';
+import gutterCleaningAffordableTile from '@/assets/blog/gutter-cleaning-affordable-tile.jpg';
+import gutterCleaningMistakesTile from '@/assets/blog/gutter-cleaning-mistakes-tile.jpg';
+import windowCleaningNearMeTile from '@/assets/blog/window-cleaning-near-me-tile.webp';
+import windowCleaningWheelingTile from '@/assets/blog/window-cleaning-wheeling-tile.jpg';
+import pressureCleaningChicagoTile from '@/assets/blog/pressure-cleaning-chicago-tile.jpg';
+import surfacesPressureCleaningTile from '@/assets/blog/surfaces-pressure-cleaning-tile.jpg';
+import windowCleanersWheelingTile from '@/assets/blog/window-cleaners-wheeling-tile.jpg';
 
 const blogPosts = [
   {
     title: 'Residential Power Washing: The Ultimate Guide to Cleaner Homes',
     excerpt: 'Take a walk around your home and look closely at the siding, driveway, or deck—chances are you\'ll spot dirt, mildew, and grime that\'s been building up over time.',
-    image: powerWashingImg,
+    image: powerWashingGuideTile,
     date: 'January 15, 2025',
     category: 'Power Washing',
     slug: 'residential-power-washing-guide',
@@ -21,7 +29,7 @@ const blogPosts = [
   {
     title: 'Exterior Power Washing in Chicago: Seasonal Tips for Homeowners',
     excerpt: 'Chicago homeowners know that our city\'s weather can be unforgiving. From icy winters packed with road salt to humid summers, your home\'s exterior takes a beating.',
-    image: powerWashingImg,
+    image: powerWashingSeasonalTile,
     date: 'January 10, 2025',
     category: 'Power Washing',
     slug: 'exterior-power-washing-chicago-seasonal-tips',
@@ -29,7 +37,7 @@ const blogPosts = [
   {
     title: 'Affordable Gutter Cleaning in Chicago: Seasonal Tips From Local Experts',
     excerpt: 'If you own a home in Chicago, you already know how unpredictable the weather can be. One week it\'s heavy rain, the next it\'s snow and ice.',
-    image: gutterCleaningImg,
+    image: gutterCleaningAffordableTile,
     date: 'January 5, 2025',
     category: 'Gutter Cleaning',
     slug: 'affordable-gutter-cleaning-chicago',
@@ -37,7 +45,7 @@ const blogPosts = [
   {
     title: 'Residential Gutter Cleaning Mistakes to Avoid This Year',
     excerpt: 'Let\'s be honest—gutter cleaning probably isn\'t at the top of your weekend to-do list. But ignoring it (or doing it wrong) can lead to serious problems.',
-    image: gutterCleaningImg,
+    image: gutterCleaningMistakesTile,
     date: 'December 28, 2024',
     category: 'Gutter Cleaning',
     slug: 'gutter-cleaning-mistakes-to-avoid',
@@ -45,7 +53,7 @@ const blogPosts = [
   {
     title: 'Searching for Window Cleaning Near Me? Here\'s How to Avoid Common Mistakes',
     excerpt: 'You type "window cleaning near me" into your search bar and dozens of results pop up. They all promise sparkling windows, but how do you choose?',
-    image: windowCleaningImg,
+    image: windowCleaningNearMeTile,
     date: 'December 20, 2024',
     category: 'Window Cleaning',
     slug: 'window-cleaning-near-me-how-to-avoid-mistakes',
@@ -53,7 +61,7 @@ const blogPosts = [
   {
     title: 'Top Residential Window Cleaning Services in Wheeling, IL',
     excerpt: 'Ever noticed how much brighter and fresher your home feels when the windows are clean? It\'s not just your imagination—clean windows make a real difference.',
-    image: windowCleaningImg,
+    image: windowCleaningWheelingTile,
     date: 'December 15, 2024',
     category: 'Window Cleaning',
     slug: 'residential-window-cleaning-wheeling-il',
@@ -61,7 +69,7 @@ const blogPosts = [
   {
     title: 'From Sidewalks to Siding: What Pressure Cleaning Can Do for Your Chicago Property',
     excerpt: 'Chicago weather is no joke. Between lake-effect snow, gritty wind, and the grime that builds up after a long winter, your property needs some serious TLC.',
-    image: powerWashingImg,
+    image: pressureCleaningChicagoTile,
     date: 'December 10, 2024',
     category: 'Power Washing',
     slug: 'pressure-cleaning-services-chicago',
@@ -69,10 +77,18 @@ const blogPosts = [
   {
     title: 'The Top 5 Surfaces That Benefit Most From Pressure Cleaning',
     excerpt: 'Ever look at your driveway or deck and think, "Was it always this dirty?" You\'re not imagining things—over time, grime, mold, and stains accumulate.',
-    image: powerWashingImg,
+    image: surfacesPressureCleaningTile,
     date: 'December 5, 2024',
     category: 'Power Washing',
     slug: 'surfaces-that-benefit-from-pressure-cleaning',
+  },
+  {
+    title: 'Why Wheeling Homeowners Rely on Our Window Cleaners Year-Round',
+    excerpt: 'Ever notice how a freshly cleaned window can completely change the feel of your home? Suddenly, rooms feel brighter, the view looks sharper, and everything just feels cleaner.',
+    image: windowCleanersWheelingTile,
+    date: 'November 28, 2024',
+    category: 'Window Cleaning',
+    slug: 'window-cleaners-serving-wheeling',
   },
 ];
 
