@@ -126,7 +126,7 @@ export const Footer = () => {
           <h4 className="font-semibold mb-6">Our Service Area</h4>
           <div className="rounded-xl overflow-hidden">
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289477.8454773082!2d-87.98843849999999!3d41.91428255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbeb156a02081%3A0x78e427b81987ce9f!2sThomas%20Window%20Cleaning!5e1!3m2!1sen!2sus!4v1769007972658!5m2!1sen!2sus" 
+              src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
               height="300" 
               style={{ border: 0 }} 
