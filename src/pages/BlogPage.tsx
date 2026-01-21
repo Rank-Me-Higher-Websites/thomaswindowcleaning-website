@@ -346,14 +346,14 @@ const BlogPage = () => {
               >
                 <Link 
                   to={`/blog/${featuredPost.slug}`}
-                  className="grid md:grid-cols-2 gap-6 bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all hover:shadow-lg"
+                  className="grid md:grid-cols-2 gap-6 card-hover overflow-hidden"
                 >
                   {/* Featured Image */}
-                  <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden">
+                  <div className="relative aspect-[4/3] md:aspect-auto overflow-hidden hover-zoom">
                     <img
                       src={featuredPost.image}
                       alt={featuredPost.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-cover"
                     />
                     <span className="absolute top-4 left-4 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1.5 rounded-md">
                       Featured
@@ -418,14 +418,14 @@ const BlogPage = () => {
                   >
                     <Link 
                       to={`/blog/${post.slug}`}
-                      className="block bg-card rounded-xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all hover:shadow-lg h-full"
+                      className="block card-hover overflow-hidden h-full"
                     >
                       {/* Image with Category Badge */}
-                      <div className="relative aspect-[16/10] overflow-hidden">
+                      <div className="relative aspect-[16/10] overflow-hidden hover-zoom">
                         <img
                           src={post.image}
                           alt={post.title}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          className="w-full h-full object-cover"
                         />
                         <span className="absolute top-3 left-3 bg-black/70 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded">
                           {post.category}

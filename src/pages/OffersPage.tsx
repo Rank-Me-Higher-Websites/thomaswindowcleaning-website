@@ -111,7 +111,7 @@ const OffersPage = () => {
                     </div>
                   )}
                   
-                  <div className="relative h-48 overflow-hidden">
+                  <div className="relative h-48 overflow-hidden hover-zoom">
                     <img 
                       src={offer.image} 
                       alt={offer.title} 
@@ -196,11 +196,13 @@ const OffersPage = () => {
                     </ul>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img 
-                      src={offersWindowCleaning} 
-                      alt="Professional window cleaning service in Chicago" 
-                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
-                    />
+                    <div className="image-tile">
+                      <img 
+                        src={offersWindowCleaning} 
+                        alt="Professional window cleaning service in Chicago" 
+                        className="w-full h-64 md:h-80 object-cover"
+                      />
+                    </div>
                   </div>
                 </motion.div>
 
@@ -213,11 +215,13 @@ const OffersPage = () => {
                   className="grid md:grid-cols-2 gap-8 items-center"
                 >
                   <div>
-                    <img 
-                      src={offersPowerWashing} 
-                      alt="Power washing services for driveways and patios in Chicagoland" 
-                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
-                    />
+                    <div className="image-tile">
+                      <img 
+                        src={offersPowerWashing} 
+                        alt="Power washing services for driveways and patios in Chicagoland" 
+                        className="w-full h-64 md:h-80 object-cover"
+                      />
+                    </div>
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold mb-4 text-foreground">
@@ -286,11 +290,13 @@ const OffersPage = () => {
                     </ul>
                   </div>
                   <div className="order-1 md:order-2">
-                    <img 
-                      src={offersHero} 
-                      alt="Gutter cleaning services in Wheeling and Chicago" 
-                      className="w-full h-64 md:h-80 object-cover rounded-2xl shadow-lg"
-                    />
+                    <div className="image-tile">
+                      <img 
+                        src={offersHero} 
+                        alt="Gutter cleaning services in Wheeling and Chicago" 
+                        className="w-full h-64 md:h-80 object-cover"
+                      />
+                    </div>
                   </div>
                 </motion.div>
               </div>
@@ -306,7 +312,7 @@ const OffersPage = () => {
                 {benefits.map((benefit, index) => (
                   <div
                     key={index}
-                    className="flex items-center gap-3 glass-card p-4"
+                    className="flex items-center gap-3 card-hover p-4"
                   >
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                       <benefit.icon className="w-5 h-5 text-primary" />
