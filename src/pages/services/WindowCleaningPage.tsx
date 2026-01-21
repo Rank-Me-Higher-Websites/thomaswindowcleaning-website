@@ -7,6 +7,8 @@ import { FloatingCTA } from '@/components/FloatingCTA';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import windowCleaningImg from '@/assets/thomas-residential-window.jpg';
 import windowCleaningHero from '@/assets/thomas-window-hero.jpg';
+import thomasDifference1 from '@/assets/thomas-difference-1.jpg';
+import thomasDifference2 from '@/assets/thomas-difference-2.jpg';
 
 const pricingData = [
   { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
@@ -262,7 +264,7 @@ const WindowCleaningPage = () => {
         {/* Thomas Difference Section */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 The Thomas Window Cleaning{' '}
                 <span className="text-gradient">Difference</span>
@@ -270,6 +272,27 @@ const WindowCleaningPage = () => {
               <p className="text-muted-foreground text-lg">
                 We're more than just local window washers—we're your trusted window cleaning experts in Chicago and the suburbs. Our customers love our attention to detail, reliability, and friendly service. When you choose Thomas Window Cleaning, you get more than clean windows—you get peace of mind knowing the job is done right.
               </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
+                className="glass-card overflow-hidden"
+              >
+                <img src={thomasDifference1} alt="Professional window cleaning with squeegee" className="w-full aspect-[4/3] object-cover" />
+              </motion.div>
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="glass-card overflow-hidden"
+              >
+                <img src={thomasDifference2} alt="Close-up of window cleaning service" className="w-full aspect-[4/3] object-cover" />
+              </motion.div>
             </div>
           </div>
         </section>
