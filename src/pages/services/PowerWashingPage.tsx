@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { CheckCircle, Phone, ArrowRight, Shield, Award } from 'lucide-react';
+import { CheckCircle, Phone, ArrowRight, Shield, Award, Home, Building2, Droplets } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import powerWashingImg from '@/assets/power-washing.jpg';
 import powerWashingHero from '@/assets/power-washing-hero.jpg';
 
@@ -33,6 +34,43 @@ const benefits = [
   'Driveway & Sidewalk Cleaning – Get rid of oil stains, dirt, and discoloration for a clean, polished look',
   'Deck & Patio Cleaning – Restore wood, concrete, and stone surfaces by removing grime and algae buildup',
   'Commercial Power Washing – Keep storefronts, parking lots, and building exteriors looking professional',
+];
+
+const serviceTypes = [
+  {
+    icon: Home,
+    title: 'House Power Wash',
+    description: 'Remove dirt, mold, and buildup from siding, driveways, and patios for a fresh, clean look.',
+  },
+  {
+    icon: Building2,
+    title: 'Commercial Pressure Washing',
+    description: 'Keep your storefront, sidewalks, and parking lots spotless and welcoming.',
+  },
+  {
+    icon: Droplets,
+    title: 'High-Pressure Cleaning',
+    description: 'Tough on stains, grime, and mildew, restoring surfaces safely and efficiently.',
+  },
+];
+
+const faqs = [
+  {
+    question: 'What does power washing do?',
+    answer: 'Power washing uses high-pressure water to remove dirt, grime, mold, mildew, algae, and stains from various surfaces. It restores the look of driveways, sidewalks, patios, decks, siding, fences, and commercial buildings, improving curb appeal and preventing long-term damage caused by buildup.',
+  },
+  {
+    question: 'How long should power washing take?',
+    answer: 'Power washing time depends on the size, surface type, and level of buildup. Smaller areas can be cleaned quickly, while larger surfaces or heavily stained areas take longer. Driveways, patios, siding, and commercial properties all require different cleaning times, but our team ensures efficient and thorough results.',
+  },
+  {
+    question: 'How powerful is a power wash?',
+    answer: 'Power washing uses high-pressure water, typically between 1,500 and 4,000 PSI, to remove dirt, grime, mold, mildew, and stains from surfaces. The pressure level is adjusted based on the material—strong enough for concrete and brick, yet safe for siding and wood decks.',
+  },
+  {
+    question: 'Can I pressure wash concrete?',
+    answer: 'Yes! Pressure washing is the best way to clean concrete surfaces like driveways, sidewalks, patios, and parking lots. High-pressure water removes dirt, stains, oil, mold, and mildew, restoring the surface to a like-new appearance. Using the right pressure settings and techniques prevents damage while ensuring a deep, effective clean.',
+  },
 ];
 
 const PowerWashingPage = () => {
@@ -190,14 +228,91 @@ const PowerWashingPage = () => {
           </div>
         </section>
 
+        {/* Service Types Section */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Residential & Commercial{' '}
+                <span className="text-gradient">Power Wash</span>
+              </h2>
+              <p className="text-muted-foreground mt-4">
+                We provide professional pressure washing services for both residential and commercial properties in Chicago, IL.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {serviceTypes.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="glass-card p-6 text-center"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <service.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-3">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Thomas Difference Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Choose Thomas for{' '}
+                <span className="text-gradient">Power Washing?</span>
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Restore your property with expert power washers in Chicago. We remove dirt, grime, mold, and stains from driveways, sidewalks, decks, siding, and more, boosting curb appeal and protecting surfaces. Our high-pressure wash ensures a deep, effective clean without damage.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <span className="section-label justify-center">FAQ</span>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Frequently Asked{' '}
+                <span className="text-gradient">Questions</span>
+              </h2>
+            </div>
+
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
+                    <AccordionTrigger className="text-left font-medium">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-24 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-              Enhance Curb Appeal & Protect Your Surfaces
+              Schedule Your Power Washing Today!
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-              Get high-pressure cleaning that delivers lasting results. Get a free quote today!
+              Enhance curb appeal and protect your surfaces. Get high-pressure cleaning that delivers lasting results!
             </p>
             <a href="tel:8474043398" className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
               <Phone className="w-5 h-5" />

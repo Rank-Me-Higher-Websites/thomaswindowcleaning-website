@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
-import { CheckCircle, Phone, ArrowRight, Shield, Award } from 'lucide-react';
+import { CheckCircle, Phone, ArrowRight, Shield, Award, Home, Building2, ArrowUpFromLine, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
 import gutterCleaningHero from '@/assets/gutter-cleaning-hero.jpg';
 
@@ -16,11 +17,58 @@ const pricingData = [
   { size: '6001 sqf or larger', story1: 'Call', story2: 'Call', story3: 'Call' },
 ];
 
+const additionalNotes = [
+  'Additional charges apply for removal of existing gutter guards',
+  'New gutter guard installation available',
+];
+
 const benefits = [
   'Expert Technicians – Trained professionals ensure gutters are cleaned safely and thoroughly',
   'Prevent Costly Damage – Avoid foundation issues, roof leaks, and siding damage caused by clogged gutters',
   'Seasonal Maintenance – Keep your gutters flowing year-round with scheduled cleanings in spring and fall',
   'No Mess, No Hassle – We remove all debris and ensure a complete cleanup after service',
+  'Local & Reliable – Serving Chicago, IL, with fast response times and quality service',
+];
+
+const serviceTypes = [
+  {
+    icon: Home,
+    title: 'Home Gutter Cleaning',
+    description: 'Protect your home from clogs, overflow, and water damage with thorough debris removal and clear drainage.',
+  },
+  {
+    icon: Building2,
+    title: 'Commercial Gutter Cleaning',
+    description: 'Keep your business, office, or multi-unit property safe from structural issues with professional gutter maintenance.',
+  },
+  {
+    icon: ArrowUpFromLine,
+    title: 'High & Hard-to-Reach Gutters',
+    description: 'No need to climb ladders—our team safely cleans second-story and difficult-access gutters for you!',
+  },
+];
+
+const faqs = [
+  {
+    question: 'How often should gutters be professionally cleaned?',
+    answer: 'Gutters should be professionally cleaned at least twice a year, typically in spring and fall. This helps prevent clogs caused by leaves, debris, and dirt buildup, reducing the risk of water damage, foundation issues, and pest infestations.',
+  },
+  {
+    question: 'What happens if you never clean your gutters?',
+    answer: 'If you never clean your gutters, they clog with debris, causing water overflow, roof damage, foundation issues, and even pest infestations. This can lead to costly repairs and structural damage over time.',
+  },
+  {
+    question: 'How to know if gutters need cleaning?',
+    answer: 'You\'ll know your gutters need cleaning if water overflows, they start sagging, or you notice debris buildup, pests, or staining on your home\'s exterior. Regular checks can prevent costly damage.',
+  },
+  {
+    question: 'How long does gutter cleaning last?',
+    answer: 'Professional gutter cleaning typically lasts 4 to 6 months, depending on factors like weather, nearby trees, and debris buildup. Homes with more trees may need more frequent cleanings to prevent clogs and damage.',
+  },
+  {
+    question: 'Is gutter cleaning difficult?',
+    answer: 'Gutter cleaning can be difficult because it involves climbing ladders, removing debris, and ensuring proper drainage. It can also be time-consuming and hazardous, especially for multi-story homes. Hiring professionals ensures safety, efficiency, and thorough cleaning.',
+  },
 ];
 
 const GutterCleaningPage = () => {
@@ -150,9 +198,95 @@ const GutterCleaningPage = () => {
                 ))}
               </div>
               
+              <div className="mt-6 space-y-2">
+                {additionalNotes.map((note, index) => (
+                  <p key={index} className="text-sm text-muted-foreground flex items-start gap-2">
+                    <span className="text-primary">•</span>
+                    {note}
+                  </p>
+                ))}
+              </div>
+              
               <p className="text-center text-muted-foreground mt-6">
                 Prices depend on square footage. Please call for an accurate price estimate.
               </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Service Types Section */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Residential & Commercial{' '}
+                <span className="text-gradient">Gutter Cleaning</span>
+              </h2>
+              <p className="text-muted-foreground mt-4">
+                Our professional gutter cleaning services in Chicago, IL, ensure clear, debris-free gutters for homes and businesses.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+              {serviceTypes.map((service, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="glass-card p-6 text-center"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                    <service.icon className="w-7 h-7 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-bold mb-3">{service.title}</h3>
+                  <p className="text-sm text-muted-foreground">{service.description}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Thomas Difference Section */}
+        <section className="py-24">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Why Thomas Gutter Cleaning{' '}
+                <span className="text-gradient">Stands Out</span>
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                We're more than just local gutter cleaners—we're your trusted gutter maintenance experts serving Chicago and the suburbs. Our customers rely on our thorough cleaning process, reliability, and attention to detail to keep their gutters clear and their homes protected.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-24 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <span className="section-label justify-center">FAQ</span>
+              <h2 className="text-3xl md:text-4xl font-bold">
+                Frequently Asked{' '}
+                <span className="text-gradient">Questions</span>
+              </h2>
+            </div>
+
+            <div className="max-w-3xl mx-auto">
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
+                    <AccordionTrigger className="text-left font-medium">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
           </div>
         </section>
@@ -161,7 +295,7 @@ const GutterCleaningPage = () => {
         <section className="py-24 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
-              Prevent Costly Water Damage Today
+              Schedule Your Gutter Cleaning Today!
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
               Our team handles the dirty work—no ladders needed. Schedule seasonal gutter maintenance for a hassle-free solution!
