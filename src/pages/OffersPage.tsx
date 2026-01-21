@@ -44,23 +44,24 @@ const OffersPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img src={offersHero} alt="Offers" className="w-full h-full object-cover opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+            <img src={offersHero} alt="Special Offers" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10">
+          <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
-              <span className="section-label">SAVE BIG WITH EXPERTS</span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Exterior Cleaning{' '}
-                <span className="text-gradient">Offers</span>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                Exclusive Savings on Exterior Cleaning
               </h1>
-              <p className="text-lg text-muted-foreground mb-8">
-                💧 Save on professional window cleaning, power washing, and gutter cleaning 💧
+              <p className="text-lg text-white/90 mb-4">
+                Take advantage of our <span className="font-semibold">limited-time offers</span> on professional window cleaning, power washing, and gutter cleaning services in <span className="font-semibold">Chicago, IL</span>.
               </p>
-              <a href="tel:8474043398" className="btn-glow text-lg">
+              <p className="text-white/80 mb-8">
+                Family-owned and trusted by homeowners across Chicagoland for over 29 years. Don't miss these seasonal savings!
+              </p>
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-5 h-5" />
                 Call to Redeem: (847) 404-3398
               </a>
