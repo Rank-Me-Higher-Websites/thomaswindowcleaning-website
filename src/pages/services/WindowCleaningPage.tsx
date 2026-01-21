@@ -101,11 +101,10 @@ const WindowCleaningPage = () => {
           <div className="container mx-auto px-4 relative z-10 py-24">
             <div className="max-w-3xl">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-                Top Rated{' '}
-                <span className="text-primary">Window Cleaners</span>
+                Top Rated Window Cleaners
               </h1>
               <p className="text-lg text-white/90 mb-4">
-                Thomas Window Cleaning provides professional <span className="font-semibold">residential and commercial window cleaning</span> in <span className="font-semibold">Chicago, IL</span> and surrounding areas. We specialize in <span className="text-primary">streak-free window washing</span>, interior and exterior glass cleaning, and complete frame maintenance.
+                Thomas Window Cleaning provides professional <span className="font-semibold">residential and commercial window cleaning</span> in <span className="font-semibold">Chicago, IL</span> and surrounding areas. We specialize in <span className="font-semibold">streak-free window washing</span>, interior and exterior glass cleaning, and complete frame maintenance.
               </p>
               <p className="text-white/80 mb-8">
                 Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team ensures crystal-clear results using professional-grade equipment.
