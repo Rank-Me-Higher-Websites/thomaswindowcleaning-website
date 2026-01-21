@@ -26,8 +26,8 @@ export const FloatingCTA = () => {
 
   return (
     <div 
-      className={`fixed bottom-4 left-4 right-4 z-50 flex gap-2 md:left-auto md:right-6 md:bottom-6 md:max-w-md transition-transform duration-300 ${
-        isVisible ? 'translate-y-0' : 'translate-y-24'
+      className={`fixed bottom-4 left-4 right-4 z-50 flex flex-col gap-2 md:left-auto md:right-6 md:bottom-6 md:max-w-xs transition-transform duration-300 ${
+        isVisible ? 'translate-y-0' : 'translate-y-32'
       }`}
     >
       <a
