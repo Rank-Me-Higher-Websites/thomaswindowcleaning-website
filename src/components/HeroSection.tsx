@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
-import { Star, Play, Phone, ArrowRight } from 'lucide-react';
+import { Star, Phone, ArrowRight, Calendar, Award, Users } from 'lucide-react';
 import heroBg from '@/assets/hero-bg.jpg';
+import aboutImg from '@/assets/thomas-about.jpg';
 
 export const HeroSection = () => {
   return (
@@ -67,40 +68,48 @@ export const HeroSection = () => {
             </div>
           </motion.div>
 
-          {/* Right side - VSL Video */}
+          {/* Right side - Image with Stats */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
             className="hidden md:block"
           >
-            {/* VSL Video Player */}
-            <div className="glass-card aspect-video relative group cursor-pointer overflow-hidden bg-foreground/90 shadow-xl">
+            {/* Image Card with Stats Overlay */}
+            <div className="relative rounded-xl overflow-hidden shadow-2xl">
               <img
-                src={heroBg}
-                alt="Video thumbnail"
-                className="w-full h-full object-cover opacity-60 transition-transform duration-300 group-hover:scale-105"
+                src={aboutImg}
+                alt="Thomas Window Cleaning Team"
+                className="w-full aspect-[4/3] object-cover"
               />
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 md:w-18 md:h-18 rounded-full bg-primary-foreground flex items-center justify-center shadow-lg transition-transform duration-200 group-hover:scale-105">
-                  <Play className="w-7 h-7 text-primary fill-current ml-0.5" />
-                </div>
-              </div>
-              {/* Video info bar */}
-              <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-foreground/80 to-transparent">
-                <div className="flex items-center justify-between text-primary-foreground">
-                  <span className="text-xs font-medium">See Why Chicagoland Trusts Us</span>
-                  <span className="text-xs opacity-80 bg-foreground/50 px-2 py-0.5 rounded-full">0:53</span>
+              
+              {/* Stats Badges - overlaid at bottom */}
+              <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/50 to-transparent">
+                <div className="flex justify-center gap-3">
+                  <div className="flex flex-col items-center px-4 py-2 border border-star/60 rounded-lg bg-black/30 backdrop-blur-sm">
+                    <span className="text-star text-xl font-bold">29+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
+                  </div>
+                  <div className="flex flex-col items-center px-4 py-2 border border-star/60 rounded-lg bg-black/30 backdrop-blur-sm">
+                    <span className="text-star text-xl font-bold">5.0</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
+                  </div>
+                  <div className="flex flex-col items-center px-4 py-2 border border-star/60 rounded-lg bg-black/30 backdrop-blur-sm">
+                    <span className="text-star text-xl font-bold">1K+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
+                  </div>
                 </div>
               </div>
             </div>
             
-            {/* Social proof below video */}
-            <div className="mt-3 flex items-center justify-center">
-              <div className="glass-card px-3 py-1.5 flex items-center gap-2 text-xs">
-                <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-                <span className="text-muted-foreground">500+ videos watched this month</span>
-              </div>
+            {/* Testimonial Quote */}
+            <div className="mt-3 bg-foreground/95 rounded-lg p-4">
+              <p className="text-primary-foreground/90 text-sm italic mb-2">
+                "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service from start to finish."
+              </p>
+              <p className="text-star text-xs font-semibold">
+                — Sarah J., Arlington Heights
+              </p>
             </div>
           </motion.div>
         </div>
