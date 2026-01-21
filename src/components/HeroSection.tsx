@@ -25,17 +25,6 @@ export const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="text-white"
           >
-            {/* Top Badges */}
-            <div className="flex flex-wrap items-center gap-2 mb-4">
-              <span className="inline-flex items-center gap-1.5 bg-white text-foreground px-3 py-1 rounded-full text-xs font-semibold">
-                <span className="w-1.5 h-1.5 bg-foreground rounded-full animate-pulse" />
-                SAME-DAY SERVICE
-              </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm text-white px-3 py-1 rounded-full text-xs font-medium border border-white/20">
-                <Clock className="w-3 h-3" />
-                Limited slots today
-              </span>
-            </div>
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1] text-white">
