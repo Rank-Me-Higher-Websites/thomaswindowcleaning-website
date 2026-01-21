@@ -48,10 +48,10 @@ const ContactPage = () => {
                   <Phone className="w-4 h-4" />
                   Call Now
                 </a>
-                <a href="#booking" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm">
+                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm">
                   <ArrowRight className="w-4 h-4" />
                   Get Quote
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -291,10 +291,10 @@ const ContactPage = () => {
                 <Phone className="w-5 h-5" />
                 Call Now: (847) 404-3398
               </a>
-              <a href="#booking" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
                 <ArrowRight className="w-5 h-5" />
                 Get Quote
-              </a>
+              </Link>
             </div>
           </div>
         </section>
