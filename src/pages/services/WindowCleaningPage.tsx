@@ -325,6 +325,70 @@ const WindowCleaningPage = () => {
           </div>
         </section>
 
+        {/* SEO Content Section */}
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
+                Professional Window Cleaning Services in Wheeling, IL & Chicago Suburbs
+              </h2>
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 text-center">
+                Thomas Window Cleaning delivers exceptional residential and commercial window cleaning throughout the Chicago metropolitan area. With over 29 years of experience, our trained professionals use industry-leading techniques and eco-friendly solutions for streak-free, crystal-clear results on every window.
+              </p>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="bg-muted/30 rounded-lg p-5">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">Residential Window Cleaning</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Our home window cleaning service includes thorough interior and exterior glass cleaning, frame wiping, screen cleaning, and sill maintenance. We handle everything from standard double-hung windows to skylights, French panes, and hard-to-reach high windows—all with care and precision.
+                  </p>
+                </div>
+                <div className="bg-muted/30 rounded-lg p-5">
+                  <h3 className="text-lg font-semibold text-foreground mb-3">Commercial Window Cleaning</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    Keep your storefront or office looking professional with our commercial window washing services. Clean windows enhance curb appeal, create inviting spaces for customers, and reflect your business's attention to detail. We offer flexible scheduling to minimize disruption.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-background border border-border rounded-lg p-5 mb-8">
+                <h3 className="text-lg font-semibold text-foreground mb-3">What's Included in Our Window Cleaning Service?</h3>
+                <div className="grid sm:grid-cols-2 gap-2">
+                  {[
+                    "Interior & exterior glass cleaning",
+                    "Window frame & sill wiping",
+                    "Screen cleaning & removal",
+                    "Streak-free finish guaranteed",
+                    "Hard water stain removal",
+                    "Skylight cleaning",
+                    "Storm window cleaning",
+                    "Track & channel cleaning"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="text-center">
+                <h3 className="text-lg font-semibold text-foreground mb-3">Serving Chicago & Surrounding Communities</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  We proudly provide window cleaning services throughout the Chicagoland area including:
+                </p>
+                <div className="flex flex-wrap justify-center gap-2">
+                  {["Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", "Mount Prospect", "Des Plaines", "Northbrook", "Glenview", "Prospect Heights", "Schaumburg"].map((area, index) => (
+                    <span key={index} className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground">
+                      {area}, IL
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-12 md:py-16 bg-primary">
           <div className="container mx-auto px-4 text-center">
