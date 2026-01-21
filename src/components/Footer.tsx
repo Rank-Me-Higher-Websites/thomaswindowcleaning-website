@@ -1,6 +1,7 @@
 import { Phone, Mail, MapPin, Facebook, Instagram, Clock, Star } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 import logoImg from '@/assets/thomas-logo.png';
+import angiesListBadge from '@/assets/angies-list-badge.png';
 
 const footerLinks = {
   services: [
@@ -48,7 +49,7 @@ export const Footer = () => {
             <p className="text-primary-foreground/80 text-sm mb-6">
               Professional window cleaning, gutter cleaning, and power washing services serving Chicagoland since 1995.
             </p>
-            <div className="flex gap-4">
+            <div className="flex items-center gap-4 mb-6">
               <a
                 href="https://www.facebook.com/thomaswindowbg"
                 target="_blank"
@@ -77,6 +78,11 @@ export const Footer = () => {
                 <Star className="w-5 h-5" />
               </a>
             </div>
+            <img 
+              src={angiesListBadge} 
+              alt="Angie's List Super Service Award 2016" 
+              className="h-20 w-auto"
+            />
           </div>
 
           {/* Services */}
@@ -159,11 +165,11 @@ export const Footer = () => {
         {/* Map */}
         <div className="mb-12">
           <h4 className="font-semibold mb-6">Our Service Area</h4>
-          <div className="rounded-xl overflow-hidden">
+          <div className="rounded-xl overflow-hidden max-w-2xl">
             <iframe 
               src="https://maps.google.com/maps?q=Thomas+Window+Cleaning,Wheeling,IL&t=&z=13&ie=UTF8&iwloc=&output=embed" 
               width="100%" 
-              height="300" 
+              height="200" 
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy" 
