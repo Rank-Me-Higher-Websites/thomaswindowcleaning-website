@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Phone, Tag, Percent, DollarSign, Shield, Users, Calendar, Award } from 'lucide-react';
+import { Phone, Tag, Percent, DollarSign, Shield, Users, Calendar, Award, CalendarCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -119,9 +119,9 @@ const OffersPage = () => {
                     <p className="text-foreground font-medium mb-2">{offer.description}</p>
                     <p className="text-sm text-muted-foreground mb-6">{offer.terms}</p>
                     
-                    <a href="tel:8474043398" className="btn-glow w-full">
-                      <Phone className="w-4 h-4" />
-                      Claim Offer
+                    <a href="#booking" className="btn-glow w-full">
+                      <CalendarCheck className="w-4 h-4" />
+                      Book Now
                     </a>
                   </div>
                 </motion.div>
