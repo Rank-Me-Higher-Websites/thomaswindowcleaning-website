@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, Menu, X, Clock, Mail, Facebook, Instagram, ChevronDown, Sparkles, Droplets, Waves } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '@/assets/thomas-logo.png';
 
 const services = [
   { 
@@ -98,19 +99,12 @@ export const Header = () => {
       <header className={`sticky-header ${isScrolled ? 'py-3 shadow-md' : 'py-4'}`}>
         <div className="container mx-auto px-4 flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <div className="relative">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" className="text-primary">
-                <rect x="4" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="22" y="4" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="4" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-                <rect x="22" y="22" width="14" height="14" rx="2" stroke="currentColor" strokeWidth="2" fill="none"/>
-              </svg>
-            </div>
-            <div className="flex flex-col">
-              <span className="font-bold text-2xl text-primary tracking-tight">Thomas</span>
-              <span className="text-xs text-muted-foreground -mt-1 tracking-wide">Window Cleaning</span>
-            </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logoImg} 
+              alt="Thomas Window Cleaning" 
+              className="h-10 md:h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
