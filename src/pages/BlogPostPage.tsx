@@ -6,9 +6,17 @@ import remarkGfm from 'remark-gfm';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
-import powerWashingImg from '@/assets/power-washing.jpg';
-import gutterCleaningImg from '@/assets/gutter-cleaning.jpg';
-import windowCleaningImg from '@/assets/window-cleaning.jpg';
+
+// Blog tile images from source
+import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
+import powerWashingSeasonalTile from '@/assets/blog/power-washing-seasonal-tile.jpg';
+import gutterCleaningAffordableTile from '@/assets/blog/gutter-cleaning-affordable-tile.jpg';
+import gutterCleaningMistakesTile from '@/assets/blog/gutter-cleaning-mistakes-tile.jpg';
+import windowCleaningNearMeTile from '@/assets/blog/window-cleaning-near-me-tile.webp';
+import windowCleaningWheelingTile from '@/assets/blog/window-cleaning-wheeling-tile.jpg';
+import pressureCleaningChicagoTile from '@/assets/blog/pressure-cleaning-chicago-tile.jpg';
+import surfacesPressureCleaningTile from '@/assets/blog/surfaces-pressure-cleaning-tile.jpg';
+import windowCleanersWheelingTile from '@/assets/blog/window-cleaners-wheeling-tile.jpg';
 
 // Blog post data with markdown content including images
 const blogPostsData: Record<string, {
@@ -23,7 +31,7 @@ const blogPostsData: Record<string, {
   'residential-power-washing-guide': {
     title: 'Residential Power Washing: The Ultimate Guide to Cleaner Homes',
     excerpt: 'Take a walk around your home and look closely at the siding, driveway, or deck—chances are you\'ll spot dirt, mildew, and grime that\'s been building up over time.',
-    image: powerWashingImg,
+    image: powerWashingGuideTile,
     date: 'January 15, 2025',
     category: 'Power Washing',
     readTime: '8 min read',
@@ -142,7 +150,7 @@ If you're ready to refresh your property, now is the perfect time to explore tru
   'affordable-gutter-cleaning-chicago': {
     title: 'Affordable Gutter Cleaning in Chicago: Seasonal Tips From Local Experts',
     excerpt: 'If you own a home in Chicago, you already know how unpredictable the weather can be. One week it\'s heavy rain, the next it\'s snow and ice.',
-    image: gutterCleaningImg,
+    image: gutterCleaningAffordableTile,
     date: 'January 5, 2025',
     category: 'Gutter Cleaning',
     readTime: '10 min read',
@@ -282,7 +290,7 @@ The main takeaway? A little routine care goes a long way. Choosing affordable gu
   'window-cleaning-near-me-how-to-avoid-mistakes': {
     title: 'Searching for Window Cleaning Near Me? Here\'s How to Avoid Common Mistakes',
     excerpt: 'You type "window cleaning near me" into your search bar and dozens of results pop up. They all promise sparkling windows, but how do you choose?',
-    image: windowCleaningImg,
+    image: windowCleaningNearMeTile,
     date: 'December 20, 2024',
     category: 'Window Cleaning',
     readTime: '7 min read',
@@ -355,7 +363,7 @@ Your windows are one of the first things people notice—make sure they reflect 
   'exterior-power-washing-chicago-seasonal-tips': {
     title: 'Exterior Power Washing in Chicago: Seasonal Tips for Homeowners',
     excerpt: 'Chicago homeowners know that our city\'s weather can be unforgiving. From icy winters packed with road salt to humid summers, your home\'s exterior takes a beating.',
-    image: powerWashingImg,
+    image: powerWashingSeasonalTile,
     date: 'January 10, 2025',
     category: 'Power Washing',
     readTime: '6 min read',
@@ -458,7 +466,7 @@ The key takeaway? Consistency. Sticking to a routine and trusting reliable profe
   'gutter-cleaning-mistakes-to-avoid': {
     title: 'Residential Gutter Cleaning Mistakes to Avoid This Year',
     excerpt: 'Let\'s be honest—gutter cleaning probably isn\'t at the top of your weekend to-do list. But ignoring it (or doing it wrong) can lead to serious problems.',
-    image: gutterCleaningImg,
+    image: gutterCleaningMistakesTile,
     date: 'December 28, 2024',
     category: 'Gutter Cleaning',
     readTime: '5 min read',
@@ -541,6 +549,342 @@ Professional gutter cleaning services that balance affordability with quality pr
 Your gutters may not be the most glamorous part of your home, but they play a vital role in keeping it safe and damage-free. Skipping cleanings, using the wrong tools, neglecting downspouts, or choosing price over quality are mistakes that can lead to expensive repairs and unnecessary stress. The good news? These pitfalls are easy to avoid with the right approach to residential gutter cleaning.
 
 By scheduling routine cleanings, paying attention to small repairs, and avoiding harsh methods, you'll keep your gutters working smoothly all year long. And if climbing ladders or handling messy debris isn't your thing, professional gutter cleaning services are a smart investment. They bring the right tools, expertise, and peace of mind—all while saving you time and effort.`,
+  },
+  'residential-window-cleaning-wheeling-il': {
+    title: 'Top Residential Window Cleaning Services in Wheeling, IL',
+    excerpt: 'Ever noticed how much brighter and fresher your home feels when the windows are clean? It\'s not just your imagination—clean windows make a real difference.',
+    image: windowCleaningWheelingTile,
+    date: 'December 15, 2024',
+    category: 'Window Cleaning',
+    readTime: '6 min read',
+    content: `Ever noticed how much brighter and fresher your home feels when the windows are clean? It's not just your imagination. Clean windows let in more natural light, improve energy efficiency, and give your entire space a polished, well-maintained appearance.
+
+For homeowners in Wheeling, IL, keeping windows sparkling isn't always easy—especially with the changing seasons, pollen, dust, and weather extremes that Chicago suburbs are known for. That's why more and more residents are turning to professional residential window cleaning services to keep their homes looking their best.
+
+## Why Professional Window Cleaning Matters
+
+![woman cleaning window](https://thomaswindow.com/wp-content/uploads/2025/06/woman-cleaning-dirty-window-by-using-towel-view-through-glass-scaled-e1749136720375.jpg)
+
+You might think window cleaning is a simple DIY job, but there's more to it than meets the eye. Professional window cleaners have the tools, expertise, and techniques to deliver streak-free results that last longer than anything you can achieve with a bottle of glass cleaner and some paper towels.
+
+Here's why professional service makes a difference:
+
+- **Streak-free results** using commercial-grade squeegees and cleaning solutions
+- **Safe access** to high or hard-to-reach windows
+- **Protection** for your window seals and frames
+- **Thorough cleaning** of tracks, sills, and screens
+
+## Seasonal Challenges for Wheeling Windows
+
+Living in Wheeling means dealing with distinct seasons that each bring their own window-cleaning challenges:
+
+**Winter:** Salt residue, condensation stains, and grime from road spray accumulate quickly.
+
+**Spring:** Pollen, tree sap, and rain spots cover windows almost overnight.
+
+**Summer:** Bug splatter, sprinkler spots, and dust from outdoor activities take their toll.
+
+**Fall:** Falling leaves, rain streaks, and moisture from changing temperatures cause buildup.
+
+Regular professional cleaning keeps your windows clear through every season.
+
+## What to Look for in a Wheeling Window Cleaning Service
+
+Not all window cleaning companies are created equal. Here's what to consider when choosing a provider:
+
+- **Local reputation** – Look for companies with positive reviews from Wheeling residents
+- **Insurance and licensing** – Make sure they're fully insured to protect your home
+- **Comprehensive service** – The best cleaners tackle frames, sills, and screens too
+- **Flexible scheduling** – Find a company that works around your schedule
+- **Transparent pricing** – No hidden fees or surprise charges
+
+## The Thomas Window Cleaning Difference
+
+At Thomas Window Cleaning, we've been serving Wheeling homeowners for over 29 years. Our team understands the specific challenges that local weather and environmental conditions pose for your windows.
+
+We offer:
+- Interior and exterior window cleaning
+- Screen and track cleaning
+- Storm window service
+- Flexible scheduling options
+- Satisfaction guaranteed
+
+## Ready for Spotless Windows?
+
+Don't let dirty windows dim your home's natural light or curb appeal. Contact Thomas Window Cleaning today for a free estimate on residential window cleaning in Wheeling, IL. Experience the difference that professional care makes for your home.`,
+  },
+  'pressure-cleaning-services-chicago': {
+    title: 'From Sidewalks to Siding: What Pressure Cleaning Can Do for Your Chicago Property',
+    excerpt: 'Chicago weather is no joke. Between lake-effect snow, gritty wind, and the grime that builds up after a long winter, your property needs some serious TLC.',
+    image: pressureCleaningChicagoTile,
+    date: 'December 10, 2024',
+    category: 'Power Washing',
+    readTime: '7 min read',
+    content: `Chicago weather is no joke. Between lake-effect snow, gritty wind, and the grime that builds up after a long winter, your property needs some serious TLC. That's where professional pressure cleaning comes in—a powerful solution for restoring everything from sidewalks and driveways to siding and decks.
+
+If you've noticed your home's exterior looking dull, stained, or covered in green algae, pressure cleaning can bring it back to life. Let's explore what this service can do for your Chicago property.
+
+## What Is Pressure Cleaning?
+
+![exterior power washing](https://thomaswindow.com/wp-content/uploads/2025/05/worker-cleaning-streets-with-pressurized-bleach-water-gun-scaled-e1759516962371.jpg)
+
+Pressure cleaning (also called power washing) uses high-pressure water spray to remove dirt, grime, mold, mildew, and stains from outdoor surfaces. Professional equipment can blast away years of buildup without damaging the underlying material—when used correctly.
+
+The key difference between DIY and professional pressure cleaning is expertise. Professionals know how to adjust pressure levels for different surfaces and use the right cleaning solutions to get optimal results without causing damage.
+
+## Surfaces That Benefit from Pressure Cleaning
+
+### Driveways and Sidewalks
+
+Concrete surfaces absorb oil, dirt, and organic matter over time. Pressure cleaning can remove:
+- Oil and grease stains
+- Tire marks
+- Mold and mildew
+- Salt residue from winter
+
+### House Siding
+
+Whether you have vinyl, aluminum, brick, or stucco, your siding collects pollution, pollen, and grime. Professional pressure cleaning safely removes this buildup while protecting paint and finishes.
+
+### Decks and Patios
+
+Wood, composite, and stone surfaces benefit tremendously from pressure cleaning. It removes:
+- Algae and moss
+- Splinters and rough patches
+- Discoloration
+- Accumulated dirt
+
+### Fences and Walls
+
+Privacy fences and retaining walls often get overlooked, but they can become eyesores when covered in mold and weathering. Pressure cleaning restores their original appearance.
+
+## Why Chicago Properties Need Regular Cleaning
+
+Chicago's climate creates the perfect conditions for exterior buildup:
+
+- **Winter salt** damages and stains concrete
+- **Spring pollen** coats every surface
+- **Summer humidity** encourages mold growth
+- **Fall leaves** create damp, staining messes
+
+Regular pressure cleaning—ideally at least once a year—prevents long-term damage and keeps your property looking its best.
+
+## Choosing a Pressure Cleaning Service
+
+When selecting a pressure cleaning company in Chicago, consider:
+
+- **Experience** with different surface types
+- **Proper insurance** and licensing
+- **Eco-friendly cleaning solutions**
+- **Customer reviews** and reputation
+- **Clear pricing** with no hidden fees
+
+## Transform Your Property Today
+
+Don't let Chicago weather win. Professional pressure cleaning can dramatically improve your home's curb appeal while protecting your investment from long-term damage. Contact Thomas Window Cleaning for expert pressure cleaning services throughout Chicago and the surrounding suburbs.`,
+  },
+  'surfaces-that-benefit-from-pressure-cleaning': {
+    title: 'The Top 5 Surfaces That Benefit Most From Pressure Cleaning',
+    excerpt: 'Ever look at your driveway or deck and think, "Was it always this dirty?" You\'re not imagining things—over time, grime, mold, and stains accumulate.',
+    image: surfacesPressureCleaningTile,
+    date: 'December 5, 2024',
+    category: 'Power Washing',
+    readTime: '5 min read',
+    content: `Ever look at your driveway or deck and think, "Was it always this dirty?" You're not imagining things—over time, grime, mold, and stains accumulate on outdoor surfaces, making them look far older than they really are.
+
+The good news? Pressure cleaning can restore these surfaces to their original beauty. Here are the top 5 surfaces that benefit most from professional pressure cleaning.
+
+## 1. Concrete Driveways and Sidewalks
+
+![power washing services](https://thomaswindow.com/wp-content/uploads/2025/05/man-cleaning-walls-floor-with-high-pressure-power-washer-washing-terrace-wood-planks-clad-scaled-e1759517187280.jpg)
+
+Concrete is porous, which means it absorbs oil, dirt, and organic matter like a sponge. Over time, this creates:
+- Dark oil stains from vehicles
+- Green or black patches from mold and mildew
+- Discoloration from weathering
+- Salt damage from winter treatments
+
+Pressure cleaning blasts away these contaminants, revealing the clean concrete underneath. For heavily stained areas, professional crews use specialized detergents that break down tough stains before washing.
+
+## 2. Wood and Composite Decks
+
+Decks take a beating from foot traffic, furniture, spills, and weather. Common problems include:
+- Algae growth making surfaces slippery
+- Graying and discoloration
+- Dirt buildup in grain patterns
+- Mold in shaded areas
+
+Professional pressure cleaning removes these issues while using appropriate pressure levels that won't damage the wood fibers or composite material. After cleaning, decks often look years younger.
+
+## 3. Vinyl and Aluminum Siding
+
+Your home's siding is exposed to everything—pollution, pollen, rain, snow, and UV rays. This leads to:
+- Green algae streaks
+- Dusty, dingy appearance
+- Mold in shaded areas
+- Pollution staining
+
+Pressure cleaning safely removes all of this, restoring your home's curb appeal without the need for repainting.
+
+## 4. Brick and Stone Surfaces
+
+Brick patios, walkways, and walls develop character over time—but not always the good kind. Common issues include:
+- White efflorescence (salt deposits)
+- Moss and algae in joints
+- Staining from rust or organic matter
+- General darkening from dirt
+
+Pressure cleaning removes surface contaminants while preserving the natural beauty of brick and stone.
+
+## 5. Fences and Retaining Walls
+
+Often forgotten during regular maintenance, fences and walls collect:
+- Mold and mildew
+- Dirt and dust
+- Green algae
+- Weather staining
+
+A thorough pressure cleaning makes fences look freshly installed and extends their lifespan by removing damaging organisms.
+
+## When to Schedule Pressure Cleaning
+
+The best times for pressure cleaning in the Chicago area are:
+- **Spring** – After winter's salt and grime
+- **Fall** – Before winter weather sets in
+- **Before events** – Parties, home sales, or special occasions
+
+## Professional vs. DIY
+
+While rental pressure washers are available, professional cleaning offers:
+- Proper pressure settings for each surface
+- Commercial-grade equipment
+- Appropriate cleaning solutions
+- Insurance protection
+- Time savings
+
+## Ready to Transform Your Property?
+
+Don't let dirty surfaces drag down your home's appearance. Contact Thomas Window Cleaning for professional pressure cleaning services that restore your property's beauty safely and effectively.`,
+  },
+  'window-cleaners-serving-wheeling': {
+    title: 'Why Wheeling Homeowners Rely on Our Window Cleaners Year-Round',
+    excerpt: 'Ever notice how a freshly cleaned window can completely change the feel of your home? Suddenly, rooms feel brighter, the view looks sharper, and everything just feels cleaner.',
+    image: windowCleanersWheelingTile,
+    date: 'November 28, 2024',
+    category: 'Window Cleaning',
+    readTime: '8 min read',
+    content: `Ever notice how a freshly cleaned window can completely change the feel of your home? Suddenly, rooms feel brighter, the view looks sharper, and everything just feels… cleaner. That's the power of professional window cleaning—and it's exactly why so many Wheeling homeowners rely on our window cleaning service all year long.
+
+Whether it's the salty residue of winter or the sticky pollen of spring, your windows take a beating in every season. But keeping them clean isn't just about appearance—it's about protecting your home, letting in more natural light, and even improving energy efficiency.
+
+In this post, we'll share why your neighbors in Wheeling continue to trust our expert window cleaners, what makes our team stand out, and how regular service can save you time, money, and hassle. If you've ever searched for "the best window washers near me," you're in the right place.
+
+## The Year-Round Difference: Why Consistent Window Cleaning Matters
+
+![man window cleaning](https://thomaswindow.com/wp-content/uploads/2025/02/man-washing-windows-using-spray-detergent-1-1024x683.jpg)
+
+You might think of hiring a window cleaning service as a once-in-a-while kind of thing—maybe in spring, when the sunshine finally returns and you realize how cloudy your windows have gotten. But here's the thing: clean windows shouldn't be a seasonal surprise. They should be part of your home's regular care, just like mowing the lawn or changing your furnace filter.
+
+Why? Because every season in Wheeling brings its own set of window challenges:
+
+- **Winter** coats your windows in road salt, grime, and condensation stains.
+- **Spring** introduces pollen, tree sap, and dust blown in from frequent winds.
+- **Summer** brings smudges from backyard fun, insects, and sprinkler spots.
+- **Fall** adds leaves, rain streaks, and mold from damp, changing weather.
+
+When these layers of dirt and debris pile up, they don't just block your view—they can actually damage your windows over time. Hard water stains, mineral buildup, and even small scratches become harder (and more expensive) to remove the longer they're left untreated.
+
+Regular visits from trusted window cleaners help protect your windows and keep your home looking its best, no matter the month. Plus, clean windows let in more sunlight, which studies show can boost your mood and even help regulate indoor temperature—who knew?
+
+## Why Wheeling Residents Trust Thomas Window as Their Go-To Window Cleaner
+
+![window cleaner cleaning a window](https://thomaswindow.com/wp-content/uploads/2025/02/window-cleaner-cleaning-window-with-squeegee-wipe-1-1024x683.jpg)
+
+In a place like Wheeling, where the seasons bring everything from icy winters to dusty spring breezes, having a reliable window cleaner isn't just convenient—it's necessary. And for many local homeowners, we've become the trusted team they turn to year after year.
+
+We're not a big-box chain or an out-of-town crew. We live and work right here in Wheeling, which means we understand the local weather, the common types of buildup on windows, and the expectations of homeowners in our community. When you schedule with us, you're working with professionals who know your neighborhood and genuinely care about the results.
+
+Our clients often share how much they value the details we bring to every job:
+
+- We show up on time
+- We're respectful of your home
+- We take care not to leave a mess
+- And we pay close attention to the corners and edges most people overlook
+
+We treat every window as if it were our own. That kind of care and consistency is why so many families in Wheeling don't even think twice—they call us whenever their windows need attention.
+
+## What Sets Our Window Cleaning Service Apart?
+
+![Person professionaly cleaning window](https://thomaswindow.com/wp-content/uploads/2025/02/man-doing-professional-home-cleaning-service-6-1-1024x683.jpg)
+
+Let's be honest—there are plenty of companies out there offering a window cleaning service. But not all of them deliver the same quality, care, or results. So why do so many Wheeling homeowners continue to choose us over the competition?
+
+It comes down to three things: professionalism, precision, and people.
+
+**Professionalism you can count on**
+
+From the first phone call to the final inspection, we aim to make the entire process simple and stress-free. We offer flexible scheduling, clear pricing, and fast responses—no surprises, no pushy upsells. Just solid, straightforward service from a team that respects your time and your home.
+
+**Precision in every detail**
+
+We don't believe in "good enough." Every window gets cleaned by hand using high-quality, streak-free tools and eco-friendly solutions that are safe for your family and pets. We pay attention to the frames, sills, and screens—because what's the point of clean glass if everything around it is still dirty?
+
+We also use professional-grade equipment to handle windows in hard-to-reach places safely, whether that's a second-story bay window or a tall pane above the front door. No shortcuts. No scratches. Just crystal-clear results that last.
+
+**People who care about your home as much as you do**
+
+Our team isn't just trained—they're trusted. We background-check every technician, ensure they're fully insured, and train them to treat every home with respect. Whether we're cleaning one window or every window on your property, we show up with a good attitude and a commitment to doing the job right.
+
+## More Than Just Homes: Commercial Window Washing Near You
+
+![a hand cleaning a window with a squeegee](https://thomaswindow.com/wp-content/uploads/2024/07/blog.ww_-1024x768.jpg)
+
+While we've built a strong reputation among Wheeling homeowners, our expertise doesn't stop at residential properties. We also provide top-quality commercial window washing for local businesses, office buildings, retail storefronts, and multi-unit properties throughout the area.
+
+If you've ever searched for commercial window washing near me, chances are you're looking for a service that's efficient, discreet, and gets the job done right the first time. That's exactly what we deliver.
+
+**First impressions matter—especially for your business.**
+
+Smudged windows, streaks, or buildup can make even the best business look neglected. Whether you're running a café with large front windows or managing an office complex, clean glass shows professionalism and attention to detail. Our team helps ensure your space always makes the right impression—inside and out.
+
+**Why Wheeling businesses choose us:**
+
+- Reliable scheduling that works around your hours
+- Fully insured and safety-trained window washers
+- Specialized equipment for high or hard-to-reach windows
+- Courteous, uniformed professionals who respect your property and privacy
+
+## How to Choose the Best Window Washers in Wheeling
+
+![diy window washing](https://thomaswindow.com/wp-content/uploads/2025/02/wind2-1024x683.webp)
+
+Choosing the right window cleaner might seem simple—until you realize how many companies are out there promising streak-free results. But not all window washers are created equal. And when it comes to the windows in your home or business, quality, reliability, and safety matter.
+
+So how do you separate the pros from the rest? Here are a few things to consider when looking for a window cleaning service in Wheeling:
+
+**1. Are they insured and professionally trained?**
+
+Safety is non-negotiable. Whether they're working on a second-story home or a multi-floor commercial building, professional window washers should be trained, insured, and follow strict safety protocols.
+
+**2. Do they have solid local reviews?**
+
+There's no better way to gauge a company's reputation than hearing from your neighbors. Look for customer testimonials, check Google reviews, and don't be afraid to ask for references.
+
+**3. What's included in the service?**
+
+Some companies clean just the glass, while others (like us) go the extra mile—wiping down sills, screens, and frames. Make sure you know exactly what you're getting so you can compare value, not just price.
+
+**4. Do they offer flexible scheduling or maintenance plans?**
+
+Life gets busy, and a great window cleaning service should work around your schedule. Bonus points if they offer recurring service plans so you don't have to keep calling back every season.
+
+## Conclusion: Your Trusted Window Cleaning Service in Wheeling—All Year Long
+
+Clean windows might seem like a small detail, but they make a big impact—on your home's appearance, your business's first impression, and even your peace of mind. That's why so many Wheeling residents rely on our professional window cleaning service year-round.
+
+Whether you're a homeowner looking to boost curb appeal or a business owner searching for commercial window washing near you, we're here to help—professionally, promptly, and with results you'll see the moment we're done.
+
+Ready to see your world a little more clearly? Reach out today to schedule your service or learn more about how we can customize a plan that fits your needs. Let us show you why Wheeling homeowners continue to trust us as their go-to window cleaning service, year after year.`,
   },
 };
 
