@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
-import { Phone, Tag, Percent, Gift, DollarSign, CheckCircle, Shield, Users, Calendar, Award } from 'lucide-react';
+import { Phone, Tag, Percent, DollarSign, Shield, Users, Calendar, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import offersHero from '@/assets/offers-hero.jpg';
+import offersHouse from '@/assets/offers-house.jpg';
+import offersPowerWashing from '@/assets/offers-power-washing.jpg';
+import offersWindowCleaning from '@/assets/offers-window-cleaning.jpg';
 
 const offers = [
   {
@@ -13,6 +16,7 @@ const offers = [
     terms: 'New or existing customers. Must present offer at time of service.',
     icon: Percent,
     highlight: false,
+    image: offersHouse,
   },
   {
     title: '$20 Off',
@@ -20,6 +24,7 @@ const offers = [
     terms: 'New or existing customers. Must present offer at time of service.',
     icon: Tag,
     highlight: true,
+    image: offersPowerWashing,
   },
   {
     title: '$10 Off',
@@ -27,6 +32,7 @@ const offers = [
     terms: 'New customers only. Must present offer at time of service.',
     icon: DollarSign,
     highlight: false,
+    image: offersWindowCleaning,
   },
 ];
 
@@ -90,28 +96,35 @@ const OffersPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className={`glass-card p-8 text-center relative overflow-hidden ${
+                  className={`glass-card overflow-hidden relative ${
                     offer.highlight ? 'ring-2 ring-primary' : ''
                   }`}
                 >
                   {offer.highlight && (
-                    <div className="absolute top-0 left-0 right-0 bg-primary text-primary-foreground text-sm py-1 font-medium">
+                    <div className="absolute top-0 left-0 right-0 bg-primary text-primary-foreground text-sm py-1 font-medium text-center z-10">
                       MOST POPULAR
                     </div>
                   )}
                   
-                  <div className={`w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6 ${offer.highlight ? 'mt-6' : ''}`}>
-                    <offer.icon className="w-8 h-8 text-primary" />
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={offer.image} 
+                      alt={offer.title} 
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <h3 className="absolute bottom-4 left-4 text-3xl font-bold text-white">{offer.title}</h3>
                   </div>
                   
-                  <h3 className="text-3xl font-bold text-primary mb-4">{offer.title}</h3>
-                  <p className="text-foreground font-medium mb-4">{offer.description}</p>
-                  <p className="text-sm text-muted-foreground mb-6">{offer.terms}</p>
-                  
-                  <a href="tel:8474043398" className="btn-glow w-full">
-                    <Phone className="w-4 h-4" />
-                    Claim Offer
-                  </a>
+                  <div className="p-6 text-center">
+                    <p className="text-foreground font-medium mb-2">{offer.description}</p>
+                    <p className="text-sm text-muted-foreground mb-6">{offer.terms}</p>
+                    
+                    <a href="tel:8474043398" className="btn-glow w-full">
+                      <Phone className="w-4 h-4" />
+                      Claim Offer
+                    </a>
+                  </div>
                 </motion.div>
               ))}
             </div>
