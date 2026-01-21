@@ -25,20 +25,22 @@ const ContactPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img src={contactHero} alt="Contact" className="w-full h-full object-cover opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+            <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
-              <span className="section-label justify-center">CONTACT US</span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Contact Cleaning Services{' '}
-                <span className="text-gradient">in Chicago</span>
+          
+          <div className="container mx-auto px-4 relative z-10 py-24">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                Contact Cleaning Services in Chicago
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/90 mb-4">
                 Thomas Window Cleaning, Inc. provides professional cleaning services for competitive prices. We strive to make each customer happy and satisfied.
+              </p>
+              <p className="text-white/80 mb-8">
+                Your positive feedback and referrals to friends, family and neighbors are the best reward for us!
               </p>
             </div>
           </div>

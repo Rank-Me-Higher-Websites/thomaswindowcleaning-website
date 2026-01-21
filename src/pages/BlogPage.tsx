@@ -83,20 +83,22 @@ const BlogPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative min-h-[60vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
-            <img src={blogHero} alt="Blog" className="w-full h-full object-cover opacity-30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/80" />
+            <img src={blogHero} alt="Exterior Cleaning Tips Blog" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-black/60" />
           </div>
-          <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-3xl mx-auto">
-              <span className="section-label justify-center">BLOG</span>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Residential Exterior{' '}
-                <span className="text-gradient">Cleaning Tips</span>
+          
+          <div className="container mx-auto px-4 relative z-10 py-24">
+            <div className="max-w-3xl">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+                Residential Exterior Cleaning Tips
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-white/90 mb-4">
                 Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning.
+              </p>
+              <p className="text-white/80">
+                Discover the best practices for window cleaning, gutter maintenance, and power washing to keep your property looking its best.
               </p>
             </div>
           </div>
