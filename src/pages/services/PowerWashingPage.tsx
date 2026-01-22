@@ -56,22 +56,41 @@ const serviceTypes = [
   },
 ];
 
-const faqs = [
+const faqData = [
   {
     question: 'What does power washing do?',
     answer: 'Power washing uses high-pressure water to remove dirt, grime, mold, mildew, algae, and stains from various surfaces. It restores the look of driveways, sidewalks, patios, decks, siding, fences, and commercial buildings, improving curb appeal and preventing long-term damage caused by buildup.',
+    linkText: 'mold',
+    linkUrl: 'https://www.cdc.gov/mold/dampness_facts.htm',
+    isExternal: true,
   },
   {
     question: 'How long should power washing take?',
-    answer: 'Power washing time depends on the size, surface type, and level of buildup. Smaller areas can be cleaned quickly, while larger surfaces or heavily stained areas take longer. Driveways, patios, siding, and commercial properties all require different cleaning times, but our team ensures efficient and thorough results.',
+    answer: 'Power washing time depends on the size, surface type, and level of buildup. Smaller areas can be cleaned quickly, while larger surfaces or heavily stained areas take longer. Contact us for an estimate based on your specific property needs.',
+    linkText: 'Contact us',
+    linkUrl: '/contact',
+    isExternal: false,
   },
   {
     question: 'How powerful is a power wash?',
     answer: 'Power washing uses high-pressure water, typically between 1,500 and 4,000 PSI, to remove dirt, grime, mold, mildew, and stains from surfaces. The pressure level is adjusted based on the material—strong enough for concrete and brick, yet safe for siding and wood decks.',
+    linkText: 'PSI',
+    linkUrl: 'https://en.wikipedia.org/wiki/Pound_per_square_inch',
+    isExternal: true,
   },
   {
     question: 'Can I pressure wash concrete?',
-    answer: 'Yes! Pressure washing is the best way to clean concrete surfaces like driveways, sidewalks, patios, and parking lots. High-pressure water removes dirt, stains, oil, mold, and mildew, restoring the surface to a like-new appearance. Using the right pressure settings and techniques prevents damage while ensuring a deep, effective clean.',
+    answer: 'Yes! Pressure washing is the best way to clean concrete surfaces like driveways, sidewalks, patios, and parking lots. High-pressure water removes dirt, stains, oil, mold, and mildew, restoring the surface to a like-new appearance. View our pricing for concrete cleaning rates.',
+    linkText: 'pricing',
+    linkUrl: '/prices',
+    isExternal: false,
+  },
+  {
+    question: 'Is power washing safe for all surfaces?',
+    answer: 'Professional power washing is safe when done correctly. We adjust pressure settings for each surface type—lower for wood decks and vinyl siding, higher for concrete and brick. Our trained technicians know how to clean effectively without causing damage.',
+    linkText: 'vinyl siding',
+    linkUrl: 'https://www.bobvila.com/articles/how-to-clean-vinyl-siding/',
+    isExternal: true,
   },
 ];
 
@@ -129,7 +148,7 @@ const PowerWashingPage = () => {
                   Services?
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Restore your home or business with best power washers that eliminate dirt, grime, and stains from exterior surfaces.
+                  Restore your home or business with professional <a href="https://en.wikipedia.org/wiki/Pressure_washing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">pressure washing</a> that eliminates dirt, grime, and stains from exterior surfaces in <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>.
                 </p>
                 
                 <div className="space-y-4">
@@ -269,7 +288,7 @@ const PowerWashingPage = () => {
                 <span className="text-gradient">Power Wash</span>
               </h2>
               <p className="text-muted-foreground mt-4">
-                We provide professional pressure washing services for both residential and commercial properties in Chicago, IL.
+                We provide professional <a href="https://www.homedepot.com/c/ah/how-to-pressure-wash-a-driveway/9ba683603be9fa5395fab901a3c7e656" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">pressure washing services</a> for both residential and commercial properties. Combine with our <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link> for complete exterior maintenance.
               </p>
             </div>
 
@@ -319,7 +338,7 @@ const PowerWashingPage = () => {
                 <span className="text-gradient">Power Washing?</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                Restore your property with expert power washers in Chicago. We remove dirt, grime, mold, and stains from driveways, sidewalks, decks, siding, and more, boosting curb appeal and protecting surfaces. Our high-pressure wash ensures a deep, effective clean without damage.
+                Restore your property with <Link to="/prices" className="text-primary hover:underline">affordable power washing</Link> in Chicago. We remove dirt, grime, <a href="https://www.cdc.gov/mold/dampness_facts.htm" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">mold</a>, and stains from <a href="https://en.wikipedia.org/wiki/Driveway" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">driveways</a>, sidewalks, decks, siding, and more, boosting curb appeal and protecting surfaces.
               </p>
             </div>
             
@@ -390,6 +409,10 @@ const PowerWashingPage = () => {
                 ))}
               </div>
 
+              <p className="text-sm text-muted-foreground text-center mb-10">
+                Not sure which surface needs cleaning? <Link to="/contact" className="text-primary hover:underline">Request a free assessment</Link> and we'll recommend the best approach for your property.
+              </p>
+
               {/* Benefits Row */}
               <div className="grid md:grid-cols-3 gap-6 mb-10">
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-primary/5">
@@ -416,7 +439,7 @@ const PowerWashingPage = () => {
                   </div>
                   <div>
                     <h4 className="text-sm font-semibold text-foreground mb-1">Eco-Friendly</h4>
-                    <p className="text-xs text-muted-foreground">Biodegradable cleaning solutions when needed</p>
+                    <p className="text-xs text-muted-foreground"><a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Biodegradable solutions</a> when needed</p>
                   </div>
                 </div>
               </div>
@@ -470,13 +493,25 @@ const PowerWashingPage = () => {
 
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
+                {faqData.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
                     <AccordionTrigger className="text-left font-medium">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      {faq.answer}
+                      {faq.linkText && faq.linkUrl ? (
+                        <>
+                          {faq.answer.split(faq.linkText)[0]}
+                          {faq.isExternal ? (
+                            <a href={faq.linkUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{faq.linkText}</a>
+                          ) : (
+                            <Link to={faq.linkUrl} className="text-primary hover:underline">{faq.linkText}</Link>
+                          )}
+                          {faq.answer.split(faq.linkText)[1]}
+                        </>
+                      ) : (
+                        faq.answer
+                      )}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
