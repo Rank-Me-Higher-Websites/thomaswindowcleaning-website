@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
-import contactHero from '@/assets/contact-hero.jpg';
+import contactHero from '@/assets/thomas-about.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 
 const ContactPage = () => {
