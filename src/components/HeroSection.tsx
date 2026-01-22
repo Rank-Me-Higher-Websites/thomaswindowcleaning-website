@@ -6,7 +6,7 @@ import aboutImg from '@/assets/thomas-about.jpg';
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden pt-24 md:pt-28">
+    <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden pt-16 md:pt-20">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
