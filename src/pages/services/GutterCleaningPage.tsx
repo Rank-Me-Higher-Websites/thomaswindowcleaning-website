@@ -50,7 +50,7 @@ const serviceTypes = [
   },
 ];
 
-const faqs = [
+const faqData = [
   {
     question: 'How often should gutters be professionally cleaned?',
     answer: 'Gutters should be professionally cleaned at least twice a year, typically in spring and fall. This helps prevent clogs caused by leaves, debris, and dirt buildup, reducing the risk of water damage, foundation issues, and pest infestations.',
@@ -58,10 +58,13 @@ const faqs = [
   {
     question: 'What happens if you never clean your gutters?',
     answer: 'If you never clean your gutters, they clog with debris, causing water overflow, roof damage, foundation issues, and even pest infestations. This can lead to costly repairs and structural damage over time.',
+    linkText: 'foundation issues',
+    linkUrl: 'https://www.thisoldhouse.com/foundations/21018642/how-to-fix-a-wet-basement',
+    isExternal: true,
   },
   {
     question: 'How to know if gutters need cleaning?',
-    answer: 'You\'ll know your gutters need cleaning if water overflows, they start sagging, or you notice debris buildup, pests, or staining on your home\'s exterior. Regular checks can prevent costly damage.',
+    answer: "You'll know your gutters need cleaning if water overflows, they start sagging, or you notice debris buildup, pests, or staining on your home's exterior. Regular checks can prevent costly damage.",
   },
   {
     question: 'How long does gutter cleaning last?',
@@ -69,7 +72,17 @@ const faqs = [
   },
   {
     question: 'Is gutter cleaning difficult?',
-    answer: 'Gutter cleaning can be difficult because it involves climbing ladders, removing debris, and ensuring proper drainage. It can also be time-consuming and hazardous, especially for multi-story homes. Hiring professionals ensures safety, efficiency, and thorough cleaning.',
+    answer: 'Gutter cleaning can be difficult because it involves climbing ladders, removing debris, and ensuring proper drainage. It can also be time-consuming and hazardous, especially for multi-story homes. Hiring professionals ensures safety, efficiency, and thorough cleaning. View our pricing for affordable rates.',
+    linkText: 'pricing',
+    linkUrl: '/prices',
+    isExternal: false,
+  },
+  {
+    question: 'Do you install gutter guards?',
+    answer: 'Yes, we offer gutter guard installation to help reduce debris buildup and minimize maintenance. Contact us to learn more about our gutter protection options.',
+    linkText: 'Contact us',
+    linkUrl: '/contact',
+    isExternal: false,
   },
 ];
 
@@ -127,7 +140,7 @@ const GutterCleaningPage = () => {
                   Services?
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  Ensure your gutters stay clear and functional with our top-rated Chicago gutter maintenance, preventing costly home repairs.
+                  Ensure your <a href="https://en.wikipedia.org/wiki/Rain_gutter" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">rain gutters</a> stay clear and functional with our top-rated <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling</a> gutter maintenance, preventing costly home repairs.
                 </p>
                 
                 <div className="space-y-4">
@@ -255,7 +268,7 @@ const GutterCleaningPage = () => {
                 <span className="text-gradient">Gutter Cleaning</span>
               </h2>
               <p className="text-muted-foreground mt-4">
-                Our professional gutter cleaning services in Chicago, IL, ensure clear, debris-free gutters for homes and businesses.
+                Our professional gutter cleaning services in Chicago, IL, ensure clear, <a href="https://www.familyhandyman.com/project/how-to-clean-gutters/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">debris-free gutters</a> for homes and businesses. Pair with our <Link to="/services/power-washing" className="text-primary hover:underline">exterior washing</Link> for complete home maintenance.
               </p>
             </div>
 
@@ -307,7 +320,7 @@ const GutterCleaningPage = () => {
                 <span className="text-gradient">Stands Out</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                We're more than just local gutter cleaners—we're your trusted gutter maintenance experts serving Chicago and the suburbs. Our customers rely on our thorough cleaning process, reliability, and attention to detail to keep their gutters clear and their homes protected.
+                We're more than just local gutter cleaners—we're your trusted <Link to="/prices" className="text-primary hover:underline">affordable gutter maintenance</Link> experts serving Chicago and the suburbs. Our customers rely on our thorough cleaning process, reliability, and attention to detail to keep their <a href="https://en.wikipedia.org/wiki/Downspout" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">downspouts</a> clear and their homes protected.
               </p>
             </div>
             
@@ -371,7 +384,7 @@ const GutterCleaningPage = () => {
                     <h3 className="text-base font-semibold text-foreground">Residential Gutter Cleaning</h3>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Protect your home's foundation, roof, and siding with regular gutter maintenance. Our residential service includes complete debris removal, downspout clearing, and thorough inspection.
+                    Protect your home's <a href="https://www.thisoldhouse.com/foundations/21018642/how-to-fix-a-wet-basement" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">foundation</a>, roof, and siding with regular gutter maintenance. Our residential service includes complete debris removal, <a href="https://en.wikipedia.org/wiki/Downspout" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">downspout clearing</a>, and thorough inspection.
                   </p>
                 </div>
                 <div className="flex-1 bg-primary/5 border-l-4 border-primary rounded-r-lg p-5">
@@ -380,7 +393,7 @@ const GutterCleaningPage = () => {
                     <h3 className="text-base font-semibold text-foreground">Commercial Gutter Cleaning</h3>
                   </div>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Keep your commercial property safe from water damage. We service office buildings, retail spaces, and multi-unit properties with flexible scheduling.
+                    Keep your commercial property safe from <a href="https://en.wikipedia.org/wiki/Water_damage" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">water damage</a>. We service office buildings, retail spaces, and multi-unit properties with flexible scheduling. Check our <Link to="/offers" className="text-primary hover:underline">special offers</Link> for discounts.
                   </p>
                 </div>
               </div>
@@ -413,7 +426,7 @@ const GutterCleaningPage = () => {
                 <div>
                   <h3 className="text-base font-semibold text-foreground mb-2">Why Regular Gutter Maintenance Matters</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Clogged gutters cause foundation cracks, basement flooding, roof leaks, and landscape erosion. Regular cleaning—especially in spring and fall—prevents costly repairs and extends the life of your gutter system. We recommend cleaning at least twice per year.
+                    Clogged gutters cause <a href="https://www.thisoldhouse.com/foundations/21018642/how-to-fix-a-wet-basement" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">foundation cracks</a>, basement flooding, <a href="https://en.wikipedia.org/wiki/Roof_leak" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">roof leaks</a>, and landscape erosion. Regular cleaning—especially in spring and fall—prevents costly repairs and extends the life of your gutter system. We recommend cleaning at least twice per year.
                   </p>
                 </div>
               </div>
@@ -449,13 +462,25 @@ const GutterCleaningPage = () => {
 
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
+                {faqData.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
                     <AccordionTrigger className="text-left font-medium">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      {faq.answer}
+                      {faq.linkText && faq.linkUrl ? (
+                        <>
+                          {faq.answer.split(faq.linkText)[0]}
+                          {faq.isExternal ? (
+                            <a href={faq.linkUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{faq.linkText}</a>
+                          ) : (
+                            <Link to={faq.linkUrl} className="text-primary hover:underline">{faq.linkText}</Link>
+                          )}
+                          {faq.answer.split(faq.linkText)[1]}
+                        </>
+                      ) : (
+                        faq.answer
+                      )}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
