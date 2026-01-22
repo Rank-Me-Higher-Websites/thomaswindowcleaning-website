@@ -158,9 +158,14 @@ const PricesPage = () => {
               </div>
             </div>
             
-            <div className="mt-4">
-              <Link to="/services/window-cleaning" className="text-primary font-medium hover:underline">
-                Learn more about our window cleaning services →
+            <div className="mt-6 flex flex-col sm:flex-row gap-3 items-start">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
+                <Phone className="w-4 h-4" />
+                Get Window Cleaning Quote
+              </a>
+              <Link to="/services/window-cleaning" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+                <ArrowRight className="w-4 h-4" />
+                Learn More
               </Link>
             </div>
           </div>
@@ -200,12 +205,16 @@ const PricesPage = () => {
               </div>
             </div>
             
-            <p className="text-muted-foreground mt-4">
-              Prices depend on square footage. Please call for an accurate price estimate.
-            </p>
-            <Link to="/services/gutter-cleaning" className="text-primary font-medium hover:underline block mt-2">
-              Learn more about our gutter cleaning services →
-            </Link>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3 items-start">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
+                <Phone className="w-4 h-4" />
+                Get Gutter Cleaning Quote
+              </a>
+              <Link to="/services/gutter-cleaning" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+                <ArrowRight className="w-4 h-4" />
+                Learn More
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -269,9 +278,16 @@ const PricesPage = () => {
               </div>
             </div>
             
-            <Link to="/services/power-washing" className="text-primary font-medium hover:underline block mt-6">
-              Learn more about our power washing services →
-            </Link>
+            <div className="mt-6 flex flex-col sm:flex-row gap-3 items-start">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
+                <Phone className="w-4 h-4" />
+                Get Power Washing Quote
+              </a>
+              <Link to="/services/power-washing" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+                <ArrowRight className="w-4 h-4" />
+                Learn More
+              </Link>
+            </div>
           </div>
         </section>
 
