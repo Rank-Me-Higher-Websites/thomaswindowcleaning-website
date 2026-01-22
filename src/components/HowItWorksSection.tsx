@@ -45,17 +45,17 @@ export const HowItWorksSection = () => {
         </motion.div>
 
         {/* Steps grid */}
-        <div className="grid sm:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid sm:grid-cols-3 gap-4 md:gap-6 pt-5">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="glass-card p-5 md:p-6 text-center relative group"
+              className="glass-card p-5 md:p-6 text-center relative group overflow-visible"
             >
               {/* Step number */}
-              <div className="absolute -top-2.5 right-3 w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold shadow-md">
+              <div className="absolute -top-4 right-4 w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold shadow-md z-10">
                 {step.number}
               </div>
               
