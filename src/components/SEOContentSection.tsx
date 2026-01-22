@@ -1,4 +1,4 @@
-import { CheckCircle, MapPin, Shield, Award } from 'lucide-react';
+import { CheckCircle, MapPin, Shield, Award, Phone, ArrowRight } from 'lucide-react';
 
 const services = [
   "Residential Window Cleaning",
@@ -96,9 +96,27 @@ export const SEOContentSection = () => {
           <h3 className="text-lg font-semibold text-foreground mb-3">
             Why Choose Thomas Window Cleaning?
           </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">
+          <p className="text-sm text-muted-foreground leading-relaxed mb-6">
             As a locally owned and operated business, we take pride in delivering personalized service to every customer. Our experienced technicians arrive on time, treat your property with respect, and ensure every job meets our high standards. From streak-free windows to debris-free gutters and sparkling clean driveways, we handle all your exterior cleaning needs with professionalism and care.
           </p>
+          
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a 
+              href="tel:8474043398" 
+              className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
+            >
+              <Phone className="w-4 h-4" />
+              Call Now
+            </a>
+            <a 
+              href="#booking" 
+              className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
+            >
+              Get Free Quote
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </div>
       </div>
     </section>

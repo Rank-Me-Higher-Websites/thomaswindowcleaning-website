@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { MessageSquare, CalendarCheck, Sparkles } from 'lucide-react';
+import { MessageSquare, CalendarCheck, Sparkles, Phone, ArrowRight } from 'lucide-react';
 
 const steps = [
   {
@@ -69,6 +69,29 @@ export const HowItWorksSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA Buttons */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.4, delay: 0.3 }}
+          className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
+        >
+          <a 
+            href="tel:8474043398" 
+            className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
+          >
+            <Phone className="w-4 h-4" />
+            Call Now
+          </a>
+          <a 
+            href="#booking" 
+            className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
+          >
+            Get Free Quote
+            <ArrowRight className="w-4 h-4" />
+          </a>
+        </motion.div>
       </div>
     </section>
   );
