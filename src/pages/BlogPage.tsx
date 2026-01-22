@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
-import blogHero from '@/assets/blog-hero.jpg';
+import blogHero from '@/assets/thomas-squeegee.jpg';
 
 // Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
