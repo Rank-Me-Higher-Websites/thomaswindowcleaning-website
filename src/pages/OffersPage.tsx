@@ -172,7 +172,7 @@ const OffersPage = () => {
                       🪟 Professional Window Cleaning Services
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Our <Link to="/services/window-cleaning" className="text-primary hover:underline font-semibold">professional window cleaning</Link> service delivers streak-free, 
+                      Our <Link to="/services/window-cleaning" className="text-primary hover:underline">professional window cleaning</Link> service delivers streak-free, 
                       crystal-clear results that transform your home. We use <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly cleaning solutions</a> 
                       and professional-grade equipment to ensure every window sparkles—inside and out.
                     </p>
@@ -231,7 +231,7 @@ const OffersPage = () => {
                       💦 Power Washing & Pressure Cleaning
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Restore your property's curb appeal with our <Link to="/services/power-washing" className="text-primary hover:underline font-semibold">professional power washing services</Link>. 
+                      Restore your property's curb appeal with our <Link to="/services/power-washing" className="text-primary hover:underline">professional power washing services</Link>. 
                       From driveways and sidewalks to siding and decks, we blast away years of dirt, grime, 
                       mold, and mildew to reveal clean, like-new surfaces.
                     </p>
@@ -269,7 +269,7 @@ const OffersPage = () => {
                       🍂 Gutter Cleaning & Maintenance
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Protect your home from water damage with our thorough <Link to="/services/gutter-cleaning" className="text-primary hover:underline font-semibold">gutter cleaning services</Link>. 
+                      Protect your home from water damage with our thorough <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning services</Link>. 
                       Chicago's unpredictable weather means your gutters work overtime—we ensure they're 
                       clear of debris and flowing properly to prevent costly repairs.
                     </p>
