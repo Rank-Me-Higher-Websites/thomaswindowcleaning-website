@@ -142,9 +142,16 @@ export const Footer = () => {
                   <span className="truncate">thomaswindowcleaning@gmail.com</span>
                 </a>
               </li>
-              <li className="flex items-start gap-2 text-primary-foreground/70">
-                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
-                Wheeling, IL 60090
+              <li>
+                <a
+                  href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
+                >
+                  <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
+                  P.O. Box 582 Wheeling, Illinois 60090
+                </a>
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Clock className="w-3 h-3 shrink-0" />

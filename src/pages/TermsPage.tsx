@@ -118,9 +118,9 @@ const TermsPage = () => {
                   For questions about these Terms of Service, please contact us:
                 </p>
                 <ul className="list-none text-muted-foreground space-y-2 mt-4">
-                  <li><strong>Phone:</strong> (847) 845-3122</li>
-                  <li><strong>Email:</strong> info@thomaswindow.com</li>
-                  <li><strong>Address:</strong> Wheeling, IL and surrounding areas</li>
+                  <li><strong>Phone:</strong> (847) 404-3398</li>
+                  <li><strong>Email:</strong> thomaswindowcleaning@gmail.com</li>
+                  <li><strong>Address:</strong> <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">P.O. Box 582 Wheeling, Illinois 60090</a></li>
                 </ul>
               </section>
             </div>

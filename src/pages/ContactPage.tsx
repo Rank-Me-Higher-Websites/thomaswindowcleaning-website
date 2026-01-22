@@ -104,7 +104,7 @@ const ContactPage = () => {
                   </a>
 
                   <a
-                    href="https://maps.google.com/maps/dir//Wheeling,+IL+60090+USA"
+                    href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
@@ -114,7 +114,7 @@ const ContactPage = () => {
                     </div>
                     <div>
                       <div className="text-xs text-muted-foreground">Location</div>
-                      <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, IL 60090</div>
+                      <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, Illinois 60090</div>
                     </div>
                   </a>
 
