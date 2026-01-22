@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Calendar, Shield, Award, CheckCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import aboutImg from '@/assets/thomas-squeegee.png';
 
 const features = [
@@ -66,10 +67,10 @@ export const AboutSection = () => {
               & Clog-Free Gutters
             </h2>
             <p className="text-muted-foreground text-sm mb-4">
-              At Thomas Window Cleaning, we know life gets busy, and cleaning can be a hassle. That's why we're here to help! Since 1995, we've been providing top-notch window cleaning, gutter cleaning, and pressure washing services to the Chicago north and northwest suburbs.
+              At Thomas Window Cleaning, we know life gets busy, and cleaning can be a hassle. That's why we're here to help! Since 1995, we've been providing top-notch <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link> services to the <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago north and northwest suburbs</a>.
             </p>
             <p className="text-muted-foreground text-sm mb-5">
-              Our goal is to make sure you're completely satisfied with our work. We love hearing your positive feedback!
+              Our goal is to make sure you're completely satisfied with our work. Check our <Link to="/prices" className="text-primary hover:underline">transparent pricing</Link> and see why customers love us!
             </p>
 
             {/* Features grid */}

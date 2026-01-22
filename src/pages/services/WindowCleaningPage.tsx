@@ -371,7 +371,7 @@ const WindowCleaningPage = () => {
                 Professional Window Cleaning Services in Wheeling, IL & Chicago Suburbs
               </h2>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 text-center">
-                Thomas Window Cleaning delivers exceptional residential and commercial window cleaning throughout the Chicago metropolitan area. With over 29 years of experience, our trained professionals use industry-leading techniques and eco-friendly solutions for streak-free, crystal-clear results on every window.
+                Thomas Window Cleaning delivers exceptional residential and commercial window cleaning throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our trained professionals use industry-leading techniques and <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly solutions</a> for streak-free, crystal-clear results. Need other services? Check out our <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link> and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> options.
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">

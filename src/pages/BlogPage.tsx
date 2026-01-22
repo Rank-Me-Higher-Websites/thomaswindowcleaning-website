@@ -266,7 +266,7 @@ const BlogPage = () => {
                 transition={{ duration: 0.5, delay: 0.1 }}
                 className="text-lg text-white/90 mb-4"
               >
-                Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning.
+                Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning about <Link to="/services/window-cleaning" className="text-white underline hover:text-white/80">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-white underline hover:text-white/80">gutter maintenance</Link>, and <Link to="/services/power-washing" className="text-white underline hover:text-white/80">power washing</Link>.
               </motion.p>
               <motion.p 
                 initial={{ opacity: 0, y: 20 }}
@@ -274,7 +274,7 @@ const BlogPage = () => {
                 transition={{ duration: 0.5, delay: 0.15 }}
                 className="text-white/80 mb-8"
               >
-                Discover the best practices for window cleaning, gutter maintenance, and power washing to keep your property looking its best.
+                Discover the best practices to keep your <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">Chicagoland</a> property looking its best year-round.
               </motion.p>
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
@@ -468,7 +468,7 @@ const BlogPage = () => {
               Need Professional Cleaning Services?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
-              Don't want to DIY? Let the experts handle it. Contact Thomas Window Cleaning for professional results.
+              Don't want to DIY? Let the experts handle it. Contact Thomas Window Cleaning for professional results in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary-foreground underline hover:opacity-80">Wheeling, IL</a> and surrounding areas. Check our <Link to="/prices" className="text-primary-foreground underline hover:opacity-80">transparent pricing</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
