@@ -170,6 +170,24 @@ const PowerWashingPage = () => {
                 <img src={powerWashingChoose1} alt="Power Washing Service" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
             </div>
+
+            {/* CTA after Benefits */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+            >
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                <ArrowRight className="w-4 h-4" />
+                Get Free Quote
+              </Link>
+            </motion.div>
           </div>
         </section>
 
@@ -227,6 +245,18 @@ const PowerWashingPage = () => {
                 ))}
               </div>
             </div>
+
+            {/* CTA after Pricing */}
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <Phone className="w-4 h-4" />
+                Call for Estimate
+              </a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                <ArrowRight className="w-4 h-4" />
+                Get Free Quote
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -261,10 +291,26 @@ const PowerWashingPage = () => {
                 </motion.div>
               ))}
             </div>
+
+            {/* CTA after Service Types */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+            >
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                <ArrowRight className="w-4 h-4" />
+                Get Free Quote
+              </Link>
+            </motion.div>
           </div>
         </section>
-
-        {/* Thomas Difference Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-12">
@@ -297,10 +343,26 @@ const PowerWashingPage = () => {
                 <img src={powerWashingChoose2} alt="Professional power washing service in action" className="w-full aspect-[4/3] object-cover" />
               </motion.div>
             </div>
+
+            {/* CTA after Thomas Difference */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+            >
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                <Phone className="w-4 h-4" />
+                Call Now
+              </a>
+              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                <ArrowRight className="w-4 h-4" />
+                Get Free Quote
+              </Link>
+            </motion.div>
           </div>
         </section>
-
-        {/* SEO Content Section */}
         <section className="py-12 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
