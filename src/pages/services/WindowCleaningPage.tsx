@@ -36,10 +36,10 @@ const additionalCharges = [
 ];
 
 const benefits = [
-  'Streak-Free Shine – We use top-quality cleaning solutions and professional techniques',
-  'Reliable & On-Time – We respect your time and always show up when promised',
-  'Safe & Efficient – Our skilled team handles both residential and commercial window cleaning',
-  'Satisfaction Guaranteed – If you\'re not happy, we\'ll make it right!',
+  { text: 'Streak-Free Shine – We use top-quality cleaning solutions and professional techniques', hasLink: false },
+  { text: 'Reliable & On-Time – We respect your time and always show up when promised', hasLink: false },
+  { text: 'Safe & Efficient – Our skilled team handles both residential and commercial window cleaning', hasLink: false },
+  { text: 'Satisfaction Guaranteed – If you\'re not happy, we\'ll make it right!', hasLink: false },
 ];
 
 const serviceTypes = [
@@ -60,10 +60,13 @@ const serviceTypes = [
   },
 ];
 
-const faqs = [
+const faqData = [
   {
     question: 'What areas do you serve for window cleaning services?',
     answer: 'We proudly offer professional window cleaning services in Wheeling, IL, and the surrounding Chicagoland area. Our service area includes both residential and commercial properties.',
+    linkText: 'Wheeling, IL',
+    linkUrl: 'https://en.wikipedia.org/wiki/Wheeling,_Illinois',
+    isExternal: true,
   },
   {
     question: 'How often should I have my windows professionally cleaned?',
@@ -72,18 +75,30 @@ const faqs = [
   {
     question: 'Do you offer additional services besides window cleaning?',
     answer: 'Yes, in addition to window cleaning, we provide gutter cleaning and power washing services to keep your property in top condition.',
+    linkText: 'gutter cleaning',
+    linkUrl: '/services/gutter-cleaning',
+    isExternal: false,
   },
   {
     question: 'Are your window cleaning services safe for my home or business?',
     answer: 'Absolutely. We use professional-grade equipment and eco-friendly cleaning solutions to ensure a thorough and safe cleaning process for both residential and commercial properties.',
+    linkText: 'eco-friendly cleaning solutions',
+    linkUrl: 'https://www.epa.gov/saferchoice',
+    isExternal: true,
   },
   {
     question: 'How can I schedule a window cleaning appointment?',
-    answer: 'Scheduling an appointment is easy. You can call us at (847) 404-3398 or visit our website to book your window cleaning service at a time that\'s convenient for you.',
+    answer: 'Scheduling an appointment is easy. You can call us at (847) 404-3398 or visit our contact page to book your window cleaning service at a time that\'s convenient for you.',
+    linkText: 'contact page',
+    linkUrl: '/contact',
+    isExternal: false,
   },
   {
     question: 'What is included in your window cleaning service?',
-    answer: 'Our professional window cleaning service includes thorough cleaning of interior and exterior glass, removal of dirt, dust, and streaks, and wiping down window frames and sills. We also offer screen cleaning and hard water stain removal upon request.',
+    answer: 'Our professional window cleaning service includes thorough cleaning of interior and exterior glass, removal of dirt, dust, and streaks, and wiping down window frames and sills. We also offer screen cleaning and hard water stain removal upon request. View our pricing page for detailed costs.',
+    linkText: 'pricing page',
+    linkUrl: '/prices',
+    isExternal: false,
   },
 ];
 
@@ -141,7 +156,7 @@ const WindowCleaningPage = () => {
                   Services?
                 </h2>
                 <p className="text-muted-foreground mb-8">
-                  We know that clean windows can make all the difference in your home's appearance. Here's why local homeowners and businesses trust us:
+                  We know that clean windows can make all the difference in your home's appearance. That's why <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling</a> homeowners and businesses trust us:
                 </p>
                 
                 <div className="space-y-4">
@@ -155,7 +170,7 @@ const WindowCleaningPage = () => {
                       className="flex items-start gap-3"
                     >
                       <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-foreground">{benefit}</span>
+                      <span className="text-foreground">{benefit.text}</span>
                     </motion.div>
                   ))}
                 </div>
@@ -266,7 +281,7 @@ const WindowCleaningPage = () => {
                 <span className="text-gradient">Window Cleaning</span>
               </h2>
               <p className="text-muted-foreground mt-4">
-                We serve both homeowners and business owners with professional window washing services tailored to your needs.
+                We serve both homeowners and business owners with professional <a href="https://www.iwca.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">window washing</a> services tailored to your needs. Combine with our <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link> for complete exterior cleaning.
               </p>
             </div>
 
@@ -318,7 +333,7 @@ const WindowCleaningPage = () => {
                 <span className="text-gradient">Difference</span>
               </h2>
               <p className="text-muted-foreground text-lg">
-                We're more than just local window washers—we're your trusted window cleaning experts in Chicago and the suburbs. Our customers love our attention to detail, reliability, and friendly service. When you choose Thomas Window Cleaning, you get more than clean windows—you get peace of mind knowing the job is done right.
+                We're more than just local window washers—we're your trusted <Link to="/prices" className="text-primary hover:underline">affordable window cleaning</Link> experts in Chicago and the suburbs. Our customers love our attention to detail, reliability, and friendly service. Need <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter maintenance</Link> too? We've got you covered.
               </p>
             </div>
             
@@ -378,13 +393,13 @@ const WindowCleaningPage = () => {
                 <div className="bg-card rounded-xl p-6 border border-border shadow-md">
                   <h3 className="text-lg font-semibold text-foreground mb-3">Residential Window Cleaning</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Our home window cleaning service includes thorough interior and exterior glass cleaning, frame wiping, screen cleaning, and sill maintenance. We handle everything from standard double-hung windows to skylights, French panes, and hard-to-reach high windows—all with care and precision.
+                    Our home window cleaning service includes thorough interior and exterior glass cleaning, frame wiping, <a href="https://www.thisoldhouse.com/windows/21097091/how-to-clean-window-screens" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">screen cleaning</a>, and sill maintenance. We handle everything from standard double-hung windows to <a href="https://en.wikipedia.org/wiki/Skylight" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">skylights</a>, French panes, and hard-to-reach high windows.
                   </p>
                 </div>
                 <div className="bg-card rounded-xl p-6 border border-border shadow-md">
                   <h3 className="text-lg font-semibold text-foreground mb-3">Commercial Window Cleaning</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    Keep your storefront or office looking professional with our commercial window washing services. Clean windows enhance curb appeal, create inviting spaces for customers, and reflect your business's attention to detail. We offer flexible scheduling to minimize disruption.
+                    Keep your storefront or office looking professional with our commercial window washing services. Clean windows enhance <a href="https://en.wikipedia.org/wiki/Curb_appeal" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">curb appeal</a>, create inviting spaces for customers, and reflect your business's attention to detail. Check our <Link to="/offers" className="text-primary hover:underline">seasonal offers</Link> for discounts.
                   </p>
                 </div>
               </div>
@@ -413,7 +428,7 @@ const WindowCleaningPage = () => {
               <div className="text-center">
                 <h3 className="text-lg font-semibold text-foreground mb-3">Serving Chicago & Surrounding Communities</h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  We proudly provide window cleaning services throughout the Chicagoland area including:
+                  We proudly provide window cleaning services throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicagoland area</a> including:
                 </p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {["Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", "Mount Prospect", "Des Plaines", "Northbrook", "Glenview", "Prospect Heights", "Schaumburg"].map((area, index) => (
@@ -422,6 +437,9 @@ const WindowCleaningPage = () => {
                     </span>
                   ))}
                 </div>
+                <p className="text-sm text-muted-foreground mt-4">
+                  <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to confirm service availability in your area.
+                </p>
               </div>
             </div>
           </div>
@@ -440,13 +458,25 @@ const WindowCleaningPage = () => {
 
             <div className="max-w-3xl mx-auto">
               <Accordion type="single" collapsible className="space-y-4">
-                {faqs.map((faq, index) => (
+                {faqData.map((faq, index) => (
                   <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
                     <AccordionTrigger className="text-left font-medium">
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent className="text-muted-foreground">
-                      {faq.answer}
+                      {faq.linkText && faq.linkUrl ? (
+                        <>
+                          {faq.answer.split(faq.linkText)[0]}
+                          {faq.isExternal ? (
+                            <a href={faq.linkUrl} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">{faq.linkText}</a>
+                          ) : (
+                            <Link to={faq.linkUrl} className="text-primary hover:underline">{faq.linkText}</Link>
+                          )}
+                          {faq.answer.split(faq.linkText)[1]}
+                        </>
+                      ) : (
+                        faq.answer
+                      )}
                     </AccordionContent>
                   </AccordionItem>
                 ))}
