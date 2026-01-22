@@ -6,7 +6,7 @@ import aboutImg from '@/assets/thomas-about.jpg';
 
 export const HeroSection = () => {
   return (
-    <section id="home" className="relative min-h-[85vh] lg:h-screen lg:max-h-screen flex items-center overflow-hidden pt-24 md:pt-28 lg:pt-20">
+    <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden pt-24 md:pt-28">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
@@ -17,8 +17,8 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-8 md:py-12 lg:py-6 relative z-10">
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-4 items-center">
+      <div className="container mx-auto px-4 py-8 md:py-12 relative z-10">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-6 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,13 +28,13 @@ export const HeroSection = () => {
           >
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-[3rem] font-bold mb-3 lg:mb-2 leading-[1.1] text-white">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1] text-white">
               Window Cleaning in Chicago<br />
               Streak-Free Results
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg lg:text-base text-white/90 mb-4 lg:mb-3 max-w-xl leading-relaxed">
+            <p className="text-base md:text-lg text-white/90 mb-5 max-w-xl leading-relaxed">
               <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
               <span className="font-medium">window cleaning</span>,{' '}
               <span className="font-medium">gutter cleaning</span>, and{' '}
@@ -43,7 +43,7 @@ export const HeroSection = () => {
             </p>
 
             {/* Service Tags */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4 lg:mb-3 text-sm text-white/80">
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5 text-sm text-white/80">
               <Link to="/services/window-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 Window Cleaning
@@ -59,7 +59,7 @@ export const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-3 mb-4 lg:mb-3">
+            <div className="flex flex-wrap gap-3 mb-5">
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors text-sm shadow-lg">
                 <Phone className="w-4 h-4" />
                 Call Now
@@ -71,7 +71,7 @@ export const HeroSection = () => {
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-2 mb-3 lg:mb-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <CheckCircle className="w-3.5 h-3.5" />
                 Fully Insured
@@ -115,37 +115,37 @@ export const HeroSection = () => {
             className="hidden lg:block"
           >
             {/* Image Card with Stats Overlay */}
-            <div className="relative max-w-sm xl:max-w-md ml-auto">
+            <div className="relative max-w-md ml-auto">
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <img
                   src={aboutImg}
                   alt="Thomas Window Cleaning Team"
-                  className="w-full aspect-[4/3] lg:aspect-[5/4] object-cover"
+                  className="w-full aspect-[4/3] object-cover"
                 />
                 
                 {/* Stats Badges - positioned at bottom inside image */}
-                <div className="absolute bottom-3 left-3 right-3 flex justify-start gap-2">
-                  <div className="flex flex-col items-center px-3 py-2 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[70px]">
-                    <span className="text-star text-lg font-bold">29+</span>
-                    <span className="text-white/80 text-[9px] uppercase tracking-wide">Years</span>
+                <div className="absolute bottom-4 left-4 right-4 flex justify-start gap-3">
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">29+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Years Exp.</span>
                   </div>
-                  <div className="flex flex-col items-center px-3 py-2 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[70px]">
-                    <span className="text-star text-lg font-bold">5.0</span>
-                    <span className="text-white/80 text-[9px] uppercase tracking-wide">Stars</span>
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">5.0</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Star Rated</span>
                   </div>
-                  <div className="flex flex-col items-center px-3 py-2 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[70px]">
-                    <span className="text-star text-lg font-bold">1K+</span>
-                    <span className="text-white/80 text-[9px] uppercase tracking-wide">Clients</span>
+                  <div className="flex flex-col items-center px-4 py-2.5 border border-star/60 rounded-lg bg-foreground/80 backdrop-blur-sm min-w-[80px]">
+                    <span className="text-star text-xl font-bold">1K+</span>
+                    <span className="text-white/80 text-[10px] uppercase tracking-wide">Happy Clients</span>
                   </div>
                 </div>
               </div>
               
               {/* Testimonial Quote - positioned below image */}
-              <div className="mt-2 bg-foreground/90 backdrop-blur-sm rounded-lg p-3 border border-star/30">
-                <p className="text-white/90 text-xs italic mb-1 leading-relaxed">
-                  "Thomas Window Cleaning did an amazing job. The windows have never looked so clear!"
+              <div className="mt-2 bg-foreground/90 backdrop-blur-sm rounded-lg p-4 border border-star/30">
+                <p className="text-white/90 text-sm italic mb-2 leading-relaxed">
+                  "Thomas Window Cleaning did an amazing job. The windows have never looked so clear! Professional service."
                 </p>
-                <p className="text-star text-[10px] font-semibold">
+                <p className="text-star text-xs font-semibold">
                   — Sarah J., Arlington Heights
                 </p>
               </div>
