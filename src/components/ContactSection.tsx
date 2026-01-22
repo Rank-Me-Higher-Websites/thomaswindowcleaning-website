@@ -61,7 +61,7 @@ export const ContactSection = () => {
               </a>
 
               <a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="glass-card p-4 flex items-center gap-3 group hover:shadow-md transition-all"
@@ -71,7 +71,7 @@ export const ContactSection = () => {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Address</div>
-                  <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, IL 60090</div>
+                  <div className="text-sm font-semibold text-foreground">P.O. Box 582 Wheeling, Illinois 60090</div>
                 </div>
               </a>
             </div>
