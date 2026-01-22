@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Phone, Clock, Shield, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 
-const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook-test/ae656859-0797-496e-9801-766df447fb22';
+const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/ae656859-0797-496e-9801-766df447fb22';
 
 export const BookingSection = () => {
   const ref = useRef(null);

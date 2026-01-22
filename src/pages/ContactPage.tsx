@@ -7,7 +7,7 @@ import { Footer } from '@/components/Footer';
 import contactHero from '@/assets/thomas-about.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 
-const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook-test/ae656859-0797-496e-9801-766df447fb22';
+const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/ae656859-0797-496e-9801-766df447fb22';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
