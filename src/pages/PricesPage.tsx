@@ -103,13 +103,13 @@ const PricesPage = () => {
                   Transparent Exterior Cleaning Service Prices in Wheeling, IL
                 </h2>
                 <p className="text-muted-foreground mb-4">
-                  For fair and transparent pricing on <span className="font-semibold text-foreground">exterior cleaning services</span>, Thomas Window Cleaning is your go-to team in <span className="font-semibold text-foreground">Wheeling, IL</span>. Our rates are competitive, and our quality of service stands out across the northwest suburbs. Whether you need <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, or <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link>, we deliver expert results with no hidden fees.
+                  For fair and transparent pricing on exterior cleaning services, Thomas Window Cleaning is your go-to team in Wheeling, IL. Our rates are competitive, and our quality of service stands out across the northwest suburbs. Whether you need <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, or <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link>, we deliver expert results with no hidden fees.
                 </p>
                 <p className="text-muted-foreground mb-4">
                   As a trusted local company, our licensed and insured technicians are known for their professionalism, attention to detail, and commitment to spotless results. We make it easy to keep your home's exterior clean, safe, and beautiful.
                 </p>
                 <p className="text-muted-foreground">
-                  To get a quote or schedule your service, simply call us at <a href="tel:8474043398" className="font-semibold text-foreground">(847) 404-3398</a> or request your free estimate online. Choose Thomas Window Cleaning for affordable and dependable exterior cleaning service prices in Wheeling and nearby areas.
+                  To get a quote or schedule your service, simply call us at <a href="tel:8474043398" className="text-primary hover:underline">(847) 404-3398</a> or request your free estimate online. Choose Thomas Window Cleaning for affordable and dependable exterior cleaning service prices in Wheeling and nearby areas.
                 </p>
               </motion.div>
               
