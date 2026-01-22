@@ -3,9 +3,21 @@ import { useState, useEffect } from 'react';
 
 export const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const isMobile = window.innerWidth < 768;
+      
+      // On mobile, only show after scrolling 100px
+      if (isMobile) {
+        setHasScrolled(scrollY > 100);
+      } else {
+        setHasScrolled(true);
+      }
+      
+      // Hide when footer is visible
       const footer = document.querySelector('footer');
       if (footer) {
         const footerRect = footer.getBoundingClientRect();
@@ -15,14 +27,18 @@ export const FloatingCTA = () => {
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', handleScroll, { passive: true });
     handleScroll(); // Check on mount
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
+    };
   }, []);
 
   return (
     <div 
       className={`fixed bottom-4 left-4 right-4 z-50 flex flex-col gap-2 md:left-auto md:right-6 md:bottom-6 md:max-w-xs transition-all duration-300 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'
+        isVisible && hasScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8 pointer-events-none'
       }`}
     >
       <a
