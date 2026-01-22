@@ -3,25 +3,14 @@ import { useState, useEffect } from 'react';
 
 export const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [hasScrolled, setHasScrolled] = useState(() => {
-    // On initial load, only show on desktop
-    if (typeof window !== 'undefined') {
-      return window.innerWidth >= 768;
-    }
-    return false;
-  });
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const isMobile = window.innerWidth < 768;
       
-      // On mobile, only show after scrolling 100px
-      if (isMobile) {
-        setHasScrolled(scrollY > 100);
-      } else {
-        setHasScrolled(true);
-      }
+      // Only show after scrolling 100px
+      setHasScrolled(scrollY > 100);
       
       // Hide when footer is visible
       const footer = document.querySelector('footer');
