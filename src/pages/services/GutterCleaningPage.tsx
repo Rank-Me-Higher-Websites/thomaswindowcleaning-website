@@ -360,7 +360,7 @@ const GutterCleaningPage = () => {
                 Professional Gutter Cleaning Services in Wheeling, IL & Chicago Suburbs
               </h2>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-                Thomas Window Cleaning provides expert gutter cleaning and maintenance throughout the Chicago metropolitan area. With over 29 years of experience, our trained technicians safely remove leaves, debris, and buildup to ensure proper water drainage and protect your home from costly damage.
+                Thomas Window Cleaning provides expert gutter cleaning and maintenance throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our trained technicians safely remove leaves, debris, and buildup to ensure proper water drainage and protect your home from costly damage. We also offer <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> and <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link>.
               </p>
 
               {/* Service Types - Horizontal Layout */}

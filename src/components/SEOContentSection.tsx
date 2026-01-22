@@ -1,13 +1,5 @@
 import { CheckCircle, MapPin, Shield, Award, Phone, ArrowRight } from 'lucide-react';
-
-const services = [
-  "Residential Window Cleaning",
-  "Commercial Window Cleaning",
-  "Gutter Cleaning & Maintenance",
-  "Power Washing Services",
-  "Pressure Washing Driveways",
-  "Deck & Patio Cleaning"
-];
+import { Link } from 'react-router-dom';
 
 const areasServed = [
   "Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", 
@@ -22,10 +14,10 @@ export const SEOContentSection = () => {
         {/* Main SEO Content */}
         <div className="max-w-4xl mx-auto text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-            Professional Window Cleaning & Exterior Services in Wheeling, IL
+            Professional Window Cleaning & Exterior Services in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>
           </h2>
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-            Thomas Window Cleaning has been providing exceptional window cleaning, gutter cleaning, and power washing services to homeowners and businesses throughout the Chicago metropolitan area for over 20 years. Our team of trained professionals uses industry-leading techniques and eco-friendly cleaning solutions to deliver spotless results every time.
+            Thomas Window Cleaning has been providing exceptional <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> services to homeowners and businesses throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a> for over 20 years. Our team of trained professionals uses industry-leading techniques and <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly cleaning solutions</a> to deliver spotless results every time.
           </p>
         </div>
 
@@ -60,12 +52,30 @@ export const SEOContentSection = () => {
           <div className="bg-background rounded-lg p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-foreground mb-4">Our Professional Services</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {services.map((service, index) => (
-                <li key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                  <span>{service}</span>
-                </li>
-              ))}
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/window-cleaning" className="hover:text-primary transition-colors">Residential Window Cleaning</Link>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/window-cleaning" className="hover:text-primary transition-colors">Commercial Window Cleaning</Link>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/gutter-cleaning" className="hover:text-primary transition-colors">Gutter Cleaning & Maintenance</Link>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Power Washing Services</Link>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Pressure Washing Driveways</Link>
+              </li>
+              <li className="flex items-center gap-2 text-sm text-muted-foreground">
+                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Deck & Patio Cleaning</Link>
+              </li>
             </ul>
           </div>
 
@@ -97,7 +107,7 @@ export const SEOContentSection = () => {
             Why Choose Thomas Window Cleaning?
           </h3>
           <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-            As a locally owned and operated business, we take pride in delivering personalized service to every customer. Our experienced technicians arrive on time, treat your property with respect, and ensure every job meets our high standards. From streak-free windows to debris-free gutters and sparkling clean driveways, we handle all your exterior cleaning needs with professionalism and care.
+            As a locally owned and operated business, we take pride in delivering personalized service to every customer. Our experienced technicians arrive on time, treat your property with respect, and ensure every job meets our high standards. From <Link to="/services/window-cleaning" className="text-primary hover:underline">streak-free windows</Link> to <Link to="/services/gutter-cleaning" className="text-primary hover:underline">debris-free gutters</Link> and <Link to="/services/power-washing" className="text-primary hover:underline">sparkling clean driveways</Link>, we handle all your exterior cleaning needs with professionalism and care. View our <Link to="/offers" className="text-primary hover:underline">current offers</Link> for seasonal savings.
           </p>
           
           {/* CTA Buttons */}

@@ -172,8 +172,8 @@ const OffersPage = () => {
                       🪟 Professional Window Cleaning Services
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Our <strong>professional window cleaning</strong> service delivers streak-free, 
-                      crystal-clear results that transform your home. We use eco-friendly cleaning solutions 
+                      Our <Link to="/services/window-cleaning" className="text-primary hover:underline font-semibold">professional window cleaning</Link> service delivers streak-free, 
+                      crystal-clear results that transform your home. We use <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly cleaning solutions</a> 
                       and professional-grade equipment to ensure every window sparkles—inside and out.
                     </p>
                     <ul className="space-y-2 text-muted-foreground">
@@ -194,6 +194,9 @@ const OffersPage = () => {
                         Safe cleaning for multi-story homes
                       </li>
                     </ul>
+                    <Link to="/services/window-cleaning" className="inline-block mt-4 text-primary hover:underline font-medium">
+                      View window cleaning pricing →
+                    </Link>
                   </div>
                   <div className="order-1 md:order-2">
                     <div className="image-tile">
@@ -228,7 +231,7 @@ const OffersPage = () => {
                       💦 Power Washing & Pressure Cleaning
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Restore your property's curb appeal with our <strong>professional power washing services</strong>. 
+                      Restore your property's curb appeal with our <Link to="/services/power-washing" className="text-primary hover:underline font-semibold">professional power washing services</Link>. 
                       From driveways and sidewalks to siding and decks, we blast away years of dirt, grime, 
                       mold, and mildew to reveal clean, like-new surfaces.
                     </p>
@@ -266,7 +269,7 @@ const OffersPage = () => {
                       🍂 Gutter Cleaning & Maintenance
                     </h3>
                     <p className="text-muted-foreground mb-4">
-                      Protect your home from water damage with our thorough <strong>gutter cleaning services</strong>. 
+                      Protect your home from water damage with our thorough <Link to="/services/gutter-cleaning" className="text-primary hover:underline font-semibold">gutter cleaning services</Link>. 
                       Chicago's unpredictable weather means your gutters work overtime—we ensure they're 
                       clear of debris and flowing properly to prevent costly repairs.
                     </p>
@@ -288,6 +291,9 @@ const OffersPage = () => {
                         Seasonal maintenance packages
                       </li>
                     </ul>
+                    <Link to="/services/gutter-cleaning" className="inline-block mt-4 text-primary hover:underline font-medium">
+                      View gutter cleaning pricing →
+                    </Link>
                   </div>
                   <div className="order-1 md:order-2">
                     <div className="image-tile">

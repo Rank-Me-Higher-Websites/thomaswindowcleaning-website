@@ -114,8 +114,10 @@ export const TestimonialsSection = () => {
           className="flex justify-center mt-8"
         >
           <a
-            href="#"
-            className="glass-card px-4 py-2.5 flex items-center gap-3"
+            href="https://www.google.com/maps/place/Thomas+Window+Cleaning/@42.1391,-87.9295,15z"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="glass-card px-4 py-2.5 flex items-center gap-3 hover:shadow-md transition-shadow"
           >
             <div className="flex items-center gap-0.5">
               {[...Array(5)].map((_, i) => (

@@ -370,7 +370,7 @@ const PowerWashingPage = () => {
                 Expert Power Washing Services in Wheeling, IL & Chicago Suburbs
               </h2>
               <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
-                Thomas Window Cleaning delivers professional pressure washing services throughout the Chicago metropolitan area. With over 29 years of experience, our team uses commercial-grade equipment to restore driveways, siding, decks, and more to like-new condition.
+                Thomas Window Cleaning delivers professional pressure washing services throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our team uses commercial-grade equipment to restore driveways, siding, decks, and more to like-new condition. We also specialize in <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> and <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter maintenance</Link>.
               </p>
 
               {/* Surface Types - 3 Column Cards */}

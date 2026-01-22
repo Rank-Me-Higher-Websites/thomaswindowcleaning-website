@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Star, Phone, ArrowRight, Clock, CheckCircle, Sparkles, Droplets, Waves, Shield, Award, MapPin, DollarSign } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
 import aboutImg from '@/assets/thomas-about.jpg';
 
@@ -43,18 +44,18 @@ export const HeroSection = () => {
 
             {/* Service Tags */}
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5 text-sm text-white/80">
-              <span className="inline-flex items-center gap-1.5">
+              <Link to="/services/window-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 Window Cleaning
-              </span>
-              <span className="inline-flex items-center gap-1.5">
+              </Link>
+              <Link to="/services/gutter-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Droplets className="w-3.5 h-3.5 text-white" />
                 Gutter Cleaning
-              </span>
-              <span className="inline-flex items-center gap-1.5">
+              </Link>
+              <Link to="/services/power-washing" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Waves className="w-3.5 h-3.5 text-white" />
                 Power Washing
-              </span>
+              </Link>
             </div>
 
             {/* CTA Buttons */}
@@ -90,7 +91,12 @@ export const HeroSection = () => {
             </div>
 
             {/* Google Reviews */}
-            <div className="flex items-center gap-2">
+            <a 
+              href="https://www.google.com/maps/place/Thomas+Window+Cleaning/@42.1391,-87.9295,15z" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            >
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-star text-star" />
@@ -98,7 +104,7 @@ export const HeroSection = () => {
               </div>
               <span className="font-bold text-white">5.0</span>
               <span className="text-white/70 text-sm">47 Google Reviews</span>
-            </div>
+            </a>
           </motion.div>
 
           {/* Right side - Image with Stats */}
