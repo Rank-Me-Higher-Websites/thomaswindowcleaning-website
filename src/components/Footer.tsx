@@ -34,19 +34,19 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="py-10 md:py-12 bg-primary text-primary-foreground">
+    <footer className="py-8 md:py-10 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-6 mb-6">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <Link to="/" className="mb-4 inline-block">
+            <Link to="/" className="mb-3 inline-block">
               <img 
                 src={logoImg} 
                 alt="Thomas Window Cleaning" 
-                className="h-10 w-auto brightness-0 invert"
+                className="h-9 w-auto brightness-0 invert"
               />
             </Link>
-            <p className="text-primary-foreground/70 text-xs mb-4 max-w-[200px]">
+            <p className="text-primary-foreground/70 text-xs mb-3 max-w-[180px]">
               Professional window cleaning, gutter cleaning, and power washing since 1995.
             </p>
             <div className="flex items-center gap-2">
@@ -54,33 +54,33 @@ export const Footer = () => {
                 href="https://www.facebook.com/thomaswindowbg"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                className="w-7 h-7 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Facebook className="w-4 h-4" />
+                <Facebook className="w-3.5 h-3.5" />
               </a>
               <a
                 href="https://www.instagram.com/thomaswindowbg/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                className="w-7 h-7 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-3.5 h-3.5" />
               </a>
               <a
                 href="https://www.yelp.com/biz/thomas-window-cleaning-wheeling"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
+                className="w-7 h-7 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
               >
-                <Star className="w-4 h-4" />
+                <Star className="w-3.5 h-3.5" />
               </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h4 className="font-semibold text-sm mb-3">Services</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-sm mb-2">Services</h4>
+            <ul className="space-y-1.5">
               {footerLinks.services.map((link) => (
                 <li key={link.label}>
                   <Link
@@ -96,8 +96,8 @@ export const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="font-semibold text-sm mb-3">Company</h4>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-sm mb-2">Company</h4>
+            <ul className="space-y-1.5">
               {footerLinks.company.map((link) => (
                 <li key={link.label}>
                   {link.scrollTo ? (
@@ -122,14 +122,14 @@ export const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-sm mb-3">Contact</h4>
-            <ul className="space-y-2 text-xs">
+            <h4 className="font-semibold text-sm mb-2">Contact</h4>
+            <ul className="space-y-1.5 text-xs">
               <li>
                 <a
                   href="tel:8474043398"
                   className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                 >
-                  <Phone className="w-3.5 h-3.5 shrink-0" />
+                  <Phone className="w-3 h-3 shrink-0" />
                   (847) 404-3398
                 </a>
               </li>
@@ -138,42 +138,46 @@ export const Footer = () => {
                   href="mailto:thomaswindowcleaning@gmail.com"
                   className="flex items-center gap-2 text-primary-foreground/70 hover:text-primary-foreground transition-colors"
                 >
-                  <Mail className="w-3.5 h-3.5 shrink-0" />
+                  <Mail className="w-3 h-3 shrink-0" />
                   <span className="truncate">thomaswindowcleaning@gmail.com</span>
                 </a>
               </li>
               <li className="flex items-start gap-2 text-primary-foreground/70">
-                <MapPin className="w-3.5 h-3.5 shrink-0 mt-0.5" />
+                <MapPin className="w-3 h-3 shrink-0 mt-0.5" />
                 Wheeling, IL 60090
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
-                <Clock className="w-3.5 h-3.5 shrink-0" />
+                <Clock className="w-3 h-3 shrink-0" />
                 Mon - Sat: 9-7
               </li>
             </ul>
             <img 
               src={angiesListBadge} 
               alt="Angie's List Super Service Award" 
-              className="h-16 w-auto mt-3 hidden md:block"
+              className="h-12 w-auto mt-2 hidden md:block"
             />
+          </div>
+
+          {/* Map */}
+          <div className="col-span-2 md:col-span-1">
+            <h4 className="font-semibold text-sm mb-2">Location</h4>
+            <div className="rounded-lg overflow-hidden h-32 md:h-36">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d-87.9295!3d42.1391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbeb156a02081%3A0x78e427b81987ce9f!2sThomas%20Window%20Cleaning!5e0!3m2!1sen!2sus!4v1769021159813!5m2!1sen!2sus"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Thomas Window Cleaning Location"
+              />
+            </div>
           </div>
         </div>
 
-        {/* Google Map */}
-        <div className="mb-8 rounded-xl overflow-hidden h-48 md:h-64">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2962.5!2d-87.9295!3d42.1391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbeb156a02081%3A0x78e427b81987ce9f!2sThomas%20Window%20Cleaning!5e0!3m2!1sen!2sus!4v1769021159813!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Thomas Window Cleaning Location"
-          />
-        </div>
         {/* Bottom bar */}
-        <div className="pt-6 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-primary-foreground/60">
+        <div className="pt-4 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Thomas Window Cleaning</p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-primary-foreground transition-colors">Privacy</Link>
