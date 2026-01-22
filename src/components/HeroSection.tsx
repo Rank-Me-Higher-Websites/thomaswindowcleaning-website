@@ -28,8 +28,8 @@ export const HeroSection = () => {
 
             {/* Headline */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1] text-white">
-              Window Cleaning<br />
-              Streak-Free Guaranteed
+              Window Cleaning in Chicago<br />
+              Streak-Free Results
             </h1>
 
             {/* Description */}
