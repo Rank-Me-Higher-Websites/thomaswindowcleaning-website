@@ -3,7 +3,13 @@ import { useState, useEffect } from 'react';
 
 export const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(true);
-  const [hasScrolled, setHasScrolled] = useState(false);
+  const [hasScrolled, setHasScrolled] = useState(() => {
+    // On initial load, only show on desktop
+    if (typeof window !== 'undefined') {
+      return window.innerWidth >= 768;
+    }
+    return false;
+  });
 
   useEffect(() => {
     const handleScroll = () => {
