@@ -34,7 +34,8 @@ const ContactPage = () => {
         },
         body: JSON.stringify({
           ...formData,
-          form_type: 'contact_page',
+          form_type: 'contact',
+          submittedAt: new Date().toISOString().split('T')[0],
         }),
       });
 
