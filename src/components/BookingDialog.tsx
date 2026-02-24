@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { Loader2, CheckCircle, AlertCircle, CalendarIcon } from 'lucide-react';
+import { format } from 'date-fns';
 import {
   Dialog,
   DialogContent,
@@ -7,6 +8,9 @@ import {
   DialogTitle,
   DialogDescription,
 } from '@/components/ui/dialog';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { Calendar } from '@/components/ui/calendar';
+import { cn } from '@/lib/utils';
 
 const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/44b2b794-4536-4293-9233-8f8c869e321a';
 
@@ -20,6 +24,7 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
     name: '',
     phone: '',
     service: '',
+    date: undefined as Date | undefined,
     notes: '',
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,10 +36,15 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
     setSubmitStatus('idle');
 
     try {
+      const payload = {
+        ...formData,
+        date: formData.date ? format(formData.date, 'yyyy-MM-dd') : '',
+        form_type: 'booking',
+      };
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...formData, form_type: 'booking' }),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) throw new Error('Network response was not ok');
@@ -42,7 +52,7 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
       const data = await response.json();
       if (data.status === 'success') {
         setSubmitStatus('success');
-        setFormData({ name: '', phone: '', service: '', notes: '' });
+        setFormData({ name: '', phone: '', service: '', date: undefined, notes: '' });
       } else {
         setSubmitStatus('error');
       }
@@ -108,6 +118,30 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
             <option value="gutter">Gutter Cleaning</option>
             <option value="power">Power Washing</option>
           </select>
+          <Popover>
+            <PopoverTrigger asChild>
+              <button
+                type="button"
+                className={cn(
+                  'input-glass w-full text-left flex items-center gap-2',
+                  !formData.date && 'text-muted-foreground'
+                )}
+                disabled={isSubmitting}
+              >
+                <CalendarIcon className="w-4 h-4" />
+                {formData.date ? format(formData.date, 'MM/dd/yyyy') : 'Preferred Date'}
+              </button>
+            </PopoverTrigger>
+            <PopoverContent className="w-auto p-0" align="start">
+              <Calendar
+                mode="single"
+                selected={formData.date}
+                onSelect={(date) => setFormData({ ...formData, date: date })}
+                disabled={(date) => date < new Date(new Date().setHours(0, 0, 0, 0))}
+                initialFocus
+              />
+            </PopoverContent>
+          </Popover>
           <textarea
             placeholder="Additional Notes (optional)"
             value={formData.notes}
