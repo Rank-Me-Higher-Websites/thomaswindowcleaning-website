@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { MessageSquare, CalendarCheck, Sparkles, Phone, ArrowRight } from 'lucide-react';
+import { useBooking } from '@/contexts/BookingContext';
 
 const steps = [
   {
@@ -26,6 +27,7 @@ const steps = [
 export const HowItWorksSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const { openBooking } = useBooking();
 
   return (
     <section className="py-12 md:py-16 relative overflow-hidden bg-background">
@@ -54,16 +56,12 @@ export const HowItWorksSection = () => {
               transition={{ duration: 0.4, delay: index * 0.1 }}
               className="glass-card p-5 md:p-6 text-center relative group overflow-visible"
             >
-              {/* Step number */}
               <div className="absolute -top-4 right-4 w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold shadow-md z-10">
                 {step.number}
               </div>
-              
-              {/* Icon */}
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                 <step.icon className="w-5 h-5 text-primary" />
               </div>
-              
               <h3 className="text-sm font-bold mb-2 tracking-wide text-foreground">{step.title}</h3>
               <p className="text-muted-foreground text-xs leading-relaxed">{step.description}</p>
             </motion.div>
@@ -84,13 +82,13 @@ export const HowItWorksSection = () => {
             <Phone className="w-4 h-4" />
             Call Now
           </a>
-          <a 
-            href="#booking" 
+          <button 
+            onClick={openBooking}
             className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
           >
             Get Free Quote
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </button>
         </motion.div>
       </div>
     </section>

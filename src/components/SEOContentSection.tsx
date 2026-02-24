@@ -1,5 +1,6 @@
 import { CheckCircle, MapPin, Shield, Award, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useBooking } from '@/contexts/BookingContext';
 
 const areasServed = [
   "Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", 
@@ -8,6 +9,8 @@ const areasServed = [
 ];
 
 export const SEOContentSection = () => {
+  const { openBooking } = useBooking();
+
   return (
     <section className="py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -48,7 +51,6 @@ export const SEOContentSection = () => {
 
         {/* Services & Areas Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Our Services */}
           <div className="bg-background rounded-lg p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-foreground mb-4">Our Professional Services</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -79,7 +81,6 @@ export const SEOContentSection = () => {
             </ul>
           </div>
 
-          {/* Areas Served */}
           <div className="bg-background rounded-lg p-6 shadow-sm">
             <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
@@ -119,13 +120,13 @@ export const SEOContentSection = () => {
               <Phone className="w-4 h-4" />
               Call Now
             </a>
-            <a 
-              href="#booking" 
+            <button 
+              onClick={openBooking}
               className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary hover:bg-primary/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm"
             >
               Get Free Quote
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
           </div>
         </div>
       </div>

@@ -3,12 +3,16 @@ import { Star, Phone, ArrowRight, Clock, CheckCircle, Sparkles, Droplets, Waves,
 import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
 import aboutImg from '@/assets/thomas-about.jpg';
+import { useBooking } from '@/contexts/BookingContext';
 
 interface HeroSectionProps {
   onGetQuote?: () => void;
 }
 
 export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
+  const { openBooking } = useBooking();
+  const handleQuote = onGetQuote || openBooking;
+
   return (
     <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden pt-16 md:pt-20">
       {/* Background with overlay */}
@@ -68,7 +72,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={onGetQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm">
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Quote
               </button>

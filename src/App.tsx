@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./components/ScrollToTop";
+import { BookingProvider } from "./contexts/BookingContext";
 import Index from "./pages/Index";
 import WindowCleaningPage from "./pages/services/WindowCleaningPage";
 import GutterCleaningPage from "./pages/services/GutterCleaningPage";
@@ -25,22 +26,24 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/services/window-cleaning" element={<WindowCleaningPage />} />
-          <Route path="/services/gutter-cleaning" element={<GutterCleaningPage />} />
-          <Route path="/services/power-washing" element={<PowerWashingPage />} />
-          <Route path="/offers" element={<OffersPage />} />
-          <Route path="/prices" element={<PricesPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/blog/:slug" element={<BlogPostPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/terms" element={<TermsPage />} />
-          <Route path="/privacy" element={<PrivacyPage />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <BookingProvider>
+          <ScrollToTop />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/services/window-cleaning" element={<WindowCleaningPage />} />
+            <Route path="/services/gutter-cleaning" element={<GutterCleaningPage />} />
+            <Route path="/services/power-washing" element={<PowerWashingPage />} />
+            <Route path="/offers" element={<OffersPage />} />
+            <Route path="/prices" element={<PricesPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/terms" element={<TermsPage />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BookingProvider>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

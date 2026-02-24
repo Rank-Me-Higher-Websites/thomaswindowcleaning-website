@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
+import { useBooking } from '@/contexts/BookingContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 import powerWashingHero from '@/assets/thomas-gutter-ladder.jpg';
 import powerWashingChoose1 from '@/assets/power-washing-choose-1.jpg';
@@ -95,6 +96,7 @@ const faqData = [
 ];
 
 const PowerWashingPage = () => {
+  const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -123,10 +125,10 @@ const PowerWashingPage = () => {
                   <Phone className="w-5 h-5" />
                   Call Now
                 </a>
-                <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+                <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
                   <ArrowRight className="w-5 h-5" />
                   Get Quote
-                </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -202,10 +204,10 @@ const PowerWashingPage = () => {
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
-              </Link>
+              </button>
             </motion.div>
           </div>
         </section>
@@ -271,10 +273,10 @@ const PowerWashingPage = () => {
                 <Phone className="w-4 h-4" />
                 Call for Estimate
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
-              </Link>
+              </button>
             </div>
           </div>
         </section>
@@ -323,10 +325,10 @@ const PowerWashingPage = () => {
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
-              </Link>
+              </button>
             </motion.div>
           </div>
         </section>
@@ -375,10 +377,10 @@ const PowerWashingPage = () => {
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
-              </Link>
+              </button>
             </motion.div>
           </div>
         </section>
@@ -534,10 +536,10 @@ const PowerWashingPage = () => {
                 <Phone className="w-5 h-5" />
                 Call Now: (847) 404-3398
               </a>
-              <Link to="/contact" className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
                 <ArrowRight className="w-5 h-5" />
                 Get Quote
-              </Link>
+              </button>
             </div>
           </div>
         </section>
