@@ -1,5 +1,6 @@
 import { Phone, FileText } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useBooking } from '@/contexts/BookingContext';
 
 interface FloatingCTAProps {
   onGetQuote?: () => void;
@@ -8,15 +9,14 @@ interface FloatingCTAProps {
 export const FloatingCTA = ({ onGetQuote }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(true);
   const [hasScrolled, setHasScrolled] = useState(false);
+  const { openBooking } = useBooking();
+
+  const handleQuote = onGetQuote || openBooking;
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      
-      // Only show after scrolling 100px
       setHasScrolled(scrollY > 100);
-      
-      // Hide when footer is visible
       const footer = document.querySelector('footer');
       if (footer) {
         const footerRect = footer.getBoundingClientRect();
@@ -27,7 +27,7 @@ export const FloatingCTA = ({ onGetQuote }: FloatingCTAProps) => {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     window.addEventListener('resize', handleScroll, { passive: true });
-    handleScroll(); // Check on mount
+    handleScroll();
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleScroll);
@@ -49,7 +49,7 @@ export const FloatingCTA = ({ onGetQuote }: FloatingCTAProps) => {
         <span className="sm:hidden">Call</span>
       </a>
       <button
-        onClick={onGetQuote}
+        onClick={handleQuote}
         className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-4 rounded-lg shadow-xl transition-all duration-300 hover:scale-105"
       >
         <FileText className="w-5 h-5" />
