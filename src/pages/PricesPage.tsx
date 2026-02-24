@@ -165,10 +165,10 @@ const PricesPage = () => {
                 <Phone className="w-4 h-4" />
                 Get Window Cleaning Quote
               </a>
-              <Link to="/services/window-cleaning" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Learn More
-              </Link>
+              </button>
             </div>
           </div>
         </section>
@@ -212,10 +212,10 @@ const PricesPage = () => {
                 <Phone className="w-4 h-4" />
                 Get Gutter Cleaning Quote
               </a>
-              <Link to="/services/gutter-cleaning" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Learn More
-              </Link>
+              </button>
             </div>
           </div>
         </section>
@@ -285,10 +285,10 @@ const PricesPage = () => {
                 <Phone className="w-4 h-4" />
                 Get Power Washing Quote
               </a>
-              <Link to="/services/power-washing" className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Learn More
-              </Link>
+              </button>
             </div>
           </div>
         </section>
