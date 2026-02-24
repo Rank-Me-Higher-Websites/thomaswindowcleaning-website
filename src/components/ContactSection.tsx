@@ -30,6 +30,7 @@ export const ContactSection = () => {
         body: JSON.stringify({
           ...formData,
           form_type: 'contact',
+          submittedAt: new Date().toISOString().split('T')[0],
         }),
       });
 
