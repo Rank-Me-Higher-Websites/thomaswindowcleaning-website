@@ -6,6 +6,7 @@ import remarkGfm from 'remark-gfm';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
+import { useBooking } from '@/contexts/BookingContext';
 
 // Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
@@ -2145,6 +2146,7 @@ const allBlogPosts = Object.entries(blogPostsData).map(([slug, post]) => ({
 
 const BlogPostPage = () => {
   const { slug } = useParams<{ slug: string }>();
+  const { openBooking } = useBooking();
   const post = slug ? blogPostsData[slug] : null;
 
   if (!post) {
@@ -2269,9 +2271,9 @@ const BlogPostPage = () => {
                   Contact Thomas Window Cleaning for professional {post.category.toLowerCase()} services in
                   Chicago and the greater Chicagoland area.
                 </p>
-                <Link to="/contact" className="btn-glow">
+                <button onClick={openBooking} className="btn-glow">
                   Get a Free Estimate
-                </Link>
+                </button>
               </div>
             </div>
           </div>

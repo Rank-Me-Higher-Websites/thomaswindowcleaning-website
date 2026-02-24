@@ -369,7 +369,7 @@ const ContactPage = () => {
                 className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg"
               >
                 <ArrowRight className="w-5 h-5" />
-                Get Quote
+                Get a Free Estimate
               </button>
             </div>
           </div>
