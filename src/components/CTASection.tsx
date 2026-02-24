@@ -2,7 +2,11 @@ import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Phone, ArrowRight, Shield, Clock } from 'lucide-react';
 
-export const CTASection = () => {
+interface CTASectionProps {
+  onGetQuote?: () => void;
+}
+
+export const CTASection = ({ onGetQuote }: CTASectionProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
@@ -28,10 +32,10 @@ export const CTASection = () => {
               <Phone className="w-4 h-4" />
               Call Now: (847) 404-3398
             </a>
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 border-[1.5px] border-primary-foreground/50 text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm">
+            <button onClick={onGetQuote} className="inline-flex items-center justify-center gap-2 border-[1.5px] border-primary-foreground/50 text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm">
               Book Appointment
               <ArrowRight className="w-4 h-4" />
-            </a>
+            </button>
           </div>
 
           <div className="flex flex-wrap justify-center gap-4 text-xs text-primary-foreground/70">
