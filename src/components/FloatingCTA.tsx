@@ -1,7 +1,11 @@
 import { Phone, FileText } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
-export const FloatingCTA = () => {
+interface FloatingCTAProps {
+  onGetQuote?: () => void;
+}
+
+export const FloatingCTA = ({ onGetQuote }: FloatingCTAProps) => {
   const [isVisible, setIsVisible] = useState(true);
   const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -44,13 +48,13 @@ export const FloatingCTA = () => {
         <span className="hidden sm:inline">Call Now</span>
         <span className="sm:hidden">Call</span>
       </a>
-      <a
-        href="#booking"
+      <button
+        onClick={onGetQuote}
         className="flex-1 flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-3 px-4 rounded-lg shadow-xl transition-all duration-300 hover:scale-105"
       >
         <FileText className="w-5 h-5" />
         <span>Get Quote</span>
-      </a>
+      </button>
     </div>
   );
 };
