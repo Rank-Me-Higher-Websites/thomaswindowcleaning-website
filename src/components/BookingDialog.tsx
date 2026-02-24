@@ -40,6 +40,7 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
         ...formData,
         date: formData.date ? format(formData.date, 'yyyy-MM-dd') : '',
         form_type: 'booking',
+        submittedAt: new Date().toISOString(),
       };
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',
