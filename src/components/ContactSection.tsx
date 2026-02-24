@@ -2,7 +2,7 @@ import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Phone, Mail, MapPin, Send, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
 
-const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/44b2b794-4536-4293-9233-8f8c869e321a';
+const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/000757b6-d8cd-4f4c-8055-adb84ccc09b4';
 
 export const ContactSection = () => {
   const ref = useRef(null);
