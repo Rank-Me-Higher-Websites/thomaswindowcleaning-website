@@ -44,16 +44,11 @@ export const ServicesSection = () => {
           transition={{ duration: 0.4 }}
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-4 md:mb-5"
         >
-          <div>
-            <span className="section-label">SERVICES</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
-              Cleaning Services<br />
-              <span className="text-gradient">in Chicagoland area</span>
-            </h2>
-          </div>
-          <p className="mt-4 lg:mt-0 max-w-sm text-muted-foreground text-sm">
-            We offer comprehensive cleaning solutions for both residential and commercial customers.
-          </p>
+          <span className="section-label">SERVICES</span>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
+            Cleaning Services<br />
+            <span className="text-gradient">in Chicagoland area</span>
+          </h2>
         </motion.div>
 
         {/* Services grid */}
