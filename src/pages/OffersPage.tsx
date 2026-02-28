@@ -51,21 +51,21 @@ const OffersPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={offersHero} alt="Special Offers" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 Exclusive Savings on Exterior Cleaning
               </h1>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-sm md:text-base text-white/90 mb-3">
                 Take advantage of our <span className="font-semibold">limited-time offers</span> on professional window cleaning, power washing, and gutter cleaning services in <span className="font-semibold">Chicago, IL</span>.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-sm text-white/80 mb-5">
                 Family-owned and trusted by homeowners across Chicagoland for over 29 years. Don't miss these seasonal savings!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -83,7 +83,7 @@ const OffersPage = () => {
         </section>
 
         {/* Offers Grid */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold">
@@ -139,7 +139,7 @@ const OffersPage = () => {
         </section>
 
         {/* SEO Content Section - Why Choose Our Offers */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <motion.div
@@ -160,7 +160,7 @@ const OffersPage = () => {
               </motion.div>
 
               {/* Service Highlights with Images */}
-              <div className="space-y-12 mb-16">
+              <div className="space-y-8 mb-10">
                 {/* Window Cleaning Highlight */}
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
@@ -369,7 +369,7 @@ const OffersPage = () => {
         </section>
 
         {/* Areas We Serve */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -408,12 +408,12 @@ const OffersPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Don't Miss Out on These Savings!
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Call now to book your service and mention your offer code. Limited time only!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

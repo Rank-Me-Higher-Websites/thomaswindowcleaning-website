@@ -111,30 +111,30 @@ const WindowCleaningPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={windowCleaningHero} alt="Window Cleaning" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 Top Rated Window Cleaners
               </h1>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-sm md:text-base text-white/90 mb-3">
                 Thomas Window Cleaning provides professional <span className="font-semibold">residential and commercial window cleaning</span> in <span className="font-semibold">Chicago, IL</span> and surrounding areas. We specialize in <span className="font-semibold">streak-free window washing</span>, interior and exterior glass cleaning, and complete frame maintenance.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-sm text-white/80 mb-5">
                 Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team ensures crystal-clear results using professional-grade equipment.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
-                  <Phone className="w-5 h-5" />
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
+                  <Phone className="w-4 h-4" />
                   Call Now
                 </a>
-                <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
-                  <ArrowRight className="w-5 h-5" />
+                <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-white/10 transition-colors text-sm">
+                  <ArrowRight className="w-4 h-4" />
                   Get Quote
                 </button>
               </div>
@@ -143,25 +143,25 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Why Choose Our{' '}
                   <span className="text-gradient">Window Cleaning</span>{' '}
                   Services?
                 </h2>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-muted-foreground text-sm mb-5">
                   We know that clean windows can make all the difference in your home's appearance. That's why <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling</a> homeowners and businesses trust us:
                 </p>
                 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {benefits.map((benefit, index) => (
                     <motion.div
                       key={index}
@@ -169,15 +169,15 @@ const WindowCleaningPage = () => {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.4, delay: index * 0.1 }}
-                      className="flex items-start gap-3"
+                      className="flex items-start gap-2"
                     >
-                      <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                      <span className="text-foreground">{benefit.text}</span>
+                      <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                      <span className="text-foreground text-sm">{benefit.text}</span>
                     </motion.div>
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex flex-wrap gap-3 mt-5">
                   <div className="badge-glow">
                     <Shield className="w-4 h-4" />
                     Fully Insured
@@ -206,13 +206,13 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
               </button>
@@ -221,11 +221,11 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">PRICING</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Basic Window Cleaning{' '}
                 <span className="text-gradient">Costs</span>
               </h2>
@@ -234,24 +234,24 @@ const WindowCleaningPage = () => {
             <div className="max-w-3xl mx-auto">
               <div className="glass-card overflow-hidden">
                 <div className="grid grid-cols-3 bg-primary text-primary-foreground font-semibold">
-                  <div className="p-4 text-center">No. of Windows</div>
-                  <div className="p-4 text-center border-l border-primary-foreground/20">Inside & Outside</div>
-                  <div className="p-4 text-center border-l border-primary-foreground/20">Outside Only</div>
+                  <div className="p-3 text-center text-sm">No. of Windows</div>
+                  <div className="p-3 text-center border-l border-primary-foreground/20 text-sm">Inside & Outside</div>
+                  <div className="p-3 text-center border-l border-primary-foreground/20 text-sm">Outside Only</div>
                 </div>
                 {pricingData.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-3 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                    <div className="p-4 text-center font-medium">{row.windows}</div>
-                    <div className="p-4 text-center border-l border-border">{row.insideOutside}</div>
-                    <div className="p-4 text-center border-l border-border">{row.outsideOnly}</div>
+                  <div key={index} className={`grid grid-cols-3 text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                    <div className="p-3 text-center font-medium">{row.windows}</div>
+                    <div className="p-3 text-center border-l border-border">{row.insideOutside}</div>
+                    <div className="p-3 text-center border-l border-border">{row.outsideOnly}</div>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-8 glass-card p-6">
-                <h4 className="font-semibold mb-4">Additional Service Charges</h4>
-                <ul className="space-y-2">
+              <div className="mt-6 glass-card p-5">
+                <h4 className="font-semibold mb-3 text-sm">Additional Service Charges</h4>
+                <ul className="space-y-1.5">
                   {additionalCharges.map((charge, index) => (
-                    <li key={index} className="text-sm text-muted-foreground flex items-start gap-2">
+                    <li key={index} className="text-xs text-muted-foreground flex items-start gap-2">
                       <span className="text-primary">•</span>
                       {charge}
                     </li>
@@ -260,12 +260,12 @@ const WindowCleaningPage = () => {
               </div>
 
               {/* CTA after Pricing */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
-                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+                <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                   <Phone className="w-4 h-4" />
                   Call for Estimate
                 </a>
-                <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                   <ArrowRight className="w-4 h-4" />
                   Get Free Quote
                 </button>
@@ -275,19 +275,19 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Residential & Commercial{' '}
                 <span className="text-gradient">Window Cleaning</span>
               </h2>
-              <p className="text-muted-foreground mt-4">
+              <p className="text-muted-foreground mt-3 text-sm">
                 We serve both homeowners and business owners with professional <a href="https://www.iwca.org/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">window washing</a> services tailored to your needs. Combine with our <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link> for complete exterior cleaning.
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {serviceTypes.map((service, index) => (
                 <motion.div
                   key={index}
@@ -295,12 +295,12 @@ const WindowCleaningPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="card-hover p-6 text-center"
+                  className="card-hover p-5 text-center"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                    <service.icon className="w-7 h-7 text-primary" />
+                  <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                    <service.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-lg font-bold mb-3">{service.title}</h3>
+                  <h3 className="text-base font-bold mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground">{service.description}</p>
                 </motion.div>
               ))}
@@ -312,13 +312,13 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
               </button>
@@ -327,19 +327,19 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Thomas Difference Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 The Thomas Window Cleaning{' '}
                 <span className="text-gradient">Difference</span>
               </h2>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-sm">
                 We're more than just local window washers—we're your trusted <Link to="/prices" className="text-primary hover:underline">affordable window cleaning</Link> experts in Chicago and the suburbs. Our customers love our attention to detail, reliability, and friendly service. Need <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter maintenance</Link> too? We've got you covered.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -366,13 +366,13 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/10 transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
               </button>
@@ -381,34 +381,34 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 text-center">
                 Professional Window Cleaning Services in Wheeling, IL & Chicago Suburbs
               </h2>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 text-center">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5 text-center">
                 Thomas Window Cleaning delivers exceptional residential and commercial window cleaning throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our trained professionals use industry-leading techniques and <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly solutions</a> for streak-free, crystal-clear results. Need other services? Check out our <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link> and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> options.
               </p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Residential Window Cleaning</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+              <div className="grid md:grid-cols-2 gap-4 mb-6">
+                <div className="bg-card rounded-xl p-5 border border-border shadow-md">
+                  <h3 className="text-base font-semibold text-foreground mb-2">Residential Window Cleaning</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     Our home window cleaning service includes thorough interior and exterior glass cleaning, frame wiping, <a href="https://www.thisoldhouse.com/windows/21097091/how-to-clean-window-screens" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">screen cleaning</a>, and sill maintenance. We handle everything from standard double-hung windows to <a href="https://en.wikipedia.org/wiki/Skylight" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">skylights</a>, French panes, and hard-to-reach high windows.
                   </p>
                 </div>
-                <div className="bg-card rounded-xl p-6 border border-border shadow-md">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Commercial Window Cleaning</h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
+                <div className="bg-card rounded-xl p-5 border border-border shadow-md">
+                  <h3 className="text-base font-semibold text-foreground mb-2">Commercial Window Cleaning</h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
                     Keep your storefront or office looking professional with our commercial window washing services. Clean windows enhance <a href="https://en.wikipedia.org/wiki/Curb_appeal" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">curb appeal</a>, create inviting spaces for customers, and reflect your business's attention to detail. Check our <Link to="/offers" className="text-primary hover:underline">seasonal offers</Link> for discounts.
                   </p>
                 </div>
               </div>
 
-              <div className="bg-card rounded-xl p-6 border border-border shadow-md mb-8">
-                <h3 className="text-lg font-semibold text-foreground mb-4">What's Included in Our Window Cleaning Service?</h3>
-                <div className="grid sm:grid-cols-2 gap-3">
+              <div className="bg-card rounded-xl p-5 border border-border shadow-md mb-6">
+                <h3 className="text-base font-semibold text-foreground mb-3">What's Included in Our Window Cleaning Service?</h3>
+                <div className="grid sm:grid-cols-2 gap-2">
                   {[
                     "Interior & exterior glass cleaning",
                     "Window frame & sill wiping",
@@ -419,8 +419,8 @@ const WindowCleaningPage = () => {
                     "Storm window cleaning",
                     "Track & channel cleaning"
                   ].map((item, index) => (
-                    <div key={index} className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
+                    <div key={index} className="flex items-center gap-2 text-xs text-muted-foreground">
+                      <CheckCircle className="h-3.5 w-3.5 text-primary flex-shrink-0" />
                       <span>{item}</span>
                     </div>
                   ))}
@@ -428,18 +428,18 @@ const WindowCleaningPage = () => {
               </div>
 
               <div className="text-center">
-                <h3 className="text-lg font-semibold text-foreground mb-3">Serving Chicago & Surrounding Communities</h3>
-                <p className="text-sm text-muted-foreground mb-4">
+                <h3 className="text-base font-semibold text-foreground mb-2">Serving Chicago & Surrounding Communities</h3>
+                <p className="text-xs text-muted-foreground mb-3">
                   We proudly provide window cleaning services throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicagoland area</a> including:
                 </p>
-                <div className="flex flex-wrap justify-center gap-2">
+                <div className="flex flex-wrap justify-center gap-1.5">
                   {["Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", "Mount Prospect", "Des Plaines", "Northbrook", "Glenview", "Prospect Heights", "Schaumburg"].map((area, index) => (
                     <span key={index} className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground">
                       {area}, IL
                     </span>
                   ))}
                 </div>
-                <p className="text-sm text-muted-foreground mt-4">
+                <p className="text-xs text-muted-foreground mt-3">
                   <Link to="/contact" className="text-primary hover:underline">Contact us</Link> to confirm service availability in your area.
                 </p>
               </div>
@@ -448,24 +448,24 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">FAQ</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Frequently Asked{' '}
                 <span className="text-gradient">Questions</span>
               </h2>
             </div>
 
             <div className="max-w-3xl mx-auto">
-              <Accordion type="single" collapsible className="space-y-4">
+              <Accordion type="single" collapsible className="space-y-3">
                 {faqData.map((faq, index) => (
-                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-6">
-                    <AccordionTrigger className="text-left font-medium">
+                  <AccordionItem key={index} value={`item-${index}`} className="glass-card px-5">
+                    <AccordionTrigger className="text-left font-medium text-sm">
                       {faq.question}
                     </AccordionTrigger>
-                    <AccordionContent className="text-muted-foreground">
+                    <AccordionContent className="text-muted-foreground text-sm">
                       {faq.linkText && faq.linkUrl ? (
                         <>
                           {faq.answer.split(faq.linkText)[0]}
@@ -488,21 +488,21 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Schedule Your Window Cleaning Today!
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Ready to enjoy spotless windows? Contact Thomas Window Cleaning today for professional window cleaning in Chicago, IL. We look forward to making your windows shine!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
-                <Phone className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors text-sm">
+                <Phone className="w-4 h-4" />
                 Call Now: (847) 404-3398
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
-                <ArrowRight className="w-5 h-5" />
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm">
+                <ArrowRight className="w-4 h-4" />
                 Get Quote
               </button>
             </div>

@@ -95,24 +95,24 @@ const GutterCleaningPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={gutterCleaningHero} alt="Gutter Cleaning" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 Leading Local Gutter Cleaning
               </h1>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-sm md:text-base text-white/90 mb-3">
                 Thomas Window Cleaning provides professional <span className="font-semibold">gutter cleaner service</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="font-semibold">clearing debris, leaves, and buildup</span> to ensure efficient drainage and protect your home.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-sm text-white/80 mb-5">
                 Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team prevents costly water damage with thorough gutter maintenance.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                   <Phone className="w-5 h-5" />
                   Call Now
@@ -127,21 +127,21 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Why Choose Our{' '}
                   <span className="text-gradient">Gutter Cleaning</span>{' '}
                   Services?
                 </h2>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-muted-foreground text-sm mb-5">
                   Ensure your <a href="https://en.wikipedia.org/wiki/Rain_gutter" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">rain gutters</a> stay clear and functional with our top-rated <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling</a> gutter maintenance, preventing costly home repairs.
                 </p>
                 
@@ -161,7 +161,7 @@ const GutterCleaningPage = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex flex-wrap gap-3 mt-5">
                   <div className="badge-glow">
                     <Shield className="w-4 h-4" />
                     Fully Insured
@@ -190,7 +190,7 @@ const GutterCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -205,11 +205,11 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">PRICING</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Gutter Cleaning{' '}
                 <span className="text-gradient">Prices</span>
               </h2>
@@ -247,7 +247,7 @@ const GutterCleaningPage = () => {
               </p>
 
               {/* CTA after Pricing */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
                 <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                   <Phone className="w-4 h-4" />
                   Call for Estimate
@@ -262,10 +262,10 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Residential & Commercial{' '}
                 <span className="text-gradient">Gutter Cleaning</span>
               </h2>
@@ -274,7 +274,7 @@ const GutterCleaningPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {serviceTypes.map((service, index) => (
                 <motion.div
                   key={index}
@@ -299,7 +299,7 @@ const GutterCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -314,19 +314,19 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Thomas Difference Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <div className="max-w-4xl mx-auto text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Why Thomas Gutter Cleaning{' '}
                 <span className="text-gradient">Stands Out</span>
               </h2>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-sm">
                 We're more than just local gutter cleaners—we're your trusted <Link to="/prices" className="text-primary hover:underline">affordable gutter maintenance</Link> experts serving Chicago and the suburbs. Our customers rely on our thorough cleaning process, reliability, and attention to detail to keep their <a href="https://en.wikipedia.org/wiki/Downspout" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">downspouts</a> clear and their homes protected.
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -353,7 +353,7 @@ const GutterCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -368,18 +368,18 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
                 Professional Gutter Cleaning Services in Wheeling, IL & Chicago Suburbs
               </h2>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-8 text-center max-w-3xl mx-auto">
                 Thomas Window Cleaning provides expert gutter cleaning and maintenance throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our trained technicians safely remove leaves, debris, and buildup to ensure proper water drainage and protect your home from costly damage. We also offer <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> and <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link>.
               </p>
 
               {/* Service Types - Horizontal Layout */}
-              <div className="flex flex-col md:flex-row gap-4 mb-10">
+              <div className="flex flex-col md:flex-row gap-4 mb-8">
                 <div className="flex-1 bg-primary/5 border-l-4 border-primary rounded-r-lg p-5">
                   <div className="flex items-center gap-3 mb-2">
                     <Home className="h-5 w-5 text-primary" />
@@ -401,7 +401,7 @@ const GutterCleaningPage = () => {
               </div>
 
               {/* What's Included - Grid with Background */}
-              <div className="bg-card rounded-xl p-6 md:p-8 border border-border shadow-sm mb-10">
+              <div className="bg-card rounded-xl p-5 md:p-6 border border-border shadow-sm mb-8">
                 <h3 className="text-lg font-semibold text-foreground mb-5 text-center">What's Included in Our Gutter Cleaning Service?</h3>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {[
@@ -423,7 +423,7 @@ const GutterCleaningPage = () => {
               </div>
 
               {/* Why It Matters - Alert Style */}
-              <div className="bg-primary/10 rounded-xl p-6 mb-10 flex gap-4 items-start">
+              <div className="bg-primary/10 rounded-xl p-5 mb-8 flex gap-4 items-start">
                 <Shield className="h-8 w-8 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-base font-semibold text-foreground mb-2">Why Regular Gutter Maintenance Matters</h3>
@@ -452,11 +452,11 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">FAQ</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Frequently Asked{' '}
                 <span className="text-gradient">Questions</span>
               </h2>
@@ -492,15 +492,15 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Schedule Your Gutter Cleaning Today!
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Our team handles the dirty work—no ladders needed. Schedule seasonal gutter maintenance for a hassle-free solution!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
                 <Phone className="w-5 h-5" />
                 Call Now: (847) 404-3398

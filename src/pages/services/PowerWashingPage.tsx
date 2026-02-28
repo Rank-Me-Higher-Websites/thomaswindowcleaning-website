@@ -103,21 +103,21 @@ const PowerWashingPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={powerWashingHero} alt="Power Washing" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 Professional Power Washing
               </h1>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-sm md:text-base text-white/90 mb-3">
                 Thomas Window Cleaning offers professional <span className="font-semibold">power and pressure washing</span> in <span className="font-semibold">Chicago, IL</span>. We specialize in <span className="font-semibold">removing stains, buildup, and discoloration</span> from siding, driveways, sidewalks, decks, and more.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-sm text-white/80 mb-5">
                 Serving homeowners and businesses across <span className="font-semibold">Chicago, IL</span> and the greater Chicagoland area, our experienced team restores your property's curb appeal with professional-grade equipment.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -135,21 +135,21 @@ const PowerWashingPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="grid lg:grid-cols-2 gap-8 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   Why Choose Our{' '}
                   <span className="text-gradient">Power Washing</span>{' '}
                   Services?
                 </h2>
-                <p className="text-muted-foreground mb-8">
+                <p className="text-muted-foreground text-sm mb-5">
                   Restore your home or business with professional <a href="https://en.wikipedia.org/wiki/Pressure_washing" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">pressure washing</a> that eliminates dirt, grime, and stains from exterior surfaces in <a href="https://en.wikipedia.org/wiki/Wheeling,_Illinois" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>.
                 </p>
                 
@@ -169,7 +169,7 @@ const PowerWashingPage = () => {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4 mt-8">
+                <div className="flex flex-wrap gap-3 mt-5">
                   <div className="badge-glow">
                     <Shield className="w-4 h-4" />
                     Fully Insured
@@ -198,7 +198,7 @@ const PowerWashingPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -213,11 +213,11 @@ const PowerWashingPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">PRICING</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Home Power Washing{' '}
                 <span className="text-gradient">Prices</span>
               </h2>
@@ -226,7 +226,7 @@ const PowerWashingPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {/* One Story */}
               <div className="glass-card overflow-hidden">
                 <div className="bg-primary text-primary-foreground p-4 text-center font-bold">
@@ -268,7 +268,7 @@ const PowerWashingPage = () => {
             </div>
 
             {/* CTA after Pricing */}
-            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
                 Call for Estimate
@@ -282,10 +282,10 @@ const PowerWashingPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Residential & Commercial{' '}
                 <span className="text-gradient">Power Wash</span>
               </h2>
@@ -294,7 +294,7 @@ const PowerWashingPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-4 max-w-5xl mx-auto">
               {serviceTypes.map((service, index) => (
                 <motion.div
                   key={index}
@@ -319,7 +319,7 @@ const PowerWashingPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-10"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
                 <Phone className="w-4 h-4" />
@@ -384,18 +384,18 @@ const PowerWashingPage = () => {
             </motion.div>
           </div>
         </section>
-        <section className="py-12 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
+              <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 text-center">
                 Expert Power Washing Services in Wheeling, IL & Chicago Suburbs
               </h2>
-              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-10 text-center max-w-3xl mx-auto">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-8 text-center max-w-3xl mx-auto">
                 Thomas Window Cleaning delivers professional pressure washing services throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a>. With over 29 years of experience, our team uses commercial-grade equipment to restore driveways, siding, decks, and more to like-new condition. We also specialize in <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link> and <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter maintenance</Link>.
               </p>
 
               {/* Surface Types - 3 Column Cards */}
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-8">
                 {[
                   { title: "Driveways & Sidewalks", desc: "Remove oil stains, tire marks, and years of dirt buildup from concrete and asphalt surfaces." },
                   { title: "House Siding", desc: "Safely clean vinyl, aluminum, brick, and stucco siding without causing damage." },
@@ -411,12 +411,12 @@ const PowerWashingPage = () => {
                 ))}
               </div>
 
-              <p className="text-sm text-muted-foreground text-center mb-10">
+              <p className="text-sm text-muted-foreground text-center mb-8">
                 Not sure which surface needs cleaning? <Link to="/contact" className="text-primary hover:underline">Request a free assessment</Link> and we'll recommend the best approach for your property.
               </p>
 
               {/* Benefits Row */}
-              <div className="grid md:grid-cols-3 gap-6 mb-10">
+              <div className="grid md:grid-cols-3 gap-4 mb-8">
                 <div className="flex items-start gap-4 p-4 rounded-lg bg-primary/5">
                   <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <Zap className="h-5 w-5 text-primary" />
@@ -447,7 +447,7 @@ const PowerWashingPage = () => {
               </div>
 
               {/* When to Power Wash */}
-              <div className="bg-muted/50 rounded-xl p-6 mb-10">
+              <div className="bg-muted/50 rounded-xl p-5 mb-8">
                 <h3 className="text-lg font-semibold text-foreground mb-4 text-center">When Should You Power Wash?</h3>
                 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
                   {[
@@ -469,7 +469,7 @@ const PowerWashingPage = () => {
               </div>
 
               {/* Areas Served */}
-              <div className="text-center border-t border-border pt-8">
+              <div className="text-center border-t border-border pt-6">
                 <h3 className="text-base font-semibold text-foreground mb-4 inline-flex items-center gap-2">
                   <MapPin className="h-4 w-4 text-primary" />
                   Service Areas
@@ -483,11 +483,11 @@ const PowerWashingPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-12 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
+            <div className="text-center mb-8">
               <span className="section-label justify-center">FAQ</span>
-              <h2 className="text-3xl md:text-4xl font-bold">
+              <h2 className="text-2xl md:text-3xl font-bold">
                 Frequently Asked{' '}
                 <span className="text-gradient">Questions</span>
               </h2>
@@ -523,12 +523,12 @@ const PowerWashingPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Schedule Your Power Washing Today!
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Enhance curb appeal and protect your surfaces. Get high-pressure cleaning that delivers lasting results!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
