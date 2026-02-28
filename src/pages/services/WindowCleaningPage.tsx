@@ -247,16 +247,19 @@ const WindowCleaningPage = () => {
                 ))}
               </div>
               
-              <div className="mt-4 glass-card p-4">
-                <h4 className="font-semibold mb-3 text-sm">Additional Service Charges</h4>
-                <ul className="space-y-1.5">
+              <div className="mt-4 bg-primary/5 border-l-4 border-primary rounded-lg p-4">
+                <h4 className="font-bold mb-2 text-sm text-foreground flex items-center gap-2">
+                  <span className="w-5 h-5 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-[10px] font-bold">$</span>
+                  Additional Service Charges
+                </h4>
+                <div className="grid sm:grid-cols-2 gap-x-4 gap-y-1.5">
                   {additionalCharges.map((charge, index) => (
-                    <li key={index} className="text-xs text-muted-foreground flex items-start gap-2">
-                      <span className="text-primary">•</span>
+                    <div key={index} className="text-xs text-foreground/80 flex items-start gap-2">
+                      <CheckCircle className="w-3 h-3 text-primary shrink-0 mt-0.5" />
                       {charge}
-                    </li>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </div>
 
               {/* CTA after Pricing */}
