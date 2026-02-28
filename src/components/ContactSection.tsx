@@ -54,7 +54,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-12 md:py-16 relative overflow-hidden bg-background">
+    <section id="contact" className="py-8 md:py-10 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
           {/* Contact info */}

@@ -12,7 +12,7 @@ export const SEOContentSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-12 md:py-16 bg-muted/30">
+    <section className="py-8 md:py-10 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Main SEO Content */}
         <div className="max-w-4xl mx-auto text-center mb-10">
@@ -26,21 +26,21 @@ export const SEOContentSection = () => {
 
         {/* Trust Badges */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm">
+          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
             <Shield className="h-8 w-8 text-primary flex-shrink-0" />
             <div className="text-left">
               <p className="font-semibold text-foreground text-sm">Licensed & Insured</p>
               <p className="text-xs text-muted-foreground">Full liability coverage</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm">
+          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
             <Award className="h-8 w-8 text-primary flex-shrink-0" />
             <div className="text-left">
               <p className="font-semibold text-foreground text-sm">Award Winning</p>
               <p className="text-xs text-muted-foreground">Top-rated local service</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm">
+          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
             <CheckCircle className="h-8 w-8 text-primary flex-shrink-0" />
             <div className="text-left">
               <p className="font-semibold text-foreground text-sm">Satisfaction Guaranteed</p>
@@ -51,7 +51,7 @@ export const SEOContentSection = () => {
 
         {/* Services & Areas Grid */}
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-background rounded-lg p-6 shadow-sm">
+          <div className="bg-background rounded-lg p-6 shadow-sm border border-border">
             <h3 className="text-lg font-semibold text-foreground mb-4">Our Professional Services</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -81,7 +81,7 @@ export const SEOContentSection = () => {
             </ul>
           </div>
 
-          <div className="bg-background rounded-lg p-6 shadow-sm">
+          <div className="bg-background rounded-lg p-6 shadow-sm border border-border">
             <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
               Areas We Serve

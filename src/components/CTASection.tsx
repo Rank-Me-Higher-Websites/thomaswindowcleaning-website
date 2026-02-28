@@ -15,7 +15,7 @@ export const CTASection = ({ onGetQuote }: CTASectionProps) => {
   const handleQuote = onGetQuote || openBooking;
 
   return (
-    <section className="py-12 md:py-16 relative overflow-hidden bg-primary">
+    <section className="py-8 md:py-10 relative overflow-hidden bg-primary">
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -18,7 +18,7 @@ export const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section className="py-12 md:py-16 relative overflow-hidden bg-muted/30">
+    <section className="py-8 md:py-10 relative overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
           {/* Image side */}
