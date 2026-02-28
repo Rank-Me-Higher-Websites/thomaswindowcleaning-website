@@ -51,20 +51,9 @@ export const ServicesSection = () => {
               <span className="text-gradient">in Chicagoland area</span>
             </h2>
           </div>
-          <div className="mt-4 lg:mt-0 max-w-sm">
-            <p className="text-muted-foreground text-sm mb-3">
-              We offer comprehensive cleaning solutions for both residential and commercial customers.
-            </p>
-            <a href="tel:8474043398" className="flex items-center gap-2 text-primary font-medium group">
-              <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                <Phone className="w-4 h-4" />
-              </div>
-              <div>
-                <span className="text-xs text-muted-foreground block leading-none mb-0.5">CALL US</span>
-                <span className="text-sm">(847) 404-3398</span>
-              </div>
-            </a>
-          </div>
+          <p className="mt-4 lg:mt-0 max-w-sm text-muted-foreground text-sm">
+            We offer comprehensive cleaning solutions for both residential and commercial customers.
+          </p>
         </motion.div>
 
         {/* Services grid */}
