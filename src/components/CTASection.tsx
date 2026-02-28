@@ -15,7 +15,7 @@ export const CTASection = ({ onGetQuote }: CTASectionProps) => {
   const handleQuote = onGetQuote || openBooking;
 
   return (
-    <section className="py-8 md:py-10 relative overflow-hidden bg-primary">
+    <section className="py-6 md:py-8 relative overflow-hidden bg-primary">
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,15 +23,15 @@ export const CTASection = ({ onGetQuote }: CTASectionProps) => {
           transition={{ duration: 0.4 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-primary-foreground leading-tight">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-primary-foreground leading-tight">
             Chicago's Trusted Experts in Power Washing, Window & Gutter Cleaning
           </h2>
           
-          <p className="text-primary-foreground/80 text-sm md:text-base mb-6 max-w-xl mx-auto">
+          <p className="text-primary-foreground/80 text-sm mb-4 max-w-xl mx-auto">
             Need spotless windows or a fresh, clean exterior? We've got you covered! Our team brings top-notch service to homes and businesses across Chicago.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-6">
+          <div className="flex flex-col sm:flex-row gap-2 justify-center mb-4">
             <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors text-sm">
               <Phone className="w-4 h-4" />
               Call Now: (847) 404-3398

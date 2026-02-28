@@ -18,9 +18,9 @@ export const AboutSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section className="py-8 md:py-10 relative overflow-hidden bg-muted/30">
+    <section className="py-6 md:py-8 relative overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           {/* Image side */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -61,20 +61,20 @@ export const AboutSection = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
           >
             <span className="section-label">WINDOW CLEANING SERVICES</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 text-foreground leading-tight">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-foreground leading-tight">
               Your Trusted Experts for{' '}
               <span className="text-gradient">Crystal-Clear Windows</span>{' '}
               & Clog-Free Gutters
             </h2>
-            <p className="text-muted-foreground text-sm mb-4">
+            <p className="text-muted-foreground text-sm mb-3">
               At Thomas Window Cleaning, we know life gets busy, and cleaning can be a hassle. That's why we're here to help! Since 1995, we've been providing top-notch <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">pressure washing</Link> services to the <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago north and northwest suburbs</a>.
             </p>
-            <p className="text-muted-foreground text-sm mb-5">
+            <p className="text-muted-foreground text-sm mb-4">
               Our goal is to make sure you're completely satisfied with our work. Check our <Link to="/prices" className="text-primary hover:underline">transparent pricing</Link> and see why customers love us!
             </p>
 
             {/* Features grid */}
-            <div className="grid grid-cols-2 gap-2 mb-5">
+            <div className="grid grid-cols-2 gap-1.5 mb-4">
               {features.map((feature, index) => (
                 <motion.div
                   key={feature}

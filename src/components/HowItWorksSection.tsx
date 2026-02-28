@@ -30,14 +30,14 @@ export const HowItWorksSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-8 md:py-10 relative overflow-hidden bg-background">
+    <section className="py-6 md:py-8 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="text-center mb-8 md:mb-10"
+          className="text-center mb-6 md:mb-8"
         >
           <span className="section-label justify-center">HOW IT WORKS</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
@@ -47,19 +47,19 @@ export const HowItWorksSection = () => {
         </motion.div>
 
         {/* Steps grid */}
-        <div className="grid sm:grid-cols-3 gap-4 md:gap-6 pt-5">
+        <div className="grid sm:grid-cols-3 gap-3 md:gap-4 pt-4">
           {steps.map((step, index) => (
             <motion.div
               key={step.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="glass-card p-5 md:p-6 text-center relative group overflow-visible"
+              className="glass-card p-4 md:p-5 text-center relative group overflow-visible"
             >
               <div className="absolute -top-4 right-4 w-9 h-9 rounded-full bg-primary text-primary-foreground flex items-center justify-center text-sm font-bold shadow-md z-10">
                 {step.number}
               </div>
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+              <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-3">
                 <step.icon className="w-5 h-5 text-primary" />
               </div>
               <h3 className="text-sm font-bold mb-2 tracking-wide text-foreground">{step.title}</h3>
@@ -73,7 +73,7 @@ export const HowItWorksSection = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
+          className="flex flex-col sm:flex-row gap-3 justify-center mt-6"
         >
           <a 
             href="tel:8474043398" 

@@ -14,7 +14,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
   const handleQuote = onGetQuote || openBooking;
 
   return (
-    <section id="home" className="relative min-h-[85vh] md:min-h-[90vh] flex items-center overflow-hidden pt-16 md:pt-20">
+    <section id="home" className="relative min-h-[75vh] md:min-h-[80vh] flex items-center overflow-hidden pt-14 md:pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
@@ -25,8 +25,8 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-8 md:py-12 relative z-10">
-        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-8 lg:gap-6 items-center">
+      <div className="container mx-auto px-4 py-6 md:py-8 relative z-10">
+        <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-5 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -36,13 +36,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
           >
 
             {/* Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-4 leading-[1.1] text-white">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] font-bold mb-3 leading-[1.1] text-white">
               Window Cleaning in Chicago<br />
               Streak-Free Results
             </h1>
 
             {/* Description */}
-            <p className="text-base md:text-lg text-white/90 mb-5 max-w-xl leading-relaxed">
+            <p className="text-sm md:text-base text-white/90 mb-4 max-w-xl leading-relaxed">
               <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
               <span className="font-medium">window cleaning</span>,{' '}
               <span className="font-medium">gutter cleaning</span>, and{' '}
@@ -51,7 +51,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </p>
 
             {/* Service Tags */}
-            <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mb-5 text-sm text-white/80">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4 text-xs text-white/80">
               <Link to="/services/window-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 Window Cleaning
@@ -67,19 +67,19 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-3 mb-5">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-6 py-3 rounded-lg font-semibold transition-colors text-sm shadow-lg">
+            <div className="flex flex-wrap gap-2 mb-4">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-5 py-2.5 rounded-lg font-semibold transition-colors text-sm shadow-lg">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition-colors text-sm">
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-5 py-2.5 rounded-lg font-semibold transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Quote
               </button>
             </div>
 
             {/* Trust Badges */}
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex flex-wrap gap-1.5 mb-3">
               <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
                 <CheckCircle className="w-3.5 h-3.5" />
                 Fully Insured

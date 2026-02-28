@@ -7,10 +7,10 @@ export const SEOContentSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-8 md:py-10 bg-muted/30">
+    <section className="py-6 md:py-8 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Main SEO Content */}
-        <div className="max-w-4xl mx-auto text-center mb-10">
+        <div className="max-w-4xl mx-auto text-center mb-8">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Professional Window Cleaning & Exterior Services in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>
           </h2>
@@ -20,7 +20,7 @@ export const SEOContentSection = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
           <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
             <Shield className="h-8 w-8 text-primary flex-shrink-0" />
             <div className="text-left">
