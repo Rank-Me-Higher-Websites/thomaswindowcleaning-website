@@ -51,7 +51,46 @@ export const areas: AreaInfo[] = [
     description: 'Glenview\'s beautiful homes deserve pristine windows and clean exteriors. Our experienced team delivers exceptional results every time.',
     mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
   },
+  {
+    name: 'Buffalo Grove',
+    slug: 'buffalo-grove',
+    description: 'Buffalo Grove residents trust Thomas Window Cleaning for reliable, high-quality exterior cleaning services that keep their homes looking beautiful year-round.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
+  {
+    name: 'Mount Prospect',
+    slug: 'mount-prospect',
+    description: 'From historic downtown to newer developments, Mount Prospect homeowners count on our professional team for spotless windows, clean gutters, and pristine exteriors.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
+  {
+    name: 'Northbrook',
+    slug: 'northbrook',
+    description: 'Northbrook\'s upscale homes and businesses deserve premium exterior cleaning. Our experienced crew delivers meticulous results every visit.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
+  {
+    name: 'Prospect Heights',
+    slug: 'prospect-heights',
+    description: 'Prospect Heights homeowners rely on Thomas Window Cleaning for dependable, professional exterior cleaning services throughout every season.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
+  {
+    name: 'Elk Grove Village',
+    slug: 'elk-grove-village',
+    description: 'Elk Grove Village\'s residential and commercial properties benefit from our thorough, professional cleaning services that restore curb appeal and protect your investment.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
+  {
+    name: 'Rolling Meadows',
+    slug: 'rolling-meadows',
+    description: 'Rolling Meadows homeowners trust our team for expert window cleaning, gutter maintenance, and power washing that keeps properties in top condition.',
+    mapUrl: 'https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5',
+  },
 ];
+
+/** All area slugs — no secondary distinction needed anymore */
+export const secondaryAreas: string[] = [];
 
 export const services: ServiceInfo[] = [
   {
@@ -108,9 +147,3 @@ export function getAreaBySlug(slug: string): AreaInfo | undefined {
 export function getServiceBySlug(slug: string): ServiceInfo | undefined {
   return services.find(s => s.slug === slug);
 }
-
-/** All area slugs that are NOT one of the 6 main areas */
-export const secondaryAreas = [
-  'Buffalo Grove', 'Mount Prospect', 'Northbrook',
-  'Prospect Heights', 'Elk Grove Village', 'Rolling Meadows',
-];
