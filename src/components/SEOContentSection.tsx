@@ -1,12 +1,10 @@
 import { CheckCircle, MapPin, Shield, Award, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useBooking } from '@/contexts/BookingContext';
+import { areas, secondaryAreas } from '@/data/areaServices';
 
-const areasServed = [
-  "Wheeling", "Arlington Heights", "Buffalo Grove", "Palatine", 
-  "Mount Prospect", "Des Plaines", "Northbrook", "Glenview",
-  "Prospect Heights", "Elk Grove Village", "Schaumburg", "Rolling Meadows"
-];
+const mainAreaSlugs = areas.map(a => a.slug);
+const mainAreaNames = areas.map(a => a.name);
 
 export const SEOContentSection = () => {
   const { openBooking } = useBooking();
@@ -87,10 +85,19 @@ export const SEOContentSection = () => {
               Areas We Serve
             </h3>
             <div className="flex flex-wrap gap-2">
-              {areasServed.map((area, index) => (
+              {areas.map((area) => (
+                <Link 
+                  key={area.slug}
+                  to={`/services/window-cleaning/${area.slug}`}
+                  className="bg-muted px-3 py-1.5 rounded-full text-xs font-medium text-foreground/70 hover:bg-primary hover:text-primary-foreground transition-colors"
+                >
+                  {area.name}, IL
+                </Link>
+              ))}
+              {secondaryAreas.map((area, index) => (
                 <span 
                   key={index}
-                  className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground"
+                  className="bg-muted px-3 py-1.5 rounded-full text-xs text-foreground/60"
                 >
                   {area}, IL
                 </span>
