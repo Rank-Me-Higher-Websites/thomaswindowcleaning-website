@@ -35,14 +35,14 @@ export const ServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section id="services" className="py-8 md:py-10 relative overflow-hidden bg-background">
+    <section id="services" className="py-6 md:py-8 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-8 md:mb-10"
+          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-6 md:mb-8"
         >
           <div>
             <span className="section-label">SERVICES</span>
@@ -68,7 +68,7 @@ export const ServicesSection = () => {
         </motion.div>
 
         {/* Services grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
@@ -85,7 +85,7 @@ export const ServicesSection = () => {
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <div className="p-4 md:p-5">
+                <div className="p-3 md:p-4">
                   <div className="flex items-center gap-2.5 mb-2">
                     <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
                       <service.icon className="w-4 h-4 text-primary" />

@@ -52,9 +52,9 @@ export const BookingSection = () => {
   };
 
   return (
-    <section id="booking" className="py-12 md:py-16 relative overflow-hidden bg-muted/40">
+    <section id="booking" className="py-8 md:py-10 relative overflow-hidden bg-muted/40">
       <div className="container mx-auto px-4" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-10 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center">
           {/* Left - Content */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
