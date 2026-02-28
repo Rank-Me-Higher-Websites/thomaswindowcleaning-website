@@ -99,9 +99,9 @@ const ContactPage = () => {
         </section>
 
         {/* Contact Content */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+            <div className="grid lg:grid-cols-2 gap-5 lg:gap-6">
               {/* Contact Info */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -277,7 +277,7 @@ const ContactPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <motion.div
@@ -351,7 +351,7 @@ const ContactPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Ready to Get Started?

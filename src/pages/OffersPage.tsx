@@ -83,9 +83,9 @@ const OffersPage = () => {
         </section>
 
         {/* Offers Grid */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold">
                 Chicagoland Exterior Cleaning{' '}
                 <span className="text-gradient">Offers</span>
@@ -139,7 +139,7 @@ const OffersPage = () => {
         </section>
 
         {/* SEO Content Section - Why Choose Our Offers */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <motion.div
@@ -369,7 +369,7 @@ const OffersPage = () => {
         </section>
 
         {/* Areas We Serve */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -408,7 +408,7 @@ const OffersPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Don't Miss Out on These Savings!

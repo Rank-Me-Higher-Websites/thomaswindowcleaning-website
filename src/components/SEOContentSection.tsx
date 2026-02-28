@@ -7,10 +7,10 @@ export const SEOContentSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-6 md:py-8 bg-muted/30">
+    <section className="py-4 md:py-6 bg-muted/30">
       <div className="container mx-auto px-4">
         {/* Main SEO Content */}
-        <div className="max-w-4xl mx-auto text-center mb-8">
+        <div className="max-w-4xl mx-auto text-center mb-5">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Professional Window Cleaning & Exterior Services in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>
           </h2>
@@ -20,8 +20,8 @@ export const SEOContentSection = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
+          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-3 shadow-sm border border-border">
             <Shield className="h-8 w-8 text-primary flex-shrink-0" />
             <div className="text-left">
               <p className="font-semibold text-foreground text-sm">Licensed & Insured</p>
@@ -45,8 +45,8 @@ export const SEOContentSection = () => {
         </div>
 
         {/* Services & Areas Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-background rounded-lg p-6 shadow-sm border border-border">
+        <div className="grid md:grid-cols-2 gap-5">
+          <div className="bg-background rounded-lg p-4 shadow-sm border border-border">
             <h3 className="text-lg font-semibold text-foreground mb-4">Our Professional Services</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
               <li className="flex items-center gap-2 text-sm text-muted-foreground">

@@ -35,14 +35,14 @@ export const ServicesSection = () => {
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
   return (
-    <section id="services" className="py-6 md:py-8 relative overflow-hidden bg-background">
+    <section id="services" className="py-4 md:py-6 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-6 md:mb-8"
+          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-4 md:mb-5"
         >
           <div>
             <span className="section-label">SERVICES</span>

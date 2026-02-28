@@ -14,7 +14,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
   const handleQuote = onGetQuote || openBooking;
 
   return (
-    <section id="home" className="relative min-h-[75vh] md:min-h-[80vh] flex items-center overflow-hidden pt-14 md:pt-16">
+    <section id="home" className="relative min-h-[70vh] md:min-h-[75vh] flex items-center overflow-hidden pt-14 md:pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
@@ -25,7 +25,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-8 relative z-10">
+      <div className="container mx-auto px-4 py-4 md:py-6 relative z-10">
         <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-6 lg:gap-5 items-center">
           {/* Left content */}
           <motion.div

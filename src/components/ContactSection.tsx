@@ -54,9 +54,9 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-6 md:py-8 relative overflow-hidden bg-background">
+    <section id="contact" className="py-4 md:py-6 relative overflow-hidden bg-background">
       <div className="container mx-auto px-4" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid lg:grid-cols-2 gap-5 lg:gap-6">
           {/* Contact info */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}

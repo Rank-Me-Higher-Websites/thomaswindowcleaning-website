@@ -464,7 +464,7 @@ const BlogPage = () => {
         )}
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Need Professional Cleaning Services?

@@ -70,9 +70,9 @@ const AreaServicePage = () => {
         </section>
 
         {/* Main content */}
-        <section className="py-8 md:py-10 bg-background">
+        <section className="py-5 md:py-6 bg-background">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-[1fr_320px] gap-8">
+            <div className="grid lg:grid-cols-[1fr_320px] gap-5">
               {/* Left content */}
               <div>
                 <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3">
