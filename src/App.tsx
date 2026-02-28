@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import WindowCleaningPage from "./pages/services/WindowCleaningPage";
 import GutterCleaningPage from "./pages/services/GutterCleaningPage";
 import PowerWashingPage from "./pages/services/PowerWashingPage";
+import AreaServicePage from "./pages/services/AreaServicePage";
 import OffersPage from "./pages/OffersPage";
 import PricesPage from "./pages/PricesPage";
 import BlogPage from "./pages/BlogPage";
@@ -34,7 +35,7 @@ const App = () => (
             <Route path="/services/window-cleaning" element={<WindowCleaningPage />} />
             <Route path="/services/gutter-cleaning" element={<GutterCleaningPage />} />
             <Route path="/services/power-washing" element={<PowerWashingPage />} />
-            <Route path="/offers" element={<OffersPage />} />
+            <Route path="/services/:serviceSlug/:areaSlug" element={<AreaServicePage />} />
             <Route path="/prices" element={<PricesPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
