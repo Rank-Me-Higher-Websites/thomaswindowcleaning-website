@@ -1,10 +1,7 @@
 import { CheckCircle, MapPin, Shield, Award, Phone, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useBooking } from '@/contexts/BookingContext';
-import { areas, secondaryAreas } from '@/data/areaServices';
-
-const mainAreaSlugs = areas.map(a => a.slug);
-const mainAreaNames = areas.map(a => a.name);
+import { areas } from '@/data/areaServices';
 
 export const SEOContentSection = () => {
   const { openBooking } = useBooking();
@@ -93,14 +90,6 @@ export const SEOContentSection = () => {
                 >
                   {area.name}, IL
                 </Link>
-              ))}
-              {secondaryAreas.map((area, index) => (
-                <span 
-                  key={index}
-                  className="bg-muted px-3 py-1.5 rounded-full text-xs text-foreground/60"
-                >
-                  {area}, IL
-                </span>
               ))}
             </div>
             <p className="text-xs text-muted-foreground mt-4">
