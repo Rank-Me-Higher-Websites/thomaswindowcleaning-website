@@ -64,13 +64,13 @@ const ContactPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[45vh] md:min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[35vh] md:min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={contactHero} alt="Contact Thomas Window Cleaning" className="w-full h-full object-cover object-top" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-2xl">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
                 Contact Cleaning Services in Chicago
@@ -99,9 +99,9 @@ const ContactPage = () => {
         </section>
 
         {/* Contact Content */}
-        <section className="py-10 md:py-12">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-8 lg:gap-10">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
               {/* Contact Info */}
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -277,7 +277,7 @@ const ContactPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-10 md:py-12 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <motion.div
@@ -351,12 +351,12 @@ const ContactPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Ready to Get Started?
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Get a free estimate for your exterior cleaning needs. Professional service, competitive prices!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

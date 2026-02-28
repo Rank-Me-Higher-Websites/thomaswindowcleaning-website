@@ -60,21 +60,21 @@ const PricesPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={pricesHero} alt="Exterior Cleaning Prices" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white">
                 Transparent Exterior Cleaning Service Prices
               </h1>
-              <p className="text-lg text-white/90 mb-4">
+              <p className="text-sm md:text-base text-white/90 mb-3">
                 For fair and transparent pricing on <span className="font-semibold">exterior cleaning services</span>, Thomas Window Cleaning is your go-to team in <span className="font-semibold">Wheeling, IL</span>.
               </p>
-              <p className="text-white/80 mb-8">
+              <p className="text-sm text-white/80 mb-5">
                 Our rates are competitive, and our quality of service stands out across the northwest suburbs. Whether you need window cleaning, gutter cleaning, or power washing, we deliver expert results with no hidden fees.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -92,9 +92,9 @@ const PricesPage = () => {
         </section>
 
         {/* Transparent Pricing Info Section */}
-        <section className="py-10 md:py-12 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -129,7 +129,7 @@ const PricesPage = () => {
         </section>
 
         {/* Window Cleaning Prices */}
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -174,7 +174,7 @@ const PricesPage = () => {
         </section>
 
         {/* Gutter Cleaning Prices */}
-        <section className="py-10 md:py-16 bg-muted/30">
+        <section className="py-8 md:py-10 bg-muted/30">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -221,7 +221,7 @@ const PricesPage = () => {
         </section>
 
         {/* Power Washing Prices */}
-        <section className="py-10 md:py-16">
+        <section className="py-8 md:py-10">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -294,21 +294,21 @@ const PricesPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Ready to Get Started?
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Call us at (847) 404-3398 or request your free estimate online. Choose Thomas Window Cleaning for affordable and dependable exterior cleaning services!
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/90 transition-colors text-lg">
-                <Phone className="w-5 h-5" />
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary-foreground text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/90 transition-colors text-sm">
+                <Phone className="w-4 h-4" />
                 Call Now: (847) 404-3398
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary-foreground/10 transition-colors text-lg">
-                <ArrowRight className="w-5 h-5" />
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-primary-foreground text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm">
+                <ArrowRight className="w-4 h-4" />
                 Get Quote
               </button>
             </div>

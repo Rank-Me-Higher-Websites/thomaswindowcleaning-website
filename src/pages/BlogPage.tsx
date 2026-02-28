@@ -246,19 +246,19 @@ const BlogPage = () => {
       
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[50vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[40vh] flex items-center overflow-hidden">
           <div className="absolute inset-0">
             <img src={blogHero} alt="Exterior Cleaning Tips Blog" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-black/60" />
           </div>
           
-          <div className="container mx-auto px-4 relative z-10 py-16 md:py-20">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-14">
             <div className="max-w-3xl">
               <motion.h1 
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white"
+                className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-white"
               >
                 Residential Exterior Cleaning Tips
               </motion.h1>
@@ -266,7 +266,7 @@ const BlogPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-lg text-white/90 mb-4"
+                className="text-sm text-white/90 mb-3"
               >
                 Expert advice and tips for maintaining your home's exterior. Learn from the professionals at Thomas Window Cleaning about <Link to="/services/window-cleaning" className="text-white underline hover:text-white/80">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-white underline hover:text-white/80">gutter maintenance</Link>, and <Link to="/services/power-washing" className="text-white underline hover:text-white/80">power washing</Link>.
               </motion.p>
@@ -274,7 +274,7 @@ const BlogPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.15 }}
-                className="text-white/80 mb-8"
+                className="text-sm text-white/80 mb-5"
               >
                 Discover the best practices to keep your <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-white underline hover:text-white/80">Chicagoland</a> property looking its best year-round.
               </motion.p>
@@ -464,12 +464,12 @@ const BlogPage = () => {
         )}
 
         {/* CTA Section */}
-        <section className="py-12 md:py-16 bg-primary">
+        <section className="py-8 md:py-10 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Need Professional Cleaning Services?
             </h2>
-            <p className="text-primary-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
               Don't want to DIY? Let the experts handle it. Contact Thomas Window Cleaning for professional results in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary-foreground underline hover:opacity-80">Wheeling, IL</a> and surrounding areas. Check our <Link to="/prices" className="text-primary-foreground underline hover:opacity-80">transparent pricing</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
