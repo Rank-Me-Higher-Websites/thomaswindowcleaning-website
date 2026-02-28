@@ -42,12 +42,12 @@ export const ServicesSection = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-4 md:mb-5"
+          className="text-center mb-6 md:mb-8"
         >
           <span className="section-label">SERVICES</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight tracking-tight">
             Cleaning Services<br />
-            <span className="text-gradient">in Chicagoland area</span>
+            <span className="text-gradient">in Chicagoland Area</span>
           </h2>
         </motion.div>
 
