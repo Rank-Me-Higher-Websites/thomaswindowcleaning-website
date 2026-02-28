@@ -143,9 +143,9 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="grid lg:grid-cols-2 gap-5 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -206,7 +206,7 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-5"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
@@ -221,9 +221,9 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <span className="section-label justify-center">PRICING</span>
               <h2 className="text-2xl md:text-3xl font-bold">
                 Basic Window Cleaning{' '}
@@ -247,7 +247,7 @@ const WindowCleaningPage = () => {
                 ))}
               </div>
               
-              <div className="mt-6 glass-card p-5">
+              <div className="mt-4 glass-card p-4">
                 <h4 className="font-semibold mb-3 text-sm">Additional Service Charges</h4>
                 <ul className="space-y-1.5">
                   {additionalCharges.map((charge, index) => (
@@ -260,7 +260,7 @@ const WindowCleaningPage = () => {
               </div>
 
               {/* CTA after Pricing */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center mt-5">
                 <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                   <Phone className="w-4 h-4" />
                   Call for Estimate
@@ -275,9 +275,9 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold">
                 Residential & Commercial{' '}
                 <span className="text-gradient">Window Cleaning</span>
@@ -312,7 +312,7 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-5"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
@@ -327,9 +327,9 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Thomas Difference Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-8">
+            <div className="max-w-4xl mx-auto text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 The Thomas Window Cleaning{' '}
                 <span className="text-gradient">Difference</span>
@@ -366,7 +366,7 @@ const WindowCleaningPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex flex-col sm:flex-row gap-3 justify-center mt-8"
+              className="flex flex-col sm:flex-row gap-3 justify-center mt-5"
             >
               <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary/90 transition-colors text-sm">
                 <Phone className="w-4 h-4" />
@@ -381,7 +381,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 text-center">
@@ -448,9 +448,9 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <span className="section-label justify-center">FAQ</span>
               <h2 className="text-2xl md:text-3xl font-bold">
                 Frequently Asked{' '}
@@ -488,12 +488,12 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
               Schedule Your Window Cleaning Today!
             </h2>
-            <p className="text-primary-foreground/80 text-sm mb-5 max-w-2xl mx-auto">
+            <p className="text-primary-foreground/80 text-sm mb-4 max-w-2xl mx-auto">
               Ready to enjoy spotless windows? Contact Thomas Window Cleaning today for professional window cleaning in Chicago, IL. We look forward to making your windows shine!
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">

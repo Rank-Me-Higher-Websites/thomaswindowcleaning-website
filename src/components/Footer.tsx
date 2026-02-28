@@ -34,10 +34,10 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="py-8 md:py-10 bg-primary text-primary-foreground">
+    <footer className="py-5 md:py-6 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4">
         {/* Mobile Layout */}
-        <div className="md:hidden space-y-6 mb-6">
+        <div className="md:hidden space-y-4 mb-4">
           {/* Brand */}
           <div>
             <Link to="/" className="mb-3 inline-block">
@@ -180,7 +180,7 @@ export const Footer = () => {
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden md:grid md:grid-cols-5 gap-6 mb-6">
+        <div className="hidden md:grid md:grid-cols-5 gap-4 mb-4">
           {/* Brand column */}
           <div>
             <Link to="/" className="mb-3 inline-block">
@@ -328,7 +328,7 @@ export const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-4 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
+        <div className="pt-3 border-t border-primary-foreground/20 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-primary-foreground/60">
           <p>© {new Date().getFullYear()} Thomas Window Cleaning</p>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-primary-foreground transition-colors">Privacy</Link>

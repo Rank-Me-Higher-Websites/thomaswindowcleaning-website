@@ -22,14 +22,14 @@ export const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="py-6 md:py-8 relative overflow-hidden bg-muted/30">
+    <section id="testimonials" className="py-4 md:py-6 relative overflow-hidden bg-muted/30">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="text-center mb-6 md:mb-8"
+          className="text-center mb-4 md:mb-5"
         >
           <span className="section-label justify-center">TESTIMONIALS</span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">

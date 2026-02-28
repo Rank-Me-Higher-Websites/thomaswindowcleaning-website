@@ -127,9 +127,9 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-8 items-center">
+            <div className="grid lg:grid-cols-2 gap-5 items-center">
               <motion.div
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -205,9 +205,9 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <span className="section-label justify-center">PRICING</span>
               <h2 className="text-2xl md:text-3xl font-bold">
                 Gutter Cleaning{' '}
@@ -262,9 +262,9 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold">
                 Residential & Commercial{' '}
                 <span className="text-gradient">Gutter Cleaning</span>
@@ -314,9 +314,9 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* Thomas Difference Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center mb-8">
+            <div className="max-w-4xl mx-auto text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
                 Why Thomas Gutter Cleaning{' '}
                 <span className="text-gradient">Stands Out</span>
@@ -368,7 +368,7 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4 text-center">
@@ -452,9 +452,9 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
+            <div className="text-center mb-5">
               <span className="section-label justify-center">FAQ</span>
               <h2 className="text-2xl md:text-3xl font-bold">
                 Frequently Asked{' '}
@@ -492,7 +492,7 @@ const GutterCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Schedule Your Gutter Cleaning Today!

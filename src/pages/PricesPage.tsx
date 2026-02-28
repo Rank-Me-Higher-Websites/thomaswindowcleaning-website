@@ -92,9 +92,9 @@ const PricesPage = () => {
         </section>
 
         {/* Transparent Pricing Info Section */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
-            <div className="grid lg:grid-cols-2 gap-8 items-center max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-5 items-center max-w-6xl mx-auto">
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -129,7 +129,7 @@ const PricesPage = () => {
         </section>
 
         {/* Window Cleaning Prices */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -174,7 +174,7 @@ const PricesPage = () => {
         </section>
 
         {/* Gutter Cleaning Prices */}
-        <section className="py-8 md:py-10 bg-muted/30">
+        <section className="py-5 md:py-6 bg-muted/30">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -221,7 +221,7 @@ const PricesPage = () => {
         </section>
 
         {/* Power Washing Prices */}
-        <section className="py-8 md:py-10">
+        <section className="py-5 md:py-6">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -294,7 +294,7 @@ const PricesPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-8 md:py-10 bg-primary">
+        <section className="py-5 md:py-6 bg-primary">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Ready to Get Started?
