@@ -66,35 +66,35 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-md">
-        <DialogHeader>
-          <DialogTitle className="text-xl font-bold">Book Your Service</DialogTitle>
-          <DialogDescription>
+      <DialogContent className="sm:max-w-md max-h-[95dvh] overflow-y-auto p-4 sm:p-6 gap-2">
+        <DialogHeader className="space-y-0.5 pb-1">
+          <DialogTitle className="text-base sm:text-lg font-bold">Book Your Service</DialogTitle>
+          <DialogDescription className="text-xs sm:text-sm">
             Fill out the form and we'll get back to you within 24 hours.
           </DialogDescription>
         </DialogHeader>
 
         {submitStatus === 'success' && (
-          <div className="flex items-center gap-2 p-3 rounded-lg bg-green-500/10 text-green-600 border border-green-500/20">
-            <CheckCircle className="w-5 h-5 shrink-0" />
-            <span className="text-sm font-medium">Form submitted successfully!</span>
+          <div className="flex items-center gap-2 p-2 rounded-lg bg-green-500/10 text-green-600 border border-green-500/20">
+            <CheckCircle className="w-4 h-4 shrink-0" />
+            <span className="text-xs font-medium">Form submitted successfully!</span>
           </div>
         )}
 
         {submitStatus === 'error' && (
-          <div className="flex items-center gap-2 p-3 rounded-lg bg-destructive/10 text-destructive border border-destructive/20">
-            <AlertCircle className="w-5 h-5 shrink-0" />
-            <span className="text-sm font-medium">Failed to submit. Please try again.</span>
+          <div className="flex items-center gap-2 p-2 rounded-lg bg-destructive/10 text-destructive border border-destructive/20">
+            <AlertCircle className="w-4 h-4 shrink-0" />
+            <span className="text-xs font-medium">Failed to submit. Please try again.</span>
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-3">
+        <form onSubmit={handleSubmit} className="space-y-2">
           <input
             type="text"
             placeholder="Your Name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="input-glass"
+            className="input-glass text-sm py-2"
             required
             disabled={isSubmitting}
           />
@@ -103,14 +103,14 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
             placeholder="Phone Number"
             value={formData.phone}
             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="input-glass"
+            className="input-glass text-sm py-2"
             required
             disabled={isSubmitting}
           />
           <select
             value={formData.service}
             onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-            className="input-glass"
+            className="input-glass text-sm py-2"
             required
             disabled={isSubmitting}
           >
@@ -124,7 +124,7 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
               <button
                 type="button"
                 className={cn(
-                  'input-glass w-full text-left flex items-center gap-2',
+                  'input-glass w-full text-left flex items-center gap-2 text-sm py-2',
                   !formData.date && 'text-muted-foreground'
                 )}
                 disabled={isSubmitting}
@@ -147,13 +147,13 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
             placeholder="Additional Notes (optional)"
             value={formData.notes}
             onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-            className="input-glass min-h-[80px] resize-none"
+            className="input-glass min-h-[60px] resize-none text-sm py-2"
             disabled={isSubmitting}
-            rows={3}
+            rows={2}
           />
           <button
             type="submit"
-            className="btn-glow w-full py-2.5 disabled:opacity-50 disabled:cursor-not-allowed"
+            className="btn-glow w-full py-2 text-sm disabled:opacity-50 disabled:cursor-not-allowed"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
