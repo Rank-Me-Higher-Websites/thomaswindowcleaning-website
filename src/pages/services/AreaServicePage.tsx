@@ -7,6 +7,7 @@ import { getAreaBySlug, getServiceBySlug, areas, services } from '@/data/areaSer
 import { CheckCircle, Phone, ArrowRight, MapPin, Shield, Award, Star } from 'lucide-react';
 import { useBooking } from '@/contexts/BookingContext';
 import { motion } from 'framer-motion';
+import { SEOHead } from '@/components/SEOHead';
 
 const AreaServicePage = () => {
   const { areaSlug, serviceSlug } = useParams();

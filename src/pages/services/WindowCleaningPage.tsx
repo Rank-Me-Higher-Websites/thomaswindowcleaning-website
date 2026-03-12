@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { SEOHead } from '@/components/SEOHead';
 import windowCleaningImg from '@/assets/thomas-residential-window.jpg';
 import windowCleaningHero from '@/assets/thomas-window-hero.jpg';
 import thomasDifference1 from '@/assets/thomas-difference-1.jpg';

@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { SEOHead } from '@/components/SEOHead';
 import powerWashingHero from '@/assets/thomas-gutter-ladder.jpg';
 import powerWashingChoose1 from '@/assets/power-washing-choose-1.jpg';
 import powerWashingChoose2 from '@/assets/power-washing-choose-2.jpg';

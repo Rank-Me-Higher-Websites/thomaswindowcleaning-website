@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { SEOHead } from '@/components/SEOHead';
 import gutterCleaningImg from '@/assets/thomas-gutter-autumn.jpg';
 import gutterCleaningHero from '@/assets/thomas-house.jpg';
 import gutterStandsOut1 from '@/assets/gutter-stands-out-1.jpg';

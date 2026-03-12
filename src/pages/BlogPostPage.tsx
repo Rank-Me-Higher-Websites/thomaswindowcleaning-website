@@ -7,6 +7,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 
 // Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';

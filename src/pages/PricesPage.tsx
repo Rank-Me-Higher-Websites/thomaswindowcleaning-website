@@ -7,6 +7,7 @@ import pricesHero from '@/assets/prices-hero.jpg';
 import pricesTransparent from '@/assets/prices-transparent.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 
 const windowPricing = [
   { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },

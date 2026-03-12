@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 import offersHero from '@/assets/offers-hero.jpg';
 import offersPowerWashing from '@/assets/offers-power-washing.jpg';
 import offersWindowCleaning from '@/assets/offers-window-cleaning.jpg';
