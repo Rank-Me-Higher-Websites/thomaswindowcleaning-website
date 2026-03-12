@@ -6,6 +6,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 import blogHero from '@/assets/thomas-squeegee.jpg';
 
 // Blog tile images from source - Page 1
@@ -242,6 +243,11 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Window Cleaning & Exterior Care Blog | Thomas Window Cleaning"
+        description="Expert tips, guides, and advice on window cleaning, gutter maintenance, and power washing for Chicago homeowners. Stay informed with Thomas Window Cleaning."
+        canonical="/blog"
+      />
       <Header />
       
       <main>

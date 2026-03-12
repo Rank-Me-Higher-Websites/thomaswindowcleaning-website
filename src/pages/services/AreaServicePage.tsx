@@ -7,6 +7,7 @@ import { getAreaBySlug, getServiceBySlug, areas, services } from '@/data/areaSer
 import { CheckCircle, Phone, ArrowRight, MapPin, Shield, Award, Star } from 'lucide-react';
 import { useBooking } from '@/contexts/BookingContext';
 import { motion } from 'framer-motion';
+import { SEOHead } from '@/components/SEOHead';
 
 const AreaServicePage = () => {
   const { areaSlug, serviceSlug } = useParams();
@@ -32,6 +33,30 @@ const AreaServicePage = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={`${service.name} in ${area.name}, IL | Thomas Window Cleaning`}
+        description={`Professional ${service.name.toLowerCase()} services in ${area.name}, IL. Trusted since 1995. Licensed, insured, 100% satisfaction guaranteed. Call (847) 404-3398!`}
+        canonical={`/services/${service.slug}/${area.slug}`}
+        schema={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Service',
+            name: `${service.name} in ${area.name}`,
+            provider: { '@type': 'LocalBusiness', name: 'Thomas Window Cleaning' },
+            areaServed: { '@type': 'City', name: `${area.name}, IL` },
+            description: service.description,
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thomaswindow.lovable.app/' },
+              { '@type': 'ListItem', position: 2, name: service.name, item: `https://thomaswindow.lovable.app/services/${service.slug}` },
+              { '@type': 'ListItem', position: 3, name: area.name, item: `https://thomaswindow.lovable.app/services/${service.slug}/${area.slug}` },
+            ],
+          },
+        ]}
+      />
       <Header />
       <main>
         {/* Hero */}

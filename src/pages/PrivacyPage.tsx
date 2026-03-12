@@ -1,10 +1,17 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { motion } from "framer-motion";
+import { SEOHead } from '@/components/SEOHead';
 
 const PrivacyPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Privacy Policy | Thomas Window Cleaning"
+        description="Privacy policy for Thomas Window Cleaning. Learn how we collect, use, and protect your personal information."
+        canonical="/privacy"
+        noindex
+      />
       <Header />
       
       {/* Hero Section */}

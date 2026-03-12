@@ -7,6 +7,7 @@ import { Footer } from '@/components/Footer';
 import contactHero from '@/assets/thomas-about.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 
 const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/000757b6-d8cd-4f4c-8055-adb84ccc09b4';
 
@@ -60,6 +61,11 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Us | Thomas Window Cleaning"
+        description="Get in touch with Thomas Window Cleaning for a free quote. Call (847) 404-3398 or fill out our contact form. Serving Chicago's northwest suburbs since 1995."
+        canonical="/contact"
+      />
       <Header />
       
       <main>

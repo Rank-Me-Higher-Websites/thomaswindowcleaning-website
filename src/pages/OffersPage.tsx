@@ -5,6 +5,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 import offersHero from '@/assets/offers-hero.jpg';
 import offersPowerWashing from '@/assets/offers-power-washing.jpg';
 import offersWindowCleaning from '@/assets/offers-window-cleaning.jpg';
@@ -47,6 +48,11 @@ const OffersPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Special Offers & Discounts | Thomas Window Cleaning"
+        description="Save on professional window cleaning, gutter cleaning, and power washing with our current deals and discounts. Limited-time offers for Chicago area homes."
+        canonical="/offers"
+      />
       <Header />
       
       <main>

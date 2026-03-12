@@ -7,6 +7,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 
 // Blog tile images from source - Page 1
 import powerWashingGuideTile from '@/assets/blog/power-washing-guide-tile.png';
@@ -2175,6 +2176,21 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={`${post.title} | Thomas Window Cleaning Blog`}
+        description={post.excerpt}
+        canonical={`/blog/${slug}`}
+        ogType="article"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          datePublished: post.date,
+          author: { '@type': 'Organization', name: 'Thomas Window Cleaning' },
+          publisher: { '@type': 'Organization', name: 'Thomas Window Cleaning' },
+          description: post.excerpt,
+        }}
+      />
       <Header />
 
       <main>

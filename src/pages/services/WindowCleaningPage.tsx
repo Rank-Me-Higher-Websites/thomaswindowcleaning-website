@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { SEOHead } from '@/components/SEOHead';
 import windowCleaningImg from '@/assets/thomas-residential-window.jpg';
 import windowCleaningHero from '@/assets/thomas-window-hero.jpg';
 import thomasDifference1 from '@/assets/thomas-difference-1.jpg';
@@ -107,6 +108,19 @@ const WindowCleaningPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Professional Window Cleaning Services | Thomas Window Cleaning"
+        description="Crystal-clear, streak-free windows for homes and businesses in Chicago's northwest suburbs. Interior & exterior cleaning, hard water stain removal. Free quotes!"
+        canonical="/services/window-cleaning"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Window Cleaning',
+          provider: { '@type': 'LocalBusiness', name: 'Thomas Window Cleaning' },
+          areaServed: { '@type': 'State', name: 'Illinois' },
+          description: 'Professional window cleaning services for residential and commercial properties.',
+        }}
+      />
       <Header />
       
       <main>

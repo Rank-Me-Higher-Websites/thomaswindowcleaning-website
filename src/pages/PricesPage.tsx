@@ -7,6 +7,7 @@ import pricesHero from '@/assets/prices-hero.jpg';
 import pricesTransparent from '@/assets/prices-transparent.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
+import { SEOHead } from '@/components/SEOHead';
 
 const windowPricing = [
   { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
@@ -56,6 +57,11 @@ const PricesPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Pricing | Window Cleaning, Gutter & Power Washing | Thomas Window Cleaning"
+        description="Transparent pricing for window cleaning, gutter cleaning, and power washing services in Chicago's northwest suburbs. No hidden fees. Get a free quote today!"
+        canonical="/prices"
+      />
       <Header />
       
       <main>
