@@ -100,6 +100,19 @@ const PowerWashingPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Power Washing Services | Thomas Window Cleaning"
+        description="Professional power washing to restore driveways, siding, decks, and patios. Eco-friendly cleaning for homes and businesses in Chicago's northwest suburbs."
+        canonical="/services/power-washing"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Power Washing',
+          provider: { '@type': 'LocalBusiness', name: 'Thomas Window Cleaning' },
+          areaServed: { '@type': 'State', name: 'Illinois' },
+          description: 'Professional power washing and pressure cleaning services.',
+        }}
+      />
       <Header />
       
       <main>

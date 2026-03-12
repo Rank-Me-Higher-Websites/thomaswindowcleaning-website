@@ -243,6 +243,11 @@ const BlogPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Window Cleaning & Exterior Care Blog | Thomas Window Cleaning"
+        description="Expert tips, guides, and advice on window cleaning, gutter maintenance, and power washing for Chicago homeowners. Stay informed with Thomas Window Cleaning."
+        canonical="/blog"
+      />
       <Header />
       
       <main>

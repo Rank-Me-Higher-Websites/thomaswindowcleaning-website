@@ -48,6 +48,11 @@ const OffersPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Special Offers & Discounts | Thomas Window Cleaning"
+        description="Save on professional window cleaning, gutter cleaning, and power washing with our current deals and discounts. Limited-time offers for Chicago area homes."
+        canonical="/offers"
+      />
       <Header />
       
       <main>

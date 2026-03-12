@@ -2176,6 +2176,21 @@ const BlogPostPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title={`${post.title} | Thomas Window Cleaning Blog`}
+        description={post.excerpt}
+        canonical={`/blog/${slug}`}
+        ogType="article"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          datePublished: post.date,
+          author: { '@type': 'Organization', name: 'Thomas Window Cleaning' },
+          publisher: { '@type': 'Organization', name: 'Thomas Window Cleaning' },
+          description: post.excerpt,
+        }}
+      />
       <Header />
 
       <main>

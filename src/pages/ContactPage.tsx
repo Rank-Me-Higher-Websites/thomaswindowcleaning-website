@@ -61,6 +61,11 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Contact Us | Thomas Window Cleaning"
+        description="Get in touch with Thomas Window Cleaning for a free quote. Call (847) 404-3398 or fill out our contact form. Serving Chicago's northwest suburbs since 1995."
+        canonical="/contact"
+      />
       <Header />
       
       <main>

@@ -92,6 +92,19 @@ const GutterCleaningPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Gutter Cleaning Services | Thomas Window Cleaning"
+        description="Professional gutter cleaning to protect your home from water damage. Complete debris removal, downspout flushing, and gutter inspections in Chicago's northwest suburbs."
+        canonical="/services/gutter-cleaning"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Gutter Cleaning',
+          provider: { '@type': 'LocalBusiness', name: 'Thomas Window Cleaning' },
+          areaServed: { '@type': 'State', name: 'Illinois' },
+          description: 'Professional gutter cleaning and maintenance services.',
+        }}
+      />
       <Header />
       
       <main>

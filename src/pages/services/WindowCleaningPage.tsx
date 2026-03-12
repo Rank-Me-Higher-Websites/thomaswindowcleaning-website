@@ -108,6 +108,19 @@ const WindowCleaningPage = () => {
   const { openBooking } = useBooking();
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Professional Window Cleaning Services | Thomas Window Cleaning"
+        description="Crystal-clear, streak-free windows for homes and businesses in Chicago's northwest suburbs. Interior & exterior cleaning, hard water stain removal. Free quotes!"
+        canonical="/services/window-cleaning"
+        schema={{
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          name: 'Window Cleaning',
+          provider: { '@type': 'LocalBusiness', name: 'Thomas Window Cleaning' },
+          areaServed: { '@type': 'State', name: 'Illinois' },
+          description: 'Professional window cleaning services for residential and commercial properties.',
+        }}
+      />
       <Header />
       
       <main>

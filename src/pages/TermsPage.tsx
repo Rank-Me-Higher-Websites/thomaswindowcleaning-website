@@ -6,6 +6,12 @@ import { SEOHead } from '@/components/SEOHead';
 const TermsPage = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEOHead
+        title="Terms of Service | Thomas Window Cleaning"
+        description="Terms of service for Thomas Window Cleaning. Read our policies regarding services, liability, and customer agreements."
+        canonical="/terms"
+        noindex
+      />
       <Header />
       
       {/* Hero Section */}
