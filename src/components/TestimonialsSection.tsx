@@ -91,8 +91,8 @@ export const TestimonialsSection = () => {
       </div>
 
       {/* Auto-scrolling marquee */}
-      <div className="relative w-full overflow-hidden marquee-mask">
-        <div className="flex gap-3 md:gap-4 marquee-track w-max">
+      <div className="relative w-full overflow-hidden">
+        <div className="flex gap-3 md:gap-4 marquee-track w-max px-3 md:px-4">
           {looped.map((review, idx) => (
             <article
               key={idx}

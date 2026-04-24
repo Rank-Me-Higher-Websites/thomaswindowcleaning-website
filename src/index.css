@@ -334,29 +334,12 @@
 
 .marquee-track {
   animation: marqueeScroll 60s linear infinite;
+  animation-direction: reverse;
   will-change: transform;
 }
 
 .marquee-track:hover {
   animation-play-state: paused;
-}
-
-/* Soft fade on the left and right edges of the marquee */
-.marquee-mask {
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 48px,
-    black calc(100% - 48px),
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 48px,
-    black calc(100% - 48px),
-    transparent 100%
-  );
 }
 
 @media (prefers-reduced-motion: reduce) {
