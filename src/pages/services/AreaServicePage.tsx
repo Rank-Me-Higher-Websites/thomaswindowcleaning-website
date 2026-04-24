@@ -60,7 +60,7 @@ const AreaServicePage = () => {
       <Header />
       <main>
         {/* Hero */}
-        <section className="relative bg-primary text-primary-foreground pt-24 pb-10 md:pt-28 md:pb-12">
+        <section className="relative bg-section-dark text-white pt-24 pb-10 md:pt-28 md:pb-12">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 15 }}

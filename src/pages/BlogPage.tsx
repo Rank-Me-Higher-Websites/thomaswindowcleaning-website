@@ -403,7 +403,7 @@ const BlogPage = () => {
 
         {/* Latest Articles Grid */}
         {remainingPosts.length > 0 && (
-          <section className="py-8 md:py-12 bg-muted/30">
+          <section className="py-8 md:py-12 bg-section-blue">
             <div className="container mx-auto px-4">
               {/* Section Header */}
               <div className="flex items-center justify-between mb-8">
@@ -470,7 +470,7 @@ const BlogPage = () => {
         )}
 
         {/* CTA Section */}
-        <section className="py-5 md:py-6 bg-primary">
+        <section className="py-5 md:py-6 bg-section-dark">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Need Professional Cleaning Services?

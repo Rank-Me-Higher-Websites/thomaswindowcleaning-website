@@ -149,7 +149,7 @@ const PowerWashingPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-5 md:py-6 bg-muted/30">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-5 items-center">
               <motion.div
@@ -296,7 +296,7 @@ const PowerWashingPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-5 md:py-6 bg-muted/30">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <div className="text-center mb-5">
               <h2 className="text-2xl md:text-3xl font-bold">
@@ -497,7 +497,7 @@ const PowerWashingPage = () => {
         </section>
 
         {/* FAQ Section */}
-        <section className="py-5 md:py-6 bg-muted/30">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <div className="text-center mb-5">
               <span className="section-label justify-center">FAQ</span>
@@ -537,7 +537,7 @@ const PowerWashingPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5 md:py-6 bg-primary">
+        <section className="py-5 md:py-6 bg-section-dark">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Schedule Your Power Washing Today!

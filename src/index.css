@@ -306,7 +306,8 @@
   .bg-section-dark .bg-white,
   .bg-section-dark .bg-background,
   .bg-section-dark .bg-card,
-  .bg-section-dark .bg-section-blue {
+  .bg-section-dark .bg-section-blue,
+  .bg-section-dark .bg-primary-foreground {
     color: hsl(var(--foreground));
   }
 
@@ -314,7 +315,8 @@
   .bg-section-dark .bg-white .text-foreground,
   .bg-section-dark .bg-background .text-foreground,
   .bg-section-dark .bg-card .text-foreground,
-  .bg-section-dark .bg-section-blue .text-foreground {
+  .bg-section-dark .bg-section-blue .text-foreground,
+  .bg-section-dark .bg-primary-foreground .text-foreground {
     color: hsl(var(--foreground));
   }
 
@@ -322,8 +324,16 @@
   .bg-section-dark .bg-white .text-muted-foreground,
   .bg-section-dark .bg-background .text-muted-foreground,
   .bg-section-dark .bg-card .text-muted-foreground,
-  .bg-section-dark .bg-section-blue .text-muted-foreground {
+  .bg-section-dark .bg-section-blue .text-muted-foreground,
+  .bg-section-dark .bg-primary-foreground .text-muted-foreground {
     color: hsl(var(--muted-foreground));
+  }
+
+  /* Preserve original primary color on text-primary inside white/light buttons in dark sections */
+  .bg-section-dark .bg-white.text-primary,
+  .bg-section-dark .bg-primary-foreground.text-primary,
+  .bg-section-dark .bg-section-blue.text-primary {
+    color: hsl(var(--primary));
   }
 
   .bg-section-dark .glass-card .text-primary,

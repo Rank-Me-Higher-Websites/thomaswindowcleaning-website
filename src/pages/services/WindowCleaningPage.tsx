@@ -157,7 +157,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-5 md:py-6 bg-muted/30 relative overflow-hidden">
+        <section className="py-5 md:py-6 bg-section-blue relative overflow-hidden">
           {/* Decorative accent bar */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-accent/50 to-transparent" />
           
@@ -301,7 +301,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-5 md:py-6 bg-primary text-primary-foreground relative overflow-hidden">
+        <section className="py-5 md:py-6 bg-section-dark text-white relative overflow-hidden">
           {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/10 -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-accent/5 translate-y-1/2 -translate-x-1/2" />
@@ -531,7 +531,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5 md:py-6 bg-gradient-to-r from-primary via-primary to-primary/90 relative overflow-hidden">
+        <section className="py-5 md:py-6 bg-section-dark relative overflow-hidden">
           <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-accent/10 -translate-y-1/2 translate-x-1/3" />
           <div className="container mx-auto px-4 text-center relative z-10">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-2">

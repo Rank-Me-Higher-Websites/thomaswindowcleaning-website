@@ -2297,7 +2297,7 @@ const BlogPostPage = () => {
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
-          <section className="py-16 bg-muted/30">
+          <section className="py-16 bg-section-blue">
             <div className="container mx-auto px-4">
               <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-8">

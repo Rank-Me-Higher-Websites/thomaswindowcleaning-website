@@ -98,7 +98,7 @@ const PricesPage = () => {
         </section>
 
         {/* Transparent Pricing Info Section */}
-        <section className="py-5 md:py-6 bg-muted/30">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <div className="grid lg:grid-cols-2 gap-5 items-center max-w-6xl mx-auto">
               <motion.div
@@ -180,7 +180,7 @@ const PricesPage = () => {
         </section>
 
         {/* Gutter Cleaning Prices */}
-        <section className="py-5 md:py-6 bg-muted/30">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -300,7 +300,7 @@ const PricesPage = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-5 md:py-6 bg-primary">
+        <section className="py-5 md:py-6 bg-section-dark">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground mb-3">
               Ready to Get Started?
