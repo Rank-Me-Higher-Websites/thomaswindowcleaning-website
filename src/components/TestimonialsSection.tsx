@@ -22,7 +22,7 @@ export const TestimonialsSection = () => {
   }, []);
 
   return (
-    <section id="testimonials" className="py-4 md:py-6 relative overflow-hidden bg-muted/30">
+    <section id="testimonials" className="py-4 md:py-6 relative overflow-hidden bg-section-blue">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Section header */}
         <motion.div

@@ -7,7 +7,7 @@ export const SEOContentSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-4 md:py-6 bg-muted/30">
+    <section className="py-4 md:py-6 bg-background">
       <div className="container mx-auto px-4">
         {/* Main SEO Content */}
         <div className="max-w-4xl mx-auto text-center mb-5">
