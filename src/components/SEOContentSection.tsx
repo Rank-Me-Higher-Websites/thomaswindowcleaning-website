@@ -36,39 +36,39 @@ export const SEOContentSection = () => {
 
         {/* Services & Areas Grid */}
         <div className="grid md:grid-cols-2 gap-5">
-          <div className="bg-background rounded-lg p-4 shadow-sm border border-border">
-            <h3 className="text-lg font-semibold text-foreground mb-4">Our Professional Services</h3>
+          <div className="bg-section-dark rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-white mb-4">Our Professional Services</h3>
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/window-cleaning" className="hover:text-primary transition-colors">Residential Window Cleaning</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/window-cleaning" className="hover:text-section-blue transition-colors">Residential Window Cleaning</Link>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/window-cleaning" className="hover:text-primary transition-colors">Commercial Window Cleaning</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/window-cleaning" className="hover:text-section-blue transition-colors">Commercial Window Cleaning</Link>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/gutter-cleaning" className="hover:text-primary transition-colors">Gutter Cleaning & Maintenance</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/gutter-cleaning" className="hover:text-section-blue transition-colors">Gutter Cleaning & Maintenance</Link>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Power Washing Services</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-section-blue transition-colors">Power Washing Services</Link>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Pressure Washing Driveways</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-section-blue transition-colors">Pressure Washing Driveways</Link>
               </li>
-              <li className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle className="h-4 w-4 text-primary flex-shrink-0" />
-                <Link to="/services/power-washing" className="hover:text-primary transition-colors">Deck & Patio Cleaning</Link>
+              <li className="flex items-center gap-2 text-sm text-white/85">
+                <CheckCircle className="h-4 w-4 text-section-blue flex-shrink-0" />
+                <Link to="/services/power-washing" className="hover:text-section-blue transition-colors">Deck & Patio Cleaning</Link>
               </li>
             </ul>
           </div>
 
-          <div className="bg-background rounded-lg p-6 shadow-sm border border-border">
-            <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-              <MapPin className="h-5 w-5 text-primary" />
+          <div className="bg-section-dark rounded-lg p-6 shadow-sm">
+            <h3 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+              <MapPin className="h-5 w-5 text-section-blue" />
               Areas We Serve
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -76,13 +76,13 @@ export const SEOContentSection = () => {
                 <Link 
                   key={area.slug}
                   to={`/services/window-cleaning/${area.slug}`}
-                  className="bg-muted px-3 py-1.5 rounded-full text-xs font-medium text-foreground/70 hover:bg-primary hover:text-primary-foreground transition-colors"
+                  className="bg-white/10 px-3 py-1.5 rounded-full text-xs font-medium text-white hover:bg-section-blue hover:text-foreground transition-colors"
                 >
                   {area.name}, IL
                 </Link>
               ))}
             </div>
-            <p className="text-xs text-muted-foreground mt-4">
+            <p className="text-xs text-white/75 mt-4">
               Serving the entire Chicago metropolitan area and surrounding suburbs.
             </p>
           </div>
