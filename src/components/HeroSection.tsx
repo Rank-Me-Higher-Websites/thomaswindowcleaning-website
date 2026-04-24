@@ -224,21 +224,21 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* Trust Badges - below the form */}
-            <div className="flex flex-wrap gap-1.5 mt-4 justify-center lg:justify-start">
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
-                <CheckCircle className="w-3.5 h-3.5" />
+            <div className="flex flex-wrap gap-2.5 mt-5 justify-center lg:justify-start">
+              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <CheckCircle className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
                 Fully Insured
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
-                <MapPin className="w-3.5 h-3.5" />
-                #1 Wheeling
+              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <MapPin className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
+                #1 in Wheeling
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
-                <Shield className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <Shield className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
                 Satisfaction Guarantee
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
-                <DollarSign className="w-3.5 h-3.5" />
+              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <DollarSign className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
                 Fair Pricing
               </span>
             </div>
