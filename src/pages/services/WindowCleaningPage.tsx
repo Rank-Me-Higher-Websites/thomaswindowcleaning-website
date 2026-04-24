@@ -255,19 +255,21 @@ const WindowCleaningPage = () => {
             </div>
 
             <div className="max-w-3xl mx-auto">
-              <div className="glass-card overflow-hidden border-2 border-accent/15">
-                <div className="grid grid-cols-3 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground font-semibold">
-                  <div className="p-3 text-center text-sm">No. of Windows</div>
-                  <div className="p-3 text-center border-l border-primary-foreground/20 text-sm">Inside & Outside</div>
-                  <div className="p-3 text-center border-l border-primary-foreground/20 text-sm">Outside Only</div>
-                </div>
-                {pricingData.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-3 text-sm ${index % 2 === 0 ? 'bg-accent/[0.03]' : 'bg-card'}`}>
-                    <div className="p-3 text-center font-medium">{row.windows}</div>
-                    <div className="p-3 text-center border-l border-border font-semibold text-accent">{row.insideOutside}</div>
-                    <div className="p-3 text-center border-l border-border font-semibold text-accent">{row.outsideOnly}</div>
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div className="glass-card overflow-hidden border-2 border-accent/15 min-w-[400px]">
+                  <div className="grid grid-cols-3 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground font-semibold text-xs md:text-sm">
+                    <div className="p-2.5 md:p-3 text-center">No. of Windows</div>
+                    <div className="p-2.5 md:p-3 text-center border-l border-primary-foreground/20">Inside & Outside</div>
+                    <div className="p-2.5 md:p-3 text-center border-l border-primary-foreground/20">Outside Only</div>
                   </div>
-                ))}
+                  {pricingData.map((row, index) => (
+                    <div key={index} className={`grid grid-cols-3 text-xs md:text-sm ${index % 2 === 0 ? 'bg-accent/[0.03]' : 'bg-card'}`}>
+                      <div className="p-2.5 md:p-3 text-center font-medium">{row.windows}</div>
+                      <div className="p-2.5 md:p-3 text-center border-l border-border font-semibold text-accent">{row.insideOutside}</div>
+                      <div className="p-2.5 md:p-3 text-center border-l border-border font-semibold text-accent">{row.outsideOnly}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
               
               <div className="mt-5 rounded-xl border-2 border-accent/20 bg-accent/[0.04] p-5 shadow-md">

@@ -230,21 +230,23 @@ const GutterCleaningPage = () => {
             </div>
 
             <div className="max-w-4xl mx-auto">
-              <div className="glass-card overflow-hidden">
-                <div className="grid grid-cols-4 bg-primary text-primary-foreground font-semibold">
-                  <div className="p-4 text-center">House Size</div>
-                  <div className="p-4 text-center border-l border-primary-foreground/20">1 Story</div>
-                  <div className="p-4 text-center border-l border-primary-foreground/20">2 Story</div>
-                  <div className="p-4 text-center border-l border-primary-foreground/20">3 Story</div>
-                </div>
-                {pricingData.map((row, index) => (
-                  <div key={index} className={`grid grid-cols-4 ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
-                    <div className="p-4 text-center font-medium text-sm">{row.size}</div>
-                    <div className="p-4 text-center border-l border-border">{row.story1}</div>
-                    <div className="p-4 text-center border-l border-border">{row.story2}</div>
-                    <div className="p-4 text-center border-l border-border">{row.story3}</div>
+              <div className="overflow-x-auto -mx-4 px-4 sm:mx-0 sm:px-0">
+                <div className="glass-card overflow-hidden min-w-[460px]">
+                  <div className="grid grid-cols-4 bg-primary text-primary-foreground font-semibold text-xs md:text-sm">
+                    <div className="p-2.5 md:p-4 text-center">House Size</div>
+                    <div className="p-2.5 md:p-4 text-center border-l border-primary-foreground/20">1 Story</div>
+                    <div className="p-2.5 md:p-4 text-center border-l border-primary-foreground/20">2 Story</div>
+                    <div className="p-2.5 md:p-4 text-center border-l border-primary-foreground/20">3 Story</div>
                   </div>
-                ))}
+                  {pricingData.map((row, index) => (
+                    <div key={index} className={`grid grid-cols-4 text-xs md:text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                      <div className="p-2.5 md:p-4 text-center font-medium">{row.size}</div>
+                      <div className="p-2.5 md:p-4 text-center border-l border-border">{row.story1}</div>
+                      <div className="p-2.5 md:p-4 text-center border-l border-border">{row.story2}</div>
+                      <div className="p-2.5 md:p-4 text-center border-l border-border">{row.story3}</div>
+                    </div>
+                  ))}
+                </div>
               </div>
               
               <div className="mt-6 space-y-2">

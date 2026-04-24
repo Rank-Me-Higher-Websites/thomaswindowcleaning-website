@@ -344,7 +344,7 @@ const BlogPage = () => {
 
         {/* Featured Article */}
         {featuredPost && (
-          <section className="py-8 md:py-12">
+          <section className="py-6 md:py-12">
             <div className="container mx-auto px-4">
               <motion.article
                 initial={{ opacity: 0, y: 20 }}
@@ -403,7 +403,7 @@ const BlogPage = () => {
 
         {/* Latest Articles Grid */}
         {remainingPosts.length > 0 && (
-          <section className="py-8 md:py-12 bg-section-blue">
+          <section className="py-6 md:py-12 bg-section-blue">
             <div className="container mx-auto px-4">
               {/* Section Header */}
               <div className="flex items-center justify-between mb-8">

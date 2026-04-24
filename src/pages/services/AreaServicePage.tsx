@@ -19,7 +19,7 @@ const AreaServicePage = () => {
     return (
       <div className="min-h-screen">
         <Header />
-        <main className="container mx-auto px-4 py-20 text-center">
+        <main className="container mx-auto px-4 py-10 md:py-20 text-center">
           <h1 className="text-2xl font-bold mb-4">Page Not Found</h1>
           <Link to="/" className="text-primary hover:underline">Return Home</Link>
         </main>

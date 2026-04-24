@@ -2154,7 +2154,7 @@ const BlogPostPage = () => {
     return (
       <div className="min-h-screen bg-background">
         <Header />
-        <main className="py-24">
+        <main className="py-12 md:py-24">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl font-bold mb-4">Post Not Found</h1>
             <p className="text-muted-foreground mb-8">The blog post you're looking for doesn't exist.</p>
@@ -2201,7 +2201,7 @@ const BlogPostPage = () => {
             <div className="absolute inset-0 bg-black/70" />
           </div>
 
-          <div className="container mx-auto px-4 relative z-10 py-24">
+          <div className="container mx-auto px-4 relative z-10 py-10 md:py-24">
             <div className="max-w-4xl">
               <Link
                 to="/blog"
@@ -2231,7 +2231,7 @@ const BlogPostPage = () => {
         </section>
 
         {/* Article Content */}
-        <section className="py-16">
+        <section className="py-8 md:py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto">
               <motion.article
@@ -2297,7 +2297,7 @@ const BlogPostPage = () => {
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
-          <section className="py-16 bg-section-blue">
+          <section className="py-8 md:py-16 bg-section-blue">
             <div className="container mx-auto px-4">
               <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
               <div className="grid md:grid-cols-3 gap-8">
