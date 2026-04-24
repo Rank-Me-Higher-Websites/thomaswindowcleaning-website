@@ -288,7 +288,8 @@
     color: rgba(255, 255, 255, 0.85);
   }
 
-  .bg-section-dark .text-primary {
+  .bg-section-dark .text-primary,
+  .bg-section-dark .text-gradient {
     color: hsl(var(--section-blue));
   }
 
