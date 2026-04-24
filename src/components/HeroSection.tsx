@@ -56,8 +56,8 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-4 md:py-8 relative z-10 w-full flex flex-col">
-        <div className="flex-1 flex flex-col gap-5 lg:grid lg:grid-cols-[1.4fr_0.6fr] lg:gap-8 lg:items-center">
+      <div className="container mx-auto px-4 py-3 md:py-8 relative z-10 w-full flex flex-col">
+        <div className="flex-1 flex flex-col gap-3 lg:grid lg:grid-cols-[1.4fr_0.6fr] lg:gap-8 lg:items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,13 +66,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             className="text-white"
           >
             {/* Headline */}
-            <h1 className="font-display italic font-black text-[2rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3rem] mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
+            <h1 className="font-display italic font-black text-[1.75rem] sm:text-[2.25rem] md:text-[2.5rem] lg:text-[3rem] mb-2 md:mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
               Window Cleaning in Chicago<br />
               <span className="text-section-blue">Streak-Free Results</span>
             </h1>
 
             {/* Description */}
-            <p className="text-sm md:text-base lg:text-lg text-white/85 mb-4 max-w-xl leading-snug md:leading-relaxed font-normal">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/85 mb-2.5 md:mb-4 max-w-xl leading-snug md:leading-relaxed font-normal">
               <span className="font-semibold text-white">Thomas Window Cleaning</span>: window cleaning, gutter cleaning &amp; power washing in <span className="font-semibold text-white">Chicago &amp; surrounding suburbs</span> since 1995.
             </p>
 
@@ -93,13 +93,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2.5 mb-3">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-bold transition-colors text-base md:text-lg shadow-lg" data-testid="button-call-hero">
-                <Phone className="w-5 h-5" />
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 mb-2 md:mb-3">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-white text-foreground hover:bg-white/90 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors text-sm md:text-lg shadow-lg" data-testid="button-call-hero">
+                <Phone className="w-4 h-4 md:w-5 md:h-5" />
                 Call Now
               </a>
-              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-bold transition-colors text-base md:text-lg" data-testid="button-quote-hero">
-                <ArrowRight className="w-5 h-5" />
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-1.5 md:gap-2 border-2 border-white text-white hover:bg-white/10 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors text-sm md:text-lg" data-testid="button-quote-hero">
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                 Get Quote
               </button>
             </div>
@@ -109,16 +109,16 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
               href="https://www.google.com/maps/place/Thomas+Window+Cleaning/@42.1391,-87.9295,15z"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="flex items-center gap-1.5 md:gap-2 hover:opacity-80 transition-opacity"
               data-testid="link-google-reviews"
             >
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-star text-star" />
+                  <Star key={i} className="w-3.5 h-3.5 md:w-4 md:h-4 fill-star text-star" />
                 ))}
               </div>
-              <span className="font-bold text-white text-base">5.0</span>
-              <span className="text-white/75 text-sm">47 Google Reviews</span>
+              <span className="font-bold text-white text-sm md:text-base">5.0</span>
+              <span className="text-white/75 text-xs md:text-sm">47 Google Reviews</span>
             </a>
           </motion.div>
 
@@ -128,11 +128,11 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-4 md:p-6 shadow-2xl">
-              <h3 className="font-display font-black text-2xl md:text-[30px] text-foreground mb-1 leading-tight">
+            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-3 md:p-6 shadow-2xl">
+              <h3 className="font-display font-black text-lg md:text-[30px] text-foreground mb-0.5 md:mb-1 leading-tight">
                 Get a Free Quote
               </h3>
-              <p className="text-xs md:text-sm text-muted-foreground mb-3 md:mb-4">
+              <p className="text-[11px] md:text-sm text-muted-foreground mb-2 md:mb-4">
                 We'll get back to you within 24 hours.
               </p>
 
@@ -149,7 +149,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-2.5 md:space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-2 md:space-y-3">
                 <div>
                   <label htmlFor="hero-name" className="sr-only md:not-sr-only md:block md:text-sm md:font-bold md:text-foreground md:mb-1">
                     Your Name
@@ -220,21 +220,21 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* Trust Badges - below the form */}
-            <div className="flex flex-wrap gap-2.5 mt-5 justify-center lg:justify-start">
-              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
-                <CheckCircle className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
+            <div className="flex flex-wrap gap-1.5 md:gap-2.5 mt-2.5 md:mt-5 justify-center lg:justify-start">
+              <span className="inline-flex items-center gap-1 md:gap-2 bg-white px-2 md:px-4 py-1 md:py-2.5 rounded-full text-[11px] md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <CheckCircle className="w-3 h-3 md:w-5 md:h-5 text-section-blue" strokeWidth={2.5} />
                 Fully Insured
               </span>
-              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
-                <MapPin className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
+              <span className="inline-flex items-center gap-1 md:gap-2 bg-white px-2 md:px-4 py-1 md:py-2.5 rounded-full text-[11px] md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <MapPin className="w-3 h-3 md:w-5 md:h-5 text-section-blue" strokeWidth={2.5} />
                 Chicagoland Local
               </span>
-              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
-                <Shield className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
+              <span className="inline-flex items-center gap-1 md:gap-2 bg-white px-2 md:px-4 py-1 md:py-2.5 rounded-full text-[11px] md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <Shield className="w-3 h-3 md:w-5 md:h-5 text-section-blue" strokeWidth={2.5} />
                 Satisfaction Guarantee
               </span>
-              <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
-                <DollarSign className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
+              <span className="inline-flex items-center gap-1 md:gap-2 bg-white px-2 md:px-4 py-1 md:py-2.5 rounded-full text-[11px] md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
+                <DollarSign className="w-3 h-3 md:w-5 md:h-5 text-section-blue" strokeWidth={2.5} />
                 Fair Pricing
               </span>
             </div>
