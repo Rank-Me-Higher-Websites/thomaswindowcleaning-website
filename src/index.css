@@ -305,21 +305,24 @@
   .bg-section-dark .glass-card,
   .bg-section-dark .bg-white,
   .bg-section-dark .bg-background,
-  .bg-section-dark .bg-card {
+  .bg-section-dark .bg-card,
+  .bg-section-dark .bg-section-blue {
     color: hsl(var(--foreground));
   }
 
   .bg-section-dark .glass-card .text-foreground,
   .bg-section-dark .bg-white .text-foreground,
   .bg-section-dark .bg-background .text-foreground,
-  .bg-section-dark .bg-card .text-foreground {
+  .bg-section-dark .bg-card .text-foreground,
+  .bg-section-dark .bg-section-blue .text-foreground {
     color: hsl(var(--foreground));
   }
 
   .bg-section-dark .glass-card .text-muted-foreground,
   .bg-section-dark .bg-white .text-muted-foreground,
   .bg-section-dark .bg-background .text-muted-foreground,
-  .bg-section-dark .bg-card .text-muted-foreground {
+  .bg-section-dark .bg-card .text-muted-foreground,
+  .bg-section-dark .bg-section-blue .text-muted-foreground {
     color: hsl(var(--muted-foreground));
   }
 
