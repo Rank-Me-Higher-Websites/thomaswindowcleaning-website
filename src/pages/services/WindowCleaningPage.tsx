@@ -308,12 +308,12 @@ const WindowCleaningPage = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-5">
-              <h2 className="text-2xl md:text-3xl font-bold text-primary-foreground">
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
                 Residential & Commercial{' '}
-                <span className="text-accent">Window Cleaning</span>
+                <span className="text-primary">Window Cleaning</span>
               </h2>
-              <p className="text-primary-foreground/70 mt-3 text-sm max-w-2xl mx-auto">
-                We serve both homeowners and business owners with professional <a href="https://www.iwca.org/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">window washing</a> services tailored to your needs. Combine with our <Link to="/services/power-washing" className="text-accent hover:underline">pressure washing</Link> for complete exterior cleaning.
+              <p className="text-foreground/80 mt-3 text-sm max-w-2xl mx-auto">
+                We serve both homeowners and business owners with professional <a href="https://www.iwca.org/" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">window washing</a> services tailored to your needs. Combine with our <Link to="/services/power-washing" className="text-primary font-semibold hover:underline">pressure washing</Link> for complete exterior cleaning.
               </p>
             </div>
 
@@ -325,13 +325,13 @@ const WindowCleaningPage = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/15 rounded-xl p-5 text-center hover:bg-primary-foreground/15 transition-all duration-300"
+                  className="bg-section-dark rounded-xl p-5 text-center shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mx-auto mb-3">
-                    <service.icon className="w-6 h-6 text-accent" />
+                  <div className="w-12 h-12 rounded-xl bg-section-blue flex items-center justify-center mx-auto mb-3">
+                    <service.icon className="w-6 h-6 text-foreground" />
                   </div>
-                  <h3 className="text-base font-bold mb-2 text-primary-foreground">{service.title}</h3>
-                  <p className="text-sm text-primary-foreground/70">{service.description}</p>
+                  <h3 className="text-base font-bold mb-2 text-white">{service.title}</h3>
+                  <p className="text-sm text-white/80">{service.description}</p>
                 </motion.div>
               ))}
             </div>
@@ -344,11 +344,11 @@ const WindowCleaningPage = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="flex flex-col sm:flex-row gap-3 justify-center mt-5"
             >
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-accent text-accent-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-accent/90 transition-colors text-sm shadow-md">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-section-dark text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-section-dark/90 transition-colors text-sm shadow-md">
                 <Phone className="w-4 h-4" />
                 Call Now
               </a>
-              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground text-primary-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-primary-foreground/10 transition-colors text-sm">
+              <button onClick={openBooking} className="inline-flex items-center justify-center gap-2 border-2 border-section-dark text-foreground px-5 py-2.5 rounded-lg font-semibold hover:bg-section-dark hover:text-white transition-colors text-sm">
                 <ArrowRight className="w-4 h-4" />
                 Get Free Quote
               </button>
