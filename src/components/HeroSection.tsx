@@ -45,7 +45,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
   };
 
   return (
-    <section id="home" className="relative lg:min-h-[75vh] flex items-center overflow-hidden pt-14 md:pt-16">
+    <section id="home" className="relative min-h-[80vh] lg:min-h-[75vh] flex items-center overflow-hidden pt-14 md:pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
@@ -56,8 +56,8 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-4 md:py-6 relative z-10">
-        <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-5 lg:gap-8 items-center">
+      <div className="container mx-auto px-4 py-6 md:py-8 relative z-10">
+        <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-6 lg:gap-8 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,13 +66,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             className="text-white"
           >
             {/* Headline */}
-            <h1 className="font-display italic font-black text-[1.75rem] md:text-[2.5rem] lg:text-[3rem] mb-2 md:mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
+            <h1 className="font-display italic font-black text-[2.25rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
               Window Cleaning in Chicago<br />
               <span className="text-section-blue">Streak-Free Results</span>
             </h1>
 
             {/* Description */}
-            <p className="text-sm md:text-base lg:text-lg text-white/80 mb-3 md:mb-4 max-w-xl leading-snug md:leading-relaxed font-normal">
+            <p className="text-base md:text-base lg:text-lg text-white/80 mb-4 max-w-xl leading-relaxed font-normal">
               <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
               <span className="font-medium">window cleaning</span>,{' '}
               <span className="font-medium">gutter cleaning</span>, and{' '}
@@ -80,8 +80,8 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
               <span className="font-semibold text-white">Chicago & the surrounding suburbs</span> since 1995.
             </p>
 
-            {/* Service Tags - hidden on mobile */}
-            <div className="hidden sm:flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4 text-xs text-white/80">
+            {/* Service Tags */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4 text-xs text-white/80">
               <Link to="/services/window-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 Window Cleaning
@@ -97,13 +97,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 mb-3 md:mb-4">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-bold transition-colors text-base md:text-lg shadow-lg" data-testid="button-call-hero">
-                <Phone className="w-4 h-4 md:w-5 md:h-5" />
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 mb-4">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-5 md:px-6 py-3 rounded-lg font-bold transition-colors text-base md:text-lg shadow-lg" data-testid="button-call-hero">
+                <Phone className="w-5 h-5" />
                 Call Now
               </a>
-              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-bold transition-colors text-base md:text-lg" data-testid="button-quote-hero">
-                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-5 md:px-6 py-3 rounded-lg font-bold transition-colors text-base md:text-lg" data-testid="button-quote-hero">
+                <ArrowRight className="w-5 h-5" />
                 Get Quote
               </button>
             </div>
@@ -122,32 +122,15 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
                 ))}
               </div>
               <span className="font-bold text-white">5.0</span>
-              <span className="text-white/70 text-xs md:text-sm">47 Google Reviews</span>
+              <span className="text-white/70 text-sm">47 Google Reviews</span>
             </a>
-
-            {/* Trust badges - mobile only, inline */}
-            <div className="flex lg:hidden flex-wrap gap-1.5 mt-3">
-              <span className="inline-flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-full text-xs font-bold text-foreground shadow">
-                <CheckCircle className="w-3.5 h-3.5 text-section-blue" strokeWidth={2.5} />
-                Insured
-              </span>
-              <span className="inline-flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-full text-xs font-bold text-foreground shadow">
-                <MapPin className="w-3.5 h-3.5 text-section-blue" strokeWidth={2.5} />
-                Chicagoland
-              </span>
-              <span className="inline-flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-full text-xs font-bold text-foreground shadow">
-                <Shield className="w-3.5 h-3.5 text-section-blue" strokeWidth={2.5} />
-                Guaranteed
-              </span>
-            </div>
           </motion.div>
 
-          {/* Right side - Quote Form + Trust Badges (desktop only) */}
+          {/* Right side - Quote Form + Trust Badges */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="hidden lg:block"
           >
             <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-2xl">
               <h3 className="font-display font-black text-[30px] text-foreground mb-1 leading-tight">
