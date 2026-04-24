@@ -66,7 +66,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             className="text-white"
           >
             {/* Headline */}
-            <h1 className="font-display italic font-black text-[3rem] md:text-[3.75rem] mb-3 leading-[0.95] tracking-tight text-white">
+            <h1 className="font-display italic font-black text-[2.25rem] md:text-[2.75rem] lg:text-[3rem] mb-3 leading-[1] tracking-tight text-white max-w-xl">
               Window Cleaning in Chicago<br />
               <span className="text-section-blue">Streak-Free Results</span>
             </h1>
