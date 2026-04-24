@@ -301,7 +301,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* Service Types Section */}
-        <section className="py-5 md:py-6 bg-section-dark text-white relative overflow-hidden">
+        <section className="py-5 md:py-6 bg-section-blue relative overflow-hidden">
           {/* Decorative circles */}
           <div className="absolute top-0 right-0 w-64 h-64 rounded-full bg-accent/10 -translate-y-1/2 translate-x-1/2" />
           <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-accent/5 translate-y-1/2 -translate-x-1/2" />
@@ -415,7 +415,7 @@ const WindowCleaningPage = () => {
         </section>
 
         {/* SEO Content Section */}
-        <section className="py-5 md:py-6 bg-muted/40">
+        <section className="py-5 md:py-6 bg-section-blue">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-xl md:text-2xl font-bold text-foreground mb-3 text-center">
