@@ -11,25 +11,25 @@ export const SEOContentSection = () => {
       <div className="container mx-auto px-4">
         {/* Trust Badges */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-3 shadow-sm border border-border">
-            <Shield className="h-8 w-8 text-primary flex-shrink-0" />
+          <div className="flex items-center justify-center gap-3 bg-section-blue rounded-lg p-4 shadow-sm">
+            <Shield className="h-8 w-8 text-foreground flex-shrink-0" strokeWidth={2.25} />
             <div className="text-left">
-              <p className="font-semibold text-foreground text-sm">Licensed & Insured</p>
-              <p className="text-xs text-muted-foreground">Full liability coverage</p>
+              <p className="font-bold text-foreground text-sm">Licensed & Insured</p>
+              <p className="text-xs text-foreground/75">Full liability coverage</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
-            <Award className="h-8 w-8 text-primary flex-shrink-0" />
+          <div className="flex items-center justify-center gap-3 bg-section-blue rounded-lg p-4 shadow-sm">
+            <Award className="h-8 w-8 text-foreground flex-shrink-0" strokeWidth={2.25} />
             <div className="text-left">
-              <p className="font-semibold text-foreground text-sm">Award Winning</p>
-              <p className="text-xs text-muted-foreground">Top-rated local service</p>
+              <p className="font-bold text-foreground text-sm">Award Winning</p>
+              <p className="text-xs text-foreground/75">Top-rated local service</p>
             </div>
           </div>
-          <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-4 shadow-sm border border-border">
-            <CheckCircle className="h-8 w-8 text-primary flex-shrink-0" />
+          <div className="flex items-center justify-center gap-3 bg-section-blue rounded-lg p-4 shadow-sm">
+            <CheckCircle className="h-8 w-8 text-foreground flex-shrink-0" strokeWidth={2.25} />
             <div className="text-left">
-              <p className="font-semibold text-foreground text-sm">Satisfaction Guaranteed</p>
-              <p className="text-xs text-muted-foreground">100% happiness promise</p>
+              <p className="font-bold text-foreground text-sm">Satisfaction Guaranteed</p>
+              <p className="text-xs text-foreground/75">100% happiness promise</p>
             </div>
           </div>
         </div>
