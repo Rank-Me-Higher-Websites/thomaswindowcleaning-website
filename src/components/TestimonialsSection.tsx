@@ -7,49 +7,49 @@ const reviews = [
     name: 'Jennifer M.',
     location: 'Wheeling, IL',
     rating: 5,
-    text: "Thomas and his team did an incredible job on our windows. Streak-free, on time, and very professional. Best window cleaning we've ever had!",
+    text: "Thomas and his team did an incredible job on our windows. Streak-free, on time, and very professional!",
   },
   {
     name: 'Mark D.',
     location: 'Arlington Heights, IL',
     rating: 5,
-    text: 'Booked them for gutter cleaning before winter. Showed up exactly when promised, cleaned up everything, and the price was very fair. Highly recommend.',
+    text: 'Booked them for gutter cleaning before winter. On time, cleaned up everything, and a very fair price.',
   },
   {
     name: 'Sarah K.',
     location: 'Buffalo Grove, IL',
     rating: 5,
-    text: "Power washed our driveway and patio - looks brand new. Friendly crew, great communication from booking to finish. Will absolutely use again.",
+    text: "Power washed our driveway and patio - looks brand new. Friendly crew and great communication.",
   },
   {
     name: 'David R.',
     location: 'Palatine, IL',
     rating: 5,
-    text: "I've used Thomas Window Cleaning for 5+ years. Always reliable, always thorough. Our home looks better every visit. They treat your property with respect.",
+    text: "I've used Thomas for 5+ years. Always reliable, always thorough. Our home looks better every visit.",
   },
   {
     name: 'Linda P.',
     location: 'Northbrook, IL',
     rating: 5,
-    text: 'Thomas personally came out to give us a quote and explained everything. The crew was polite, fast, and the windows are spotless inside and out.',
+    text: 'Thomas came out personally to give us a quote. The crew was polite, fast, and the windows are spotless.',
   },
   {
     name: 'Anthony G.',
     location: 'Mount Prospect, IL',
     rating: 5,
-    text: "Best price I got from three quotes and the quality was top notch. They even cleaned the screens. Honest, hardworking team you can trust.",
+    text: "Best price of three quotes and the quality was top notch. Honest, hardworking team you can trust.",
   },
   {
     name: 'Michelle T.',
     location: 'Schaumburg, IL',
     rating: 5,
-    text: 'Annual gutter cleaning customer here. Always punctual, always thorough, never any surprises on the bill. Thomas runs a great business.',
+    text: 'Annual gutter cleaning customer. Always punctual, always thorough, never any surprises on the bill.',
   },
   {
     name: 'Robert H.',
     location: 'Glenview, IL',
     rating: 5,
-    text: "We had our entire home power washed and windows cleaned for a listing. Made a huge difference in the photos. Sold in a week. Thank you!",
+    text: "Whole-home power wash and windows before listing. Made a huge difference in the photos. Sold in a week!",
   },
 ];
 
@@ -57,84 +57,80 @@ export const TestimonialsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-50px' });
 
+  // Duplicate the list so the marquee can loop seamlessly
+  const looped = [...reviews, ...reviews];
+
   return (
     <section
       id="testimonials"
-      className="py-8 md:py-12 relative overflow-hidden bg-section-blue"
+      className="py-6 md:py-8 relative overflow-hidden bg-section-blue"
     >
       <div className="container mx-auto px-4" ref={ref}>
-        {/* Section header */}
+        {/* Compact header */}
         <motion.div
-          initial={{ opacity: 0, y: 15 }}
+          initial={{ opacity: 0, y: 10 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.4 }}
-          className="text-center mb-6 md:mb-8"
+          className="text-center mb-4 md:mb-5"
         >
-          <span className="section-label justify-center">TESTIMONIALS</span>
-          <h2 className="text-3xl md:text-4xl font-black mb-2 text-foreground">
-            Trusted by thousands of<br />
-            people &amp; companies
+          <h2 className="text-2xl md:text-3xl font-black mb-1 text-foreground">
+            Trusted by thousands of people &amp; companies
           </h2>
-          <div className="flex items-center justify-center gap-2 text-sm font-semibold text-foreground">
+          <div className="flex items-center justify-center gap-2 text-xs md:text-sm font-semibold text-foreground">
             <div className="flex items-center gap-0.5">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                  className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400"
                 />
               ))}
             </div>
-            <span>5.0 average · 47+ Google Reviews</span>
+            <span>5.0 · 47+ Google Reviews</span>
           </div>
         </motion.div>
       </div>
 
-      {/* Horizontal scroll row */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={isInView ? { opacity: 1, y: 0 } : {}}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="relative"
-      >
-        <div
-          className="flex gap-4 md:gap-5 overflow-x-auto pb-4 px-4 md:px-8 snap-x snap-mandatory scroll-smooth"
-          style={{ scrollbarWidth: 'thin' }}
-          data-testid="scroll-reviews"
-        >
-          {reviews.map((review, idx) => (
+      {/* Auto-scrolling marquee */}
+      <div className="relative w-full overflow-hidden marquee-mask">
+        <div className="flex gap-3 md:gap-4 marquee-track w-max">
+          {looped.map((review, idx) => (
             <article
               key={idx}
-              className="flex-shrink-0 w-[280px] md:w-[340px] snap-start bg-white rounded-2xl shadow-md p-5 md:p-6 flex flex-col"
+              className="flex-shrink-0 w-[260px] md:w-[300px] bg-white rounded-xl shadow-sm p-4 flex flex-col"
               data-testid={`card-review-${idx}`}
             >
-              <Quote className="w-6 h-6 text-foreground/20 mb-2" />
-              <div className="flex items-center gap-0.5 mb-2">
-                {[...Array(review.rating)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className="w-4 h-4 fill-yellow-400 text-yellow-400"
-                  />
-                ))}
+              <div className="flex items-center justify-between mb-1.5">
+                <div className="flex items-center gap-0.5">
+                  {[...Array(review.rating)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className="w-3.5 h-3.5 fill-yellow-400 text-yellow-400"
+                    />
+                  ))}
+                </div>
+                <Quote className="w-4 h-4 text-foreground/15" />
               </div>
               <p
-                className="text-sm md:text-[0.95rem] text-foreground/80 leading-relaxed mb-4 flex-1"
+                className="text-[0.85rem] md:text-sm text-foreground/80 leading-snug mb-3 flex-1"
                 data-testid={`text-review-body-${idx}`}
               >
                 {review.text}
               </p>
-              <div className="border-t border-foreground/10 pt-3">
+              <div className="border-t border-foreground/10 pt-2">
                 <p
-                  className="font-bold text-foreground text-sm"
+                  className="font-bold text-foreground text-xs md:text-sm leading-tight"
                   data-testid={`text-review-name-${idx}`}
                 >
                   {review.name}
                 </p>
-                <p className="text-xs text-foreground/60">{review.location}</p>
+                <p className="text-[0.7rem] md:text-xs text-foreground/60">
+                  {review.location}
+                </p>
               </div>
             </article>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
