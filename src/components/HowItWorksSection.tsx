@@ -30,7 +30,7 @@ export const HowItWorksSection = () => {
   const { openBooking } = useBooking();
 
   return (
-    <section className="py-4 md:py-6 relative overflow-hidden bg-background">
+    <section className="py-4 md:py-6 relative overflow-hidden bg-section-blue">
       <div className="container mx-auto px-4 relative z-10" ref={ref}>
         {/* Section header */}
         <motion.div

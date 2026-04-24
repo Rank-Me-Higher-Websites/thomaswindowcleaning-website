@@ -45,6 +45,7 @@ export default {
         },
         star: "hsl(var(--star))",
         "section-blue": "hsl(var(--section-blue))",
+        "section-dark": "hsl(var(--section-dark))",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",

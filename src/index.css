@@ -43,6 +43,7 @@
 
     /* Alternating section background - light blue */
     --section-blue: 207 90% 77%;
+    --section-dark: 213 60% 16%;
 
     /* Custom glassmorphism tokens for light theme */
     --glass-bg: 0 0% 100% / 0.7;
@@ -275,6 +276,64 @@
 
   .bg-section-blue .text-muted-foreground {
     color: hsl(var(--foreground));
+  }
+
+  /* Inside dark-blue sections: default text to white and lighten muted/foreground variants. */
+  .bg-section-dark {
+    color: #ffffff;
+  }
+
+  .bg-section-dark .text-foreground,
+  .bg-section-dark .text-muted-foreground {
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .bg-section-dark .text-primary {
+    color: hsl(var(--section-blue));
+  }
+
+  .bg-section-dark .section-label {
+    color: hsl(var(--section-blue));
+  }
+
+  .bg-section-dark .section-label::before {
+    background-color: hsl(var(--section-blue));
+  }
+
+  /* Re-establish dark text inside light/white cards nested in dark sections */
+  .bg-section-dark .glass-card,
+  .bg-section-dark .bg-white,
+  .bg-section-dark .bg-background,
+  .bg-section-dark .bg-card {
+    color: hsl(var(--foreground));
+  }
+
+  .bg-section-dark .glass-card .text-foreground,
+  .bg-section-dark .bg-white .text-foreground,
+  .bg-section-dark .bg-background .text-foreground,
+  .bg-section-dark .bg-card .text-foreground {
+    color: hsl(var(--foreground));
+  }
+
+  .bg-section-dark .glass-card .text-muted-foreground,
+  .bg-section-dark .bg-white .text-muted-foreground,
+  .bg-section-dark .bg-background .text-muted-foreground,
+  .bg-section-dark .bg-card .text-muted-foreground {
+    color: hsl(var(--muted-foreground));
+  }
+
+  .bg-section-dark .glass-card .text-primary,
+  .bg-section-dark .bg-white .text-primary,
+  .bg-section-dark .bg-background .text-primary,
+  .bg-section-dark .bg-card .text-primary {
+    color: hsl(var(--primary));
+  }
+
+  /* Make small chips/badges legible on the dark section */
+  .bg-section-dark .badge-glow {
+    background: hsl(var(--section-blue) / 0.18);
+    border-color: hsl(var(--section-blue) / 0.45);
+    color: hsl(var(--section-blue));
   }
 
   /* Animate on scroll fade in */
