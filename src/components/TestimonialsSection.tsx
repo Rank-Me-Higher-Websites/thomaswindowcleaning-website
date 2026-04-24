@@ -5,7 +5,7 @@ import { Star, Quote } from 'lucide-react';
 const reviews = [
   {
     name: 'Jennifer M.',
-    location: 'Wheeling, IL',
+    location: 'Chicago, IL',
     rating: 5,
     text: "Thomas and his team did an incredible job on our windows. Streak-free, on time, and very professional!",
   },

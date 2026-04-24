@@ -77,7 +77,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
               <span className="font-medium">window cleaning</span>,{' '}
               <span className="font-medium">gutter cleaning</span>, and{' '}
               <span className="font-medium">power washing</span>. Serving{' '}
-              <span className="font-semibold text-white">Wheeling & Chicagoland</span> since 1995.
+              <span className="font-semibold text-white">Chicago & the surrounding suburbs</span> since 1995.
             </p>
 
             {/* Service Tags */}
@@ -231,7 +231,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
               </span>
               <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
                 <MapPin className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
-                #1 in Wheeling
+                Chicagoland Local
               </span>
               <span className="inline-flex items-center gap-2 bg-white px-4 py-2.5 rounded-full text-sm md:text-base font-bold text-foreground shadow-lg ring-1 ring-black/5">
                 <Shield className="w-5 h-5 text-section-blue" strokeWidth={2.5} />
