@@ -45,7 +45,7 @@ export const ServicesSection = () => {
           className="text-center mb-6 md:mb-8"
         >
           <span className="section-label">SERVICES</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground leading-tight tracking-tight">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-foreground leading-tight tracking-tight">
             Cleaning Services<br />
             <span className="text-gradient">in Chicagoland Area</span>
           </h2>

@@ -36,13 +36,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
           >
 
             {/* Headline */}
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[3rem] font-bold mb-3 leading-[1.1] text-white">
+            <h1 className="font-display italic font-black text-[3rem] md:text-[3.75rem] mb-3 leading-[0.95] tracking-tight text-white">
               Window Cleaning in Chicago<br />
               Streak-Free Results
             </h1>
 
             {/* Description */}
-            <p className="text-sm md:text-base text-white/90 mb-4 max-w-xl leading-relaxed">
+            <p className="text-base lg:text-lg text-white/80 mb-4 max-w-xl leading-relaxed font-normal">
               <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
               <span className="font-medium">window cleaning</span>,{' '}
               <span className="font-medium">gutter cleaning</span>, and{' '}
@@ -68,31 +68,31 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-2 mb-4">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-5 py-2.5 rounded-lg font-semibold transition-colors text-sm shadow-lg">
-                <Phone className="w-4 h-4" />
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-6 py-3 rounded-lg font-bold transition-colors text-lg shadow-lg">
+                <Phone className="w-5 h-5" />
                 Call Now
               </a>
-              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-5 py-2.5 rounded-lg font-semibold transition-colors text-sm">
-                <ArrowRight className="w-4 h-4" />
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-6 py-3 rounded-lg font-bold transition-colors text-lg">
+                <ArrowRight className="w-5 h-5" />
                 Get Quote
               </button>
             </div>
 
             {/* Trust Badges */}
             <div className="flex flex-wrap gap-1.5 mb-3">
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
                 <CheckCircle className="w-3.5 h-3.5" />
                 Fully Insured
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
                 <MapPin className="w-3.5 h-3.5" />
                 #1 Wheeling
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
                 <Shield className="w-3.5 h-3.5" />
                 Satisfaction Guarantee
               </span>
-              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-xs font-medium border border-white/15 text-white">
+              <span className="inline-flex items-center gap-1.5 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm font-semibold border border-white/15 text-white">
                 <DollarSign className="w-3.5 h-3.5" />
                 Fair Pricing
               </span>

@@ -64,7 +64,7 @@ export const ContactSection = () => {
             transition={{ duration: 0.4 }}
           >
             <span className="section-label">GET IN TOUCH</span>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-foreground">
+            <h2 className="text-3xl md:text-3xl font-black mb-6 text-foreground">
               Let's discuss your{' '}
               <span className="text-gradient">cleaning needs</span>
             </h2>

@@ -23,7 +23,7 @@ export const CTASection = ({ onGetQuote }: CTASectionProps) => {
           transition={{ duration: 0.4 }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-primary-foreground leading-tight">
+          <h2 className="text-3xl md:text-3xl font-black mb-3 text-primary-foreground leading-tight">
             Chicago's Trusted Experts in Power Washing, Window & Gutter Cleaning
           </h2>
           

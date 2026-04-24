@@ -40,7 +40,7 @@ export const HowItWorksSection = () => {
           className="text-center mb-4 md:mb-5"
         >
           <span className="section-label justify-center">HOW IT WORKS</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+          <h2 className="text-3xl md:text-4xl font-black text-foreground">
             Schedule cleaning service<br />
             <span className="text-gradient">in 3 simple steps</span>
           </h2>

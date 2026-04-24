@@ -32,7 +32,7 @@ export const TestimonialsSection = () => {
           className="text-center mb-4 md:mb-5"
         >
           <span className="section-label justify-center">TESTIMONIALS</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 text-foreground">
+          <h2 className="text-3xl md:text-4xl font-black mb-3 text-foreground">
             Trusted by thousands of<br />
             <span className="text-gradient">people & companies</span>
           </h2>

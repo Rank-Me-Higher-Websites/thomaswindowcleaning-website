@@ -11,7 +11,7 @@ export const SEOContentSection = () => {
       <div className="container mx-auto px-4">
         {/* Main SEO Content */}
         <div className="max-w-4xl mx-auto text-center mb-5">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl md:text-3xl font-black text-foreground mb-4">
             Professional Window Cleaning & Exterior Services in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>
           </h2>
           <p className="text-muted-foreground text-sm md:text-base leading-relaxed">

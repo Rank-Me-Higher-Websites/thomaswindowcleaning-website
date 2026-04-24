@@ -61,7 +61,7 @@ export const AboutSection = () => {
             transition={{ duration: 0.4, delay: 0.1 }}
           >
             <span className="section-label">WINDOW CLEANING SERVICES</span>
-            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 text-foreground leading-tight">
+            <h2 className="text-3xl md:text-3xl font-black mb-3 text-foreground leading-tight">
               Your Trusted Experts for{' '}
               <span className="text-gradient">Crystal-Clear Windows</span>{' '}
               & Clog-Free Gutters
