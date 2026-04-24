@@ -9,16 +9,6 @@ export const SEOContentSection = () => {
   return (
     <section className="py-4 md:py-6 bg-background">
       <div className="container mx-auto px-4">
-        {/* Main SEO Content */}
-        <div className="max-w-4xl mx-auto text-center mb-5">
-          <h2 className="text-3xl md:text-3xl font-black text-foreground mb-4">
-            Professional Window Cleaning & Exterior Services in <a href="https://maps.app.goo.gl/GGN3Vf6jbHyoRMry5" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Wheeling, IL</a>
-          </h2>
-          <p className="text-muted-foreground text-sm md:text-base leading-relaxed">
-            Thomas Window Cleaning has been providing exceptional <Link to="/services/window-cleaning" className="text-primary hover:underline">window cleaning</Link>, <Link to="/services/gutter-cleaning" className="text-primary hover:underline">gutter cleaning</Link>, and <Link to="/services/power-washing" className="text-primary hover:underline">power washing</Link> services to homeowners and businesses throughout the <a href="https://en.wikipedia.org/wiki/Chicago_metropolitan_area" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Chicago metropolitan area</a> for over 20 years. Our team of trained professionals uses industry-leading techniques and <a href="https://www.epa.gov/saferchoice" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">eco-friendly cleaning solutions</a> to deliver spotless results every time.
-          </p>
-        </div>
-
         {/* Trust Badges */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
           <div className="flex items-center justify-center gap-3 bg-background rounded-lg p-3 shadow-sm border border-border">
