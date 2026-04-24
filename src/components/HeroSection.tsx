@@ -45,7 +45,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
   };
 
   return (
-    <section id="home" className="relative min-h-[80vh] lg:min-h-[75vh] flex items-center overflow-hidden pt-14 md:pt-16">
+    <section id="home" className="relative min-h-svh lg:min-h-[75vh] flex items-center overflow-hidden pt-14 md:pt-16">
       {/* Background with overlay */}
       <div className="absolute inset-0">
         <img
@@ -56,8 +56,8 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
         <div className="absolute inset-0 bg-gradient-to-r from-foreground/90 via-foreground/75 to-foreground/50" />
       </div>
 
-      <div className="container mx-auto px-4 py-6 md:py-8 relative z-10">
-        <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-6 lg:gap-8 items-center">
+      <div className="container mx-auto px-4 py-3 md:py-8 relative z-10 w-full">
+        <div className="grid lg:grid-cols-[1.4fr_0.6fr] gap-3 lg:gap-8 items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -66,22 +66,18 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             className="text-white"
           >
             {/* Headline */}
-            <h1 className="font-display italic font-black text-[2.25rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
+            <h1 className="font-display italic font-black text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] mb-1.5 md:mb-3 leading-[1.05] tracking-tight text-white max-w-xl">
               Window Cleaning in Chicago<br />
               <span className="text-section-blue">Streak-Free Results</span>
             </h1>
 
-            {/* Description */}
-            <p className="text-base md:text-base lg:text-lg text-white/80 mb-4 max-w-xl leading-relaxed font-normal">
-              <span className="font-semibold text-white">Thomas Window Cleaning</span> specializes in{' '}
-              <span className="font-medium">window cleaning</span>,{' '}
-              <span className="font-medium">gutter cleaning</span>, and{' '}
-              <span className="font-medium">power washing</span>. Serving{' '}
-              <span className="font-semibold text-white">Chicago & the surrounding suburbs</span> since 1995.
+            {/* Description - tight on mobile */}
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/80 mb-2 md:mb-4 max-w-xl leading-snug md:leading-relaxed font-normal">
+              <span className="font-semibold text-white">Thomas Window Cleaning</span>: window cleaning, gutter cleaning &amp; power washing in <span className="font-semibold text-white">Chicago &amp; surrounding suburbs</span> since 1995.
             </p>
 
-            {/* Service Tags */}
-            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4 text-xs text-white/80">
+            {/* Service Tags - hidden on mobile */}
+            <div className="hidden md:flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-4 text-xs text-white/80">
               <Link to="/services/window-cleaning" className="inline-flex items-center gap-1.5 hover:text-white transition-colors">
                 <Sparkles className="w-3.5 h-3.5 text-white" />
                 Window Cleaning
@@ -97,13 +93,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 mb-4">
-              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-2 bg-white text-foreground hover:bg-white/90 px-5 md:px-6 py-3 rounded-lg font-bold transition-colors text-base md:text-lg shadow-lg" data-testid="button-call-hero">
-                <Phone className="w-5 h-5" />
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-2 mb-2 md:mb-4">
+              <a href="tel:8474043398" className="inline-flex items-center justify-center gap-1.5 md:gap-2 bg-white text-foreground hover:bg-white/90 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors text-sm md:text-lg shadow-lg" data-testid="button-call-hero">
+                <Phone className="w-4 h-4 md:w-5 md:h-5" />
                 Call Now
               </a>
-              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 px-5 md:px-6 py-3 rounded-lg font-bold transition-colors text-base md:text-lg" data-testid="button-quote-hero">
-                <ArrowRight className="w-5 h-5" />
+              <button onClick={handleQuote} className="inline-flex items-center justify-center gap-1.5 md:gap-2 border-2 border-white text-white hover:bg-white/10 px-3 md:px-6 py-2 md:py-3 rounded-lg font-bold transition-colors text-sm md:text-lg" data-testid="button-quote-hero">
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
                 Get Quote
               </button>
             </div>
@@ -113,88 +109,88 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
               href="https://www.google.com/maps/place/Thomas+Window+Cleaning/@42.1391,-87.9295,15z"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              className="flex items-center gap-1.5 md:gap-2 hover:opacity-80 transition-opacity"
               data-testid="link-google-reviews"
             >
               <div className="flex">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-star text-star" />
+                  <Star key={i} className="w-3.5 h-3.5 md:w-4 md:h-4 fill-star text-star" />
                 ))}
               </div>
-              <span className="font-bold text-white">5.0</span>
-              <span className="text-white/70 text-sm">47 Google Reviews</span>
+              <span className="font-bold text-white text-sm md:text-base">5.0</span>
+              <span className="text-white/70 text-xs md:text-sm">47 Google Reviews</span>
             </a>
           </motion.div>
 
-          {/* Right side - Quote Form + Trust Badges */}
+          {/* Right side - Quote Form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.15 }}
           >
-            <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-5 md:p-6 shadow-2xl">
-              <h3 className="font-display font-black text-[30px] text-foreground mb-1 leading-tight">
+            <div className="bg-white/95 backdrop-blur-sm rounded-xl md:rounded-2xl p-3 md:p-6 shadow-2xl">
+              <h3 className="font-display font-black text-lg md:text-[30px] text-foreground mb-0.5 md:mb-1 leading-tight">
                 Get a Free Quote
               </h3>
-              <p className="text-sm text-muted-foreground mb-4">
+              <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-4">
                 We'll get back to you within 24 hours.
               </p>
 
               {submitStatus === 'success' && (
-                <div className="flex items-center gap-2 p-3 mb-3 rounded-lg bg-green-500/10 text-green-600 border border-green-500/20" data-testid="status-form-success">
-                  <CheckCircle className="w-5 h-5 shrink-0" />
-                  <span className="text-sm font-semibold">Thanks! We'll be in touch soon.</span>
+                <div className="flex items-center gap-2 p-2 md:p-3 mb-2 md:mb-3 rounded-lg bg-green-500/10 text-green-600 border border-green-500/20" data-testid="status-form-success">
+                  <CheckCircle className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+                  <span className="text-xs md:text-sm font-semibold">Thanks! We'll be in touch soon.</span>
                 </div>
               )}
               {submitStatus === 'error' && (
-                <div className="flex items-center gap-2 p-3 mb-3 rounded-lg bg-destructive/10 text-destructive border border-destructive/20" data-testid="status-form-error">
-                  <AlertCircle className="w-5 h-5 shrink-0" />
-                  <span className="text-sm font-semibold">Something went wrong. Please try again.</span>
+                <div className="flex items-center gap-2 p-2 md:p-3 mb-2 md:mb-3 rounded-lg bg-destructive/10 text-destructive border border-destructive/20" data-testid="status-form-error">
+                  <AlertCircle className="w-4 h-4 md:w-5 md:h-5 shrink-0" />
+                  <span className="text-xs md:text-sm font-semibold">Something went wrong. Please try again.</span>
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-3">
+              <form onSubmit={handleSubmit} className="space-y-2 md:space-y-3">
                 <div>
-                  <label htmlFor="hero-name" className="block text-sm font-bold text-foreground mb-1">
+                  <label htmlFor="hero-name" className="sr-only md:not-sr-only md:block md:text-sm md:font-bold md:text-foreground md:mb-1">
                     Your Name
                   </label>
                   <input
                     id="hero-name"
                     type="text"
-                    placeholder="John Smith"
+                    placeholder="Your Name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="input-glass"
+                    className="input-glass !py-2 md:!py-2.5"
                     required
                     disabled={isSubmitting}
                     data-testid="input-hero-name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="hero-phone" className="block text-sm font-bold text-foreground mb-1">
+                  <label htmlFor="hero-phone" className="sr-only md:not-sr-only md:block md:text-sm md:font-bold md:text-foreground md:mb-1">
                     Phone Number
                   </label>
                   <input
                     id="hero-phone"
                     type="tel"
-                    placeholder="(847) 404-3398"
+                    placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="input-glass"
+                    className="input-glass !py-2 md:!py-2.5"
                     required
                     disabled={isSubmitting}
                     data-testid="input-hero-phone"
                   />
                 </div>
                 <div>
-                  <label htmlFor="hero-service" className="block text-sm font-bold text-foreground mb-1">
+                  <label htmlFor="hero-service" className="sr-only md:not-sr-only md:block md:text-sm md:font-bold md:text-foreground md:mb-1">
                     Service
                   </label>
                   <select
                     id="hero-service"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="input-glass"
+                    className="input-glass !py-2 md:!py-2.5"
                     required
                     disabled={isSubmitting}
                     data-testid="select-hero-service"
@@ -207,13 +203,13 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
                 </div>
                 <button
                   type="submit"
-                  className="btn-glow w-full py-3 text-lg font-bold disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="btn-glow w-full !py-2 md:!py-3 text-sm md:text-lg font-bold disabled:opacity-50 disabled:cursor-not-allowed"
                   disabled={isSubmitting}
                   data-testid="button-submit-hero-quote"
                 >
                   {isSubmitting ? (
                     <>
-                      <Loader2 className="w-5 h-5 animate-spin" />
+                      <Loader2 className="w-4 h-4 md:w-5 md:h-5 animate-spin" />
                       Submitting...
                     </>
                   ) : (
