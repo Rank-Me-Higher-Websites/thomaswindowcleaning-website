@@ -260,22 +260,20 @@
 }
 
 @layer utilities {
-  /* Highlighted text - matches the "Streak-Free Results" accent */
+  /* Highlighted text - render as normal foreground so it stays legible on white backgrounds.
+     The hero accent ("Streak-Free Results") uses `text-section-blue` directly on the dark hero. */
   .text-gradient {
-    color: hsl(var(--section-blue));
+    color: hsl(var(--foreground));
     background-image: none;
     -webkit-text-fill-color: currentColor;
   }
 
-  /* Inside light-blue sections: default text to foreground (black) and darken any muted/highlight
-     variants that would otherwise be illegible. Component-level color utilities (buttons, badges,
-     status banners, primary CTAs) keep their intentional colors. */
+  /* Inside light-blue sections: default text to foreground (black) and darken muted variants. */
   .bg-section-blue {
     color: hsl(var(--foreground));
   }
 
-  .bg-section-blue .text-muted-foreground,
-  .bg-section-blue .text-gradient {
+  .bg-section-blue .text-muted-foreground {
     color: hsl(var(--foreground));
   }
 
