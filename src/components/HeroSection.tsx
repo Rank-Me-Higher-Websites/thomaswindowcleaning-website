@@ -57,7 +57,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
       </div>
 
       <div className="container mx-auto px-4 py-4 md:py-8 relative z-10 w-full flex flex-col">
-        <div className="flex-1 flex flex-col justify-between gap-4 lg:grid lg:grid-cols-[1.4fr_0.6fr] lg:gap-8 lg:items-center">
+        <div className="flex-1 flex flex-col gap-5 lg:grid lg:grid-cols-[1.4fr_0.6fr] lg:gap-8 lg:items-center">
           {/* Left content */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
