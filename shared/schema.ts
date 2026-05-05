@@ -1,5 +1,4 @@
 import { pgTable, serial, text, timestamp, jsonb } from "drizzle-orm/pg-core";
-import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
 export const leads = pgTable("leads", {
@@ -17,17 +16,24 @@ export const leads = pgTable("leads", {
   createdAt: timestamp("created_at").notNull().defaultNow(),
 });
 
-export const insertLeadSchema = createInsertSchema(leads, {
-  name: z.string().min(1).max(200),
-  phone: z.string().max(50).optional().nullable(),
-  email: z.string().email().max(200).optional().nullable(),
-  service: z.string().max(100).optional().nullable(),
-  message: z.string().max(5000).optional().nullable(),
-  preferredDate: z.string().max(50).optional().nullable(),
-  notes: z.string().max(5000).optional().nullable(),
-  sourcePage: z.string().max(500).optional().nullable(),
+const optionalText = (max: number) =>
+  z.preprocess(
+    (v) => (v === "" || v === undefined ? null : v),
+    z.string().max(max).nullable().optional(),
+  );
+
+export const insertLeadSchema = z.object({
   formType: z.string().min(1).max(50),
-}).omit({ id: true, createdAt: true });
+  sourcePage: optionalText(500),
+  name: z.string().min(1).max(200),
+  phone: optionalText(50),
+  email: optionalText(200),
+  service: optionalText(100),
+  message: optionalText(5000),
+  preferredDate: optionalText(50),
+  notes: optionalText(5000),
+  metadata: z.record(z.any()).nullable().optional(),
+});
 
 export type InsertLead = z.infer<typeof insertLeadSchema>;
 export type Lead = typeof leads.$inferSelect;
