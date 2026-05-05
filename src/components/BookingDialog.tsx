@@ -11,6 +11,7 @@ import {
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Calendar } from '@/components/ui/calendar';
 import { cn } from '@/lib/utils';
+import { logLead } from '@/lib/leadLogger';
 
 const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/44b2b794-4536-4293-9233-8f8c869e321a';
 
@@ -35,6 +36,14 @@ export const BookingDialog = ({ open, onOpenChange }: BookingDialogProps) => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    logLead({
+      formType: 'booking_dialog',
+      name: formData.name,
+      phone: formData.phone,
+      service: formData.service,
+      preferredDate: formData.date ? format(formData.date, 'yyyy-MM-dd') : undefined,
+      notes: formData.notes,
+    });
     try {
       const payload = {
         ...formData,

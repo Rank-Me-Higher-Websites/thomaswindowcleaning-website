@@ -8,6 +8,7 @@ import contactHero from '@/assets/thomas-about.jpg';
 import { FloatingCTA } from '@/components/FloatingCTA';
 import { useBooking } from '@/contexts/BookingContext';
 import { SEOHead } from '@/components/SEOHead';
+import { logLead } from '@/lib/leadLogger';
 
 const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/000757b6-d8cd-4f4c-8055-adb84ccc09b4';
 
@@ -27,6 +28,13 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    logLead({
+      formType: 'contact_page',
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message,
+    });
     try {
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',

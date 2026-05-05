@@ -1,6 +1,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { Phone, Clock, Shield, Loader2, CheckCircle, AlertCircle } from 'lucide-react';
+import { logLead } from '@/lib/leadLogger';
 
 const WEBHOOK_URL = 'https://cdlagency.app.n8n.cloud/webhook/ae656859-0797-496e-9801-766df447fb22';
 
@@ -20,6 +21,7 @@ export const BookingSection = () => {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    logLead({ formType: 'booking_section', name: formData.name, phone: formData.phone, service: formData.service });
     try {
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',

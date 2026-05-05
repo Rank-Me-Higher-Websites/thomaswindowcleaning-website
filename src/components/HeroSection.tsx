@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { Star, Phone, ArrowRight, CheckCircle, Sparkles, Droplets, Waves, Shield, MapPin, DollarSign, Loader2, AlertCircle } from 'lucide-react';
+import { logLead } from '@/lib/leadLogger';
 import { Link } from 'react-router-dom';
 import heroBg from '@/assets/hero-bg.jpg';
 import { useBooking } from '@/contexts/BookingContext';
@@ -23,6 +24,7 @@ export const HeroSection = ({ onGetQuote }: HeroSectionProps) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitStatus('idle');
+    logLead({ formType: 'hero_quote', name: formData.name, phone: formData.phone, service: formData.service });
     try {
       const response = await fetch(WEBHOOK_URL, {
         method: 'POST',
