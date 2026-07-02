@@ -13,28 +13,33 @@ import thomasDifference1 from '@/assets/thomas-difference-1.jpg';
 import thomasDifference2 from '@/assets/thomas-difference-2.jpg';
 
 const pricingData = [
-  { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
-  { windows: '16 - 25', insideOutside: '$160', outsideOnly: '$110' },
-  { windows: '26 - 35', insideOutside: '$180', outsideOnly: '$130' },
-  { windows: '36 - 45', insideOutside: '$220', outsideOnly: '$150' },
-  { windows: '46 - 60', insideOutside: '$270', outsideOnly: '$180' },
-  { windows: '61 - 80', insideOutside: '$320', outsideOnly: '$210' },
-  { windows: '81 - 100', insideOutside: '$380', outsideOnly: '$250' },
-  { windows: '101 - 125', insideOutside: '$440', outsideOnly: '$290' },
-  { windows: '126 - 150', insideOutside: '$520', outsideOnly: '$340' },
-  { windows: '151 - 175', insideOutside: '$600', outsideOnly: '$400' },
-  { windows: '176 - 200', insideOutside: '$700', outsideOnly: '$490' },
+  { windows: '1 – 15', insideOutside: '$160', outsideOnly: '$110' },
+  { windows: '16 – 25', insideOutside: '$180', outsideOnly: '$130' },
+  { windows: '26 – 35', insideOutside: '$220', outsideOnly: '$150' },
+  { windows: '36 – 45', insideOutside: '$260', outsideOnly: '$170' },
+  { windows: '46 – 60', insideOutside: '$300', outsideOnly: '$200' },
+  { windows: '61 – 80', insideOutside: '$360', outsideOnly: '$230' },
+  { windows: '81 – 100', insideOutside: '$420', outsideOnly: '$270' },
+  { windows: '101 – 125', insideOutside: '$480', outsideOnly: '$310' },
+  { windows: '126 – 150', insideOutside: '$560', outsideOnly: '$360' },
+  { windows: '151 – 175', insideOutside: '$640', outsideOnly: '$420' },
+  { windows: '176 – 200', insideOutside: '$760', outsideOnly: '$500' },
 ];
 
 const additionalCharges = [
   'Wiping of window sills is free',
-  'Storm windows and screens are $3 each',
-  'French windows (price based on size)',
-  'Outside only: $2-$3 extra per window',
-  'Inside & outside: $3-$5 extra per window',
-  'Skylights: $10 each',
-  'Additional charges for over-sized windows and new construction scraping',
-  'Cleaning window tracks: $1.50-$3',
+  'Regular storm windows: $5 each',
+  'Pella-type storms: $6 each',
+  'Wood and screwed on storms: $5–$10 each',
+  'Large picture window storm: $20–$50 each',
+  'Screen washing: $5 each',
+  'Screens brushed: $3 each',
+  'Oversize windows: $10–$20 extra',
+  'Cleaning window inside window well: $15 per window',
+  'Skylights: $15 per side',
+  'Window tracks and frames: $5 each window',
+  'Scraping: $3 per side',
+  'Hard water removal: $10 per window',
 ];
 
 const benefits = [

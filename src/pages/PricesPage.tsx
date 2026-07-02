@@ -10,17 +10,35 @@ import { useBooking } from '@/contexts/BookingContext';
 import { SEOHead } from '@/components/SEOHead';
 
 const windowPricing = [
-  { windows: '1 - 15', insideOutside: '$140', outsideOnly: '$90' },
-  { windows: '16 - 25', insideOutside: '$160', outsideOnly: '$110' },
-  { windows: '26 - 35', insideOutside: '$180', outsideOnly: '$130' },
-  { windows: '36 - 45', insideOutside: '$220', outsideOnly: '$150' },
-  { windows: '46 - 60', insideOutside: '$270', outsideOnly: '$180' },
-  { windows: '61 - 80', insideOutside: '$320', outsideOnly: '$210' },
-  { windows: '81 - 100', insideOutside: '$380', outsideOnly: '$250' },
-  { windows: '101 - 125', insideOutside: '$440', outsideOnly: '$290' },
-  { windows: '126 - 150', insideOutside: '$520', outsideOnly: '$340' },
-  { windows: '151 - 175', insideOutside: '$600', outsideOnly: '$400' },
-  { windows: '176 - 200', insideOutside: '$700', outsideOnly: '$490' },
+  { windows: '1 – 15', insideOutside: '$160', outsideOnly: '$110' },
+  { windows: '16 – 25', insideOutside: '$180', outsideOnly: '$130' },
+  { windows: '26 – 35', insideOutside: '$220', outsideOnly: '$150' },
+  { windows: '36 – 45', insideOutside: '$260', outsideOnly: '$170' },
+  { windows: '46 – 60', insideOutside: '$300', outsideOnly: '$200' },
+  { windows: '61 – 80', insideOutside: '$360', outsideOnly: '$230' },
+  { windows: '81 – 100', insideOutside: '$420', outsideOnly: '$270' },
+  { windows: '101 – 125', insideOutside: '$480', outsideOnly: '$310' },
+  { windows: '126 – 150', insideOutside: '$560', outsideOnly: '$360' },
+  { windows: '151 – 175', insideOutside: '$640', outsideOnly: '$420' },
+  { windows: '176 – 200', insideOutside: '$760', outsideOnly: '$500' },
+];
+
+const stormWindowPricing = [
+  { type: 'Regular Storm Windows', price: '$5 each' },
+  { type: 'Pella-Type Storms', price: '$6 each' },
+  { type: 'Wood and Screwed On Storms', price: '$5 – $10 each' },
+  { type: 'Large Picture Window Storm', price: '$20 – $50 each' },
+];
+
+const additionalServicesPricing = [
+  { service: 'Screen Washing', price: '$5 each' },
+  { service: 'Screens Brushed', price: '$3 each' },
+  { service: 'Oversize Windows', price: '$10 – $20 extra' },
+  { service: 'Cleaning Window Inside Window Well', price: '$15 per window' },
+  { service: 'Skylights', price: '$15 per side' },
+  { service: 'Window Tracks and Frames', price: '$5 each window' },
+  { service: 'Scraping', price: '$3 per side' },
+  { service: 'Hard Water Removal', price: '$10 per window' },
 ];
 
 const gutterPricing = [
@@ -175,6 +193,70 @@ const PricesPage = () => {
                 <ArrowRight className="w-4 h-4" />
                 Learn More
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Storm Windows & Additional Services */}
+        <section className="py-5 md:py-6 bg-section-blue">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-8 max-w-5xl">
+              {/* Storm Windows */}
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-3 mb-4"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Sparkles className="w-5 h-5 text-primary" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold">Storm Windows</h2>
+                </motion.div>
+                <div className="glass-card overflow-hidden">
+                  <div className="grid grid-cols-2 bg-primary text-primary-foreground font-semibold text-xs md:text-sm">
+                    <div className="p-3 md:p-4">Type</div>
+                    <div className="p-3 md:p-4 border-l border-primary-foreground/20 text-center">Price</div>
+                  </div>
+                  {stormWindowPricing.map((row, index) => (
+                    <div key={index} className={`grid grid-cols-2 text-xs md:text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                      <div className="p-3 md:p-4 font-medium">{row.type}</div>
+                      <div className="p-3 md:p-4 border-l border-border text-center">{row.price}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Additional Services */}
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="flex items-center gap-3 mb-4"
+                >
+                  <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                    <Sparkles className="w-5 h-5 text-primary" />
+                  </div>
+                  <h2 className="text-xl md:text-2xl font-bold">Additional Services</h2>
+                </motion.div>
+                <div className="glass-card overflow-hidden">
+                  <div className="grid grid-cols-2 bg-primary text-primary-foreground font-semibold text-xs md:text-sm">
+                    <div className="p-3 md:p-4">Service</div>
+                    <div className="p-3 md:p-4 border-l border-primary-foreground/20 text-center">Price</div>
+                  </div>
+                  {additionalServicesPricing.map((row, index) => (
+                    <div key={index} className={`grid grid-cols-2 text-xs md:text-sm ${index % 2 === 0 ? 'bg-muted/30' : 'bg-card'}`}>
+                      <div className="p-3 md:p-4 font-medium">{row.service}</div>
+                      <div className="p-3 md:p-4 border-l border-border text-center">{row.price}</div>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs text-muted-foreground mt-3">
+                  Note: Window well clean-out service is available upon request for an extra charge.
+                </p>
+              </div>
             </div>
           </div>
         </section>
