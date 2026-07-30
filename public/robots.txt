@@ -37,4 +37,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://thomaswindow.lovable.app/sitemap.xml
+Sitemap: https://thomaswindow.com/sitemap.xml

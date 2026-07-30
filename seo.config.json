@@ -1,0 +1,2036 @@
+{
+  "site": "thomaswindowcleaning-website",
+  "domain": "thomaswindow.com",
+  "distDir": "dist",
+  "publicDir": "public",
+  "siteName": "Thomas Window Cleaning",
+  "ogImage": "/thomas-logo.png",
+  "disallow": [],
+  "replacements": [
+    {
+      "from": "thomaswindow.lovable.app",
+      "to": "thomaswindow.com"
+    },
+    {
+      "from": "thomaswindowcleaning-website.replit.app",
+      "to": "thomaswindow.com"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "title": "Thomas Window Cleaning | Professional Window, Gutter & Power Washing in Chicago",
+      "description": "Professional window cleaning, gutter cleaning, and power washing for homes and businesses across Chicago’s northwest suburbs. Family-run since 1995.",
+      "changefreq": "weekly",
+      "priority": 1,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://thomaswindow.com/#business",
+          "name": "Thomas Window Cleaning",
+          "url": "https://thomaswindow.com/",
+          "image": "https://thomaswindow.com/thomas-logo.png",
+          "telephone": "+1-847-404-3398",
+          "email": "thomaswindowcleaning@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "P.O. Box 582",
+            "addressLocality": "Wheeling",
+            "addressRegion": "IL",
+            "postalCode": "60090",
+            "addressCountry": "US"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wheeling, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Arlington Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Schaumburg, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Des Plaines, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Palatine, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Glenview, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Buffalo Grove, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Mount Prospect, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Northbrook, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Prospect Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Elk Grove Village, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Rolling Meadows, IL"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "foundingDate": "1995",
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Window Cleaning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gutter Cleaning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Power Washing"
+              }
+            }
+          ]
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Thomas Window Cleaning",
+          "url": "https://thomaswindow.com/",
+          "publisher": {
+            "@id": "https://thomaswindow.com/#business"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning",
+      "title": "Professional Window Cleaning Services | Thomas Window Cleaning",
+      "description": "Crystal-clear, streak-free windows for homes and businesses in Chicago’s northwest suburbs. Interior & exterior cleaning and hard water stain removal.",
+      "changefreq": "monthly",
+      "priority": 0.9,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wheeling, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Arlington Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Schaumburg, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Des Plaines, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Palatine, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Glenview, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Buffalo Grove, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Mount Prospect, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Northbrook, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Prospect Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Elk Grove Village, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Rolling Meadows, IL"
+            }
+          ],
+          "url": "https://thomaswindow.com/services/window-cleaning"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning",
+      "title": "Gutter Cleaning Services | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning to protect your home from water damage. Debris removal, downspout flushing and inspections in Chicago’s northwest suburbs.",
+      "changefreq": "monthly",
+      "priority": 0.9,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wheeling, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Arlington Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Schaumburg, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Des Plaines, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Palatine, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Glenview, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Buffalo Grove, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Mount Prospect, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Northbrook, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Prospect Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Elk Grove Village, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Rolling Meadows, IL"
+            }
+          ],
+          "url": "https://thomaswindow.com/services/gutter-cleaning"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing",
+      "title": "Power Washing Services | Thomas Window Cleaning",
+      "description": "Professional power washing to restore driveways, siding, decks and patios. Eco-friendly cleaning for homes and businesses in Chicago’s northwest suburbs.",
+      "changefreq": "monthly",
+      "priority": 0.9,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wheeling, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Arlington Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Schaumburg, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Des Plaines, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Palatine, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Glenview, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Buffalo Grove, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Mount Prospect, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Northbrook, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Prospect Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Elk Grove Village, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Rolling Meadows, IL"
+            }
+          ],
+          "url": "https://thomaswindow.com/services/power-washing"
+        }
+      ]
+    },
+    {
+      "path": "/prices",
+      "title": "Pricing | Window Cleaning, Gutter & Power Washing | Thomas Window Cleaning",
+      "description": "Transparent pricing for window cleaning, gutter cleaning and power washing in Chicago’s northwest suburbs. No hidden fees. Get a free quote today.",
+      "changefreq": "monthly",
+      "priority": 0.8
+    },
+    {
+      "path": "/blog",
+      "title": "Window Cleaning & Exterior Care Blog | Thomas Window Cleaning",
+      "description": "Expert tips, guides and advice on window cleaning, gutter maintenance and power washing for Chicago homeowners, from Thomas Window Cleaning.",
+      "changefreq": "weekly",
+      "priority": 0.8
+    },
+    {
+      "path": "/contact",
+      "title": "Contact Us | Thomas Window Cleaning",
+      "description": "Get in touch with Thomas Window Cleaning for a free quote. Call (847) 404-3398 or use our contact form. Serving Chicago’s northwest suburbs since 1995.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "url": "https://thomaswindow.com/contact",
+          "about": {
+            "@id": "https://thomaswindow.com/#business"
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          "@id": "https://thomaswindow.com/#business",
+          "name": "Thomas Window Cleaning",
+          "url": "https://thomaswindow.com/",
+          "image": "https://thomaswindow.com/thomas-logo.png",
+          "telephone": "+1-847-404-3398",
+          "email": "thomaswindowcleaning@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "P.O. Box 582",
+            "addressLocality": "Wheeling",
+            "addressRegion": "IL",
+            "postalCode": "60090",
+            "addressCountry": "US"
+          },
+          "areaServed": [
+            {
+              "@type": "City",
+              "name": "Wheeling, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Arlington Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Schaumburg, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Des Plaines, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Palatine, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Glenview, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Buffalo Grove, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Mount Prospect, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Northbrook, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Prospect Heights, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Elk Grove Village, IL"
+            },
+            {
+              "@type": "City",
+              "name": "Rolling Meadows, IL"
+            }
+          ],
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "foundingDate": "1995",
+          "makesOffer": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Window Cleaning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Gutter Cleaning"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Power Washing"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/wheeling",
+      "title": "Window Cleaning in Wheeling, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Wheeling, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Wheeling, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Wheeling, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/wheeling"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/arlington-heights",
+      "title": "Window Cleaning in Arlington Heights, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Arlington Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Arlington Heights, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Arlington Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/arlington-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/schaumburg",
+      "title": "Window Cleaning in Schaumburg, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Schaumburg, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Schaumburg, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Schaumburg, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/schaumburg"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/des-plaines",
+      "title": "Window Cleaning in Des Plaines, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Des Plaines, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Des Plaines, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Des Plaines, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/des-plaines"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/palatine",
+      "title": "Window Cleaning in Palatine, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Palatine, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Palatine, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Palatine, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/palatine"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/glenview",
+      "title": "Window Cleaning in Glenview, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Glenview, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Glenview, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Glenview, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/glenview"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/buffalo-grove",
+      "title": "Window Cleaning in Buffalo Grove, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Buffalo Grove, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Buffalo Grove, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Buffalo Grove, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/buffalo-grove"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/mount-prospect",
+      "title": "Window Cleaning in Mount Prospect, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Mount Prospect, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Mount Prospect, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Mount Prospect, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/mount-prospect"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/northbrook",
+      "title": "Window Cleaning in Northbrook, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Northbrook, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Northbrook, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Northbrook, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/northbrook"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/prospect-heights",
+      "title": "Window Cleaning in Prospect Heights, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Prospect Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Prospect Heights, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Prospect Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/prospect-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/elk-grove-village",
+      "title": "Window Cleaning in Elk Grove Village, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Elk Grove Village, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Elk Grove Village, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Elk Grove Village, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/elk-grove-village"
+        }
+      ]
+    },
+    {
+      "path": "/services/window-cleaning/rolling-meadows",
+      "title": "Window Cleaning in Rolling Meadows, IL | Thomas Window Cleaning",
+      "description": "Professional window cleaning in Rolling Meadows, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Window Cleaning in Rolling Meadows, IL",
+          "serviceType": "Window Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Rolling Meadows, IL"
+          },
+          "url": "https://thomaswindow.com/services/window-cleaning/rolling-meadows"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/wheeling",
+      "title": "Gutter Cleaning in Wheeling, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Wheeling, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Wheeling, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Wheeling, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/wheeling"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/arlington-heights",
+      "title": "Gutter Cleaning in Arlington Heights, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Arlington Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Arlington Heights, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Arlington Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/arlington-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/schaumburg",
+      "title": "Gutter Cleaning in Schaumburg, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Schaumburg, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Schaumburg, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Schaumburg, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/schaumburg"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/des-plaines",
+      "title": "Gutter Cleaning in Des Plaines, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Des Plaines, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Des Plaines, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Des Plaines, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/des-plaines"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/palatine",
+      "title": "Gutter Cleaning in Palatine, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Palatine, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Palatine, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Palatine, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/palatine"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/glenview",
+      "title": "Gutter Cleaning in Glenview, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Glenview, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Glenview, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Glenview, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/glenview"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/buffalo-grove",
+      "title": "Gutter Cleaning in Buffalo Grove, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Buffalo Grove, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Buffalo Grove, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Buffalo Grove, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/buffalo-grove"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/mount-prospect",
+      "title": "Gutter Cleaning in Mount Prospect, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Mount Prospect, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Mount Prospect, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Mount Prospect, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/mount-prospect"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/northbrook",
+      "title": "Gutter Cleaning in Northbrook, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Northbrook, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Northbrook, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Northbrook, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/northbrook"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/prospect-heights",
+      "title": "Gutter Cleaning in Prospect Heights, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Prospect Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Prospect Heights, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Prospect Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/prospect-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/elk-grove-village",
+      "title": "Gutter Cleaning in Elk Grove Village, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Elk Grove Village, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Elk Grove Village, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Elk Grove Village, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/elk-grove-village"
+        }
+      ]
+    },
+    {
+      "path": "/services/gutter-cleaning/rolling-meadows",
+      "title": "Gutter Cleaning in Rolling Meadows, IL | Thomas Window Cleaning",
+      "description": "Professional gutter cleaning in Rolling Meadows, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Gutter Cleaning in Rolling Meadows, IL",
+          "serviceType": "Gutter Cleaning",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Rolling Meadows, IL"
+          },
+          "url": "https://thomaswindow.com/services/gutter-cleaning/rolling-meadows"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/wheeling",
+      "title": "Power Washing in Wheeling, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Wheeling, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Wheeling, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Wheeling, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/wheeling"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/arlington-heights",
+      "title": "Power Washing in Arlington Heights, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Arlington Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Arlington Heights, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Arlington Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/arlington-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/schaumburg",
+      "title": "Power Washing in Schaumburg, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Schaumburg, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Schaumburg, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Schaumburg, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/schaumburg"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/des-plaines",
+      "title": "Power Washing in Des Plaines, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Des Plaines, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Des Plaines, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Des Plaines, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/des-plaines"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/palatine",
+      "title": "Power Washing in Palatine, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Palatine, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Palatine, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Palatine, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/palatine"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/glenview",
+      "title": "Power Washing in Glenview, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Glenview, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Glenview, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Glenview, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/glenview"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/buffalo-grove",
+      "title": "Power Washing in Buffalo Grove, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Buffalo Grove, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Buffalo Grove, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Buffalo Grove, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/buffalo-grove"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/mount-prospect",
+      "title": "Power Washing in Mount Prospect, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Mount Prospect, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Mount Prospect, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Mount Prospect, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/mount-prospect"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/northbrook",
+      "title": "Power Washing in Northbrook, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Northbrook, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured. Call (847) 404-3398.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Northbrook, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Northbrook, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/northbrook"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/prospect-heights",
+      "title": "Power Washing in Prospect Heights, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Prospect Heights, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Prospect Heights, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Prospect Heights, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/prospect-heights"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/elk-grove-village",
+      "title": "Power Washing in Elk Grove Village, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Elk Grove Village, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Elk Grove Village, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Elk Grove Village, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/elk-grove-village"
+        }
+      ]
+    },
+    {
+      "path": "/services/power-washing/rolling-meadows",
+      "title": "Power Washing in Rolling Meadows, IL | Thomas Window Cleaning",
+      "description": "Professional power washing in Rolling Meadows, IL from Thomas Window Cleaning. Serving the northwest suburbs since 1995. Licensed and insured.",
+      "changefreq": "monthly",
+      "priority": 0.7,
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Power Washing in Rolling Meadows, IL",
+          "serviceType": "Power Washing",
+          "provider": {
+            "@type": "LocalBusiness",
+            "@id": "https://thomaswindow.com/#business",
+            "name": "Thomas Window Cleaning",
+            "telephone": "+1-847-404-3398"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Rolling Meadows, IL"
+          },
+          "url": "https://thomaswindow.com/services/power-washing/rolling-meadows"
+        }
+      ]
+    },
+    {
+      "path": "/blog/residential-power-washing-guide",
+      "title": "Residential Power Washing: The Ultimate Guide to Cleaner Homes | Thomas Window Cleaning Blog",
+      "description": "Take a walk around your home and look closely at the siding, driveway, or deck—chances are you'll spot dirt, mildew, and grime that's been building up over…",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2025-01-15",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Residential Power Washing: The Ultimate Guide to Cleaner Homes",
+          "description": "Take a walk around your home and look closely at the siding, driveway, or deck—chances are you'll spot dirt, mildew, and grime that's been building up over…",
+          "datePublished": "2025-01-15",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/residential-power-washing-guide",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/affordable-gutter-cleaning-chicago",
+      "title": "Affordable Gutter Cleaning in Chicago: Seasonal Tips From Local Experts | Thomas Window Cleaning Blog",
+      "description": "If you own a home in Chicago, you already know how unpredictable the weather can be. One week it's heavy rain, the next it's snow and ice.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2025-01-05",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Affordable Gutter Cleaning in Chicago: Seasonal Tips From Local Experts",
+          "description": "If you own a home in Chicago, you already know how unpredictable the weather can be. One week it's heavy rain, the next it's snow and ice.",
+          "datePublished": "2025-01-05",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/affordable-gutter-cleaning-chicago",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/window-cleaning-near-me-how-to-avoid-mistakes",
+      "title": "Searching for Window Cleaning Near Me? Here's How to Avoid Common Mistakes | Thomas Window Cleaning Blog",
+      "description": "You type \"window cleaning near me\" into your search bar and dozens of results pop up. They all promise sparkling windows, but how do you choose?",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-12-20",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Searching for Window Cleaning Near Me? Here's How to Avoid Common Mistakes",
+          "description": "You type \"window cleaning near me\" into your search bar and dozens of results pop up. They all promise sparkling windows, but how do you choose?",
+          "datePublished": "2024-12-20",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/window-cleaning-near-me-how-to-avoid-mistakes",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/exterior-power-washing-chicago-seasonal-tips",
+      "title": "Exterior Power Washing in Chicago: Seasonal Tips for Homeowners | Thomas Window Cleaning Blog",
+      "description": "Chicago homeowners know that our city's weather can be unforgiving.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2025-01-10",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Exterior Power Washing in Chicago: Seasonal Tips for Homeowners",
+          "description": "Chicago homeowners know that our city's weather can be unforgiving.",
+          "datePublished": "2025-01-10",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/exterior-power-washing-chicago-seasonal-tips",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/gutter-cleaning-mistakes-to-avoid",
+      "title": "Residential Gutter Cleaning Mistakes to Avoid This Year | Thomas Window Cleaning Blog",
+      "description": "Let's be honest—gutter cleaning probably isn't at the top of your weekend to-do list. But ignoring it (or doing it wrong) can lead to serious problems.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-12-28",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Residential Gutter Cleaning Mistakes to Avoid This Year",
+          "description": "Let's be honest—gutter cleaning probably isn't at the top of your weekend to-do list. But ignoring it (or doing it wrong) can lead to serious problems.",
+          "datePublished": "2024-12-28",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/gutter-cleaning-mistakes-to-avoid",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/residential-window-cleaning-wheeling-il",
+      "title": "Top Residential Window Cleaning Services in Wheeling, IL | Thomas Window Cleaning Blog",
+      "description": "Ever noticed how much brighter and fresher your home feels when the windows are clean? It's not just your imagination—clean windows make a real difference.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-12-15",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Top Residential Window Cleaning Services in Wheeling, IL",
+          "description": "Ever noticed how much brighter and fresher your home feels when the windows are clean? It's not just your imagination—clean windows make a real difference.",
+          "datePublished": "2024-12-15",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/residential-window-cleaning-wheeling-il",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/pressure-cleaning-services-chicago",
+      "title": "From Sidewalks to Siding: What Pressure Cleaning Can Do for Your Chicago Property | Thomas Window Cleaning Blog",
+      "description": "Chicago weather is no joke. Between lake-effect snow, gritty wind, and the grime that builds up after a long winter, your property needs some serious TLC.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-12-10",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "From Sidewalks to Siding: What Pressure Cleaning Can Do for Your Chicago Property",
+          "description": "Chicago weather is no joke. Between lake-effect snow, gritty wind, and the grime that builds up after a long winter, your property needs some serious TLC.",
+          "datePublished": "2024-12-10",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/pressure-cleaning-services-chicago",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/surfaces-that-benefit-from-pressure-cleaning",
+      "title": "The Top 5 Surfaces That Benefit Most From Pressure Cleaning | Thomas Window Cleaning Blog",
+      "description": "Ever look at your driveway or deck and think, \"Was it always this dirty?\" You're not imagining things—over time, grime, mold, and stains accumulate.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-12-05",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "The Top 5 Surfaces That Benefit Most From Pressure Cleaning",
+          "description": "Ever look at your driveway or deck and think, \"Was it always this dirty?\" You're not imagining things—over time, grime, mold, and stains accumulate.",
+          "datePublished": "2024-12-05",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/surfaces-that-benefit-from-pressure-cleaning",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/window-cleaners-serving-wheeling",
+      "title": "Why Wheeling Homeowners Rely on Our Window Cleaners Year-Round | Thomas Window Cleaning Blog",
+      "description": "Ever notice how a freshly cleaned window can completely change the feel of your home?",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-11-28",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Why Wheeling Homeowners Rely on Our Window Cleaners Year-Round",
+          "description": "Ever notice how a freshly cleaned window can completely change the feel of your home?",
+          "datePublished": "2024-11-28",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/window-cleaners-serving-wheeling",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/hire-professional-window-cleaning-service",
+      "title": "7 Reasons to Hire a Professional Window Cleaning Service for Your Home | Thomas Window Cleaning Blog",
+      "description": "When was the last time you truly looked at your windows—not through them, but at them?",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-11-20",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "7 Reasons to Hire a Professional Window Cleaning Service for Your Home",
+          "description": "When was the last time you truly looked at your windows—not through them, but at them?",
+          "datePublished": "2024-11-20",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/hire-professional-window-cleaning-service",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/beginners-guide-to-power-washing",
+      "title": "A Beginner's Guide to Power Washing: Surfaces, Frequency, and Safety Tips | Thomas Window Cleaning Blog",
+      "description": "There's something incredibly satisfying about watching years of grime vanish in seconds.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-11-15",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "A Beginner's Guide to Power Washing: Surfaces, Frequency, and Safety Tips",
+          "description": "There's something incredibly satisfying about watching years of grime vanish in seconds.",
+          "datePublished": "2024-11-15",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/beginners-guide-to-power-washing",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/local-guide-to-power-washing-wheeling-il",
+      "title": "Local Guide to Power Washing in Wheeling, IL: What Homeowners Should Know | Thomas Window Cleaning Blog",
+      "description": "Is your home's exterior looking a little worse for wear after another tough Midwest winter? You're not alone.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-11-10",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Local Guide to Power Washing in Wheeling, IL: What Homeowners Should Know",
+          "description": "Is your home's exterior looking a little worse for wear after another tough Midwest winter? You're not alone.",
+          "datePublished": "2024-11-10",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/local-guide-to-power-washing-wheeling-il",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/window-cleaning-chicago-professional-service",
+      "title": "Window Cleaning in Chicago: Why Professional Service Matters in the Windy City | Thomas Window Cleaning Blog",
+      "description": "Let's be honest—Chicago is tough on windows. Between the constant wind, unpredictable weather, and city grime, it doesn't take long before your once-clear…",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-11-05",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Window Cleaning in Chicago: Why Professional Service Matters in the Windy City",
+          "description": "Let's be honest—Chicago is tough on windows. Between the constant wind, unpredictable weather, and city grime, it doesn't take long before your once-clear…",
+          "datePublished": "2024-11-05",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/window-cleaning-chicago-professional-service",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/window-washers-vs-diy-window-cleaning",
+      "title": "Window Washers vs. DIY: Why Professional Window Cleaning Is Worth It | Thomas Window Cleaning Blog",
+      "description": "We all know the feeling—when your windows are streaked, dirty, or covered in fingerprints, it can feel like you're looking through a foggy lens.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-10-28",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Window Washers vs. DIY: Why Professional Window Cleaning Is Worth It",
+          "description": "We all know the feeling—when your windows are streaked, dirty, or covered in fingerprints, it can feel like you're looking through a foggy lens.",
+          "datePublished": "2024-10-28",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/window-washers-vs-diy-window-cleaning",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/gutter-cleaning-myths-debunked",
+      "title": "Gutter Cleaning Myths Debunked: What Homeowners Need to Stop Believing | Thomas Window Cleaning Blog",
+      "description": "Let's be honest—gutter cleaning isn't exactly at the top of most homeowners' to-do lists.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-10-20",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Gutter Cleaning Myths Debunked: What Homeowners Need to Stop Believing",
+          "description": "Let's be honest—gutter cleaning isn't exactly at the top of most homeowners' to-do lists.",
+          "datePublished": "2024-10-20",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/gutter-cleaning-myths-debunked",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/gutter-cleaning-chicago-schedule-maintenance",
+      "title": "Gutter Cleaning in Chicago: How Often Should You Schedule Maintenance? | Thomas Window Cleaning Blog",
+      "description": "Gutters might not be the most exciting part of home maintenance, but they play a crucial role in protecting your home from water damage and structural issues.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-10-15",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Gutter Cleaning in Chicago: How Often Should You Schedule Maintenance?",
+          "description": "Gutters might not be the most exciting part of home maintenance, but they play a crucial role in protecting your home from water damage and structural issues.",
+          "datePublished": "2024-10-15",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/gutter-cleaning-chicago-schedule-maintenance",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/window-washing-benefits-homes-businesses",
+      "title": "Top Benefits of Regular Window Washing for Homes and Businesses | Thomas Window Cleaning Blog",
+      "description": "Have you ever noticed how much better a space feels when the windows are sparkling clean?",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-10-10",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Top Benefits of Regular Window Washing for Homes and Businesses",
+          "description": "Have you ever noticed how much better a space feels when the windows are sparkling clean?",
+          "datePublished": "2024-10-10",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/window-washing-benefits-homes-businesses",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/chicago-window-cleaners-guide-spotless-glass",
+      "title": "2025 Guide to Window Cleaning: How Chicago Window Cleaners Keep Your Glass Spotless | Thomas Window Cleaning Blog",
+      "description": "Have you ever looked out your window and noticed streaks, smudges, or a layer of grime blocking your view? You're not alone.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-10-05",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "2025 Guide to Window Cleaning: How Chicago Window Cleaners Keep Your Glass Spotless",
+          "description": "Have you ever looked out your window and noticed streaks, smudges, or a layer of grime blocking your view? You're not alone.",
+          "datePublished": "2024-10-05",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/chicago-window-cleaners-guide-spotless-glass",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/gutter-guards-worth-investment",
+      "title": "Gutter Guards: Are They Worth the Investment? | Thomas Window Cleaning Blog",
+      "description": "Gutter guards are designed to keep leaves, twigs, and other debris out of your gutters, allowing rainwater to flow freely.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-09-25",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Gutter Guards: Are They Worth the Investment?",
+          "description": "Gutter guards are designed to keep leaves, twigs, and other debris out of your gutters, allowing rainwater to flow freely.",
+          "datePublished": "2024-09-25",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/gutter-guards-worth-investment",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "/blog/top-5-tips-sparkling-clean-windows",
+      "title": "Top 5 Tips for Sparkling Clean Windows | Thomas Window Cleaning Blog",
+      "description": "Cleaning your windows without hiring a professional can be time-consuming and messy without the right tools and techniques.",
+      "changefreq": "yearly",
+      "priority": 0.6,
+      "lastmod": "2024-09-20",
+      "jsonLd": [
+        {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": "Top 5 Tips for Sparkling Clean Windows",
+          "description": "Cleaning your windows without hiring a professional can be time-consuming and messy without the right tools and techniques.",
+          "datePublished": "2024-09-20",
+          "mainEntityOfPage": "https://thomaswindow.com/blog/top-5-tips-sparkling-clean-windows",
+          "author": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Thomas Window Cleaning",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://thomaswindow.com/thomas-logo.png"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

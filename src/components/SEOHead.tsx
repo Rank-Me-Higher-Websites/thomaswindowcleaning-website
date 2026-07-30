@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-const BASE_URL = 'https://thomaswindowcleaning-website.replit.app';
+const BASE_URL = 'https://thomaswindow.com';
 const DEFAULT_OG_IMAGE = `${BASE_URL}/thomas-logo.png`;
 const SITE_NAME = 'Thomas Window Cleaning';
 

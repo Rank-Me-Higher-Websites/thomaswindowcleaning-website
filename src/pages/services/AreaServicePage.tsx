@@ -50,9 +50,9 @@ const AreaServicePage = () => {
             '@context': 'https://schema.org',
             '@type': 'BreadcrumbList',
             itemListElement: [
-              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thomaswindow.lovable.app/' },
-              { '@type': 'ListItem', position: 2, name: service.name, item: `https://thomaswindow.lovable.app/services/${service.slug}` },
-              { '@type': 'ListItem', position: 3, name: area.name, item: `https://thomaswindow.lovable.app/services/${service.slug}/${area.slug}` },
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://thomaswindow.com/' },
+              { '@type': 'ListItem', position: 2, name: service.name, item: `https://thomaswindow.com/services/${service.slug}` },
+              { '@type': 'ListItem', position: 3, name: area.name, item: `https://thomaswindow.com/services/${service.slug}/${area.slug}` },
             ],
           },
         ]}
