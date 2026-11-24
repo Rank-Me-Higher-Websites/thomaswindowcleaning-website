@@ -1,0 +1,28 @@
+{
+  "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
+  "name": "thomaswindowcleaning-website",
+  "account_id": "e8be0cb8f132e4efd6dfb9c25aaa420b",
+  "main": "worker/entry.js",
+  "compatibility_date": "2026-11-01",
+  "observability": { "enabled": true },
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    // `npm run build` -> vite build into dist/ + per-route prerendered dist/<route>/index.html (seo-postbuild)
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Pages today: /contact -> /contact/, /contact/index.html -> /contact/, /index.html -> /
+    "html_handling": "auto-trailing-slash",
+    // Pages today (no 404.html): unknown URLs return 200 with the SPA index.html
+    "not_found_handling": "single-page-application",
+    "run_worker_first": true
+  },
+  "vars": {
+    "CANONICAL_HOST": "thomaswindow.com",
+    "ALIAS_HOSTS": "www.thomaswindow.com",
+    // Web Analytics site token of the thomaswindow.com zone (public; it is in every live page). See worker/entry.js.
+    "CF_BEACON_TOKEN": "3dee7720a04c4a1b8c6d9a7d34ca21c1"
+  }
+  // Custom hostnames are attached on swap day (Cloudflare for SaaS route on cdlagency.com,
+  // or a Workers custom domain when the zone is in our account). Do not add routes here.
+}
