@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/wrangler@4/config-schema.json",
   "name": "thomaswindowcleaning-website",
   "account_id": "e8be0cb8f132e4efd6dfb9c25aaa420b",
-  "main": "worker/index.js",
+  "main": "worker/entry.js",
   "compatibility_date": "2026-11-01",
   "observability": { "enabled": true },
   "workers_dev": true,
@@ -19,7 +19,9 @@
   },
   "vars": {
     "CANONICAL_HOST": "thomaswindow.com",
-    "ALIAS_HOSTS": "www.thomaswindow.com"
+    "ALIAS_HOSTS": "www.thomaswindow.com",
+    // Web Analytics site token of the thomaswindow.com zone (public; it is in every live page). See worker/entry.js.
+    "CF_BEACON_TOKEN": "3dee7720a04c4a1b8c6d9a7d34ca21c1"
   }
   // Custom hostnames are attached on swap day (Cloudflare for SaaS route on cdlagency.com,
   // or a Workers custom domain when the zone is in our account). Do not add routes here.
